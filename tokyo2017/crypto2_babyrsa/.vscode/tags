@@ -1,0 +1,464 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AnalyzeCommand	../featherduster/featherduster/featherduster.py	/^class AnalyzeCommand(Command):$/;"	kind:class	line:207
+AutopwnCommand	../featherduster/featherduster/featherduster.py	/^class AutopwnCommand(Command):$/;"	kind:class	line:228
+ConsoleCommand	../featherduster/featherduster/featherduster.py	/^class ConsoleCommand(Command):$/;"	kind:class	line:150
+ExportCommand	../featherduster/featherduster/featherduster.py	/^class ExportCommand(Command):$/;"	kind:class	line:160
+F	../featherduster/feathermodules/hash/pymd5.py	/^def F(x, y, z):$/;"	kind:function	line:82
+G	../featherduster/feathermodules/hash/pymd5.py	/^def G(x, y, z):$/;"	kind:function	line:85
+H	../featherduster/feathermodules/hash/pymd5.py	/^def H(x, y, z):$/;"	kind:function	line:88
+I	../featherduster/feathermodules/hash/pymd5.py	/^def I(x, y, z):$/;"	kind:function	line:91
+ImportClearCommand	../featherduster/featherduster/featherduster.py	/^class ImportClearCommand(Command):$/;"	kind:class	line:110
+ImportCommand	../featherduster/featherduster/featherduster.py	/^class ImportCommand(Command):$/;"	kind:class	line:114
+ImportManualEntryCommand	../featherduster/featherduster/featherduster.py	/^class ImportManualEntryCommand(Command):$/;"	kind:class	line:79
+ImportMultiFileCommand	../featherduster/featherduster/featherduster.py	/^class ImportMultiFileCommand(Command):$/;"	kind:class	line:43
+ImportResultsCommand	../featherduster/featherduster/featherduster.py	/^class ImportResultsCommand(Command):$/;"	kind:class	line:85
+ImportSingleFileCommand	../featherduster/featherduster/featherduster.py	/^class ImportSingleFileCommand(Command):$/;"	kind:class	line:61
+MD5Type	../featherduster/feathermodules/hash/pymd5.py	/^class MD5Type:$/;"	kind:class	line:115
+ModulesCommand	../featherduster/featherduster/featherduster.py	/^class ModulesCommand(Command):$/;"	kind:class	line:282
+N	../featherduster/tests/test_rsa_crt_fault_attack.py	/^N = 10582801803234222023721351326204905463469321586937873866285899804705438289550794516434678042160644904163578778193959630189545495390487529871810472562828953980775617092992054819000569379567214328036625223601593768074993103126020801627845266883277896935534900134552457628778290646235319742652095517837642111737039755900571013123362947713434696280050067990761280634722593133366154815295209776044603345322953117132250103892984014819690279192133597065661729463436631976729813726128619125291814410455706189604700693994757946995645898522397403679829590407298131095142520403589090633192841184074504222946814847796446760184239L$/;"	kind:variable	line:5
+OptionsCommand	../featherduster/featherduster/featherduster.py	/^class OptionsCommand(Command):$/;"	kind:class	line:312
+ResultsCommand	../featherduster/featherduster/featherduster.py	/^class ResultsCommand(Command):$/;"	kind:class	line:366
+RunCommand	../featherduster/featherduster/featherduster.py	/^class RunCommand(Command):$/;"	kind:class	line:291
+SamplesCommand	../featherduster/featherduster/featherduster.py	/^class SamplesCommand(Command):$/;"	kind:class	line:271
+SearchCommand	../featherduster/featherduster/featherduster.py	/^class SearchCommand(Command):$/;"	kind:class	line:253
+SetCommand	../featherduster/featherduster/featherduster.py	/^class SetCommand(Command):$/;"	kind:class	line:332
+UnsetCommand	../featherduster/featherduster/featherduster.py	/^class UnsetCommand(Command):$/;"	kind:class	line:348
+UseCommand	../featherduster/featherduster/featherduster.py	/^class UseCommand(Command):$/;"	kind:class	line:192
+XX	../featherduster/feathermodules/hash/pymd5.py	/^def XX(func, a, b, c, d, x, s, ac):$/;"	kind:function	line:95
+__all__	../featherduster/cryptanalib/__init__.py	/^__all__ = ['helpers', 'modern', 'classical']$/;"	kind:variable	line:8
+__all__	../featherduster/feathermodules/auxiliary/__init__.py	/^__all__ = ['rand_time', 'hash_format_detect', 'base_n_solver']$/;"	kind:variable	line:1
+__all__	../featherduster/feathermodules/block/__init__.py	/^__all__ = ['generic_padding_oracle', 'http_padding_oracle', 'ecb_cpa_decrypt', 'aes_key_brute']$/;"	kind:variable	line:1
+__all__	../featherduster/feathermodules/classical/__init__.py	/^__all__ = ['alpha_shift', 'columnar_transposition', 'vigenere']$/;"	kind:variable	line:1
+__all__	../featherduster/feathermodules/custom/__init__.py	/^__all__ = map(lambda x: x[:-3], filter(py_and_not_init, os.listdir(path_to_custom_dir)))$/;"	kind:variable	line:9
+__all__	../featherduster/feathermodules/pubkey/__init__.py	/^__all__ = ['rsa_fermat', 'rsa_wiener']$/;"	kind:variable	line:1
+__all__	../featherduster/feathermodules/stream/__init__.py	/^__all__ = ['many_time_pad', 'single_byte_xor','multi_byte_xor']$/;"	kind:variable	line:1
+__all__	../featherduster/tests/__init__.py	/^__all__ = ['test_break_alpha_shift',$/;"	kind:variable	line:1
+__date__	../featherduster/feathermodules/hash/pymd5.py	/^__date__    = '2004-11-17'$/;"	kind:variable	line:35
+__init__	../featherduster/feathermodules/hash/pymd5.py	/^    def __init__(self):$/;"	kind:member	line:118
+__init__.py	../featherduster/cryptanalib/__init__.py	1;"	kind:file	line:1
+__init__.py	../featherduster/featherduster/__init__.py	1;"	kind:file	line:1
+__init__.py	../featherduster/feathermodules/__init__.py	1;"	kind:file	line:1
+__init__.py	../featherduster/feathermodules/auxiliary/__init__.py	1;"	kind:file	line:1
+__init__.py	../featherduster/feathermodules/block/__init__.py	1;"	kind:file	line:1
+__init__.py	../featherduster/feathermodules/classical/__init__.py	1;"	kind:file	line:1
+__init__.py	../featherduster/feathermodules/custom/__init__.py	1;"	kind:file	line:1
+__init__.py	../featherduster/feathermodules/hash/__init__.py	1;"	kind:file	line:1
+__init__.py	../featherduster/feathermodules/pubkey/__init__.py	1;"	kind:file	line:1
+__init__.py	../featherduster/feathermodules/stream/__init__.py	1;"	kind:file	line:1
+__init__.py	../featherduster/tests/__init__.py	1;"	kind:file	line:1
+__metaclass__	../featherduster/feathermodules/hash/pymd5.py	/^__metaclass__ = type # or genrpy won't work$/;"	kind:variable	line:38
+__padding_decryption_oracle	../featherduster/cryptanalib/modern.py	/^   def __padding_decryption_oracle(ciphertext):$/;"	kind:function	line:969
+__version__	../featherduster/feathermodules/hash/pymd5.py	/^__version__ = 0.91 # Modernised by J. Hallén and L. Creighton for Pypy$/;"	kind:variable	line:36
+_bytelist2long	../featherduster/feathermodules/hash/pymd5.py	/^def _bytelist2long(list):$/;"	kind:function	line:47
+_complete_path	../featherduster/featherduster/completer.py	/^def _complete_path(path=None):$/;"	kind:function	line:19
+_formatOutput	../featherduster/featherduster/featherduster.py	/^      def _formatOutput(res):$/;"	kind:function	line:162
+_listdir	../featherduster/featherduster/completer.py	/^def _listdir(root):$/;"	kind:function	line:9
+_rotateLeft	../featherduster/feathermodules/hash/pymd5.py	/^def _rotateLeft(x, n):$/;"	kind:function	line:67
+_transform	../featherduster/feathermodules/hash/pymd5.py	/^    def _transform(self, inp):$/;"	kind:member	line:147
+accuracy	../featherduster/tests/test_break_many_time_pad.py	/^accuracy = bits_correct \/ float(total_bit_length) $/;"	kind:variable	line:61
+aes_key_brute	../featherduster/feathermodules/block/aes_key_brute.py	/^def aes_key_brute(samples):$/;"	kind:function	line:9
+aes_key_brute.py	../featherduster/feathermodules/block/aes_key_brute.py	1;"	kind:file	line:1
+alpha_shift	../featherduster/util/create_alpha_shift.py	/^def alpha_shift(plaintext, key):$/;"	kind:function	line:3
+alpha_shift.py	../featherduster/feathermodules/classical/alpha_shift.py	1;"	kind:file	line:1
+analyze	../featherduster/featherduster/featherduster.py	/^analyze = AnalyzeCommand('analyze', help='Analyze\/decode samples', dynamic_args=True)$/;"	kind:variable	line:224
+analyze_ciphertext	../featherduster/cryptanalib/modern.py	/^def analyze_ciphertext(data, verbose=False):$/;"	kind:function	line:532
+answer	../featherduster/tests/test_multi_byte_xor.py	/^answer = ca.break_multi_byte_xor(ct, num_answers=3, verbose=True)[0]$/;"	kind:variable	line:69
+answer	../featherduster/tests/test_small_message_rsa.py	/^answer = ca.small_message_rsa_attack(ciphertext,modulus,exponent,num_answers=50,minutes=.5,verbose=True, cribs=['GOP{'])[0]$/;"	kind:variable	line:5
+answers	../featherduster/tests/test_break_many_time_pad.py	/^answers = ca.break_many_time_pad(ciphertexts, verbose=True)$/;"	kind:variable	line:51
+args	../featherduster/featherduster/featherduster.py	/^   def args(self):$/;"	kind:member	line:115
+args	../featherduster/featherduster/featherduster.py	/^   def args(self):$/;"	kind:member	line:193
+args	../featherduster/featherduster/featherduster.py	/^   def args(self):$/;"	kind:member	line:343
+args	../featherduster/featherduster/featherduster.py	/^   def args(self):$/;"	kind:member	line:362
+author	../featherduster/setup.py	/^      author='Daniel "unicornfurnace" Crowley',$/;"	kind:variable	line:7
+author_email	../featherduster/setup.py	/^      author_email='daniel.crowley@nccgroup.trust',$/;"	kind:variable	line:8
+autopwn	../featherduster/featherduster/featherduster.py	/^autopwn = AutopwnCommand('autopwn', help='Analyze samples and run all attacks', dynamic_args=True)$/;"	kind:variable	line:249
+badsig	../featherduster/tests/test_rsa_crt_fault_attack.py	/^badsig = 8864006670929406852925128423419283000101606264931546544565004118285111530579411512945707908758302944358049245159881240365195456784997978690049780123607312704598614883100338341770324555702622215028874055295233188087028972047396168538381606028425952850084870840815139465808335221537979841948906784351532564396334588129879467099436972117704102514869368975631607984728653576512470131900790248497082055162110680555834874277167971776484142044468048689414584647613377242581544618782866426893967031773962301853433165727478082390333355401924553292504003746966703113454750999893154821514523123639279610673613179496062870087972L$/;"	kind:variable	line:9
+base64_results	../featherduster/tests/test_ciphertext_analysis.py	/^base64_results = ca.analyze_ciphertext([ct.encode('base64') for ct in ecb_ciphertexts])$/;"	kind:variable	line:84
+base_n_solve	../featherduster/feathermodules/auxiliary/base_n_solver.py	/^def base_n_solve(samples):$/;"	kind:function	line:4
+base_n_solver.py	../featherduster/feathermodules/auxiliary/base_n_solver.py	1;"	kind:file	line:1
+batch_gcd	../featherduster/cryptanalib/modern.py	/^def batch_gcd(items):$/;"	kind:function	line:1169
+bb98_padding_oracle	../featherduster/cryptanalib/modern.py	/^def bb98_padding_oracle(ciphertext, padding_oracle, exponent, modulus, verbose=False, debug=False):$/;"	kind:function	line:370
+bit_length	../featherduster/tests/test_break_many_time_pad.py	/^   bit_length = len(correct_answer) * 8$/;"	kind:variable	line:57
+bits_correct	../featherduster/tests/test_break_many_time_pad.py	/^bits_correct = 0$/;"	kind:variable	line:54
+break_alpha_shift	../featherduster/cryptanalib/classical.py	/^def break_alpha_shift(ciphertext, num_answers=1):$/;"	kind:function	line:144
+break_alpha_shift	../featherduster/feathermodules/classical/alpha_shift.py	/^def break_alpha_shift(ciphertexts):$/;"	kind:function	line:4
+break_ascii_shift	../featherduster/cryptanalib/classical.py	/^def break_ascii_shift(ciphertext):$/;"	kind:function	line:148
+break_columnar_transposition	../featherduster/cryptanalib/classical.py	/^def break_columnar_transposition(ciphertext, pt_freq_table=frequency.frequency_tables['single_english'], num_answers=1):$/;"	kind:function	line:156
+break_columnar_transposition	../featherduster/feathermodules/classical/columnar_transposition.py	/^def break_columnar_transposition(ciphertexts):$/;"	kind:function	line:4
+break_generic_shift	../featherduster/cryptanalib/classical.py	/^def break_generic_shift(ciphertext, charset, num_answers=1):$/;"	kind:function	line:130
+break_many_time_pad	../featherduster/cryptanalib/modern.py	/^def break_many_time_pad(ciphertexts, pt_freq_table=frequency.frequency_tables['single_english'], accuracy=50, verbose=False):$/;"	kind:function	line:1084
+break_multi_byte_xor	../featherduster/cryptanalib/modern.py	/^def break_multi_byte_xor(ciphertext, max_keysize=40, num_answers=5, pt_freq_table=frequency.frequency_tables['english'], verbose=False):$/;"	kind:function	line:1034
+break_rail_fence	../featherduster/cryptanalib/classical.py	/^def break_rail_fence(ciphertext):$/;"	kind:function	line:153
+break_shift	../featherduster/cryptanalib/classical.py	/^def break_shift(ciphertext, ref_letter_freq, correlation = False):$/;"	kind:function	line:259
+break_simple_substitution	../featherduster/cryptanalib/classical.py	/^def break_simple_substitution(ciphertext, freq_table=frequency.frequency_tables['english'], num_answers=5):$/;"	kind:function	line:100
+break_single_byte_xor	../featherduster/cryptanalib/modern.py	/^def break_single_byte_xor(ciphertext,num_answers=20,pt_freq_table=frequency.frequency_tables['english'], detect_words=True, charset=None, verbose=False):$/;"	kind:function	line:1000
+break_vigenere	../featherduster/cryptanalib/classical.py	/^def break_vigenere(ciphertext, scan_range, num_answers=1, max_best_shifts=2,$/;"	kind:function	line:317
+break_vigenere	../featherduster/feathermodules/classical/vigenere.py	/^def break_vigenere(ciphertexts):$/;"	kind:function	line:5
+c1	../featherduster/tests/test_hastad_broadcast.py	/^c1=59058347096109371168795252122846264164451858386505373224717251386760070715998321616322872045496360926010965597694014530236569746798289883620698223974595367916085717978321529423973042614191915468707322332091455074345692573515857940306572327140400350462809984034174154399693239167252702004158475615822913969287$/;"	kind:variable	line:4
+c2	../featherduster/tests/test_hastad_broadcast.py	/^c2=6883263686330952184273822891213591005924705168937975803056469379223409544614680809888088032770672596940790664538600692174951037808814433024269560545952391984729877968807887091176040788850793084257461538315949143092080737002404840007500340125359757260591604068743351078048379311774951289024843307735044171207$/;"	kind:variable	line:6
+c3	../featherduster/tests/test_hastad_broadcast.py	/^c3=31530233954435234871615474461082257860814574852516832348566750745247980529778060741121062564921306275042716802719690563904928683994299563976201039979006456180637367868349438046345194799904021862696709805385084593929161922092328004450918869656249671823890686732759451197371660447696246493681072092464092210096$/;"	kind:variable	line:8
+cbc_cipher	../featherduster/tests/test_ciphertext_analysis.py	/^cbc_cipher = AES.new(key, AES.MODE_CBC, iv)$/;"	kind:variable	line:45
+cbc_cipher	../featherduster/tests/test_ciphertext_analysis.py	/^cbc_cipher = AES.new(key, AES.MODE_CBC, iv)$/;"	kind:variable	line:47
+cbc_ciphertexts	../featherduster/tests/test_ciphertext_analysis.py	/^cbc_ciphertexts = [cbc_cipher.encrypt(ca.pkcs7_pad(plaintext,AES.block_size))]$/;"	kind:variable	line:46
+cbc_edit	../featherduster/cryptanalib/modern.py	/^def cbc_edit(old_plaintext,new_plaintext,old_ciphertext):$/;"	kind:function	line:511
+cbc_results	../featherduster/tests/test_ciphertext_analysis.py	/^cbc_results = ca.analyze_ciphertext(cbc_ciphertexts)$/;"	kind:variable	line:64
+cbcr	../featherduster/cryptanalib/modern.py	/^def cbcr(new_plaintext, oracle, block_size, is_padding_oracle=False, verbose=False):$/;"	kind:function	line:954
+cbcr_plaintext	../featherduster/tests/test_cbcr_do_to_eo.py	/^cbcr_plaintext = ca.pkcs7_padding_remove(cipher.decrypt(new_ciphertext), AES.block_size)$/;"	kind:variable	line:22
+cbcr_plaintext	../featherduster/tests/test_cbcr_do_to_eo.py	/^cbcr_plaintext = ca.pkcs7_padding_remove(cipher.decrypt(new_ciphertext), AES.block_size)$/;"	kind:variable	line:31
+char_freq	../featherduster/util/generate_frequency_tables.py	/^char_freq = ca.generate_frequency_table(source_text, charset)$/;"	kind:variable	line:24
+charset	../featherduster/util/generate_frequency_tables.py	/^charset = [chr(x) for x in xrange(256)]$/;"	kind:variable	line:7
+check_arguments	../featherduster/feathermodules/auxiliary/base_n_solver.py	/^def check_arguments(options):$/;"	kind:function	line:26
+check_arguments	../featherduster/feathermodules/auxiliary/rand_time.py	/^def check_arguments(options):$/;"	kind:function	line:30
+check_key_reuse	../featherduster/cryptanalib/helpers.py	/^def check_key_reuse(samples):$/;"	kind:function	line:168
+check_rsa_key	../featherduster/cryptanalib/helpers.py	/^def check_rsa_key(sample):$/;"	kind:function	line:23
+chinese_remainder_theorem	../featherduster/cryptanalib/helpers.py	/^def chinese_remainder_theorem(items):$/;"	kind:function	line:338
+cipher	../featherduster/tests/test_cbcr_do_to_eo.py	/^cipher = AES.new(key, AES.MODE_CBC, iv)$/;"	kind:variable	line:21
+cipher	../featherduster/tests/test_cbcr_do_to_eo.py	/^cipher = AES.new(key, AES.MODE_CBC, iv)$/;"	kind:variable	line:30
+cipher	../featherduster/tests/test_cbcr_do_to_eo.py	/^cipher = AES.new(key, AES.MODE_CBC, iv)$/;"	kind:variable	line:7
+cipher	../featherduster/tests/test_ecb_decrypt_harder.py	/^cipher = AES.new(key, AES.MODE_ECB, iv)$/;"	kind:variable	line:10
+cipher	../featherduster/tests/test_ecb_decrypt_simple.py	/^cipher = AES.new(key, AES.MODE_ECB, iv)$/;"	kind:variable	line:12
+cipher	../featherduster/tests/test_padding_oracle_decrypt.py	/^cipher = AES.new(key,AES.MODE_CBC,iv)$/;"	kind:variable	line:20
+cipher	../featherduster/tests/test_retrieve_iv.py	/^cipher = AES.new(key, mode=AES.MODE_CBC, IV=iv)$/;"	kind:variable	line:7
+ciphertext	../featherduster/tests/test_bleichenbacher.py	/^ciphertext = key.encrypt(plaintext, 0)[0]$/;"	kind:variable	line:14
+ciphertext	../featherduster/tests/test_break_columnar_transposition.py	/^ciphertext = ''.join([plaintext[num::num_rows] for num in xrange(num_rows)])$/;"	kind:variable	line:7
+ciphertext	../featherduster/tests/test_padding_oracle_decrypt.py	/^ciphertext = cipher.encrypt(plaintext)$/;"	kind:variable	line:21
+ciphertext	../featherduster/tests/test_retrieve_iv.py	/^ciphertext = cipher.encrypt(ca.pkcs7_pad('Check out the mic while the DJ revolves it (ICE ICE BABY)',AES.block_size))$/;"	kind:variable	line:10
+ciphertext	../featherduster/tests/test_single_byte_xor.py	/^ciphertext = ca.sxor(plaintext, '\\x3f'*len(plaintext))$/;"	kind:variable	line:5
+ciphertext	../featherduster/tests/test_small_message_rsa.py	/^ciphertext = 7886628609932312856721838252684055098339992816102997660569906859962889119954467411265040044316172905699264209686304825127080381228725097508989876619523628471350199170160595371782349198554549809552157184997191444734022439243999474944462357511842789814731649941550363737953620555149640588920398560941190527429L$/;"	kind:variable	line:2
+ciphertexts	../featherduster/tests/test_break_many_time_pad.py	/^ciphertexts = []$/;"	kind:variable	line:45
+classical.py	../featherduster/cryptanalib/classical.py	1;"	kind:file	line:1
+columnar_transposition.py	../featherduster/feathermodules/classical/columnar_transposition.py	1;"	kind:file	line:1
+common_words	../featherduster/cryptanalib/frequency.py	/^common_words = {}$/;"	kind:variable	line:8
+complete	../featherduster/featherduster/completer.py	/^def complete(text, state):$/;"	kind:function	line:39
+completer.py	../featherduster/featherduster/completer.py	1;"	kind:file	line:1
+compressed_messages	../featherduster/tests/test_ciphertext_analysis.py	/^compressed_messages = [compress(plaintext), compress(plaintext2)]$/;"	kind:variable	line:56
+compressed_results	../featherduster/tests/test_ciphertext_analysis.py	/^compressed_results = ca.analyze_ciphertext(compressed_messages)$/;"	kind:variable	line:89
+console	../featherduster/featherduster/featherduster.py	/^console = ConsoleCommand('console', help='Opens an interactive prompt', dynamic_args=True)$/;"	kind:variable	line:157
+contfrac	../featherduster/cryptanalib/modern.py	/^   def contfrac(x, y):$/;"	kind:function	line:240
+continuants	../featherduster/cryptanalib/modern.py	/^   def continuants(frac):$/;"	kind:function	line:256
+copy	../featherduster/feathermodules/hash/pymd5.py	/^    def copy(self):$/;"	kind:member	line:348
+count_up	../featherduster/cryptanalib/classical.py	/^def count_up(ll_indices, list_of_lists):$/;"	kind:function	line:301
+count_words	../featherduster/cryptanalib/helpers.py	/^def count_words(candidate_text, common_words=frequency.common_words['english'], case_sensitive=True):$/;"	kind:function	line:587
+create_alpha_shift.py	../featherduster/util/create_alpha_shift.py	1;"	kind:file	line:1
+crit_rsa_length_results	../featherduster/tests/test_ciphertext_analysis.py	/^crit_rsa_length_results = ca.analyze_ciphertext([RSA_pubkey_critically_small_n])$/;"	kind:variable	line:94
+ct	../featherduster/tests/test_break_alpha_shift.py	/^ct = 'znoy oy se iovnkxzkdz. oz\\'y gckyusk gtj cutjkxlar.'$/;"	kind:variable	line:3
+ct	../featherduster/tests/test_break_vigenere.py	/^ct = 'XUEGTZFZARLMOWPAQRNUPLQKWPRJABVURBFBAWYEEYPILJRZMPCJAPRXANSGZZZAPNTFOJLRIBNCLBGOWGABWJRXXVASZCAJEADVDMQGQRTBWKVVLRRETAPZSFWJEKUHIGWFPVPOTUESLTCNEOEUDIYHIETJDALYXRMPYTLYAVTDSMQGPCHBMMGYESTFCARBIEAMHWEJWNNEDEVZGUETHMEKMADJNIGKHOYXCQGORTTIPTRZXRRPQBUKGBRSPACURQIORIYVLNBFEQAZLRCJAPRXXRXU'$/;"	kind:variable	line:3
+d	../featherduster/tests/test_rsa_crt_fault_attack.py	/^d = 8276730537354063873046700086606934013390657907137764360442957114148983703392213920905379521933961200662349418726972470589061811064510563973168097131091762900935884000158700608857487894152877574467022635471921054922438416372847738044720341171693728509510304733152582025735997457366640962042446371702796650429270558556364971206673220641102736535785495085270088144553219777365472362543536538109527913412532336001148762959211359919986044869355021796538441331705044929239323402165504467704827987337504638532978042282749691349759655331384162387839085847376059025035741851624666333548281288846373129193232087364721195558785$/;"	kind:variable	line:3
+debug	../featherduster/featherduster/featherduster.py	/^debug = False$/;"	kind:variable	line:408
+decrypt	../solver.py	/^def decrypt(p, q, e, ct):$/;"	kind:function	line:12
+decrypt_and_check	../featherduster/feathermodules/block/aes_key_brute.py	/^   def decrypt_and_check(cipher, ciphertext):$/;"	kind:function	line:25
+decrypted	../featherduster/tests/test_bleichenbacher.py	/^decrypted = ca.bb98_padding_oracle(ciphertext, oracle, key.e, key.n, verbose=True, debug=False) $/;"	kind:variable	line:23
+decrypted_suffix	../featherduster/tests/test_ecb_decrypt_harder.py	/^decrypted_suffix = ca.ecb_cpa_decrypt(my_encryption_oracle, AES.block_size, verbose=True, hollywood=True)$/;"	kind:variable	line:16
+decrypted_suffix	../featherduster/tests/test_ecb_decrypt_harder.py	/^decrypted_suffix = ca.pkcs7_padding_remove(decrypted_suffix, AES.block_size)$/;"	kind:variable	line:17
+decrypted_suffix	../featherduster/tests/test_ecb_decrypt_simple.py	/^decrypted_suffix = ca.ecb_cpa_decrypt(my_encryption_oracle, AES.block_size, verbose=True, hollywood=True)$/;"	kind:variable	line:18
+decrypted_suffix	../featherduster/tests/test_ecb_decrypt_simple.py	/^decrypted_suffix = ca.pkcs7_padding_remove(decrypted_suffix, AES.block_size)$/;"	kind:variable	line:19
+decryption_oracle	../featherduster/tests/test_retrieve_iv.py	/^def decryption_oracle(ciphertext):$/;"	kind:function	line:12
+derive_d_from_pqe	../featherduster/cryptanalib/helpers.py	/^def derive_d_from_pqe(p,q,e):$/;"	kind:function	line:708
+description	../featherduster/setup.py	/^      description='An automated cryptanalysis tool',$/;"	kind:variable	line:5
+detect_block_cipher	../featherduster/cryptanalib/helpers.py	/^def detect_block_cipher(ciphertext):$/;"	kind:function	line:362
+detect_ecb	../featherduster/cryptanalib/helpers.py	/^def detect_ecb(ciphertext):$/;"	kind:function	line:662
+detect_hash_format	../featherduster/cryptanalib/modern.py	/^def detect_hash_format(words, hashes):$/;"	kind:function	line:1179
+detect_hash_format	../featherduster/feathermodules/auxiliary/hash_format_detect.py	/^def detect_hash_format(hashes):$/;"	kind:function	line:4
+detect_plaintext	../featherduster/cryptanalib/helpers.py	/^def detect_plaintext(candidate_text, pt_freq_table=frequency.frequency_tables['english_letters'], detect_words=True, common_words=frequency.common_words['english'], individual_scores=False):$/;"	kind:function	line:377
+detect_polybius	../featherduster/cryptanalib/helpers.py	/^def detect_polybius(sample):$/;"	kind:function	line:118
+digest	../featherduster/feathermodules/hash/pymd5.py	/^    def digest(self):$/;"	kind:member	line:294
+digest_size	../featherduster/feathermodules/hash/pymd5.py	/^digest_size = 16$/;"	kind:variable	line:373
+do_simple_substitution	../featherduster/cryptanalib/helpers.py	/^def do_simple_substitution(ciphertext, pt_charset, ct_charset):$/;"	kind:function	line:192
+dsa_repeated_nonce_attack	../featherduster/cryptanalib/modern.py	/^def dsa_repeated_nonce_attack(r,msg1,s1,msg2,s2,n,verbose=False):$/;"	kind:function	line:1254
+dynamic_args	../featherduster/featherduster/featherduster.py	/^   dynamic_args=True)$/;"	kind:variable	line:123
+dynamic_args	../featherduster/featherduster/featherduster.py	/^   dynamic_args=True)$/;"	kind:variable	line:127
+dynamic_args	../featherduster/featherduster/featherduster.py	/^   dynamic_args=True)$/;"	kind:variable	line:131
+dynamic_args	../featherduster/featherduster/featherduster.py	/^   dynamic_args=True)$/;"	kind:variable	line:135
+dynamic_args	../featherduster/featherduster/featherduster.py	/^   dynamic_args=True)$/;"	kind:variable	line:139
+e	../featherduster/tests/test_rsa_crt_fault_attack.py	/^e = 0x10001$/;"	kind:variable	line:7
+ecb_cipher	../featherduster/tests/test_ciphertext_analysis.py	/^ecb_cipher = AES.new(key, AES.MODE_ECB, iv)$/;"	kind:variable	line:40
+ecb_cipher	../featherduster/tests/test_ciphertext_analysis.py	/^ecb_cipher = AES.new(key, AES.MODE_ECB, iv)$/;"	kind:variable	line:42
+ecb_ciphertexts	../featherduster/tests/test_ciphertext_analysis.py	/^ecb_ciphertexts = [ecb_cipher.encrypt(ca.pkcs7_pad(plaintext, AES.block_size))]$/;"	kind:variable	line:41
+ecb_cpa_decrypt	../featherduster/cryptanalib/modern.py	/^def ecb_cpa_decrypt(encryption_oracle, block_size, verbose=False, hollywood=True, charset=frequency.optimized_charset['english']):$/;"	kind:function	line:738
+ecb_cpa_decrypt.py	../featherduster/feathermodules/block/ecb_cpa_decrypt.py	1;"	kind:file	line:1
+ecb_results	../featherduster/tests/test_ciphertext_analysis.py	/^ecb_results = ca.analyze_ciphertext(ecb_ciphertexts)$/;"	kind:variable	line:59
+egcd	../solver.py	/^def egcd(a, b):$/;"	kind:function	line:3
+embed	../featherduster/featherduster/featherduster.py	/^   def embed():$/;"	kind:function	line:20
+english_text	../featherduster/tests/testbench_vigenere.py	/^english_text = filter(lambda x: x.isalpha(), textfile.read()).upper()$/;"	kind:variable	line:22
+entry_points	../featherduster/setup.py	/^      entry_points = {$/;"	kind:variable	line:17
+evaluate_vigenere_key_length	../featherduster/cryptanalib/classical.py	/^def evaluate_vigenere_key_length(ciphertext, max_length):$/;"	kind:function	line:222
+example_feathermodule.py	../featherduster/examples/example_feathermodule.py	1;"	kind:file	line:1
+exponent	../featherduster/tests/test_hastad_broadcast.py	/^exponent=3$/;"	kind:variable	line:9
+exponent	../featherduster/tests/test_small_message_rsa.py	/^exponent = 3$/;"	kind:variable	line:4
+export	../featherduster/featherduster/featherduster.py	/^export = ExportCommand('export', help='Export current results to file', dynamic_args=True)$/;"	kind:variable	line:188
+extended_gcd	../featherduster/cryptanalib/helpers.py	/^def extended_gcd(a, b): $/;"	kind:function	line:320
+fd_console	../featherduster/featherduster/featherduster.py	/^fd_console = Console(prompt='\\nFeatherDuster', prompt_delim='>')$/;"	kind:variable	line:386
+featherduster.py	../featherduster/featherduster/featherduster.py	1;"	kind:file	line:1
+fermat	../solver.py	/^def fermat(n):$/;"	kind:function	line:28
+fermat_factor	../featherduster/cryptanalib/modern.py	/^def fermat_factor(N, minutes=10, verbose=False):$/;"	kind:function	line:318
+fermat_factor_attack	../featherduster/feathermodules/pubkey/rsa_fermat.py	/^def fermat_factor_attack(ciphertexts):$/;"	kind:function	line:6
+find_egg	../featherduster/cryptanalib/modern.py	/^   def find_egg(ciphertext, block_size):$/;"	kind:function	line:753
+frequency.py	../featherduster/cryptanalib/frequency.py	1;"	kind:file	line:1
+frequency_tables	../featherduster/cryptanalib/frequency.py	/^frequency_tables={}$/;"	kind:variable	line:1
+gcd	../featherduster/cryptanalib/helpers.py	/^def gcd(a,b):$/;"	kind:function	line:313
+generate_ecb_cpa_decrypt_attack_script	../featherduster/feathermodules/block/ecb_cpa_decrypt.py	/^def generate_ecb_cpa_decrypt_attack_script(ciphertexts):$/;"	kind:function	line:19
+generate_frequency_table	../featherduster/cryptanalib/helpers.py	/^def generate_frequency_table(text,charset):$/;"	kind:function	line:441
+generate_frequency_tables.py	../featherduster/util/generate_frequency_tables.py	1;"	kind:file	line:1
+generate_from_state	../featherduster/cryptanalib/modern.py	/^   def generate_from_state(mersenne_state):$/;"	kind:function	line:841
+generate_generic_padding_oracle_attack_script	../featherduster/feathermodules/block/generic_padding_oracle.py	/^def generate_generic_padding_oracle_attack_script(ciphertexts):$/;"	kind:function	line:42
+generate_hash_padding	../featherduster/feathermodules/hash/hash_extend.py	/^def generate_hash_padding(original_plaintext, endianness='little')$/;"	kind:function	line:11
+generate_http_padding_oracle_attack_script	../featherduster/feathermodules/block/http_padding_oracle.py	/^def generate_http_padding_oracle_attack_script(ciphertexts):$/;"	kind:function	line:34
+generate_optimized_charset	../featherduster/cryptanalib/helpers.py	/^def generate_optimized_charset(text, include_zero_freq=False):$/;"	kind:function	line:470
+generate_optimized_charset_from_frequency	../featherduster/cryptanalib/helpers.py	/^def generate_optimized_charset_from_frequency(freq_table, include_zero_freq=False):$/;"	kind:function	line:426
+generic_padding_oracle.py	../featherduster/feathermodules/block/generic_padding_oracle.py	1;"	kind:file	line:1
+get_arguments	../featherduster/feathermodules/hash/hash_extend.py	/^def get_arguments(ciphertexts):$/;"	kind:function	line:15
+get_arguments	../featherduster/feathermodules/stream/many_time_pad.py	/^def get_arguments(ciphertexts):$/;"	kind:function	line:12
+get_r_values	../featherduster/cryptanalib/modern.py	/^   def get_r_values(s, M):$/;"	kind:function	line:396
+hamming_distance	../featherduster/cryptanalib/helpers.py	/^def hamming_distance(string1, string2):$/;"	kind:function	line:486
+hash_extend.py	../featherduster/feathermodules/hash/hash_extend.py	1;"	kind:file	line:1
+hash_extend_attack	../featherduster/feathermodules/hash/hash_extend.py	/^def hash_extend_attack(ciphertexts):$/;"	kind:function	line:5
+hash_format_detect.py	../featherduster/feathermodules/auxiliary/hash_format_detect.py	1;"	kind:file	line:1
+hashes	../featherduster/tests/test_detect_hash_format.py	/^hashes = ['4e99e8c12de7e01535248d2bac85e732']$/;"	kind:variable	line:8
+hastad_broadcast_attack	../featherduster/cryptanalib/modern.py	/^def hastad_broadcast_attack(key_message_pairs, exponent):$/;"	kind:function	line:1233
+help	../featherduster/featherduster/featherduster.py	/^   help='Clear current sample set',$/;"	kind:variable	line:138
+help	../featherduster/featherduster/featherduster.py	/^   help='Import a single file as a raw sample',$/;"	kind:variable	line:126
+help	../featherduster/featherduster/featherduster.py	/^   help='Import last module\\'s results as samples',$/;"	kind:variable	line:134
+help	../featherduster/featherduster/featherduster.py	/^   help='Import multiple newline-separated samples from one file',$/;"	kind:variable	line:122
+help	../featherduster/featherduster/featherduster.py	/^   help='Manually enter a single sample',$/;"	kind:variable	line:130
+helpers.py	../featherduster/cryptanalib/helpers.py	1;"	kind:file	line:1
+hex_results	../featherduster/tests/test_ciphertext_analysis.py	/^hex_results = ca.analyze_ciphertext([ct.encode('hex') for ct in ecb_ciphertexts])$/;"	kind:variable	line:79
+hexdigest	../featherduster/feathermodules/hash/pymd5.py	/^    def hexdigest(self):$/;"	kind:member	line:337
+http_padding_oracle.py	../featherduster/feathermodules/block/http_padding_oracle.py	1;"	kind:file	line:1
+import_clear	../featherduster/featherduster/featherduster.py	/^import_clear = ImportClearCommand($/;"	kind:variable	line:136
+import_manualentry	../featherduster/featherduster/featherduster.py	/^import_manualentry = ImportManualEntryCommand($/;"	kind:variable	line:128
+import_multifile	../featherduster/featherduster/featherduster.py	/^import_multifile = ImportMultiFileCommand($/;"	kind:variable	line:120
+import_results	../featherduster/featherduster/featherduster.py	/^import_results = ImportResultsCommand($/;"	kind:variable	line:132
+import_sample	../featherduster/featherduster/featherduster.py	/^import_sample = ImportCommand('import', help='Import samples for analysis', dynamic_args=True)$/;"	kind:variable	line:118
+import_singlefile	../featherduster/featherduster/featherduster.py	/^import_singlefile = ImportSingleFileCommand($/;"	kind:variable	line:124
+ind_of_coinc	../featherduster/cryptanalib/classical.py	/^def ind_of_coinc(text, distance):$/;"	kind:function	line:173
+init	../featherduster/feathermodules/hash/pymd5.py	/^    def init(self):$/;"	kind:member	line:133
+install_requires	../featherduster/setup.py	/^      install_requires=[$/;"	kind:variable	line:12
+is_base64_encoded	../featherduster/cryptanalib/helpers.py	/^def is_base64_encoded(sample):$/;"	kind:function	line:74
+is_hex_encoded	../featherduster/cryptanalib/helpers.py	/^def is_hex_encoded(sample):$/;"	kind:function	line:93
+is_random	../featherduster/cryptanalib/helpers.py	/^def is_random(sample, verbose=False, boolean_results=True):$/;"	kind:function	line:211
+is_square	../featherduster/cryptanalib/modern.py	/^   def is_square(n):$/;"	kind:function	line:337
+is_zlib_compressed	../featherduster/cryptanalib/helpers.py	/^def is_zlib_compressed(sample):$/;"	kind:function	line:105
+isqrt	../solver.py	/^def isqrt(n):$/;"	kind:function	line:20
+iterations	../featherduster/tests/testbench_vigenere.py	/^iterations = 5$/;"	kind:variable	line:16
+iv	../featherduster/tests/test_cbcr_do_to_eo.py	/^iv = Random.new().read(AES.block_size)$/;"	kind:variable	line:6
+iv	../featherduster/tests/test_ciphertext_analysis.py	/^iv = Random.new().read(AES.block_size)$/;"	kind:variable	line:36
+iv	../featherduster/tests/test_ecb_decrypt_harder.py	/^iv = Random.new().read(AES.block_size)$/;"	kind:variable	line:7
+iv	../featherduster/tests/test_ecb_decrypt_simple.py	/^iv = Random.new().read(AES.block_size)$/;"	kind:variable	line:7
+iv	../featherduster/tests/test_padding_oracle_decrypt.py	/^iv = Random.new().read(AES.block_size)$/;"	kind:variable	line:11
+key	../featherduster/tests/test_bleichenbacher.py	/^key = RSA.construct((N, e, d))$/;"	kind:variable	line:11
+key	../featherduster/tests/test_break_many_time_pad.py	/^key = Random.new().read(100)$/;"	kind:variable	line:4
+key	../featherduster/tests/test_break_vigenere.py	/^key = ca.break_vigenere(ct, 11)[0]$/;"	kind:variable	line:7
+key	../featherduster/tests/test_cbcr_do_to_eo.py	/^key = b'YELLOW SUBMARINE'$/;"	kind:variable	line:5
+key	../featherduster/tests/test_ciphertext_analysis.py	/^key = b'YELLOW SUBMARINE'$/;"	kind:variable	line:35
+key	../featherduster/tests/test_ecb_decrypt_harder.py	/^key = b'YELLOW SUBMARINE'$/;"	kind:variable	line:6
+key	../featherduster/tests/test_ecb_decrypt_simple.py	/^key = b'YELLOW SUBMARINE'$/;"	kind:variable	line:6
+key	../featherduster/tests/test_padding_oracle_decrypt.py	/^key = b'YELLOW SUBMARINE' #<3 matasano crypto challenges$/;"	kind:variable	line:10
+key_len_max	../featherduster/tests/testbench_vigenere.py	/^key_len_max = 10$/;"	kind:variable	line:14
+key_len_max_try	../featherduster/tests/testbench_vigenere.py	/^key_len_max_try = 11$/;"	kind:variable	line:15
+key_len_min	../featherduster/tests/testbench_vigenere.py	/^key_len_min = 5$/;"	kind:variable	line:12
+key_len_step	../featherduster/tests/testbench_vigenere.py	/^key_len_step = 1$/;"	kind:variable	line:13
+key_message_pairs	../featherduster/tests/test_hastad_broadcast.py	/^key_message_pairs = [(c1,n1),(c2,n2),(c3,n3)]$/;"	kind:variable	line:11
+lcg_next_states	../featherduster/cryptanalib/modern.py	/^def lcg_next_states(known_states_in_order, num_states=5, a='unknown', c='unknown', m='unknown'):$/;"	kind:function	line:28
+lcg_prev_states	../featherduster/cryptanalib/modern.py	/^def lcg_prev_states(known_states_in_order, num_states=5, a='unknown', c='unknown', m='unknown'):$/;"	kind:function	line:56
+libc_rand_next_states	../featherduster/cryptanalib/modern.py	/^def libc_rand_next_states(known_states_in_order, num_states):$/;"	kind:function	line:84
+libc_rand_prev_states	../featherduster/cryptanalib/modern.py	/^def libc_rand_prev_states(known_states_in_order, num_states):$/;"	kind:function	line:91
+license	../featherduster/setup.py	/^      license='BSD',$/;"	kind:variable	line:9
+long_to_string	../featherduster/cryptanalib/helpers.py	/^def long_to_string(inlong):$/;"	kind:function	line:524
+main	../featherduster/featherduster/featherduster.py	/^def main():$/;"	kind:function	line:438
+make_polybius_square	../featherduster/cryptanalib/helpers.py	/^def make_polybius_square(password,extended=False):$/;"	kind:function	line:609
+many_time_pad.py	../featherduster/feathermodules/stream/many_time_pad.py	1;"	kind:file	line:1
+many_time_pad_attack	../featherduster/feathermodules/stream/many_time_pad.py	/^def many_time_pad_attack(ciphertexts):$/;"	kind:function	line:4
+max_best_shifts	../featherduster/tests/testbench_vigenere.py	/^max_best_shifts = 2$/;"	kind:variable	line:17
+mb_xor_ciphertexts	../featherduster/tests/test_ciphertext_analysis.py	/^mb_xor_ciphertexts = [ca.sxor(plaintext,"\\xfa\\x4e\\x77\\x01\\x43"*len(plaintext))]$/;"	kind:variable	line:50
+md5	../featherduster/feathermodules/hash/pymd5.py	/^def md5(arg=None):$/;"	kind:function	line:388
+mersenne_untwister	../featherduster/cryptanalib/modern.py	/^def mersenne_untwister(mersenne_state):$/;"	kind:function	line:837
+message	../featherduster/tests/test_rsa_crt_fault_attack.py	/^message = 2$/;"	kind:variable	line:11
+modern.py	../featherduster/cryptanalib/modern.py	1;"	kind:file	line:1
+module_list	../featherduster/feathermodules/__init__.py	/^module_list = {}$/;"	kind:variable	line:1
+modules	../featherduster/featherduster/featherduster.py	/^modules = ModulesCommand('modules', help='Show all available modules')$/;"	kind:variable	line:287
+modulus	../featherduster/tests/test_fermat_factor.py	/^modulus = 716964916940879546138124882672818584584991631224140663455771200877839938258702872560211127714342696696978111845386119004386454160099769917873311978018269699088196264842514324761699982234532991660513929672464059417955040688538274647460432095192282995372532392341624828593409100981930850228230166628322248541207663074491770050432549927573300401601578359202437399664989334325743075443102265971522582582357641746603821745017615347999943134068224622811513368008659486950263954867333494385737028833253098188249645785442424127885550248613190661561390047434065372762008317395993145554579676084581312723173025106529214679408366419325062831305551918344243750114756646295632940359082010844539535985698938402396592035497626347813743975539631873474695917008946922622884825381071268215125820524533163273148841361308746046011512296946221060471464978840615120297578983355331951803391663341257430986421227855717210388181685091395855574001571995725978801733087672335839619804513360580026340867708359282125820732699165264115715701966309500153578123160118878654210251382105515862141692489741781345330617437972714951872803775320256148151645609645049787162841793170170573836930810880845788534901943812435571891665082866604423396743762474153857287967214449L$/;"	kind:variable	line:5
+modulus	../featherduster/tests/test_small_message_rsa.py	/^modulus = 123349256543572756599832130145387724394122885306054523190190404610383008244970059817041943488582111578342574409930412051840690648881725278636342103947121730543631822609425040258662833852052732042796923825430853808775356617075455762132149943495404561333281437015895053098152372473731239986092252384462426190836L$/;"	kind:variable	line:3
+modulus	../featherduster/tests/test_wiener_factor.py	/^modulus = 109676931776753394141394564514720734236796584022842820507613945978304098920529412415619708851314423671483225500317195833435789174491417871864260375066278885574232653256425434296113773973874542733322600365156233965235292281146938652303374751525426102732530711430473466903656428846184387282528950095967567885381L$/;"	kind:variable	line:3
+monte_carlo_pi	../featherduster/cryptanalib/helpers.py	/^def monte_carlo_pi(sample):$/;"	kind:function	line:129
+morse_decode	../featherduster/cryptanalib/classical.py	/^def morse_decode(text, dot='.', dash='-', space=' '):$/;"	kind:function	line:62
+morse_encode	../featherduster/cryptanalib/classical.py	/^def morse_encode(text, dot='.', dash='-', space=' '):$/;"	kind:function	line:80
+morse_table	../featherduster/cryptanalib/classical.py	/^morse_table = {$/;"	kind:variable	line:23
+msg1	../featherduster/tests/test_dsa_key_recovery.py	/^msg1 = "Students reported that students post to discussion forums more frequently and are irrevocable provided the stated conditions are met."$/;"	kind:variable	line:11
+msg2	../featherduster/tests/test_dsa_key_recovery.py	/^msg2 = "But is this enough? And what new threats could be using it as a friend or fan.[2]"$/;"	kind:variable	line:12
+multi_byte_xor.py	../featherduster/feathermodules/stream/multi_byte_xor.py	1;"	kind:file	line:1
+multi_byte_xor_attack	../featherduster/feathermodules/stream/multi_byte_xor.py	/^def multi_byte_xor_attack(ciphertexts):$/;"	kind:function	line:4
+multi_byte_xor_results	../featherduster/tests/test_ciphertext_analysis.py	/^multi_byte_xor_results = ca.analyze_ciphertext(mb_xor_ciphertexts)$/;"	kind:variable	line:69
+my_decryption_oracle	../featherduster/tests/test_cbcr_do_to_eo.py	/^def my_decryption_oracle(ciphertext):$/;"	kind:function	line:9
+my_encryption_oracle	../featherduster/tests/test_ecb_decrypt_harder.py	/^def my_encryption_oracle(plaintext):$/;"	kind:function	line:12
+my_encryption_oracle	../featherduster/tests/test_ecb_decrypt_simple.py	/^def my_encryption_oracle(plaintext):$/;"	kind:function	line:14
+my_padding_oracle	../featherduster/tests/test_cbcr_do_to_eo.py	/^def my_padding_oracle(ciphertext):$/;"	kind:function	line:13
+my_padding_oracle	../featherduster/tests/test_padding_oracle_decrypt.py	/^def my_padding_oracle(ciphertext):$/;"	kind:function	line:13
+myplaintext	../featherduster/tests/test_break_columnar_transposition.py	/^myplaintext = ca.break_columnar_transposition(ciphertext)$/;"	kind:variable	line:11
+n	../featherduster/tests/test_dsa_key_recovery.py	/^n = 39402006196394479212279040100143613805079739270465446667946905279627659399113263569398956308152294913554433653942643L$/;"	kind:variable	line:16
+n	../solver.py	/^n =$/;"	kind:variable	line:43
+n1	../featherduster/tests/test_hastad_broadcast.py	/^n1=67108337285130152841142557048979836392659321891857101226732337281870319219630063308425261001094568350046449570317350200345069218868069937257334549833448872476614876540784326223874329257870403617101833443821600387071916268539809093718680249166808635061387807508685444808747478914853774065015492846530346393353$/;"	kind:variable	line:3
+n2	../featherduster/tests/test_hastad_broadcast.py	/^n2=72291820644801851050330848110159409202048919534527955164120302762396644587973560056961559507263386276590810913644140431966430239440589187607901445455506476844642551722261333276197428423259685681788297978506553640688246992377440543586422646431425963957419557354223431017425961356384309621186050871003908824523$/;"	kind:variable	line:5
+n3	../featherduster/tests/test_hastad_broadcast.py	/^n3=104783788987827067930027452786608829382069127222045660514968202129202628419456254428420482380928992774984332897768761789989189306007432083874165500533674664850382891750853847082861247537097054898628900960779958023749459758924880679450916956553601431823839124186749459819727500823704168760828991322166878406679$/;"	kind:variable	line:7
+new	../featherduster/feathermodules/hash/pymd5.py	/^def new(arg=None):$/;"	kind:function	line:375
+new_ciphertext	../featherduster/tests/test_cbcr_do_to_eo.py	/^new_ciphertext = ca.cbcr(new_plaintext, my_decryption_oracle, block_size=AES.block_size)$/;"	kind:variable	line:20
+new_ciphertext	../featherduster/tests/test_cbcr_do_to_eo.py	/^new_ciphertext = ca.cbcr(new_plaintext, my_padding_oracle, is_padding_oracle=True, block_size=AES.block_size)$/;"	kind:variable	line:29
+new_plaintext	../featherduster/tests/test_cbcr_do_to_eo.py	/^new_plaintext = 'I am the very model of a modern major-general.'$/;"	kind:variable	line:17
+num_key_guesses	../featherduster/tests/testbench_vigenere.py	/^num_key_guesses = 100$/;"	kind:variable	line:19
+num_key_lengths	../featherduster/tests/testbench_vigenere.py	/^num_key_lengths = 3$/;"	kind:variable	line:18
+num_rows	../featherduster/tests/test_break_columnar_transposition.py	/^num_rows = 6$/;"	kind:variable	line:5
+optimized_charset	../featherduster/cryptanalib/frequency.py	/^optimized_charset = {}$/;"	kind:variable	line:10
+options	../featherduster/featherduster/featherduster.py	/^options = OptionsCommand('options', help='Show the current option values', dynamic_args=True)$/;"	kind:variable	line:381
+oracle	../featherduster/tests/test_bleichenbacher.py	/^def oracle(ciphertext):$/;"	kind:function	line:16
+output	../featherduster/tests/test_single_byte_xor.py	/^output = ca.break_single_byte_xor(ciphertext)$/;"	kind:variable	line:6
+output_mask	../featherduster/cryptanalib/helpers.py	/^def output_mask(text, charset):$/;"	kind:function	line:500
+packages	../featherduster/setup.py	/^      packages=find_packages(exclude=['examples','tests']),$/;"	kind:variable	line:11
+padding_oracle_decrypt	../featherduster/cryptanalib/modern.py	/^def padding_oracle_decrypt(padding_oracle, ciphertext, block_size, padding_type='pkcs7', iv=None, prefix='',verbose=False, hollywood=True, charset=frequency.optimized_charset['english']):$/;"	kind:function	line:857
+path_to_custom_dir	../featherduster/feathermodules/custom/__init__.py	/^path_to_custom_dir = os.path.dirname(os.path.realpath(__file__))$/;"	kind:variable	line:4
+pkcs7_pad	../featherduster/cryptanalib/helpers.py	/^def pkcs7_pad(text, blocksize):$/;"	kind:function	line:697
+pkcs7_padding_remove	../featherduster/cryptanalib/helpers.py	/^def pkcs7_padding_remove(text, blocksize):$/;"	kind:function	line:682
+plaintext	../featherduster/tests/test_bleichenbacher.py	/^plaintext = '\\x02BJ\\xe2s^\\x1a\\x9f\\xcfAS\\xceGZ\\xa0\\x99n\\xae\\x1d;\\xd6N\\xbb\\xf6\\xcd\\xaf\\xb5\\'$\\x81\/0w\\xf8\\x88"\\xb6\\xda\\xbb\\x86\\xb6\\x9b\\xb4z\\xde\\x04\\xd4\\xbd\\xcf\\x17\\xe5\\xe3G#\\x1fv\\xabP\\x17$015\\xb5\/il\\x12U\\xdf0\\x1b\\xdcEl\\x0fQw`\\x02#\\xd4kQ\\x1a\/\\x89\\xfa\\x15\\x04U\\xef>\\x90v\\xee\\x01O\\xde\\x9d\\x0bi\\x17\\xd1\\x16\\xe2\\x8b\\xfa\\x087\\xb3\\x83\\x00test plaintext'$/;"	kind:variable	line:12
+plaintext	../featherduster/tests/test_break_columnar_transposition.py	/^plaintext = 'I am the very model of a modern major-general, I\\'ve information vegetable, animal and mineral, I know the kings of England and I quote the fights historical from Marathon to Waterloo in order categorical.'$/;"	kind:variable	line:3
+plaintext	../featherduster/tests/test_ciphertext_analysis.py	/^plaintext = 'I am the very model of a modern major-general, I\\'ve information vegetable, animal and mineral, I know the kings of England and I quote the fights historical, from Marathon to Waterloo in order categoricalAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'$/;"	kind:variable	line:8
+plaintext	../featherduster/tests/test_detect_hash_format.py	/^plaintext = 'foo:bar'$/;"	kind:variable	line:4
+plaintext	../featherduster/tests/test_padding_oracle_decrypt.py	/^plaintext = 'I am the very model of a modern major-general'$/;"	kind:variable	line:6
+plaintext	../featherduster/tests/test_padding_oracle_decrypt.py	/^plaintext = ca.pkcs7_pad(plaintext, AES.block_size)$/;"	kind:variable	line:7
+plaintext	../featherduster/tests/test_retrieve_iv.py	/^plaintext = decryption_oracle(ciphertext)$/;"	kind:variable	line:18
+plaintext	../featherduster/tests/test_single_byte_xor.py	/^plaintext = 'I am the very model of a modern major-general'$/;"	kind:variable	line:3
+plaintext2	../featherduster/tests/test_ciphertext_analysis.py	/^plaintext2 = 'I am the very model of a modern major-general, I\\'m covered in bees and I have information vegetable, animal and mineral, I know the kings of England and I quote the fights historical, from Marathon to Waterloo in order categoricalAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'$/;"	kind:variable	line:10
+plaintext_len_max	../featherduster/tests/testbench_vigenere.py	/^plaintext_len_max = 400$/;"	kind:variable	line:11
+plaintext_len_min	../featherduster/tests/testbench_vigenere.py	/^plaintext_len_min = 50$/;"	kind:variable	line:9
+plaintext_len_step	../featherduster/tests/testbench_vigenere.py	/^plaintext_len_step = 25$/;"	kind:variable	line:10
+plaintexts	../featherduster/tests/test_break_many_time_pad.py	/^plaintexts = plaintexts.split('\\n')$/;"	kind:variable	line:43
+polRoot	../featherduster/cryptanalib/modern.py	/^   def polRoot(a, b, c):$/;"	kind:function	line:275
+polybius_decrypt	../featherduster/cryptanalib/helpers.py	/^def polybius_decrypt(ps, ciphertext):$/;"	kind:function	line:641
+prefix	../featherduster/tests/test_ecb_decrypt_simple.py	/^prefix = 'A'*random.randint(1,4)$/;"	kind:variable	line:8
+prepare_options	../featherduster/feathermodules/block/generic_padding_oracle.py	/^def prepare_options(options, ciphertexts):$/;"	kind:function	line:60
+prepare_options	../featherduster/feathermodules/block/http_padding_oracle.py	/^def prepare_options(options, ciphertexts):$/;"	kind:function	line:52
+prepare_options	../featherduster/feathermodules/pubkey/rsa_fermat.py	/^def prepare_options(options, ciphertexts):$/;"	kind:function	line:39
+prepare_options	../featherduster/feathermodules/pubkey/rsa_wiener.py	/^def prepare_options(options, ciphertexts):$/;"	kind:function	line:39
+prepare_options	../featherduster/feathermodules/stream/multi_byte_xor.py	/^def prepare_options(options):$/;"	kind:function	line:16
+process_options	../featherduster/feathermodules/block/ecb_cpa_decrypt.py	/^def process_options(options, ciphertexts):$/;"	kind:function	line:37
+pt	../featherduster/tests/test_break_alpha_shift.py	/^pt = ca.break_alpha_shift(ct)$/;"	kind:variable	line:7
+pt	../featherduster/tests/test_multi_byte_xor.py	/^pt = '49276d206261636b20616e642049276d2072696e67696e27207468652062656c6c200a4120726f636b696e27206f6e20746865206d696b65207768696c652074686520666c79206769726c732079656c6c200a496e206563737461737920696e20746865206261636b206f66206d65200a57656c6c20746861742773206d7920444a204465736861792063757474696e2720616c6c207468656d205a2773200a48697474696e27206861726420616e6420746865206769726c69657320676f696e27206372617a79200a56616e696c6c612773206f6e20746865206d696b652c206d616e2049276d206e6f74206c617a792e200a0a49276d206c657474696e27206d792064727567206b69636b20696e200a497420636f6e74726f6c73206d79206d6f75746820616e64204920626567696e200a546f206a757374206c657420697420666c6f772c206c6574206d7920636f6e636570747320676f200a4d7920706f737365277320746f2074686520736964652079656c6c696e272c20476f2056616e696c6c6120476f21200a0a536d6f6f74682027636175736520746861742773207468652077617920492077696c6c206265200a416e6420696620796f7520646f6e2774206769766520612064616d6e2c207468656e200a57687920796f752073746172696e27206174206d65200a536f20676574206f666620276361757365204920636f6e74726f6c20746865207374616765200a54686572652773206e6f2064697373696e2720616c6c6f776564200a49276d20696e206d79206f776e207068617365200a546865206769726c69657320736120792074686579206c6f7665206d6520616e642074686174206973206f6b200a416e6420492063616e2064616e636520626574746572207468616e20616e79206b6964206e2720706c6179200a0a53746167652032202d2d2059656120746865206f6e65207961272077616e6e61206c697374656e20746f200a49742773206f6666206d79206865616420736f206c657420746865206265617420706c6179207468726f756768200a536f20492063616e2066756e6b20697420757020616e64206d616b6520697420736f756e6420676f6f64200a312d322d3320596f202d2d204b6e6f636b206f6e20736f6d6520776f6f64200a466f7220676f6f64206c75636b2c2049206c696b65206d79207268796d6573206174726f63696f7573200a537570657263616c6166726167696c697374696365787069616c69646f63696f7573200a49276d20616e2065666665637420616e64207468617420796f752063616e20626574200a492063616e2074616b65206120666c79206769726c20616e64206d616b6520686572207765742e200a0a49276d206c696b652053616d736f6e202d2d2053616d736f6e20746f2044656c696c6168200a54686572652773206e6f2064656e79696e272c20596f752063616e2074727920746f2068616e67200a42757420796f75276c6c206b65657020747279696e2720746f20676574206d79207374796c65200a4f76657220616e64206f7665722c207072616374696365206d616b65732070657266656374200a427574206e6f7420696620796f752772652061206c6f616665722e200a0a596f75276c6c20676574206e6f77686572652c206e6f20706c6163652c206e6f2074696d652c206e6f206769726c73200a536f6f6e202d2d204f68206d7920476f642c20686f6d65626f64792c20796f752070726f6261626c7920656174200a537061676865747469207769746820612073706f6f6e2120436f6d65206f6e20616e642073617920697421200a0a5649502e2056616e696c6c6120496365207965702c207965702c2049276d20636f6d696e272068617264206c696b652061207268696e6f200a496e746f7869636174696e6720736f20796f752073746167676572206c696b6520612077696e6f200a536f2070756e6b732073746f7020747279696e6720616e64206769726c2073746f7020637279696e27200a56616e696c6c61204963652069732073656c6c696e2720616e6420796f752070656f706c652061726520627579696e27200a274361757365207768792074686520667265616b7320617265206a6f636b696e27206c696b65204372617a7920476c7565200a4d6f76696e2720616e642067726f6f76696e2720747279696e6720746f2073696e6720616c6f6e67200a416c6c207468726f756768207468652067686574746f2067726f6f76696e272074686973206865726520736f6e67200a4e6f7720796f7527726520616d617a6564206279207468652056495020706f7373652e200a0a5374657070696e2720736f2068617264206c696b652061204765726d616e204e617a69200a53746172746c6564206279207468652062617365732068697474696e272067726f756e64200a54686572652773206e6f207472697070696e27206f6e206d696e652c2049276d206a7573742067657474696e2720646f776e200a537061726b616d617469632c2049276d2068616e67696e27207469676874206c696b6520612066616e61746963200a596f752074726170706564206d65206f6e636520616e6420492074686f756768742074686174200a596f75206d696768742068617665206974200a536f207374657020646f776e20616e64206c656e64206d6520796f757220656172200a27383920696e206d792074696d652120596f752c20273930206973206d7920796561722e200a0a596f75277265207765616b656e696e2720666173742c20594f2120616e6420492063616e2074656c6c206974200a596f757220626f647927732067657474696e2720686f742c20736f2c20736f20492063616e20736d656c6c206974200a536f20646f6e2774206265206d616420616e6420646f6e277420626520736164200a27436175736520746865206c79726963732062656c6f6e6720746f204943452c20596f752063616e2063616c6c206d6520446164200a596f75277265207069746368696e272061206669742c20736f2073746570206261636b20616e6420656e64757265200a4c65742074686520776974636820646f63746f722c204963652c20646f207468652064616e636520746f2063757265200a536f20636f6d6520757020636c6f736520616e6420646f6e277420626520737175617265200a596f752077616e6e6120626174746c65206d65202d2d20416e7974696d652c20616e797768657265200a0a596f752074686f756768742074686174204920776173207765616b2c20426f792c20796f7527726520646561642077726f6e67200a536f20636f6d65206f6e2c206576657279626f647920616e642073696e67207468697320736f6e67200a0a536179202d2d20506c617920746861742066756e6b79206d75736963205361792c20676f20776869746520626f792c20676f20776869746520626f7920676f200a706c617920746861742066756e6b79206d7573696320476f20776869746520626f792c20676f20776869746520626f792c20676f200a4c617920646f776e20616e6420626f6f67696520616e6420706c617920746861742066756e6b79206d757369632074696c6c20796f75206469652e200a0a506c617920746861742066756e6b79206d7573696320436f6d65206f6e2c20436f6d65206f6e2c206c6574206d652068656172200a506c617920746861742066756e6b79206d7573696320776869746520626f7920796f75207361792069742c20736179206974200a506c617920746861742066756e6b79206d757369632041206c6974746c65206c6f75646572206e6f77200a506c617920746861742066756e6b79206d757369632c20776869746520626f7920436f6d65206f6e2c20436f6d65206f6e2c20436f6d65206f6e200a506c617920746861742066756e6b79206d75736963200a'.decode('hex')$/;"	kind:variable	line:2
+py_and_not_init	../featherduster/feathermodules/custom/__init__.py	/^def py_and_not_init(filename):$/;"	kind:function	line:6
+pymd5.py	../featherduster/feathermodules/hash/pymd5.py	1;"	kind:file	line:1
+r	../featherduster/tests/test_dsa_key_recovery.py	/^r = "a0289c0fa7e87f1ab1e94b577f43691ebd70c04b0e62ca7eaaf1791983d512e7bbc843ee3a2a0430455e9f755f832ccd".decode('hex')$/;"	kind:variable	line:13
+r	../featherduster/tests/test_dsa_key_recovery.py	/^r = hex(2584600559599262630013650841090856)[2:-1].decode('hex')$/;"	kind:variable	line:3
+rand_seeded_with_time_check	../featherduster/feathermodules/auxiliary/rand_time.py	/^def rand_seeded_with_time_check(samples):$/;"	kind:function	line:6
+rand_time.py	../featherduster/feathermodules/auxiliary/rand_time.py	1;"	kind:file	line:1
+real_pt	../featherduster/tests/test_break_alpha_shift.py	/^real_pt = 'this is my ciphertext. it\\'s awesome and wonderful.'$/;"	kind:variable	line:4
+real_pt	../featherduster/tests/test_break_vigenere.py	/^real_pt = 'THEFIRSTWELLDOCUMENTEDDESCRIPTIONOFAPOLYALPHABETICCIPHERWASFORMULATEDBYLEONBATTISTAALBERTIAROUNDANDUSEDAMETALCIPHERDISCTOSWITCHBETWEENCIPHERALPHABETSALBERTISSYSTEMONLYSWITCHEDALPHABETSAFTERSEVERALWORDSANDSWITCHESWEREINDICATEDBYWRITINGTHELETTEROFTHECORRESPONDINGALPHABETINTHECIPHERTEXT'$/;"	kind:variable	line:4
+recover_rsa_modulus_from_signatures	../featherduster/cryptanalib/modern.py	/^def recover_rsa_modulus_from_signatures(m1, s1, m2, s2, e=0x10001):$/;"	kind:function	line:127
+recover_state	../featherduster/cryptanalib/modern.py	/^   def recover_state(output_list):$/;"	kind:function	line:843
+recovered_message	../featherduster/tests/test_hastad_broadcast.py	/^recovered_message = ca.hastad_broadcast_attack(key_message_pairs, exponent)$/;"	kind:variable	line:14
+result	../featherduster/tests/test_padding_oracle_decrypt.py	/^result = ca.padding_oracle_decrypt(my_padding_oracle, ciphertext, block_size=AES.block_size, verbose=True)$/;"	kind:variable	line:30
+result	../featherduster/tests/test_padding_oracle_decrypt.py	/^result = ca.padding_oracle_decrypt(my_padding_oracle, ciphertext, block_size=AES.block_size, verbose=True, iv=iv)$/;"	kind:variable	line:24
+results	../featherduster/featherduster/featherduster.py	/^results = ResultsCommand('results', help='Show the results from the last module run')$/;"	kind:variable	line:382
+results	../featherduster/tests/test_dsa_key_recovery.py	/^results = ca.dsa_repeated_nonce_attack(r,"foobar",sig1,"foobaz",sig2,0xdb7c2abf62e35e7628dfac6561c5, verbose=True)$/;"	kind:variable	line:7
+results	../featherduster/tests/test_dsa_key_recovery.py	/^results = ca.dsa_repeated_nonce_attack(r,msg1,s1,msg2,s2,n,verbose=True)$/;"	kind:variable	line:18
+retrieve_iv	../featherduster/cryptanalib/modern.py	/^def retrieve_iv(decryption_oracle,ciphertext,blocksize):$/;"	kind:function	line:1290
+retrieved_iv	../featherduster/tests/test_retrieve_iv.py	/^retrieved_iv = ca.retrieve_iv(decryption_oracle, ciphertext, AES.block_size)$/;"	kind:variable	line:16
+reverse_transposition	../featherduster/examples/example_feathermodule.py	/^def reverse_transposition(samples):$/;"	kind:function	line:13
+right_pad_with_none	../featherduster/cryptanalib/modern.py	/^   def right_pad_with_none(array, length):$/;"	kind:function	line:1106
+rsa_crt_fault_attack	../featherduster/cryptanalib/modern.py	/^def rsa_crt_fault_attack(faulty_signature, message, modulus, e=0x10001, verbose=False):$/;"	kind:function	line:101
+rsa_fermat.py	../featherduster/feathermodules/pubkey/rsa_fermat.py	1;"	kind:file	line:1
+rsa_wiener.py	../featherduster/feathermodules/pubkey/rsa_wiener.py	1;"	kind:file	line:1
+rsa_wiener_attack	../featherduster/feathermodules/pubkey/rsa_wiener.py	/^def rsa_wiener_attack(ciphertexts):$/;"	kind:function	line:6
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:111
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:151
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:161
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:195
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:208
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:229
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:254
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:272
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:283
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:292
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:313
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:333
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:349
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:367
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:44
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:62
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:80
+run	../featherduster/featherduster/featherduster.py	/^   def run(self, line):$/;"	kind:member	line:86
+run	../featherduster/featherduster/featherduster.py	/^run = RunCommand('run', help='Run the currently selected module')$/;"	kind:variable	line:308
+s1	../featherduster/tests/test_dsa_key_recovery.py	/^s1 = "cd7a46d769ee43467a01453214868094ca228cb5eebc953a39fb9bbaf865f4dbe1dad9b5f9f1bed75671e0db5433f0ed".decode('hex')$/;"	kind:variable	line:14
+s2	../featherduster/tests/test_dsa_key_recovery.py	/^s2 = "54d4f8306fe11bd4a28a491ddf596c64cd98c93d7fa9a05acead17e42e96ed1a190a2fddd7c695b8d9bce43f221b4e1b".decode('hex')$/;"	kind:variable	line:15
+samples	../featherduster/featherduster/featherduster.py	/^samples = SamplesCommand('samples', help='Show samples')$/;"	kind:variable	line:278
+search	../featherduster/featherduster/featherduster.py	/^search = SearchCommand('search', help='Search module names and descriptions by keyword')$/;"	kind:variable	line:267
+second_cipher_because_yolo	../featherduster/tests/test_retrieve_iv.py	/^second_cipher_because_yolo = AES.new(key, mode=AES.MODE_CBC, IV=iv)$/;"	kind:variable	line:8
+seed_and_generate_value	../featherduster/feathermodules/auxiliary/rand_time.py	/^   def seed_and_generate_value(seed, lowest, highest):$/;"	kind:function	line:7
+set_command	../featherduster/featherduster/featherduster.py	/^set_command = SetCommand('set', help='Set an option (i.e., "set num_answers=3"', dynamic_args=True)$/;"	kind:variable	line:379
+setup.py	../featherduster/setup.py	1;"	kind:file	line:1
+show_histogram	../featherduster/cryptanalib/helpers.py	/^def show_histogram(frequency_table, width=80, sort=True):$/;"	kind:function	line:48
+sig1	../featherduster/tests/test_dsa_key_recovery.py	/^sig1 = hex(3270745407167110613002216741426642)[2:-1].decode('hex')$/;"	kind:variable	line:4
+sig2	../featherduster/tests/test_dsa_key_recovery.py	/^sig2 = hex(1024704976491997075830153512952688)[2:-1].decode('hex')$/;"	kind:variable	line:5
+single_byte_xor.py	../featherduster/feathermodules/stream/single_byte_xor.py	1;"	kind:file	line:1
+single_byte_xor_attack	../featherduster/feathermodules/stream/single_byte_xor.py	/^def single_byte_xor_attack(ciphertexts):$/;"	kind:function	line:4
+small_message_rsa_attack	../featherduster/cryptanalib/modern.py	/^def small_message_rsa_attack(ciphertext, modulus, exponent, num_answers=10, minutes=5, frequency_table=frequency.frequency_tables['english'], verbose=False, cribs=frequency.common_words['english']):$/;"	kind:function	line:161
+small_rsa_length_results	../featherduster/tests/test_ciphertext_analysis.py	/^small_rsa_length_results = ca.analyze_ciphertext([RSA_pubkey_small_n])$/;"	kind:variable	line:104
+solver.py	../solver.py	1;"	kind:file	line:1
+source	../featherduster/util/generate_frequency_tables.py	/^source = sys.argv[1]$/;"	kind:variable	line:5
+source_file	../featherduster/util/generate_frequency_tables.py	/^source_file = open(source,'r')$/;"	kind:variable	line:9
+source_text	../featherduster/util/generate_frequency_tables.py	/^source_text = source_file.read()$/;"	kind:variable	line:10
+split_into_blocks	../featherduster/cryptanalib/helpers.py	/^def split_into_blocks(ciphertext,blocksize):$/;"	kind:function	line:566
+sqrt	../featherduster/cryptanalib/modern.py	/^   def sqrt(n):$/;"	kind:function	line:272
+sqrt	../featherduster/cryptanalib/modern.py	/^   def sqrt(n):$/;"	kind:function	line:334
+step2	../featherduster/cryptanalib/modern.py	/^   def step2(search_number, i, M):$/;"	kind:function	line:407
+step3	../featherduster/cryptanalib/modern.py	/^   def step3(s, M, R):$/;"	kind:function	line:439
+string_to_long	../featherduster/cryptanalib/helpers.py	/^def string_to_long(instring):$/;"	kind:function	line:516
+suffix	../featherduster/tests/test_ecb_decrypt_harder.py	/^suffix = 'lol, u tk him 2 da bar|?duh'$/;"	kind:variable	line:8
+suffix	../featherduster/tests/test_ecb_decrypt_simple.py	/^suffix = 'lol, u tk him 2 da bar|?duh'$/;"	kind:variable	line:10
+sxor	../featherduster/cryptanalib/helpers.py	/^def sxor(string1, string2):$/;"	kind:function	line:577
+test_bleichenbacher.py	../featherduster/tests/test_bleichenbacher.py	1;"	kind:file	line:1
+test_break_alpha_shift.py	../featherduster/tests/test_break_alpha_shift.py	1;"	kind:file	line:1
+test_break_columnar_transposition.py	../featherduster/tests/test_break_columnar_transposition.py	1;"	kind:file	line:1
+test_break_many_time_pad.py	../featherduster/tests/test_break_many_time_pad.py	1;"	kind:file	line:1
+test_break_vigenere.py	../featherduster/tests/test_break_vigenere.py	1;"	kind:file	line:1
+test_cbcr_do_to_eo.py	../featherduster/tests/test_cbcr_do_to_eo.py	1;"	kind:file	line:1
+test_ciphertext_analysis.py	../featherduster/tests/test_ciphertext_analysis.py	1;"	kind:file	line:1
+test_detect_hash_format.py	../featherduster/tests/test_detect_hash_format.py	1;"	kind:file	line:1
+test_dsa_key_recovery.py	../featherduster/tests/test_dsa_key_recovery.py	1;"	kind:file	line:1
+test_ecb_decrypt_harder.py	../featherduster/tests/test_ecb_decrypt_harder.py	1;"	kind:file	line:1
+test_ecb_decrypt_simple.py	../featherduster/tests/test_ecb_decrypt_simple.py	1;"	kind:file	line:1
+test_fermat_factor.py	../featherduster/tests/test_fermat_factor.py	1;"	kind:file	line:1
+test_hastad_broadcast.py	../featherduster/tests/test_hastad_broadcast.py	1;"	kind:file	line:1
+test_multi_byte_xor.py	../featherduster/tests/test_multi_byte_xor.py	1;"	kind:file	line:1
+test_padding_oracle_decrypt.py	../featherduster/tests/test_padding_oracle_decrypt.py	1;"	kind:file	line:1
+test_retrieve_iv.py	../featherduster/tests/test_retrieve_iv.py	1;"	kind:file	line:1
+test_rsa_crt_fault_attack.py	../featherduster/tests/test_rsa_crt_fault_attack.py	1;"	kind:file	line:1
+test_run	../featherduster/tests/testbench_vigenere.py	/^def test_run(plaintext_len, key_len, key = ""):$/;"	kind:function	line:43
+test_single_byte_xor.py	../featherduster/tests/test_single_byte_xor.py	1;"	kind:file	line:1
+test_small_message_rsa.py	../featherduster/tests/test_small_message_rsa.py	1;"	kind:file	line:1
+test_wiener_factor.py	../featherduster/tests/test_wiener_factor.py	1;"	kind:file	line:1
+testbench	../featherduster/tests/testbench_vigenere.py	/^def testbench():$/;"	kind:function	line:89
+testbench_key_length	../featherduster/tests/testbench_vigenere.py	/^def testbench_key_length():$/;"	kind:function	line:130
+testbench_vigenere.py	../featherduster/tests/testbench_vigenere.py	1;"	kind:file	line:1
+textfile	../featherduster/tests/testbench_vigenere.py	/^textfile = open('english_text.txt', 'r')$/;"	kind:variable	line:21
+to_char	../featherduster/cryptanalib/classical.py	/^def to_char(number):$/;"	kind:function	line:167
+to_number	../featherduster/cryptanalib/classical.py	/^def to_number(character):$/;"	kind:function	line:170
+total_bit_length	../featherduster/tests/test_break_many_time_pad.py	/^total_bit_length = 0$/;"	kind:variable	line:53
+translate_vigenere	../featherduster/cryptanalib/classical.py	/^def translate_vigenere(text, key, decrypt):$/;"	kind:function	line:204
+try_forever_egghunt_encryption_oracle	../featherduster/cryptanalib/modern.py	/^   def try_forever_egghunt_encryption_oracle(encryption_oracle, block_size, plaintext):$/;"	kind:function	line:763
+two_time_pad_ciphertexts	../featherduster/tests/test_ciphertext_analysis.py	/^two_time_pad_ciphertexts = [ca.sxor(plaintext,two_time_pad_key)]$/;"	kind:variable	line:53
+two_time_pad_key	../featherduster/tests/test_ciphertext_analysis.py	/^two_time_pad_key = Random.new().read(len(plaintext2))$/;"	kind:variable	line:38
+two_time_pad_results	../featherduster/tests/test_ciphertext_analysis.py	/^two_time_pad_results = ca.analyze_ciphertext(two_time_pad_ciphertexts)$/;"	kind:variable	line:74
+unset	../featherduster/featherduster/featherduster.py	/^unset = UnsetCommand('unset', help='Revert an option to its default value', dynamic_args=True)$/;"	kind:variable	line:380
+untemper_integer	../featherduster/cryptanalib/modern.py	/^   def untemper_integer(sample):$/;"	kind:function	line:845
+update	../featherduster/feathermodules/hash/pymd5.py	/^    def update(self, inBuf):$/;"	kind:member	line:252
+update_progress	../featherduster/tests/testbench_vigenere.py	/^def update_progress(progress, status = "", done = ""):$/;"	kind:function	line:25
+url	../featherduster/setup.py	/^      url='http:\/\/github.com\/nccgroup\/featherduster',$/;"	kind:variable	line:6
+use	../featherduster/featherduster/featherduster.py	/^use = UseCommand('use', help='Select the module to use', dynamic_args=True)$/;"	kind:variable	line:204
+version	../featherduster/setup.py	/^      version='0.2',$/;"	kind:variable	line:4
+very_small_rsa_length_results	../featherduster/tests/test_ciphertext_analysis.py	/^very_small_rsa_length_results = ca.analyze_ciphertext([RSA_pubkey_very_small_n])$/;"	kind:variable	line:99
+vigenere.py	../featherduster/feathermodules/classical/vigenere.py	1;"	kind:file	line:1
+wiener	../featherduster/cryptanalib/modern.py	/^def wiener(N, e, minutes=10, verbose=False):$/;"	kind:function	line:224
+words	../featherduster/tests/test_detect_hash_format.py	/^words = ['bar','baz','foo','garply']$/;"	kind:variable	line:6
+xor_known_plaintext	../featherduster/cryptanalib/modern.py	/^def xor_known_plaintext(matched_plaintext,matched_ciphertext,unmatched_ciphertext):$/;"	kind:function	line:498
+zip_safe	../featherduster/setup.py	/^      zip_safe=False)$/;"	kind:variable	line:20

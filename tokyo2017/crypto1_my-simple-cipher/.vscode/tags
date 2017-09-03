@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+cipher	../solve.py	/^cipher = open('encrypted.txt', 'r')$/;"	kind:variable	line:5
+cipher.py	../cipher.py	1;"	kind:file	line:1
+enc	../solve.py	/^enc = cipher.read()$/;"	kind:variable	line:6
+enc	../solve.py	/^enc = enc[:72]$/;"	kind:variable	line:7
+encbyte	../solve.py	/^encbyte = bytearray.fromhex(enc)$/;"	kind:variable	line:8
+encrypted	../cipher.py	/^encrypted = chr(random.randint(0, 128))$/;"	kind:variable	line:15
+flag	../cipher.py	/^flag = '**CENSORED**'$/;"	kind:variable	line:7
+key	../cipher.py	/^key = sys.argv[1]$/;"	kind:variable	line:6
+message	../cipher.py	/^message = flag + "|" + key$/;"	kind:variable	line:13
+solve.py	../solve.py	1;"	kind:file	line:1

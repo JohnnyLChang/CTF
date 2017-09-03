@@ -1,0 +1,7 @@
+# BANNER FILE NOT PROVIDED (-b option)
+# BULK_EXTRACTOR-Version: 1.5.5 ($Rev: 10844 $)
+# Feature-Recorder: telephone
+# Filename: memdump.elf
+# Histogram-File-Version: 1.1
+n=1	2565121024
+n=1	4005001500

@@ -1,0 +1,7 @@
+# BANNER FILE NOT PROVIDED (-b option)
+# BULK_EXTRACTOR-Version: 1.5.5 ($Rev: 10844 $)
+# Feature-Recorder: aes_keys
+# Filename: memdump.elf
+# Feature-File-Version: 1.1
+200371616	9e 90 12 6c 33 c8 5d 9a 69 13 e6 49 30 1b 5d cf 	AES128
+200372128	68 3c 5a 4b f8 f1 ce df 5b 64 9c 48 2e 48 e6 39 	AES128

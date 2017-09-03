@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Thu Aug 24 21:18:03 2017
+Invocation: foremost 01.jpg 
+Output directory: /media/sdcard/_CTF/hitb/misc02/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: 01.jpg
+Start: Thu Aug 24 21:18:03 2017
+Length: 13 KB (13430 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	      13 KB 	          0 	 
+Finish: Thu Aug 24 21:18:03 2017
+
+1 FILES EXTRACTED
+	
+jpg:= 1
+------------------------------------------------------------------
+
+Foremost finished at Thu Aug 24 21:18:03 2017

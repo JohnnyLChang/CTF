@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Wed Aug  9 10:49:56 2017
+Invocation: foremost -v filesystem.img 
+Output directory: /media/johnny/mydisk/_CTF/SHA2017/jun/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: filesystem.img
+Start: Wed Aug  9 10:49:56 2017
+Length: 10 MB (10485760 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00020354.jpg 	      59 KB 	   10421248 	 
+Finish: Wed Aug  9 10:49:57 2017
+
+1 FILES EXTRACTED
+	
+jpg:= 1
+------------------------------------------------------------------
+
+Foremost finished at Wed Aug  9 10:49:57 2017

@@ -1,0 +1,7 @@
+# BANNER FILE NOT PROVIDED (-b option)
+# BULK_EXTRACTOR-Version: 1.5.5 ($Rev: 10844 $)
+# Feature-Recorder: windirs
+# Filename: memdump.elf
+# Feature-File-Version: 1.1
+158517760	(1503607.009	<fileobject src='fat'><atime>1980-00-00T00:00:00</atime><attrib>41</attrib><ctime>1980-00-00T00:00:00</ctime><ctimeten>0</ctimeten><filename>(1503607.009</filename><filesize>0</filesize><mtime>1980-04-21T00:00:00</mtime><startcluster>0</startcluster></fileobject>
+264354304	DPOor.FUA	<fileobject src='fat'><atime>1980-00-00T00:00:00</atime><attrib>10</attrib><ctime>1980-00-00T00:00:00</ctime><ctimeten>0</ctimeten><filename>DPOor.FUA</filename><filesize>0</filesize><mtime>1980-00-00T00:00:00</mtime><startcluster>0</startcluster></fileobject>

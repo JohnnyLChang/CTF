@@ -1,0 +1,8 @@
+# BANNER FILE NOT PROVIDED (-b option)
+# BULK_EXTRACTOR-Version: 1.5.5 ($Rev: 10844 $)
+# Feature-Recorder: ether
+# Filename: memdump.elf
+# Histogram-File-Version: 1.1
+n=69	08:00:27:02:4F:99
+n=68	52:54:00:12:35:02
+n=19	08:00:27:02:4f:99

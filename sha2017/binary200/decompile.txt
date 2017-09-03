@@ -1,0 +1,1036 @@
+int __usercall sub_8048900@<eax>(_BYTE *a1@<edx>, _BYTE *input@<ebx>, _BYTE *a3@<ebp>, int a4@<edi>, _BYTE *a5@<esi>, int a6, int a7)
+{
+  signed int v7; // eax@1
+  int v8; // eax@10
+  int v9; // ST60_4@13
+  _BYTE *v10; // edi@13
+  _BYTE *v11; // ebp@13
+  _BYTE *v12; // ebx@13
+  _BYTE *v13; // esi@13
+  _BYTE *v14; // edi@18
+  _BYTE *v15; // ebp@18
+  _BYTE *v16; // ebx@18
+  _BYTE *v17; // esi@18
+  signed int v18; // eax@18
+  unsigned int v19; // eax@24
+  __m128i v20; // xmm1@24
+  unsigned int v21; // ecx@24
+  __m128i v22; // xmm2@24
+  __m128i v23; // xmm1@24
+  unsigned int v24; // ecx@24
+  __m128i v25; // xmm0@24
+  int v26; // ST60_4@24
+  _BYTE *v27; // edi@24
+  _BYTE *v28; // ebp@24
+  _BYTE *v29; // ebx@24
+  _BYTE *v30; // esi@24
+  unsigned int v31; // edx@24
+  __m128i v32; // xmm0@24
+  unsigned int v33; // ecx@24
+  __m128i v34; // xmm1@24
+  unsigned int v35; // edx@24
+  __m128i v36; // xmm1@24
+  unsigned int v37; // ecx@24
+  __m128i v38; // xmm0@24
+  unsigned int v39; // edx@24
+  __m128i v40; // xmm0@24
+  unsigned int v41; // ecx@24
+  __m128i v42; // xmm1@24
+  unsigned int v43; // edx@24
+  __m128i v44; // xmm1@24
+  unsigned int v45; // ecx@24
+  __m128i v46; // xmm0@24
+  unsigned int v47; // edx@24
+  __m128i v48; // xmm0@24
+  unsigned int v49; // ecx@24
+  __m128i v50; // xmm1@24
+  unsigned int v51; // edx@24
+  __m128i v52; // xmm1@24
+  unsigned int v53; // ecx@24
+  __m128i v54; // xmm0@24
+  unsigned int v55; // edx@24
+  __m128i v56; // xmm0@24
+  unsigned int v57; // ecx@24
+  __m128i v58; // xmm1@24
+  unsigned int v59; // edx@24
+  __m128i v60; // xmm1@24
+  unsigned int v61; // ecx@24
+  __m128i v62; // xmm0@24
+  unsigned int v63; // edx@24
+  __m128i v64; // xmm0@24
+  __m128 v65; // xmm0@24
+  __m128i v66; // xmm1@24
+  _BYTE *v67; // ebp@65
+  int v68; // esi@65
+  int v69; // esi@65
+  int v70; // ebx@65
+  int v71; // eax@65
+  bool v72; // zf@65
+  int v73; // ST60_4@93
+  _BYTE *v74; // edi@93
+  _BYTE *v75; // ebp@93
+  _BYTE *v76; // ebx@93
+  _BYTE *v77; // esi@93
+  int v78; // ST60_4@138
+  _BYTE *v79; // edi@138
+  _BYTE *v80; // ebp@138
+  _BYTE *v81; // ebx@138
+  _BYTE *v82; // esi@138
+  int v83; // ST60_4@155
+  _BYTE *v84; // edi@155
+  _BYTE *v85; // ebp@155
+  _BYTE *v86; // ebx@155
+  _BYTE *v87; // esi@155
+  _BYTE *input_chr; // [sp+20h] [bp-CCh]@65
+  _BYTE *v90; // [sp+24h] [bp-C8h]@1
+  int v91; // [sp+28h] [bp-C4h]@1
+  int v92; // [sp+2Ch] [bp-C0h]@1
+  _BYTE *v93; // [sp+30h] [bp-BCh]@65
+  _BYTE *v94; // [sp+38h] [bp-B4h]@1
+  _BYTE *v95; // [sp+3Ch] [bp-B0h]@1
+  _BYTE *v96; // [sp+40h] [bp-ACh]@1
+  int heap_len2; // [sp+44h] [bp-A8h]@1
+  int heap_end; // [sp+48h] [bp-A4h]@1
+  _BYTE *v99; // [sp+4Ch] [bp-A0h]@1
+  int v100; // [sp+50h] [bp-9Ch]@1
+  int v101; // [sp+54h] [bp-98h]@1
+  unsigned int v102; // [sp+58h] [bp-94h]@1
+  unsigned int v103; // [sp+5Ch] [bp-90h]@1
+  int v104; // [sp+60h] [bp-8Ch]@18
+  int v105; // [sp+64h] [bp-88h]@1
+  bool v106; // [sp+69h] [bp-83h]@1
+  bool v107; // [sp+6Ah] [bp-82h]@1
+  bool v108; // [sp+6Bh] [bp-81h]@0
+  _BYTE *v109; // [sp+6Ch] [bp-80h]@0
+  int flag_len; // [sp+70h] [bp-7Ch]@0
+  int v111; // [sp+74h] [bp-78h]@0
+  unsigned __int8 v112; // [sp+78h] [bp-74h]@0
+  int heap_start; // [sp+7Ch] [bp-70h]@0
+  unsigned int v114; // [sp+80h] [bp-6Ch]@0
+  bool v115; // [sp+87h] [bp-65h]@0
+  unsigned int v116; // [sp+88h] [bp-64h]@0
+  unsigned int v117; // [sp+8Ch] [bp-60h]@0
+  _BYTE *v118; // [sp+90h] [bp-5Ch]@0
+  _BYTE *v119; // [sp+94h] [bp-58h]@0
+  int v120; // [sp+98h] [bp-54h]@0
+  bool v121; // [sp+9Fh] [bp-4Dh]@0
+  int flag_f; // [sp+A0h] [bp-4Ch]@0
+  int v123; // [sp+A4h] [bp-48h]@0
+  bool WTF_1; // [sp+ABh] [bp-41h]@0
+  int *flag_part1; // [sp+ACh] [bp-40h]@0
+  int *flag_part2; // [sp+B0h] [bp-3Ch]@0
+  int v127; // [sp+B4h] [bp-38h]@0
+  bool v128; // [sp+BAh] [bp-32h]@0
+  bool v129; // [sp+BBh] [bp-31h]@0
+  int heap_len3; // [sp+BCh] [bp-30h]@0
+  int heap_end2; // [sp+C0h] [bp-2Ch]@0
+  int v132; // [sp+C4h] [bp-28h]@0
+  _BYTE *v133; // [sp+C8h] [bp-24h]@0
+  _BYTE *v134; // [sp+CCh] [bp-20h]@0
+  _BYTE *v135; // [sp+D0h] [bp-1Ch]@0
+  int result1; // [sp+D4h] [bp-18h]@0
+  int result2; // [sp+D8h] [bp-14h]@0
+
+  v7 = 0xCC597DD5;
+  v90 = a5;
+  v95 = a5;
+  v94 = a5;
+  v96 = a5;
+  heap_end = dword_80EBAEC;
+  heap_len2 = dword_80EBAEC;
+  v105 = dword_80EBAEC;
+  v99 = a1;
+  v103 = (unsigned int)a1;
+  v102 = (unsigned int)a5;
+  v101 = dword_80EBAEC;
+  v100 = dword_80EBAEC;
+  v92 = dword_80EBAEC;
+  v91 = dword_80EBAEC;
+  v106 = ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0;
+  v107 = dword_80EBAF4 < 10;
+  do
+  {
+    while ( 1 )
+    {
+      while ( 1 )
+      {
+        while ( 1 )
+        {
+          while ( 1 )
+          {
+            while ( 1 )
+            {
+              while ( 1 )
+              {
+                while ( 1 )
+                {
+                  while ( 1 )
+                  {
+                    while ( 1 )
+                    {
+                      while ( 1 )
+                      {
+                        while ( 1 )
+                        {
+                          while ( 1 )
+                          {
+                            while ( 1 )
+                            {
+                              while ( 1 )
+                              {
+                                while ( 1 )
+                                {
+                                  while ( 1 )
+                                  {
+                                    while ( 1 )
+                                    {
+                                      while ( 1 )
+                                      {
+                                        while ( 1 )
+                                        {
+                                          while ( 1 )
+                                          {
+                                            while ( 1 )
+                                            {
+                                              while ( 1 )
+                                              {
+                                                while ( 1 )
+                                                {
+                                                  while ( 1 )
+                                                  {
+                                                    while ( 1 )
+                                                    {
+                                                      while ( 1 )
+                                                      {
+                                                        while ( 1 )
+                                                        {
+                                                          while ( 1 )
+                                                          {
+                                                            while ( 1 )
+                                                            {
+                                                              while ( 1 )
+                                                              {
+                                                                while ( 1 )
+                                                                {
+                                                                  while ( 1 )
+                                                                  {
+                                                                    while ( 1 )
+                                                                    {
+                                                                      while ( 1 )
+                                                                      {
+                                                                        while ( 1 )
+                                                                        {
+                                                                          while ( 1 )
+                                                                          {
+                                                                            while ( 1 )
+                                                                            {
+                                                                              while ( 1 )
+                                                                              {
+                                                                                while ( 1 )
+                                                                                {
+                                                                                  while ( 1 )
+                                                                                  {
+                                                                                    while ( 1 )
+                                                                                    {
+                                                                                      while ( 1 )
+                                                                                      {
+                                                                                        while ( 1 )
+                                                                                        {
+                                                                                          while ( v7 <= (signed int)0x8C762344 )
+                                                                                          {
+                                                                                            if ( v7 == -1998568552 )
+                                                                                              v7 = 739001187;
+                                                                                          }
+                                                                                          if ( v7 > (signed int)0x920DAE88 )
+                                                                                            break;
+                                                                                          if ( v7 == 0x8C762345 )
+                                                                                          {
+                                                                                            v7 = 657043249;
+                                                                                            a1 = input;
+                                                                                            a5 = a3;
+                                                                                            v105 = a4;
+                                                                                          }
+                                                                                        }
+                                                                                        if ( v7 > -1705553041 )
+                                                                                          break;
+                                                                                        if ( v7 == -1844597111 )
+                                                                                        {
+                                                                                          v135 = v99;
+                                                                                          flag_part1 = (int *)(flag_f + 8 * (_DWORD)v99);
+                                                                                          v103 = *(_DWORD *)(flag_f + 8 * (_DWORD)v99);
+                                                                                          v8 = 8 * (_DWORD)v99 + 4;
+                                                                                          flag_part2 = (int *)(flag_f + v8);
+                                                                                          v102 = *(_DWORD *)(flag_f + v8);
+                                                                                          v101 = 0;
+                                                                                          v7 = 1911790104;
+                                                                                          v100 = 0;
+                                                                                        }
+                                                                                      }
+                                                                                      if ( v7 > -1589604903 )
+                                                                                        break;
+                                                                                      if ( v7 == 0x9A575370 )
+                                                                                      {
+                                                                                        v9 = a4;
+                                                                                        v10 = a3;
+                                                                                        v11 = input;
+                                                                                        v12 = a5;
+                                                                                        v13 = a1;
+                                                                                        clean_heap(
+                                                                                          heap_end2,
+                                                                                          v112,
+                                                                                          v111 - heap_len3);
+                                                                                        a1 = v13;
+                                                                                        a5 = v12;
+                                                                                        input = v11;
+                                                                                        a3 = v10;
+                                                                                        a4 = v9;
+                                                                                        v7 = -772161499;
+                                                                                        if ( ((_BYTE)dword_80EBAEC
+                                                                                            * ((_BYTE)dword_80EBAEC - 1) & 1) == 0
+                                                                                          || dword_80EBAF4 < 10 )
+                                                                                        {
+                                                                                          v7 = 296771938;
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                    if ( v7 > -1555277368 )
+                                                                                      break;
+                                                                                    if ( v7 == -1589604902 )
+                                                                                    {
+                                                                                      v104 = a4;
+                                                                                      v14 = a3;
+                                                                                      v15 = input;
+                                                                                      v16 = a5;
+                                                                                      v17 = a1;
+                                                                                      v109 = *(_BYTE **)(a7 + 4);
+                                                                                      v18 = sub_805C500(*(_DWORD *)(a7 + 4));
+                                                                                      flag_len = v18;
+                                                                                      v111 = ((v18
+                                                                                             + ((unsigned int)(v18 >> 31) >> 29)) & 0xFFFFFFF8)
+                                                                                           + 8;
+                                                                                      v112 = v111 - v18;
+                                                                                      heap_start = sub_805A0D0(v111);
+                                                                                      v7 = -1138646390;
+                                                                                      if ( flag_len <= 0 )
+                                                                                        v7 = -221021431;
+                                                                                      heap_len2 = 0;
+                                                                                      heap_end = heap_start;
+                                                                                      goto LABEL_21;
+                                                                                    }
+                                                                                  }
+                                                                                  if ( v7 > -1514182670 )
+                                                                                    break;
+                                                                                  if ( v7 == -1555277367 )
+                                                                                  {
+                                                                                    v19 = *(_DWORD *)heap_start;
+                                                                                    v20 = _mm_cvtsi32_si128(*(_DWORD *)heap_start);
+                                                                                    v21 = _mm_extract_epi16(v20, 1);
+                                                                                    v22 = _mm_load_si128((const __m128i *)&xmmword_80BC120);
+                                                                                    v23 = _mm_and_si128(
+                                                                                            _mm_xor_si128(
+                                                                                              _mm_insert_epi16(
+                                                                                                _mm_insert_epi16(
+                                                                                                  _mm_insert_epi16(
+                                                                                                    _mm_insert_epi16(v20, *(_DWORD *)heap_start, 0),
+                                                                                                    BYTE1(v19),
+                                                                                                    2),
+                                                                                                  v21,
+                                                                                                  4),
+                                                                                                v21 >> 8,
+                                                                                                6),
+                                                                                              (__m128i)xmmword_80BC110),
+                                                                                            v22);
+                                                                                    *(_DWORD *)heap_start = 0;
+                                                                                    v24 = *(_DWORD *)(heap_start + 4);
+                                                                                    v25 = _mm_cvtsi32_si128(v24);
+                                                                                    v26 = a4;
+                                                                                    v27 = a3;
+                                                                                    v28 = input;
+                                                                                    v29 = a5;
+                                                                                    v30 = a1;
+                                                                                    v31 = _mm_extract_epi16(v25, 1);
+                                                                                    v32 = _mm_add_epi32(
+                                                                                            _mm_and_si128(
+                                                                                              _mm_xor_si128(
+                                                                                                _mm_insert_epi16(
+                                                                                                  _mm_insert_epi16(
+                                                                                                    _mm_insert_epi16(_mm_insert_epi16(v25, v24, 0), BYTE1(v24), 2),
+                                                                                                    v31,
+                                                                                                    4),
+                                                                                                  v31 >> 8,
+                                                                                                  6),
+                                                                                                (__m128i)xmmword_80BC130),
+                                                                                              v22),
+                                                                                            v23);
+                                                                                    *(_DWORD *)(heap_start + 4) = 0;
+                                                                                    v33 = *(_DWORD *)(heap_start + 8);
+                                                                                    v34 = _mm_cvtsi32_si128(v33);
+                                                                                    v35 = _mm_extract_epi16(v34, 1);
+                                                                                    v36 = _mm_add_epi32(
+                                                                                            _mm_and_si128(
+                                                                                              _mm_xor_si128(
+                                                                                                _mm_insert_epi16(
+                                                                                                  _mm_insert_epi16(
+                                                                                                    _mm_insert_epi16(_mm_insert_epi16(v34, v33, 0), BYTE1(v33), 2),
+                                                                                                    v35,
+                                                                                                    4),
+                                                                                                  v35 >> 8,
+                                                                                                  6),
+                                                                                                (__m128i)xmmword_80BC140),
+                                                                                              v22),
+                                                                                            v32);
+                                                                                    *(_DWORD *)(heap_start + 8) = 0;
+                                                                                    v37 = *(_DWORD *)(heap_start + 12);
+                                                                                    v38 = _mm_cvtsi32_si128(v37);
+                                                                                    v39 = _mm_extract_epi16(v38, 1);
+                                                                                    v40 = _mm_add_epi32(
+                                                                                            _mm_and_si128(
+                                                                                              _mm_xor_si128(
+                                                                                                _mm_insert_epi16(
+                                                                                                  _mm_insert_epi16(
+                                                                                                    _mm_insert_epi16(_mm_insert_epi16(v38, v37, 0), BYTE1(v37), 2),
+                                                                                                    v39,
+                                                                                                    4),
+                                                                                                  v39 >> 8,
+                                                                                                  6),
+                                                                                                (__m128i)xmmword_80BC150),
+                                                                                              v22),
+                                                                                            v36);
+                                                                                    *(_DWORD *)(heap_start + 12) = 0;
+                                                                                    v41 = *(_DWORD *)(heap_start + 16);
+                                                                                    v42 = _mm_cvtsi32_si128(v41);
+                                                                                    v43 = _mm_extract_epi16(v42, 1);
+                                                                                    v44 = _mm_add_epi32(
+                                                                                            _mm_and_si128(
+                                                                                              _mm_xor_si128(
+                                                                                                _mm_insert_epi16(
+                                                                                                  _mm_insert_epi16(
+                                                                                                    _mm_insert_epi16(_mm_insert_epi16(v42, v41, 0), BYTE1(v41), 2),
+                                                                                                    v43,
+                                                                                                    4),
+                                                                                                  v43 >> 8,
+                                                                                                  6),
+                                                                                                (__m128i)xmmword_80BC160),
+                                                                                              v22),
+                                                                                            v40);
+                                                                                    *(_DWORD *)(heap_start + 16) = 0;
+                                                                                    v45 = *(_DWORD *)(heap_start + 20);
+                                                                                    v46 = _mm_cvtsi32_si128(v45);
+                                                                                    v47 = _mm_extract_epi16(v46, 1);
+                                                                                    v48 = _mm_add_epi32(
+                                                                                            _mm_and_si128(
+                                                                                              _mm_xor_si128(
+                                                                                                _mm_insert_epi16(
+                                                                                                  _mm_insert_epi16(
+                                                                                                    _mm_insert_epi16(_mm_insert_epi16(v46, v45, 0), BYTE1(v45), 2),
+                                                                                                    v47,
+                                                                                                    4),
+                                                                                                  v47 >> 8,
+                                                                                                  6),
+                                                                                                (__m128i)xmmword_80BC170),
+                                                                                              v22),
+                                                                                            v44);
+                                                                                    *(_DWORD *)(heap_start + 20) = 0;
+                                                                                    v49 = *(_DWORD *)(heap_start + 24);
+                                                                                    v50 = _mm_cvtsi32_si128(v49);
+                                                                                    v51 = _mm_extract_epi16(v50, 1);
+                                                                                    v52 = _mm_add_epi32(
+                                                                                            _mm_and_si128(
+                                                                                              _mm_xor_si128(
+                                                                                                _mm_insert_epi16(
+                                                                                                  _mm_insert_epi16(
+                                                                                                    _mm_insert_epi16(_mm_insert_epi16(v50, v49, 0), BYTE1(v49), 2),
+                                                                                                    v51,
+                                                                                                    4),
+                                                                                                  v51 >> 8,
+                                                                                                  6),
+                                                                                                (__m128i)xmmword_80BC180),
+                                                                                              v22),
+                                                                                            v48);
+                                                                                    *(_DWORD *)(heap_start + 24) = 0;
+                                                                                    v53 = *(_DWORD *)(heap_start + 28);
+                                                                                    v54 = _mm_cvtsi32_si128(v53);
+                                                                                    v55 = _mm_extract_epi16(v54, 1);
+                                                                                    v56 = _mm_add_epi32(
+                                                                                            _mm_and_si128(
+                                                                                              _mm_xor_si128(
+                                                                                                _mm_insert_epi16(
+                                                                                                  _mm_insert_epi16(
+                                                                                                    _mm_insert_epi16(_mm_insert_epi16(v54, v53, 0), BYTE1(v53), 2),
+                                                                                                    v55,
+                                                                                                    4),
+                                                                                                  v55 >> 8,
+                                                                                                  6),
+                                                                                                (__m128i)xmmword_80BC190),
+                                                                                              v22),
+                                                                                            v52);
+                                                                                    *(_DWORD *)(heap_start + 28) = 0;
+                                                                                    v57 = *(_DWORD *)(heap_start + 32);
+                                                                                    v58 = _mm_cvtsi32_si128(v57);
+                                                                                    v59 = _mm_extract_epi16(v58, 1);
+                                                                                    v60 = _mm_add_epi32(
+                                                                                            _mm_and_si128(
+                                                                                              _mm_xor_si128(
+                                                                                                _mm_insert_epi16(
+                                                                                                  _mm_insert_epi16(
+                                                                                                    _mm_insert_epi16(_mm_insert_epi16(v58, v57, 0), BYTE1(v57), 2),
+                                                                                                    v59,
+                                                                                                    4),
+                                                                                                  v59 >> 8,
+                                                                                                  6),
+                                                                                                (__m128i)xmmword_80BC1A0),
+                                                                                              v22),
+                                                                                            v56);
+                                                                                    *(_DWORD *)(heap_start + 32) = 0;
+                                                                                    v61 = *(_DWORD *)(heap_start + 36);
+                                                                                    v62 = _mm_cvtsi32_si128(v61);
+                                                                                    v63 = _mm_extract_epi16(v62, 1);
+                                                                                    v64 = _mm_insert_epi16(
+                                                                                            _mm_insert_epi16(
+                                                                                              _mm_insert_epi16(
+                                                                                                _mm_insert_epi16(
+                                                                                                  v62,
+                                                                                                  v61,
+                                                                                                  0),
+                                                                                                BYTE1(v61),
+                                                                                                2),
+                                                                                              v63,
+                                                                                              4),
+                                                                                            v63 >> 8,
+                                                                                            6);
+                                                                                    a1 = v30;
+                                                                                    a5 = v29;
+                                                                                    input = v28;
+                                                                                    a3 = v27;
+                                                                                    a4 = v26;
+                                                                                    v65 = (__m128)_mm_add_epi32(
+                                                                                                    _mm_and_si128(_mm_xor_si128(v64, (__m128i)xmmword_80BC1B0), v22),
+                                                                                                    v60);
+                                                                                    v66 = _mm_add_epi32(
+                                                                                            (__m128i)_mm_movehl_ps(v65, v65),
+                                                                                            (__m128i)v65);
+                                                                                    *(_DWORD *)(heap_start + 36) = 0;
+                                                                                    v7 = -515262613;
+                                                                                    if ( !_mm_cvtsi128_si32(_mm_add_epi32(_mm_shuffle_epi32(v66, 1), v66)) )
+                                                                                      v7 = 921311543;
+                                                                                  }
+                                                                                }
+                                                                                if ( v7 > -1481960507 )
+                                                                                  break;
+                                                                                if ( v7 == -1514182669 )
+                                                                                {
+                                                                                  v7 = -214684943;
+                                                                                  if ( ((_BYTE)dword_80EBAEC
+                                                                                      * ((_BYTE)dword_80EBAEC - 1) & 1) == 0
+                                                                                    || dword_80EBAF4 < 10 )
+                                                                                  {
+                                                                                    v7 = 1309635160;
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                              if ( v7 > -1410132328 )
+                                                                                break;
+                                                                              if ( v7 == -1481960506 )
+                                                                              {
+                                                                                *flag_part1 = result1;
+                                                                                *flag_part2 = result2;
+                                                                                v127 = (int)(v135 + 1);
+                                                                                v128 = v135 + 1 == (_BYTE *)v123;
+                                                                                v7 = 412701311;
+                                                                                if ( ((_BYTE)dword_80EBAEC
+                                                                                    * ((_BYTE)dword_80EBAEC - 1) & 1) == 0
+                                                                                  || dword_80EBAF4 < 10 )
+                                                                                {
+                                                                                  v7 = 863711978;
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                            if ( v7 > -1327435239 )
+                                                                              break;
+                                                                            if ( v7 == -1410132327 )
+                                                                            {
+                                                                              *v134 = *v133;
+                                                                              v7 = -627431947;
+                                                                            }
+                                                                          }
+                                                                          if ( v7 <= 2060627649 )
+                                                                            break;
+                                                                          if ( v7 == 2060627650 )
+                                                                          {
+                                                                            v7 = -1310026510;
+                                                                            if ( (_BYTE *)flag_len != v96 )
+                                                                              v7 = -1938414779;
+                                                                            input = v95;
+                                                                            a3 = v94;
+                                                                            a4 = (int)v96;
+                                                                          }
+                                                                        }
+                                                                        if ( v7 <= 2036918444 )
+                                                                          break;
+                                                                        if ( v7 == 2036918445 )
+                                                                        {
+                                                                          v7 = 543895560;
+                                                                          if ( ((_BYTE)dword_80EBAEC
+                                                                              * ((_BYTE)dword_80EBAEC - 1) & 1) == 0
+                                                                            || dword_80EBAF4 < 10 )
+                                                                          {
+                                                                            v7 = -100550424;
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                      if ( v7 <= 1911790103 )
+                                                                        break;
+                                                                      if ( v7 == 1911790104 )
+                                                                      {
+                                                                        v93 = a3;
+                                                                        input_chr = input;
+                                                                        v67 = a5;
+                                                                        v103 += (v101 + v102 - 0x61C88647) ^ (16 * v102 + 0x5570C21C) ^ ((v102 >> 5) - 1529187945);
+                                                                        v68 = v101 + v103 - 0x61C88647;
+                                                                        v101 -= 0x61C88647;
+                                                                        v69 = (16 * v103 - 1008116787) ^ v68;
+                                                                        v70 = (v69 ^ ((v103 >> 5) + 0x5D7FA99B)) + v102;
+                                                                        v102 += v69 ^ ((v103 >> 5) + 0x5D7FA99B);
+                                                                        v71 = v100 + 1;
+                                                                        v100 = v71;
+                                                                        v72 = v71 == 32;
+                                                                        v7 = 0x71F39A18;
+                                                                        if ( v72 )
+                                                                          v7 = 0xBE9C4F90;
+                                                                        v92 = v70;
+                                                                        a5 = v67;
+                                                                        input = input_chr;
+                                                                        a3 = v93;
+                                                                        v91 = v103;
+                                                                      }
+                                                                    }
+                                                                    if ( v7 <= 1816448129 )
+                                                                      break;
+                                                                    if ( v7 == 1816448130 )
+                                                                    {
+                                                                      v108 = a6 == 2;
+                                                                      v7 = -511434008;
+                                                                      if ( ((_BYTE)dword_80EBAEC
+                                                                          * ((_BYTE)dword_80EBAEC - 1) & 1) == 0
+                                                                        || dword_80EBAF4 < 10 )
+                                                                      {
+                                                                        v7 = 1791465696;
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                  if ( v7 <= 1791465695 )
+                                                                    break;
+                                                                  if ( v7 == 1791465696 )
+                                                                  {
+                                                                    v7 = 203763673;
+                                                                    if ( v108 )
+                                                                      v7 = -1589604902;
+                                                                  }
+                                                                }
+                                                                if ( v7 <= 1643498334 )
+                                                                  break;
+                                                                if ( v7 == 1643498335 )
+                                                                {
+                                                                  v7 = 174456952;
+                                                                  if ( v129 )
+                                                                    v7 = 30318017;
+                                                                }
+                                                              }
+                                                              if ( v7 <= 1526488527 )
+                                                                break;
+                                                              if ( v7 == 1526488528 )
+                                                              {
+                                                                v7 = 174456952;
+                                                                if ( WTF_1 )
+                                                                  v7 = 0xB0E0F21A;
+                                                              }
+                                                            }
+                                                            if ( v7 <= 1309635159 )
+                                                              break;
+                                                            if ( v7 == 1309635160 )
+                                                            {
+                                                              flag_f = heap_start;
+                                                              v123 = v111 / 8;
+                                                              WTF_1 = v111 > 7;
+                                                              v7 = -214684943;
+                                                              if ( ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0
+                                                                || dword_80EBAF4 < 10 )
+                                                              {
+                                                                v7 = 1526488528;
+                                                              }
+                                                            }
+                                                          }
+                                                          if ( v7 <= 1082393547 )
+                                                            break;
+                                                          if ( v7 == 1082393548 )
+                                                          {
+                                                            v129 = v111 == 40;
+                                                            v7 = 456851575;
+                                                            if ( ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0
+                                                              || dword_80EBAF4 < 10 )
+                                                            {
+                                                              v7 = 1643498335;
+                                                            }
+                                                          }
+                                                        }
+                                                        if ( v7 <= 994204358 )
+                                                          break;
+                                                        if ( v7 == 0x3B425AC7 )
+                                                        {
+                                                          v73 = a4;
+                                                          v74 = a3;
+                                                          v75 = input;
+                                                          v76 = a5;
+                                                          v77 = a1;
+                                                          sub_80503D0((int)"Yes!");
+                                                          a1 = v77;
+                                                          a5 = v76;
+                                                          input = v75;
+                                                          a3 = v74;
+                                                          a4 = v73;
+                                                          v7 = -318698924;
+                                                          if ( ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0
+                                                            || dword_80EBAF4 < 10 )
+                                                          {
+                                                            v7 = 37641530;
+                                                          }
+                                                        }
+                                                      }
+                                                      if ( v7 <= 921311542 )
+                                                        break;
+                                                      if ( v7 == 0x36EA1937 )
+                                                      {
+                                                        v7 = -318698924;
+                                                        if ( ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0
+                                                          || dword_80EBAF4 < 10 )
+                                                        {
+                                                          v7 = 0x3B425AC7;
+                                                        }
+                                                      }
+                                                    }
+                                                    if ( v7 <= 863711977 )
+                                                      break;
+                                                    if ( v7 == 863711978 )
+                                                    {
+                                                      v7 = -1844597111;
+                                                      if ( v128 )
+                                                        v7 = -102258765;
+                                                      v99 = (_BYTE *)v127;
+                                                    }
+                                                  }
+                                                  if ( v7 <= 739001186 )
+                                                    break;
+                                                  if ( v7 == 739001187 )
+                                                  {
+                                                    v7 = -1998568552;
+                                                    if ( ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0
+                                                      || dword_80EBAF4 < 10 )
+                                                    {
+                                                      v7 = -715229814;
+                                                    }
+                                                  }
+                                                }
+                                                if ( v7 > -1310026511 )
+                                                  break;
+                                                if ( v7 == -1327435238 )
+                                                {
+                                                  v99 = 0;
+                                                  v7 = -1844597111;
+                                                }
+                                              }
+                                              if ( v7 > -1181997796 )
+                                                break;
+                                              if ( v7 == -1310026510 )
+                                              {
+                                                heap_end = flag_len + heap_start;
+                                                v7 = -221021431;
+                                                heap_len2 = flag_len;
+                                              }
+                                            }
+                                            if ( v7 > -1138646391 )
+                                              break;
+                                            if ( v7 == -1181997795 )
+                                            {
+                                              v7 = 657043249;
+                                              if ( v121 )
+                                                v7 = 229334574;
+                                              a5 = v118;
+                                              a1 = v119;
+                                              v105 = v120;
+                                            }
+                                          }
+                                          if ( v7 > -1097052273 )
+                                            break;
+                                          if ( v7 == -1138646390 )
+                                          {
+                                            v7 = -1938414779;
+                                            if ( flag_len )
+                                              v7 = 2036918445;
+                                            a3 = v109;
+                                            a4 = 0;
+                                            input = (_BYTE *)heap_start;
+                                          }
+                                        }
+                                        if ( v7 > -866550316 )
+                                          break;
+                                        if ( v7 == -1097052272 )
+                                        {
+                                          result1 = v91;
+                                          result2 = v92;
+                                          v7 = 412701311;
+                                          if ( ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0
+                                            || dword_80EBAF4 < 10 )
+                                          {
+                                            v7 = -1481960506;
+                                          }
+                                        }
+                                      }
+                                      if ( v7 > -835085018 )
+                                        break;
+                                      if ( v7 == -866550315 )
+                                      {
+                                        v7 = -511434008;
+                                        if ( v106 || v107 )
+                                          v7 = 1816448130;
+                                      }
+                                    }
+                                    if ( v7 > -772161500 )
+                                      break;
+                                    if ( v7 == -835085017 )
+                                    {
+                                      v7 = -1998568552;
+                                      if ( ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0
+                                        || dword_80EBAF4 < 10 )
+                                      {
+                                        v7 = 739001187;
+                                      }
+                                    }
+                                  }
+                                  if ( v7 > -715229815 )
+                                    break;
+                                  if ( v7 == -772161499 )
+                                  {
+                                    v78 = a4;
+                                    v79 = a3;
+                                    v80 = input;
+                                    v81 = a5;
+                                    v82 = a1;
+                                    clean_heap(heap_end2, v112, v111 - heap_len3);
+                                    a1 = v82;
+                                    a5 = v81;
+                                    input = v80;
+                                    a3 = v79;
+                                    a4 = v78;
+                                    v7 = -1705553040;
+                                  }
+                                }
+                                if ( v7 > -627431948 )
+                                  break;
+                                if ( v7 == -715229814 )
+                                {
+                                  v90 = 0;
+                                  v7 = -138152806;
+                                }
+                              }
+                              if ( v7 > -515262614 )
+                                break;
+                              if ( v7 == -627431947 )
+                              {
+                                v118 = v133 + 1;// load flag into heap
+                                                // 
+                                v119 = v134 + 1;
+                                *v134 = *v133;
+                                v120 = v132 + 1;
+                                v121 = v132 + 1 == flag_len;
+                                v7 = 0xABF31699;
+                                if ( ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0 || dword_80EBAF4 < 10 )
+                                  v7 = 0xB98C251D;
+                              }
+                            }
+                            if ( v7 > -511434009 )
+                              break;
+                            if ( v7 == -515262613 )
+                              goto LABEL_219;
+                          }
+                          if ( v7 > -318698925 )
+                            break;
+                          if ( v7 == -511434008 )
+                            v7 = 1816448130;
+                        }
+                        if ( v7 > (signed int)0xF048E509 )
+                          break;
+                        if ( v7 == 0xED010A54 )
+                        {
+                          v83 = a4;
+                          v84 = a3;
+                          v85 = input;
+                          v86 = a5;
+                          v87 = a1;
+                          sub_80503D0((int)"Yes!");
+                          a1 = v87;
+                          a5 = v86;
+                          input = v85;
+                          a3 = v84;
+                          a4 = v83;
+                          v7 = 994204359;
+                        }
+                      }
+                      if ( v7 > (signed int)0xF2D37B08 )
+                        break;
+                      if ( v7 == 0xF048E50A )
+                      {
+                        v96 = (_BYTE *)v114;
+                        v95 = (_BYTE *)v116;
+                        v7 = 2060627650;
+                        v94 = (_BYTE *)v117;
+                      }
+                    }
+                    if ( v7 > -214684944 )
+                      break;
+                    if ( v7 == -221021431 )
+                    {
+                      heap_len3 = heap_len2;
+                      heap_end2 = heap_end;
+                      v7 = 658715030;
+                      if ( v111 <= heap_len2 )
+                        v7 = -1514182669;
+                    }
+                  }
+                  if ( v7 > -138152807 )
+                    break;
+                  if ( v7 == -214684943 )
+                    v7 = 1309635160;
+                }
+                if ( v7 > -102258766 )
+                  break;
+                if ( v7 == -138152806 )
+                {
+                  v104 = a4;
+                  v14 = a3;
+                  v15 = input;
+                  v16 = a5;
+                  v17 = a1;
+                  _mm_storeu_si128((__m128i *)&v90[heap_start], _mm_loadu_si128((const __m128i *)&v90[(_DWORD)v109]));
+                  v90 += 16;
+                  v7 = -263658230;
+                  if ( v90 != (_BYTE *)v114 )
+                    v7 = -138152806;
+LABEL_21:
+                  a1 = v17;
+                  a5 = v16;
+                  input = v15;                  // load args into heap
+                                                // 
+                  a3 = v14;
+                  a4 = v104;
+                }
+              }
+              if ( v7 > -100550425 )
+                break;
+              if ( v7 == -102258765 )
+              {
+                v7 = 456851575;
+                if ( ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0 || dword_80EBAF4 < 10 )
+                  v7 = 1082393548;
+              }
+            }
+            if ( v7 > -57311870 )
+              break;
+            if ( v7 == -100550424 )
+            {
+              v114 = flag_len & 0xFFFFFFF0;
+              v115 = (flag_len & 0xFFFFFFF0) == 0;
+              v116 = (flag_len & 0xFFFFFFF0) + heap_start;
+              v117 = (unsigned int)&v109[flag_len & 0xFFFFFFF0];
+              v7 = 543895560;
+              if ( ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0 || dword_80EBAF4 < 10 )
+                v7 = -57311869;
+            }
+          }
+          if ( v7 > 30318016 )
+            break;
+          if ( v7 == -57311869 )
+          {
+            v7 = -835085017;
+            if ( v115 )
+              v7 = 2060627650;
+            v94 = v109;
+            v96 = 0;
+            v95 = (_BYTE *)heap_start;
+          }
+        }
+        if ( v7 > 37641529 )
+          break;
+        if ( v7 == 30318017 )
+          v7 = -1555277367;
+      }
+      if ( v7 <= 174456951 )
+        break;
+      if ( v7 > 203763672 )
+      {
+        if ( v7 > 229334573 )
+        {
+          if ( v7 > 296771937 )
+          {
+            if ( v7 > 412701310 )
+            {
+              if ( v7 > 456851574 )
+              {
+                if ( v7 > 543895559 )
+                {
+                  switch ( v7 )
+                  {
+                    case 543895560:
+                      v7 = -100550424;
+                      break;
+                    case 657043249:
+                      v132 = v105;
+                      v133 = a5;
+                      v134 = a1;
+                      v7 = 0xABF31699;
+                      if ( ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0 || dword_80EBAF4 < 10 )
+                        v7 = 0xDA9A25F5;
+                      break;
+                    case 658715030:
+                      v7 = -772161499;
+                      if ( ((_BYTE)dword_80EBAEC * ((_BYTE)dword_80EBAEC - 1) & 1) == 0 || dword_80EBAF4 < 10 )
+                        v7 = 0x9A575370;
+                      break;
+                  }
+                }
+                else if ( v7 == 456851575 )
+                {
+                  v7 = 1082393548;
+                }
+              }
+              else if ( v7 == 412701311 )
+              {
+                *flag_part1 = result1;
+                *flag_part2 = result2;
+                v7 = -1481960506;
+              }
+            }
+            else if ( v7 == 296771938 )
+            {
+              v7 = -1514182669;
+            }
+          }
+          else if ( v7 == 229334574 )
+          {
+            v7 = -1310026510;
+          }
+        }
+        else if ( v7 == 203763673 )
+        {
+          sub_80488E0();
+        }
+      }
+      else if ( v7 == 174456952 )
+      {
+LABEL_219:
+        sub_80488E0();
+      }
+    }
+  }
+  while ( v7 != 37641530 );
+  return 0;
+}

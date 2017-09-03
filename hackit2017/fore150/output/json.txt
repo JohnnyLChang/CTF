@@ -1,0 +1,11 @@
+# BANNER FILE NOT PROVIDED (-b option)
+# BULK_EXTRACTOR-Version: 1.5.5 ($Rev: 10844 $)
+# Feature-Recorder: json
+# Filename: memdump.elf
+# Feature-File-Version: 1.1
+64457075	[1, 2, 3, 4, 5]	6675982b5d76c7fdd870c9e439c0b413
+68052308	[2,58,59,52,55,60,61,53,56,54,62,4,63,22,23,25]	52e0c4e36893cff0e31e5e90ad29c3d7
+70270982	[1,3,5,7]	bd1b88be9bc6866a7bfaaa28f4094aeb
+70270993	[0,2,4,8]	9b2bfca0ddd4d29866e56c23fb1569b9
+70271007	[5,10,15,20]	cac944667dfae77d5c90bf8af80d0d63
+70271067	[0, 1, 2, 3, 4, 5, 5, 7, 8, 10, 15, 20, 25]	83ab387f5193827018121f38ccbd97dd

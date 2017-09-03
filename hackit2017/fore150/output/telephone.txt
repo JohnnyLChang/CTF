@@ -1,0 +1,7 @@
+# BANNER FILE NOT PROVIDED (-b option)
+# BULK_EXTRACTOR-Version: 1.5.5 ($Rev: 10844 $)
+# Feature-Recorder: telephone
+# Filename: memdump.elf
+# Feature-File-Version: 1.1
+245579241	400/500/1500	S Receiver (300/400/500/1500/2000)\x00DigiTech\x00
+253983311	256/512/1024	nd\x00 64 bit addr\x00256/512/1024\x001024\x00 32 period

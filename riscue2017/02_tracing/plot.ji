@@ -1,0 +1,14 @@
+using Jlsca.Sca
+using Jlsca.Trs
+using Jlsca.Align
+using Jlsca.Aes
+using PyCall
+using PyPlot.plot,PyPlot.figure
+
+@pyimport numpy
+
+filename = ARGS[1]
+trs = InspectorTrace(filename)
+
+((data,samples),eof) = readTraces(trs, 1:10);
+plot(samples[1:10,:]',linewidth=.3);
