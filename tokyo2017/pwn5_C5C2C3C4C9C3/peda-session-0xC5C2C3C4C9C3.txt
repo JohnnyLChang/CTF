@@ -1,0 +1,3 @@
+break check_ebcdic_alphanum
+break *check_ebcdic_alphanum
+

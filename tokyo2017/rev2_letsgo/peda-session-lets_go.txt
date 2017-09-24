@@ -1,4 +1,3 @@
-break *main
-
-
+break *0x0492522
+break *0x04924AB
 

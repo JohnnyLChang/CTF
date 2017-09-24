@@ -1,0 +1,47 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DEBUG	../golang_loader_assist.py	/^DEBUG = False$/;"	kind:variable	line:18
+REPLACE_CHARS	../golang_loader_assist.py	/^REPLACE_CHARS = ['.', '*', '-', ',', ';', ':', '\/', '\\xb7' ]$/;"	kind:variable	line:332
+STRIP_CHARS	../golang_loader_assist.py	/^STRIP_CHARS = [ '(', ')', '[', ']', '{', '}', ' ', '"' ]$/;"	kind:variable	line:331
+VALID_DEST	../golang_loader_assist.py	/^VALID_DEST = ['esp', 'eax', 'ecx', 'edx', 'rsp']$/;"	kind:variable	line:73
+VALID_REGS	../golang_loader_assist.py	/^VALID_REGS = ['eax', 'ebx', 'ebp', 'rax', 'rcx', 'r10', 'rdx']$/;"	kind:variable	line:70
+__author__	../golang_loader_assist.py	/^__author__ = "Tim 'diff' Strazzere"$/;"	kind:variable	line:3
+__copyright__	../golang_loader_assist.py	/^__copyright__ = "Copyright 2016, Red Naga"$/;"	kind:variable	line:4
+__email__	../golang_loader_assist.py	/^__email__ = ["strazz@gmail.com"]$/;"	kind:variable	line:7
+__license__	../golang_loader_assist.py	/^__license__ = "GPL"$/;"	kind:variable	line:5
+__version__	../golang_loader_assist.py	/^__version__ = "1.2"$/;"	kind:variable	line:6
+_get_seg	../golang_loader_assist.py	/^def _get_seg(possible_seg_names):$/;"	kind:function	line:203
+clean_function_name	../golang_loader_assist.py	/^def clean_function_name(str):$/;"	kind:function	line:333
+create_offset	../golang_loader_assist.py	/^def create_offset(addr):$/;"	kind:function	line:131
+create_pointer	../golang_loader_assist.py	/^def create_pointer(addr, force_size=None):$/;"	kind:function	line:323
+create_runtime_ms	../golang_loader_assist.py	/^def create_runtime_ms():$/;"	kind:function	line:224
+create_string	../golang_loader_assist.py	/^def create_string(addr, string_len):$/;"	kind:function	line:109
+debug	../golang_loader_assist.py	/^def debug(formatted_string):$/;"	kind:function	line:29
+error	../golang_loader_assist.py	/^def error(formatted_string):$/;"	kind:function	line:26
+find_func_by_name	../golang_loader_assist.py	/^def find_func_by_name(name):$/;"	kind:function	line:294
+flag2	../test.py	/^flag2 = flag$/;"	kind:variable	line:2
+flag2	../test.py	/^flag2 = list(flag)$/;"	kind:variable	line:6
+get_gopclntab_seg	../golang_loader_assist.py	/^def get_gopclntab_seg():$/;"	kind:function	line:199
+get_text_seg	../golang_loader_assist.py	/^def get_text_seg():$/;"	kind:function	line:195
+golang_loader_assist.py	../golang_loader_assist.py	1;"	kind:file	line:1
+info	../golang_loader_assist.py	/^def info(formatted_string):$/;"	kind:function	line:23
+is_simple_wrapper	../golang_loader_assist.py	/^def is_simple_wrapper(addr):$/;"	kind:function	line:216
+is_string_load	../golang_loader_assist.py	/^def is_string_load(addr):$/;"	kind:function	line:76
+main	../golang_loader_assist.py	/^def main():$/;"	kind:function	line:411
+pointer_renamer	../golang_loader_assist.py	/^def pointer_renamer():$/;"	kind:function	line:385
+rcx	../test.py	/^            rcx = (rcx + flag2[0])$/;"	kind:variable	line:16
+rcx	../test.py	/^            rcx = (rcx + flag2[i+1])$/;"	kind:variable	line:14
+rcx	../test.py	/^        rcx = box[rcx&0xff]$/;"	kind:variable	line:12
+rcx	../test.py	/^        rcx = rcx&0xff00 | rol(rcx, 1, 8)$/;"	kind:variable	line:17
+rcx	../test.py	/^rcx = flag2[0]$/;"	kind:variable	line:7
+renamer_init	../golang_loader_assist.py	/^def renamer_init():$/;"	kind:function	line:345
+rol	../test.py	/^rol = lambda val, r_bits, max_bits:     (val << r_bits%max_bits) & (2**max_bits-1) |     ((val & (2**max_bits-1)) >> (max_bits-(r_bits%max_bits)))$/;"	kind:variable	line:4
+runtime_init	../golang_loader_assist.py	/^def runtime_init():$/;"	kind:function	line:305
+str	../test.py	/^    str = ""$/;"	kind:variable	line:9
+strings_init	../golang_loader_assist.py	/^def strings_init():$/;"	kind:function	line:139
+test.py	../test.py	1;"	kind:file	line:1
+traverse_xrefs	../golang_loader_assist.py	/^def traverse_xrefs(func):$/;"	kind:function	line:255

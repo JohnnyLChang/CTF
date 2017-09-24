@@ -1,0 +1,223 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+__all__	../baluhn/src/baluhn.py	/^__all__ = ['generate', 'verify']$/;"	kind:variable	line:1
+aes_ecb.py	../aes_ecb.py	1;"	kind:file	line:1
+allocate	../pwn-zone/exploit-3.py	/^def allocate(size):$/;"	kind:function	line:10
+almostxor.py	../almostxor.py	1;"	kind:file	line:1
+amex	../creditcard.py	/^        amex = credit_card_number(generator, amexPrefixList, 15, 1)$/;"	kind:variable	line:156
+amex	../creditcard.py	/^amex = credit_card_number(generator, amexPrefixList, 15, 5)$/;"	kind:variable	line:142
+amexPrefixList	../creditcard.py	/^amexPrefixList = [['3', '4'], ['3', '7']]$/;"	kind:variable	line:31
+ans	../rev-tablez/solve.py	/^ans = bytearray(37)$/;"	kind:variable	line:19
+anw	../rev-tablez/solve.py	/^anw = ""$/;"	kind:variable	line:20
+arena	../pwn-zone/exploit-3.py	/^arena = int(r.recvn(14), 16)$/;"	kind:variable	line:30
+arr	../misc-registration/get_x.py	/^arr = re.findall(r'&x=([0-9a-f]+)', data)$/;"	kind:variable	line:8
+author	../baluhn/setup.py	/^    author='Ben Hodgson',$/;"	kind:variable	line:12
+author_email	../baluhn/setup.py	/^    author_email='ben@benhodgson.com',$/;"	kind:variable	line:13
+baluhn.py	../baluhn/src/baluhn.py	1;"	kind:file	line:1
+binsh	../pwn-zone/exploit-3.py	/^binsh = libc_base + next(libc.search('\/bin\/sh\\x00'))$/;"	kind:variable	line:52
+brutexor.py	../brutexor.py	1;"	kind:file	line:1
+can	../pwn-svc/solve.py	/^    can = leakoffset(p, 8*21)$/;"	kind:variable	line:53
+can	../pwn-svc/solve.py	/^    can = struct.unpack("<Q", can)[0]$/;"	kind:variable	line:56
+can	../pwn-svc/solve.py	/^can = []$/;"	kind:variable	line:7
+card	../creditcard.py	/^    card = card.strip()$/;"	kind:variable	line:154
+card	../creditcard.py	/^    card = p[13:]$/;"	kind:variable	line:153
+check	../creditcard.py	/^                    check = card[idx+4:end]$/;"	kind:variable	line:182
+checkparity	../01_serial/solve_serial.py	/^def checkparity(resp):$/;"	kind:function	line:6
+cipher	../cipher.py	/^cipher = xor(plaintext, repeat(key, len(plaintext)))$/;"	kind:variable	line:15
+cipher	../encode.py	/^cipher = xor(plaintext, repeat(key, len(plaintext)))$/;"	kind:variable	line:13
+cipher	../solvexor.py	/^cipher = '1b580305170002074b0a1a4c414d1f1d171d00151b1d0f480e491e0249010c15'$/;"	kind:variable	line:3
+cipher.py	../cipher.py	1;"	kind:file	line:1
+cipherbin	../solvexor.py	/^cipherbin = bytearray(cipher.decode('hex'))$/;"	kind:variable	line:7
+classifiers	../baluhn/setup.py	/^    classifiers = [$/;"	kind:variable	line:15
+completed_number	../creditcard.py	/^def completed_number(prefix, length):$/;"	kind:function	line:50
+credit_card_number	../creditcard.py	/^def credit_card_number(rnd, prefixList, length, howMany):$/;"	kind:function	line:96
+creditcard.py	../creditcard.py	1;"	kind:file	line:1
+data	../misc-registration/get_x.py	/^	data = f.read()$/;"	kind:variable	line:5
+decimal_decoder	../baluhn/src/baluhn.py	/^decimal_decoder = lambda s: int(s, 10)$/;"	kind:variable	line:3
+decimal_encoder	../baluhn/src/baluhn.py	/^decimal_encoder = lambda i: str(i)$/;"	kind:variable	line:4
+delete	../pwn-zone/exploit-3.py	/^def delete():$/;"	kind:function	line:15
+description	../baluhn/setup.py	/^    description='A base-agnostic implementation of the Luhn Algorithm for '$/;"	kind:variable	line:7
+destroy	../pwn-auir/exploit-2.py	/^def destroy(index):$/;"	kind:function	line:13
+dinersPrefixList	../creditcard.py	/^dinersPrefixList = [$/;"	kind:variable	line:35
+discover	../creditcard.py	/^discover = credit_card_number(generator, discoverPrefixList, 16, 3)$/;"	kind:variable	line:145
+discoverPrefixList	../creditcard.py	/^discoverPrefixList = [['6', '0', '1', '1']]$/;"	kind:variable	line:33
+display	../pwn-auir/exploit-2.py	/^def display(index):$/;"	kind:function	line:23
+elf	../pwn-svc/solve.py	/^elf = ELF('libc-2.23.so')$/;"	kind:variable	line:6
+enRoutePrefixList	../creditcard.py	/^enRoutePrefixList = [['2', '0', '1', '4'], ['2', '1', '4', '9']]$/;"	kind:variable	line:43
+encode.py	../encode.py	1;"	kind:file	line:1
+encr_vals	../almostxor.py	/^def encr_vals(m_chr, k_chr, n):$/;"	kind:function	line:32
+encrypt	../almostxor.py	/^def encrypt(k, m, n):$/;"	kind:function	line:35
+end	../creditcard.py	/^                end = card.find(' is valid!')$/;"	kind:variable	line:180
+end	../creditcard.py	/^                end = card.find('!')$/;"	kind:variable	line:171
+exit	../pwn-zone/exploit-3.py	/^def exit():$/;"	kind:function	line:26
+exploit-2.py	../pwn-auir/exploit-2.py	1;"	kind:file	line:1
+exploit-3.py	../pwn-zone/exploit-3.py	1;"	kind:file	line:1
+f	../rev-tablez/solve.py	/^f = open('result.bin', 'rb')$/;"	kind:variable	line:5
+f	../rev-tablez/solve.py	/^f = open('target.bin', 'rb')$/;"	kind:variable	line:16
+feed	../pwn-svc/solve.py	/^def feed(p, pl):$/;"	kind:function	line:19
+feedcanary	../pwn-svc/solve.py	/^def feedcanary(p,can):$/;"	kind:function	line:42
+findmatch	../solvexor.py	/^def findmatch(s1, s2):$/;"	kind:function	line:29
+fix	../pwn-auir/exploit-2.py	/^def fix(index, size, skill):$/;"	kind:function	line:17
+flag	../01_serial/solve_serial.py	/^flag = ""$/;"	kind:variable	line:15
+flag	../aes_ecb.py	/^flag = ""$/;"	kind:variable	line:114
+flag	../aes_ecb.py	/^flag = ""$/;"	kind:variable	line:135
+flag	../aes_ecb.py	/^flag = ""$/;"	kind:variable	line:156
+flag	../aes_ecb.py	/^flag = ""$/;"	kind:variable	line:177
+flag	../aes_ecb.py	/^flag = ""$/;"	kind:variable	line:51
+flag	../aes_ecb.py	/^flag = ""$/;"	kind:variable	line:72
+flag	../aes_ecb.py	/^flag = ""$/;"	kind:variable	line:94
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s"$/;"	kind:variable	line:198
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s"$/;"	kind:variable	line:221
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s"$/;"	kind:variable	line:242
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s"$/;"	kind:variable	line:264
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s"$/;"	kind:variable	line:287
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s"$/;"	kind:variable	line:308
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s"$/;"	kind:variable	line:356
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s"$/;"	kind:variable	line:377
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s"$/;"	kind:variable	line:398
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s"$/;"	kind:variable	line:460
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s00000000000000000000000000"$/;"	kind:variable	line:333
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s0_h@rd_t0_d0..."$/;"	kind:variable	line:420
+flag	../aes_ecb.py	/^flag = "flag{Crypt0_is_s0_h@rd_t0_d0..."$/;"	kind:variable	line:441
+fsbox	../rev-tablez/solve.py	/^def fsbox(v):$/;"	kind:function	line:10
+gdbattach	../pwn-svc/solve.py	/^def gdbattach(p):$/;"	kind:function	line:24
+generate	../baluhn/src/baluhn.py	/^def generate(string, base=10, encoder=decimal_encoder,$/;"	kind:function	line:14
+generator	../creditcard.py	/^generator = Random()$/;"	kind:variable	line:132
+get_chrs	../almostxor.py	/^def get_chrs(val_list, n):$/;"	kind:function	line:20
+get_nums	../almostxor.py	/^def get_nums(s, n):$/;"	kind:function	line:6
+get_vals	../almostxor.py	/^def get_vals(x, n):$/;"	kind:function	line:11
+get_x.py	../misc-registration/get_x.py	1;"	kind:file	line:1
+go_home	../pwn-auir/exploit-2.py	/^def go_home():$/;"	kind:function	line:27
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:116
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:137
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:158
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:179
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:19
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:200
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:223
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:244
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:266
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:289
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:310
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:335
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:34
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:358
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:379
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:400
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:422
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:443
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:462
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:5
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:52
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:73
+guessing	../aes_ecb.py	/^def guessing(p):$/;"	kind:function	line:95
+i	../rev-tablez/solve.py	/^i = 0$/;"	kind:variable	line:9
+idx	../creditcard.py	/^                idx = card.find(' if ')$/;"	kind:variable	line:179
+idx	../creditcard.py	/^            idx = card.find('ends with')$/;"	kind:variable	line:169
+input	../rev-tablez/solve.py	/^input = bytearray('AAA%AAsAABAA$AAnAACAA-AA(AADAA;AA)AAE')$/;"	kind:variable	line:7
+is_mod10_valid	../creditcard.py	/^def is_mod10_valid(card):$/;"	kind:function	line:118
+ishex	../solvexor.py	/^def ishex(v):$/;"	kind:function	line:12
+jcbPrefixList	../creditcard.py	/^jcbPrefixList = [['3', '5']]$/;"	kind:variable	line:45
+k	../solvexor.py	/^k = string.ascii_letters+string.digits+string.punctuation$/;"	kind:variable	line:10
+key	../cipher.py	/^key = sys.argv[1]$/;"	kind:variable	line:12
+key	../encode.py	/^key = sys.argv[1]$/;"	kind:variable	line:10
+keywords	../baluhn/setup.py	/^    keywords = ['luhn', 'mod10', 'check digit', 'luhn mod N'],$/;"	kind:variable	line:14
+leakoffset	../pwn-svc/solve.py	/^def leakoffset(p, off):$/;"	kind:function	line:30
+libc	../pwn-auir/exploit-2.py	/^libc = ELF('libc-2.23.so')$/;"	kind:variable	line:6
+libc	../pwn-svc/solve.py	/^    libc = leakoffset(p, 183).strip()$/;"	kind:variable	line:57
+libc	../pwn-svc/solve.py	/^    libc = libc+"\\0"*(8-len(libc))$/;"	kind:variable	line:58
+libc	../pwn-zone/exploit-3.py	/^libc = ELF('libc-2.23.so')$/;"	kind:variable	line:6
+libc_base	../pwn-auir/exploit-2.py	/^libc_base = u64(r.recvn(6) + '\\x00'*2) - 0x3c4b78$/;"	kind:variable	line:36
+libc_base	../pwn-zone/exploit-3.py	/^libc_base = u64(r.recvn(6) + '\\x00'*2) - libc_start_main_240_off$/;"	kind:variable	line:49
+libc_start_main_240_off	../pwn-zone/exploit-3.py	/^libc_start_main_240_off = 0x20830$/;"	kind:variable	line:8
+libcadr	../pwn-svc/solve.py	/^    libcadr = struct.unpack("<Q", libc)[0]$/;"	kind:variable	line:59
+libcbase	../pwn-svc/solve.py	/^    libcbase = libcsys - elf.symbols['system']$/;"	kind:variable	line:63
+libcsh	../pwn-svc/solve.py	/^    libcsh = libcbase + 0x18CD17$/;"	kind:variable	line:64
+libcsys	../pwn-svc/solve.py	/^    libcsys = libcadr + 0x24B60$/;"	kind:variable	line:60
+license	../baluhn/setup.py	/^    license='Public Domain',$/;"	kind:variable	line:6
+luhn_sum_mod_base	../baluhn/src/baluhn.py	/^def luhn_sum_mod_base(string, base=10, decoder=decimal_decoder):$/;"	kind:function	line:7
+main	../brutexor.py	/^def main(argv):$/;"	kind:function	line:40
+make	../pwn-auir/exploit-2.py	/^def make(size, skill):$/;"	kind:function	line:8
+mastercard	../creditcard.py	/^        mastercard = credit_card_number(generator, mastercardPrefixList, 16, 1)$/;"	kind:variable	line:159
+mastercard	../creditcard.py	/^mastercard = credit_card_number(generator, mastercardPrefixList, 16, 10)$/;"	kind:variable	line:136
+mastercardPrefixList	../creditcard.py	/^mastercardPrefixList = [$/;"	kind:variable	line:28
+name	../baluhn/setup.py	/^    name='baluhn',$/;"	kind:variable	line:4
+one_gadget	../pwn-auir/exploit-2.py	/^one_gadget = libc_base + 0xf0274 # constraint: [rsp+0x50] == NULL$/;"	kind:variable	line:38
+output	../creditcard.py	/^def output(title, numbers):$/;"	kind:function	line:108
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:112
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:133
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:154
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:16
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:175
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:196
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:218
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:220
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:240
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:262
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:285
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:3
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:32
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:330
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:354
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:375
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:396
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:418
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:439
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:480
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:49
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:70
+p	../aes_ecb.py	/^p = remote('crypto.chal.csaw.io', 1578)$/;"	kind:variable	line:92
+p	../creditcard.py	/^    p = r.recvline()$/;"	kind:variable	line:151
+p	../solvexor.py	/^p = []$/;"	kind:variable	line:19
+package_dir	../baluhn/setup.py	/^    package_dir = {'':'src'},$/;"	kind:variable	line:9
+pflist	../creditcard.py	/^                    pflist = []$/;"	kind:variable	line:189
+pflist	../creditcard.py	/^pflist = []$/;"	kind:variable	line:149
+plaintext	../cipher.py	/^plaintext = sys.argv[2] + key$/;"	kind:variable	line:13
+plaintext	../encode.py	/^plaintext = sys.argv[2] + key$/;"	kind:variable	line:11
+pop_rdi_ret	../pwn-zone/exploit-3.py	/^pop_rdi_ret = libc_base + 0x21102$/;"	kind:variable	line:51
+poprdi	../pwn-svc/solve.py	/^    poprdi = 0x0021102+libcbase$/;"	kind:variable	line:66
+postfix	../creditcard.py	/^                postfix = card[idx+10:end]$/;"	kind:variable	line:172
+prefix	../creditcard.py	/^                    prefix = card[22:26]$/;"	kind:variable	line:188
+print_block	../pwn-zone/exploit-3.py	/^def print_block():$/;"	kind:function	line:23
+pt	../rev-tablez/solve.py	/^pt = bytearray(string.printable)$/;"	kind:variable	line:18
+py_modules	../baluhn/setup.py	/^    py_modules=['baluhn'],$/;"	kind:variable	line:10
+q	../01_serial/solve_serial.py	/^    q = r.recv(timeout=5)$/;"	kind:variable	line:17
+r	../01_serial/solve_serial.py	/^r = remote('misc.chal.csaw.io',4239)$/;"	kind:variable	line:3
+r	../creditcard.py	/^r = remote('misc.chal.csaw.io', 8308)$/;"	kind:variable	line:148
+r	../pwn-auir/exploit-2.py	/^r = remote('pwn.chal.csaw.io', 7713)$/;"	kind:variable	line:5
+r	../pwn-zone/exploit-3.py	/^r = remote('pwn.chal.csaw.io', 5223)$/;"	kind:variable	line:5
+r	../rev-tablez/solve.py	/^r = bytearray(37)$/;"	kind:variable	line:8
+repeat	../cipher.py	/^def repeat(s, l):$/;"	kind:function	line:9
+repeat	../encode.py	/^def repeat(s, l):$/;"	kind:function	line:7
+retlibc	../pwn-svc/solve.py	/^def retlibc(p, can, libcsys, sh, pop):$/;"	kind:function	line:37
+reviewfood	../pwn-svc/solve.py	/^def reviewfood(p, pl=''):$/;"	kind:function	line:8
+sbox	../rev-tablez/solve.py	/^sbox = bytearray(f.read())$/;"	kind:variable	line:6
+setup.py	../baluhn/setup.py	1;"	kind:file	line:1
+solve.py	../pwn-svc/solve.py	1;"	kind:file	line:1
+solve.py	../rev-tablez/solve.py	1;"	kind:file	line:1
+solve_serial.py	../01_serial/solve_serial.py	1;"	kind:file	line:1
+solvexor.py	../solvexor.py	1;"	kind:file	line:1
+system	../pwn-zone/exploit-3.py	/^system = libc_base + libc.symbols['system']$/;"	kind:variable	line:53
+target	../rev-tablez/solve.py	/^target = bytearray(f.read())            $/;"	kind:variable	line:17
+to_num	../almostxor.py	/^def to_num(s):$/;"	kind:function	line:1
+url	../baluhn/setup.py	/^    url='http:\/\/github.com\/benhodgson\/baluhn',$/;"	kind:variable	line:11
+v	../creditcard.py	/^                    v = credit_card_number(generator, pflist, 16, 1)$/;"	kind:variable	line:191
+v	../creditcard.py	/^                    v = credit_card_number(generator, visaPrefixList, 16, 1)$/;"	kind:variable	line:175
+v	../creditcard.py	/^                v = credit_card_number(generator, visaPrefixList, 16, 1)$/;"	kind:variable	line:173
+v	../creditcard.py	/^        v = credit_card_number(generator, discoverPrefixList, 16, 1)$/;"	kind:variable	line:165
+v	../creditcard.py	/^        v = credit_card_number(generator, visaPrefixList, 16, 1)$/;"	kind:variable	line:162
+valid_ascii	../brutexor.py	/^def valid_ascii(char):$/;"	kind:function	line:25
+value	../misc-registration/get_x.py	/^value = []$/;"	kind:variable	line:9
+verify	../baluhn/src/baluhn.py	/^def verify(string, base=10, decoder=decimal_decoder):$/;"	kind:function	line:54
+version	../baluhn/setup.py	/^    version='0.1',$/;"	kind:variable	line:5
+visa16	../creditcard.py	/^visa16 = credit_card_number(generator, visaPrefixList, 16, 10)$/;"	kind:variable	line:139
+visaPrefixList	../creditcard.py	/^visaPrefixList = [$/;"	kind:variable	line:17
+voyagerPrefixList	../creditcard.py	/^voyagerPrefixList = [['8', '6', '9', '9']]$/;"	kind:variable	line:47
+write	../pwn-zone/exploit-3.py	/^def write(content):$/;"	kind:function	line:18
+xor	../brutexor.py	/^def xor(data, key):$/;"	kind:function	line:31
+xor	../cipher.py	/^def xor(s1,s2):$/;"	kind:function	line:4
+xor	../encode.py	/^def xor(s1,s2):$/;"	kind:function	line:4
