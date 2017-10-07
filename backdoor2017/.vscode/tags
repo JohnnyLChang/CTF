@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+32.py	../32.py	1;"	kind:file	line:1
+BINSH	../justdoit/exploit.py	/^BINSH = LIBC_BASE + BINSH_OFFSET$/;"	kind:variable	line:34
+BINSH	../justdoit/solve2.py	/^BINSH = LIBCBASE + 0x15900b$/;"	kind:variable	line:31
+BINSH_OFFSET	../justdoit/exploit.py	/^BINSH_OFFSET = 0x015900b$/;"	kind:variable	line:14
+LIBCBASE	../justdoit/solve2.py	/^LIBCBASE = PRINTF - libc.symbols['printf']$/;"	kind:variable	line:29
+LIBC_BASE	../justdoit/exploit.py	/^LIBC_BASE = READ_LIBC - READ_OFFSET$/;"	kind:variable	line:32
+MAIN	../justdoit/solve2.py	/^MAIN = 0x804847d  # You can get this from radare2 for example$/;"	kind:variable	line:14
+MAIN_ADDR	../justdoit/exploit.py	/^MAIN_ADDR = 0x0804847d$/;"	kind:variable	line:10
+PRINTF	../justdoit/solve2.py	/^PRINTF = u32(r.recv(0x4))$/;"	kind:variable	line:28
+PRINTFGOT	../justdoit/solve2.py	/^PRINTFGOT = binary.got['printf']$/;"	kind:variable	line:13
+READ_GOT	../justdoit/exploit.py	/^READ_GOT = 0x0804a00c$/;"	kind:variable	line:8
+READ_LIBC	../justdoit/exploit.py	/^READ_LIBC = u32(p.recv(4))$/;"	kind:variable	line:31
+READ_OFFSET	../justdoit/exploit.py	/^READ_OFFSET = 0x000d4350$/;"	kind:variable	line:12
+SYSTEM	../justdoit/exploit.py	/^SYSTEM = LIBC_BASE + SYSTEM_OFFSET$/;"	kind:variable	line:33
+SYSTEM	../justdoit/solve2.py	/^SYSTEM = LIBCBASE + libc.symbols['system']$/;"	kind:variable	line:30
+SYSTEM_OFFSET	../justdoit/exploit.py	/^SYSTEM_OFFSET = 0x0003a940$/;"	kind:variable	line:13
+URL	../wall.py	/^URL = 'http:\/\/163.172.176.29\/WALL\/index.php'$/;"	kind:variable	line:4
+WRITEPLT	../justdoit/solve2.py	/^WRITEPLT = binary.plt['write']$/;"	kind:variable	line:12
+WRITE_PLT	../justdoit/exploit.py	/^WRITE_PLT = 0x08048370$/;"	kind:variable	line:9
+arg	../noclam/exp_angr.py	/^    arg = claripy.BVS("input_string" + str(i), 8)$/;"	kind:variable	line:18
+argv	../noclam/exp_angr.py	/^argv = []$/;"	kind:variable	line:16
+attack	../32.py	/^def attack(pl):$/;"	kind:function	line:17
+attack	../justdoit/solve.py	/^def attack(pl):$/;"	kind:function	line:28
+avoid	../noclam/exp_angr.py	/^avoid = [fail]$/;"	kind:variable	line:13
+binaddr	../justdoit/solve.py	/^binaddr = next(elf.search('\/bin\/sh'))$/;"	kind:variable	line:6
+binary	../justdoit/solve2.py	/^binary = ELF('.\/justdoit')$/;"	kind:variable	line:10
+bruteforce	../justdoit/solve.py	/^def bruteforce():$/;"	kind:function	line:47
+elf	../32.py	/^elf = ELF('32_new')$/;"	kind:variable	line:5
+elf	../justdoit/solve.py	/^elf = ELF('libc.so.6')$/;"	kind:variable	line:4
+end	../noclam/exp_angr.py	/^end = [success]$/;"	kind:variable	line:14
+exec_fmt	../32.py	/^def exec_fmt(pl):$/;"	kind:function	line:8
+exit_got	../32.py	/^exit_got = elf.symbols['got.exit']$/;"	kind:variable	line:49
+exp_angr.py	../noclam/exp_angr.py	1;"	kind:file	line:1
+exploit.py	../justdoit/exploit.py	1;"	kind:file	line:1
+fail	../noclam/exp_angr.py	/^fail = 0x004007CC$/;"	kind:variable	line:9
+flag	../32.py	/^flag = 0x7be86c5$/;"	kind:variable	line:46
+flag	../32.py	/^flag = elf.symbols['_Z4flagv']$/;"	kind:variable	line:45
+flag	../noclam/exp_angr.py	/^        flag = ""$/;"	kind:variable	line:39
+flag	../noclam/solve.py	/^flag = ""$/;"	kind:variable	line:18
+flag	../wall.py	/^            flag = True$/;"	kind:variable	line:15
+flag	../wall.py	/^    flag = False$/;"	kind:variable	line:9
+getConn	../justdoit/solve2.py	/^def getConn():$/;"	kind:function	line:5
+leakaddr	../justdoit/solve.py	/^def leakaddr(pl):$/;"	kind:function	line:14
+libc	../justdoit/solve.py	/^libc = libcaddr()$/;"	kind:variable	line:58
+libc	../justdoit/solve2.py	/^libc = ELF('libc.so.6')$/;"	kind:variable	line:11
+libcaddr	../justdoit/solve.py	/^def libcaddr():$/;"	kind:function	line:42
+libcmainoff	../justdoit/solve.py	/^libcmainoff = 0x18637$/;"	kind:variable	line:11
+local	../justdoit/solve2.py	/^local = True$/;"	kind:variable	line:2
+p	../justdoit/exploit.py	/^p = process('.\/justdoit')$/;"	kind:variable	line:5
+padding	../justdoit/solve2.py	/^padding = 'aaaa' * 28$/;"	kind:variable	line:9
+password	../wall.py	/^password = ''$/;"	kind:variable	line:6
+payload	../32.py	/^payload = FormatString(remote_atk, elf=elf, index=10, pad=0,$/;"	kind:variable	line:57
+payload	../justdoit/exploit.py	/^payload = "A" * 104$/;"	kind:variable	line:40
+payload	../justdoit/exploit.py	/^payload = "A" * 112$/;"	kind:variable	line:23
+pg	../noclam/exp_angr.py	/^pg = proj.factory.path_group(state, veritesting=False)$/;"	kind:variable	line:24
+poprdi	../justdoit/solve.py	/^poprdi = 0x000177db$/;"	kind:variable	line:10
+printf_plt	../32.py	/^printf_plt = elf.symbols['got.printf']$/;"	kind:variable	line:51
+proj	../noclam/exp_angr.py	/^proj = angr.Project('challenge', load_options={'auto_load_libs': False})$/;"	kind:variable	line:7
+r	../justdoit/solve2.py	/^r = getConn()$/;"	kind:variable	line:21
+r	../wall.py	/^        r = requests.post(URL, data={"life":"' or password like '{}{}%' --".format(password, e), "soul":""})$/;"	kind:variable	line:11
+remote_atk	../32.py	/^def remote_atk(pl):$/;"	kind:function	line:29
+ropchain	../justdoit/solve2.py	/^ropchain = ''$/;"	kind:variable	line:15
+ropchain2	../justdoit/solve2.py	/^ropchain2 = p32(SYSTEM)  # WRITE function "call"$/;"	kind:variable	line:36
+solve.py	../justdoit/solve.py	1;"	kind:file	line:1
+solve.py	../noclam/solve.py	1;"	kind:file	line:1
+solve2.py	../justdoit/solve2.py	1;"	kind:file	line:1
+start	../noclam/exp_angr.py	/^start = 0x004007E2$/;"	kind:variable	line:12
+start_time	../noclam/exp_angr.py	/^start_time = time.time()$/;"	kind:variable	line:26
+state	../noclam/exp_angr.py	/^        state = pg.found[0].state$/;"	kind:variable	line:37
+state	../noclam/exp_angr.py	/^state = proj.factory.entry_state(args=argv, remove_options={$/;"	kind:variable	line:21
+success	../noclam/exp_angr.py	/^success = 0x004007B6$/;"	kind:variable	line:10
+systemaddr	../justdoit/solve.py	/^systemaddr = elf.symbols['system']$/;"	kind:variable	line:8
+v	../noclam/solve.py	/^v = [81, 53, 87,$/;"	kind:variable	line:1
+w	../noclam/solve.py	/^w = [0] * 31$/;"	kind:variable	line:12
+wall.py	../wall.py	1;"	kind:file	line:1
