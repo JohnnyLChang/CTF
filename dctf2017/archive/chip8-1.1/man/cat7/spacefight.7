@@ -1,0 +1,750 @@
+spacefight(7)							 spacefight(7)
+
+
+
+NNAAMMEE
+       space fight - space invaders clone
+
+SSYYNNOOPPSSIISS
+       cchhiipp88rruunn	ssppaacceeffiigghhtt
+
+DDEESSCCRRIIPPTTIIOONN
+       Ok,  here's  a little Super-Chip	game for all you mad S-Chip-freaks out
+       there!
+
+   PPUURRPPOOSSEE
+       The purpose of the game is.... _t_o _w_i_n (say what?)
+
+       In order	to complete this quite difficult task your body	(yes only your
+       body  and not your mind (this remark shows that I believe that the body
+       merely serves as	a tool for the brain)) have  been  warped  through  87
+       different  time-warps  due  to  some foolish scientists who didn't know
+       what they were doing.  This resulted in a rather	big waste of resources
+       but  that's of course another story.  When you finally arrive you can't
+       recognize anything and two weird-looking	dudes tell you	that  this  is
+       the year	2091!!!	 Frightening eh?
+
+       You  are	 of  course not	very happy about your situation	partly because
+       you only	have 25	dollars	in your	wallet and the	prizes	have  gone  up
+       about 30000% but	mainly because IBM and the fucking PC clones have com-
+       pletely taken over all of  the  computer-market	resulting  in  CHIP8's
+       death!
+
+       In  a  Holo-BiDirectional-FullDuplex-TV-store  you see a	newsflash con-
+       cerning some evil aliens	about to invade	the good  ol'  EARTH.	Scien-
+       tists think that	they are being drawn towards the Earth due to the mas-
+       sive pollution the PC's cause.  However if people  had  bought  CHIP8's
+       instead (which don't pollute) they would	have been no aliens now!
+
+       This  is	your call!  You	sneak into a Warp-Transporter without a	ticket
+       and you end up at NASA where you	get to talk to the boss	and  you  tell
+       him:  "OK you listen to me you scumbag!	I wanna	get into a spacecraft,
+       get up there and	KICK SOME ALIEN	BUTT!".	 "But  why?"  the  boss	 says.
+       "Personal  motives"  you	answer.	 If you	can save the CHIP8's existence
+       you're ready to do anything!
+
+       You get the newest spacecraft (CHIP8) and you take off!
+
+       Battle you way through the 6 (increasingly harder) levels!
+
+   TThhee DDiissppllaayy
+       box  at	(1.5875,0.7875)	 wid  3.2  ht  1.6  thickness  0.225  box   at
+       (0.05,1.575)  wid  0.025	ht 0.025 fill 1	box at (0.075,1.575) wid 0.025
+       ht 0.025	fill 1 box at (0.1,1.575) wid 0.025 ht 0.025  fill  1  box  at
+       (0.2,1.575) wid 0.025 ht	0.025 fill 1 box at (0.225,1.575) wid 0.025 ht
+       0.025 fill 1 box	at (0.25,1.575)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.35,1.575)  wid  0.025	ht 0.025 fill 1	box at (0.375,1.575) wid 0.025
+       ht 0.025	fill 1 box at (0.4,1.575) wid 0.025 ht 0.025  fill  1  box  at
+       (0.5,1.575) wid 0.025 ht	0.025 fill 1 box at (0.525,1.575) wid 0.025 ht
+       0.025 fill 1 box	at (0.55,1.575)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.7,1.575) wid 0.025 ht	0.025 fill 1 box at (0.725,1.575) wid 0.025 ht
+       0.025 fill 1 box	at (0.75,1.575)	wid 0.025  ht  0.025  fill  1  box  at
+       (2.525,1.575)  wid  0.025 ht 0.025 fill 1 box at	(2.55,1.575) wid 0.025
+       ht 0.025	fill 1 box at (2.675,1.575) wid	0.025 ht 0.025 fill 1  box  at
+       (2.7,1.575)  wid	0.025 ht 0.025 fill 1 box at (2.75,1.575) wid 0.025 ht
+       0.025 fill 1 box	at (2.775,1.575) wid 0.025 ht  0.025  fill  1  box  at
+       (2.85,1.575)  wid  0.025	ht 0.025 fill 1	box at (2.875,1.575) wid 0.025
+       ht 0.025	fill 1 box at (2.975,1.575) wid	0.025 ht 0.025 fill 1  box  at
+       (3,1.575)  wid  0.025 ht	0.025 fill 1 box at (3.025,1.575) wid 0.025 ht
+       0.025 fill 1 box	at (3.125,1.575) wid 0.025 ht  0.025  fill  1  box  at
+       (3.15,1.575)  wid  0.025	ht 0.025 fill 1	box at (3.175,1.575) wid 0.025
+       ht 0.025	fill 1 box at (0.025,1.55) wid 0.025 ht	0.025 fill  1  box  at
+       (0.05,1.55)  wid	0.025 ht 0.025 fill 1 box at (0.075,1.55) wid 0.025 ht
+       0.025 fill 1 box	at (0.1,1.55)  wid  0.025  ht  0.025  fill  1  box  at
+       (0.175,1.55)  wid  0.025	ht 0.025 fill 1	box at (0.2,1.55) wid 0.025 ht
+       0.025 fill 1 box	at (0.225,1.55)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.25,1.55)  wid	0.025 ht 0.025 fill 1 box at (0.325,1.55) wid 0.025 ht
+       0.025 fill 1 box	at (0.35,1.55) wid  0.025  ht  0.025  fill  1  box  at
+       (0.375,1.55)  wid  0.025	ht 0.025 fill 1	box at (0.4,1.55) wid 0.025 ht
+       0.025 fill 1 box	at (0.425,1.55)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.475,1.55)  wid  0.025	ht 0.025 fill 1	box at (0.5,1.55) wid 0.025 ht
+       0.025 fill 1 box	at (0.525,1.55)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.55,1.55)  wid	0.025 ht 0.025 fill 1 box at (0.575,1.55) wid 0.025 ht
+       0.025 fill 1 box	at (0.675,1.55)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.7,1.55)  wid	0.025 ht 0.025 fill 1 box at (0.725,1.55) wid 0.025 ht
+       0.025 fill 1 box	at (0.75,1.55) wid  0.025  ht  0.025  fill  1  box  at
+       (2,1.55)	wid 0.025 ht 0.025 fill	1 box at (2.2,1.55) wid	0.025 ht 0.025
+       fill 1 box at (2.4,1.55)	wid 0.025 ht 0.025 fill	1 box at  (2.525,1.55)
+       wid  0.025 ht 0.025 fill	1 box at (2.55,1.55) wid 0.025 ht 0.025	fill 1
+       box at (2.675,1.55) wid 0.025 ht	0.025 fill 1  box  at  (2.7,1.55)  wid
+       0.025  ht 0.025 fill 1 box at (2.75,1.55) wid 0.025 ht 0.025 fill 1 box
+       at (2.775,1.55) wid 0.025 ht 0.025 fill 1 box at	(2.85,1.55) wid	 0.025
+       ht  0.025  fill	1 box at (2.875,1.55) wid 0.025	ht 0.025 fill 1	box at
+       (2.95,1.55) wid 0.025 ht	0.025 fill 1 box at (2.975,1.55) wid 0.025  ht
+       0.025  fill  1  box  at	(3,1.55)  wid  0.025  ht  0.025	 fill 1	box at
+       (3.025,1.55) wid	0.025 ht 0.025 fill 1 box at (3.1,1.55)	wid  0.025  ht
+       0.025  fill  1  box  at	(3.125,1.55)  wid 0.025	ht 0.025 fill 1	box at
+       (3.15,1.55) wid 0.025 ht	0.025 fill 1 box at (3.175,1.55) wid 0.025  ht
+       0.025  fill  1  box  at	(0,1.525)  wid	0.025  ht  0.025 fill 1	box at
+       (0.025,1.525) wid 0.025 ht 0.025	fill 1 box at (0.15,1.525)  wid	 0.025
+       ht  0.025  fill 1 box at	(0.175,1.525) wid 0.025	ht 0.025 fill 1	box at
+       (0.2,1.525) wid 0.025 ht	0.025 fill 1 box at (0.3,1.525)	wid  0.025  ht
+       0.025  fill  1  box  at	(0.325,1.525) wid 0.025	ht 0.025 fill 1	box at
+       (0.35,1.525) wid	0.025 ht 0.025 fill 1 box at (0.4,1.525) wid 0.025  ht
+       0.025  fill  1  box  at	(0.425,1.525) wid 0.025	ht 0.025 fill 1	box at
+       (0.475,1.525) wid 0.025 ht 0.025	fill 1 box at (0.5,1.525) wid 0.025 ht
+       0.025  fill  1  box  at	(0.55,1.525)  wid 0.025	ht 0.025 fill 1	box at
+       (0.575,1.525) wid 0.025 ht 0.025	fill 1 box at (0.6,1.525) wid 0.025 ht
+       0.025  fill  1  box  at	(0.65,1.525)  wid 0.025	ht 0.025 fill 1	box at
+       (0.675,1.525) wid 0.025 ht 0.025	fill 1 box at (0.7,1.525) wid 0.025 ht
+       0.025  fill  1  box  at	(2,1.525)  wid	0.025  ht  0.025 fill 1	box at
+       (2.2,1.525) wid 0.025 ht	0.025 fill 1 box at (2.4,1.525)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.525,1.525) wid 0.025	ht 0.025 fill 1	box at
+       (2.55,1.525) wid	0.025 ht 0.025 fill 1 box at (2.675,1.525)  wid	 0.025
+       ht  0.025  fill	1  box at (2.7,1.525) wid 0.025	ht 0.025 fill 1	box at
+       (2.75,1.525) wid	0.025 ht 0.025 fill 1 box at (2.775,1.525)  wid	 0.025
+       ht  0.025  fill	1 box at (2.85,1.525) wid 0.025	ht 0.025 fill 1	box at
+       (2.875,1.525) wid 0.025 ht 0.025	fill 1 box at (2.925,1.525) wid	 0.025
+       ht  0.025  fill	1 box at (2.95,1.525) wid 0.025	ht 0.025 fill 1	box at
+       (2.975,1.525) wid 0.025 ht 0.025	fill 1 box at (3.075,1.525) wid	 0.025
+       ht  0.025  fill	1  box at (3.1,1.525) wid 0.025	ht 0.025 fill 1	box at
+       (0,1.5) wid 0.025 ht 0.025 fill 1 box at	(0.025,1.5) wid	0.025 ht 0.025
+       fill  1	box at (0.05,1.5) wid 0.025 ht 0.025 fill 1 box	at (0.075,1.5)
+       wid 0.025 ht 0.025 fill 1 box at	(0.15,1.5) wid 0.025 ht	0.025  fill  1
+       box at (0.175,1.5) wid 0.025 ht 0.025 fill 1 box	at (0.3,1.5) wid 0.025
+       ht 0.025	fill 1 box at (0.325,1.5) wid 0.025 ht 0.025  fill  1  box  at
+       (0.4,1.5)  wid  0.025  ht  0.025	fill 1 box at (0.425,1.5) wid 0.025 ht
+       0.025 fill 1 box	at (0.475,1.5) wid  0.025  ht  0.025  fill  1  box  at
+       (0.5,1.5)  wid  0.025  ht  0.025	fill 1 box at (0.575,1.5) wid 0.025 ht
+       0.025 fill 1 box	at  (0.6,1.5)  wid  0.025  ht  0.025  fill  1  box  at
+       (0.65,1.5)  wid	0.025  ht 0.025	fill 1 box at (0.675,1.5) wid 0.025 ht
+       0.025 fill 1 box	at (0.85,1.5)  wid  0.025  ht  0.025  fill  1  box  at
+       (0.875,1.5)  wid	 0.025	ht  0.025 fill 1 box at	(0.9,1.5) wid 0.025 ht
+       0.025 fill 1 box	at (0.925,1.5) wid  0.025  ht  0.025  fill  1  box  at
+       (0.975,1.5) wid 0.025 ht	0.025 fill 1 box at (1,1.5) wid	0.025 ht 0.025
+       fill 1 box at (1.025,1.5) wid 0.025 ht 0.025 fill 1 box	at  (1.05,1.5)
+       wid  0.025  ht  0.025 fill 1 box	at (1.1,1.5) wid 0.025 ht 0.025	fill 1
+       box at (1.125,1.5) wid 0.025 ht 0.025 fill  1  box  at  (1.15,1.5)  wid
+       0.025  ht 0.025 fill 1 box at (1.175,1.5) wid 0.025 ht 0.025 fill 1 box
+       at (2,1.5) wid 0.025 ht 0.025 fill 1 box	 at  (2.2,1.5)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.4,1.5)  wid	0.025  ht  0.025 fill 1	box at
+       (2.525,1.5) wid 0.025 ht	0.025 fill 1 box at (2.55,1.5)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.675,1.5)  wid  0.025	ht 0.025 fill 1	box at
+       (2.7,1.5) wid 0.025 ht 0.025 fill 1 box	at  (2.75,1.5)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.775,1.5)  wid  0.025	ht 0.025 fill 1	box at
+       (2.85,1.5) wid 0.025 ht 0.025 fill 1 box	at (2.875,1.5)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.925,1.5)  wid  0.025	ht 0.025 fill 1	box at
+       (2.95,1.5) wid 0.025 ht 0.025 fill 1 box	at (3.075,1.5)	wid  0.025  ht
+       0.025  fill  1  box  at	(3.1,1.5)  wid	0.025  ht  0.025 fill 1	box at
+       (3.125,1.5) wid 0.025 ht	0.025 fill 1 box at (3.15,1.5)	wid  0.025  ht
+       0.025  fill  1  box  at	(0.025,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (0.05,1.475) wid	0.025 ht 0.025 fill 1 box at (0.075,1.475)  wid	 0.025
+       ht  0.025  fill	1  box at (0.1,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (0.15,1.475) wid	0.025 ht 0.025 fill 1 box at (0.175,1.475)  wid	 0.025
+       ht  0.025  fill	1  box at (0.3,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (0.325,1.475) wid 0.025 ht 0.025	fill 1 box at (0.4,1.475) wid 0.025 ht
+       0.025  fill  1  box  at	(0.425,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (0.475,1.475) wid 0.025 ht 0.025	fill 1 box at (0.5,1.475) wid 0.025 ht
+       0.025  fill  1  box  at	(0.525,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (0.55,1.475) wid	0.025 ht 0.025 fill 1 box at (0.575,1.475)  wid	 0.025
+       ht  0.025  fill	1  box at (0.6,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (0.65,1.475) wid	0.025 ht 0.025 fill 1 box at (0.675,1.475)  wid	 0.025
+       ht  0.025  fill	1  box at (0.7,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (0.725,1.475) wid 0.025 ht 0.025	fill 1 box at (0.85,1.475)  wid	 0.025
+       ht  0.025  fill 1 box at	(0.925,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (0.975,1.475) wid 0.025 ht 0.025	fill 1 box at (1.05,1.475)  wid	 0.025
+       ht  0.025  fill	1  box at (1.1,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (1.175,1.475) wid 0.025 ht 0.025	fill 1 box at (1.975,1.475) wid	 0.025
+       ht  0.025  fill 1 box at	(2.025,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (2.175,1.475) wid 0.025 ht 0.025	fill 1 box at (2.225,1.475) wid	 0.025
+       ht  0.025  fill 1 box at	(2.375,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (2.425,1.475) wid 0.025 ht 0.025	fill 1 box at (2.525,1.475) wid	 0.025
+       ht  0.025  fill	1 box at (2.55,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (2.675,1.475) wid 0.025 ht 0.025	fill 1 box at (2.7,1.475) wid 0.025 ht
+       0.025  fill  1  box  at	(2.75,1.475)  wid 0.025	ht 0.025 fill 1	box at
+       (2.775,1.475) wid 0.025 ht 0.025	fill 1 box at (2.85,1.475)  wid	 0.025
+       ht  0.025  fill 1 box at	(2.875,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (2.925,1.475) wid 0.025 ht 0.025	fill 1 box at (2.95,1.475)  wid	 0.025
+       ht  0.025  fill 1 box at	(2.975,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (3,1.475) wid 0.025 ht 0.025 fill 1 box at  (3.1,1.475)	wid  0.025  ht
+       0.025  fill  1  box  at	(3.125,1.475) wid 0.025	ht 0.025 fill 1	box at
+       (3.15,1.475) wid	0.025 ht 0.025 fill 1 box at (3.175,1.475)  wid	 0.025
+       ht  0.025  fill	1 box at (0.075,1.45) wid 0.025	ht 0.025 fill 1	box at
+       (0.1,1.45) wid 0.025 ht 0.025 fill 1 box	at (0.15,1.45)	wid  0.025  ht
+       0.025  fill  1  box  at	(0.175,1.45)  wid 0.025	ht 0.025 fill 1	box at
+       (0.3,1.45) wid 0.025 ht 0.025 fill 1 box	at (0.325,1.45)	wid  0.025  ht
+       0.025  fill  1  box  at	(0.4,1.45)  wid	 0.025	ht 0.025 fill 1	box at
+       (0.425,1.45) wid	0.025 ht 0.025 fill 1 box at (0.475,1.45) wid 0.025 ht
+       0.025  fill  1  box  at	(0.5,1.45)  wid	 0.025	ht 0.025 fill 1	box at
+       (0.525,1.45) wid	0.025 ht 0.025 fill 1 box at (0.55,1.45) wid 0.025  ht
+       0.025  fill  1  box  at	(0.575,1.45)  wid 0.025	ht 0.025 fill 1	box at
+       (0.65,1.45) wid 0.025 ht	0.025 fill 1 box at (0.675,1.45) wid 0.025  ht
+       0.025  fill  1  box  at	(0.85,1.45)  wid  0.025	ht 0.025 fill 1	box at
+       (0.925,1.45) wid	0.025 ht 0.025 fill 1 box at (0.975,1.45) wid 0.025 ht
+       0.025  fill  1  box  at	(1.05,1.45)  wid  0.025	ht 0.025 fill 1	box at
+       (1.1,1.45) wid 0.025 ht 0.025 fill 1 box	at (1.175,1.45)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.95,1.45)  wid  0.025	ht 0.025 fill 1	box at
+       (1.975,1.45) wid	0.025 ht 0.025 fill 1 box at  (2,1.45)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.025,1.45)  wid 0.025	ht 0.025 fill 1	box at
+       (2.05,1.45) wid 0.025 ht	0.025 fill 1 box at (2.15,1.45)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.175,1.45)  wid 0.025	ht 0.025 fill 1	box at
+       (2.2,1.45) wid 0.025 ht 0.025 fill 1 box	at (2.225,1.45)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.25,1.45)  wid  0.025	ht 0.025 fill 1	box at
+       (2.35,1.45) wid 0.025 ht	0.025 fill 1 box at (2.375,1.45) wid 0.025  ht
+       0.025  fill  1  box  at	(2.4,1.45)  wid	 0.025	ht 0.025 fill 1	box at
+       (2.425,1.45) wid	0.025 ht 0.025 fill 1 box at (2.45,1.45) wid 0.025  ht
+       0.025  fill  1  box  at	(2.525,1.45)  wid 0.025	ht 0.025 fill 1	box at
+       (2.55,1.45) wid 0.025 ht	0.025 fill 1 box at (2.575,1.45) wid 0.025  ht
+       0.025  fill  1  box  at	(2.675,1.45)  wid 0.025	ht 0.025 fill 1	box at
+       (2.7,1.45) wid 0.025 ht 0.025 fill 1 box	at (2.75,1.45)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.775,1.45)  wid 0.025	ht 0.025 fill 1	box at
+       (2.8,1.45) wid 0.025 ht 0.025 fill 1 box	at (2.825,1.45)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.85,1.45)  wid  0.025	ht 0.025 fill 1	box at
+       (2.875,1.45) wid	0.025 ht 0.025 fill 1 box at (2.925,1.45) wid 0.025 ht
+       0.025  fill  1  box  at	(2.95,1.45)  wid  0.025	ht 0.025 fill 1	box at
+       (3.15,1.45) wid 0.025 ht	0.025 fill 1 box at (3.175,1.45) wid 0.025  ht
+       0.025  fill  1  box  at	(0,1.425)  wid	0.025  ht  0.025 fill 1	box at
+       (0.025,1.425) wid 0.025 ht 0.025	fill 1 box at (0.05,1.425)  wid	 0.025
+       ht  0.025  fill 1 box at	(0.075,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (0.1,1.425) wid 0.025 ht	0.025 fill 1 box at (0.15,1.425) wid 0.025  ht
+       0.025  fill  1  box  at	(0.175,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (0.2,1.425) wid 0.025 ht	0.025 fill 1 box at (0.225,1.425) wid 0.025 ht
+       0.025  fill  1  box  at	(0.25,1.425)  wid 0.025	ht 0.025 fill 1	box at
+       (0.3,1.425) wid 0.025 ht	0.025 fill 1 box at (0.325,1.425) wid 0.025 ht
+       0.025  fill  1  box  at	(0.35,1.425)  wid 0.025	ht 0.025 fill 1	box at
+       (0.375,1.425) wid 0.025 ht 0.025	fill 1 box at (0.4,1.425) wid 0.025 ht
+       0.025  fill  1  box  at	(0.425,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (0.475,1.425) wid 0.025 ht 0.025	fill 1 box at (0.5,1.425) wid 0.025 ht
+       0.025  fill  1  box  at	(0.55,1.425)  wid 0.025	ht 0.025 fill 1	box at
+       (0.575,1.425) wid 0.025 ht 0.025	fill 1 box at (0.6,1.425) wid 0.025 ht
+       0.025  fill  1  box  at	(0.65,1.425)  wid 0.025	ht 0.025 fill 1	box at
+       (0.675,1.425) wid 0.025 ht 0.025	fill 1 box at (0.7,1.425) wid 0.025 ht
+       0.025  fill  1  box  at	(0.725,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (0.75,1.425) wid	0.025 ht 0.025 fill 1 box at (0.85,1.425) wid 0.025 ht
+       0.025  fill  1  box  at	(0.925,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (0.975,1.425) wid 0.025 ht 0.025	fill 1 box at (1.05,1.425)  wid	 0.025
+       ht  0.025  fill	1  box at (1.1,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (1.175,1.425) wid 0.025 ht 0.025	fill 1 box at (1.925,1.425) wid	 0.025
+       ht  0.025  fill	1 box at (1.95,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (2,1.425) wid 0.025 ht 0.025 fill 1 box at (2.05,1.425)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.075,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (2.125,1.425) wid 0.025 ht 0.025	fill 1 box at (2.15,1.425)  wid	 0.025
+       ht  0.025  fill	1  box at (2.2,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (2.25,1.425) wid	0.025 ht 0.025 fill 1 box at (2.275,1.425)  wid	 0.025
+       ht  0.025  fill 1 box at	(2.325,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (2.35,1.425) wid	0.025 ht 0.025 fill 1 box at (2.4,1.425) wid 0.025  ht
+       0.025  fill  1  box  at	(2.45,1.425)  wid 0.025	ht 0.025 fill 1	box at
+       (2.475,1.425) wid 0.025 ht 0.025	fill 1 box at (2.55,1.425)  wid	 0.025
+       ht  0.025  fill 1 box at	(2.575,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (2.6,1.425) wid 0.025 ht	0.025 fill 1 box at (2.625,1.425) wid 0.025 ht
+       0.025  fill  1  box  at	(2.675,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (2.7,1.425) wid 0.025 ht	0.025 fill 1 box at (2.775,1.425) wid 0.025 ht
+       0.025  fill  1  box  at	(2.8,1.425)  wid  0.025	ht 0.025 fill 1	box at
+       (2.825,1.425) wid 0.025 ht 0.025	fill 1 box at (2.85,1.425)  wid	 0.025
+       ht  0.025  fill 1 box at	(2.925,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (2.95,1.425) wid	0.025 ht 0.025 fill 1 box at (2.975,1.425)  wid	 0.025
+       ht  0.025  fill	1  box	at  (3,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (3.025,1.425) wid 0.025 ht 0.025	fill 1 box at (3.075,1.425) wid	 0.025
+       ht  0.025  fill	1  box at (3.1,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (3.125,1.425) wid 0.025 ht 0.025	fill 1 box at (3.15,1.425)  wid	 0.025
+       ht  0.025  fill 1 box at	(3.175,1.425) wid 0.025	ht 0.025 fill 1	box at
+       (0,1.4) wid 0.025 ht 0.025 fill 1 box at	(0.025,1.4) wid	0.025 ht 0.025
+       fill  1	box at (0.05,1.4) wid 0.025 ht 0.025 fill 1 box	at (0.075,1.4)
+       wid 0.025 ht 0.025 fill 1 box at	(0.175,1.4) wid	0.025 ht 0.025 fill  1
+       box at (0.2,1.4)	wid 0.025 ht 0.025 fill	1 box at (0.225,1.4) wid 0.025
+       ht 0.025	fill 1 box at (0.25,1.4) wid 0.025 ht  0.025  fill  1  box  at
+       (0.325,1.4)  wid	 0.025	ht 0.025 fill 1	box at (0.35,1.4) wid 0.025 ht
+       0.025 fill 1 box	at (0.375,1.4) wid  0.025  ht  0.025  fill  1  box  at
+       (0.4,1.4)  wid  0.025  ht  0.025	fill 1 box at (0.475,1.4) wid 0.025 ht
+       0.025 fill 1 box	at  (0.5,1.4)  wid  0.025  ht  0.025  fill  1  box  at
+       (0.575,1.4)  wid	 0.025	ht  0.025 fill 1 box at	(0.6,1.4) wid 0.025 ht
+       0.025 fill 1 box	at (0.675,1.4) wid  0.025  ht  0.025  fill  1  box  at
+       (0.7,1.4)  wid  0.025  ht  0.025	fill 1 box at (0.725,1.4) wid 0.025 ht
+       0.025 fill 1 box	at (0.75,1.4)  wid  0.025  ht  0.025  fill  1  box  at
+       (0.85,1.4)  wid	0.025  ht 0.025	fill 1 box at (0.875,1.4) wid 0.025 ht
+       0.025 fill 1 box	at  (0.9,1.4)  wid  0.025  ht  0.025  fill  1  box  at
+       (0.925,1.4)  wid	 0.025 ht 0.025	fill 1 box at (0.975,1.4) wid 0.025 ht
+       0.025 fill 1  box  at  (1,1.4)  wid  0.025  ht  0.025  fill  1  box  at
+       (1.025,1.4)  wid	 0.025	ht 0.025 fill 1	box at (1.05,1.4) wid 0.025 ht
+       0.025 fill 1 box	at  (1.1,1.4)  wid  0.025  ht  0.025  fill  1  box  at
+       (1.125,1.4)  wid	 0.025	ht 0.025 fill 1	box at (1.15,1.4) wid 0.025 ht
+       0.025 fill 1 box	at (1.175,1.4) wid  0.025  ht  0.025  fill  1  box  at
+       (1.925,1.4)  wid	 0.025	ht 0.025 fill 1	box at (1.95,1.4) wid 0.025 ht
+       0.025 fill 1 box	at (1.975,1.4) wid  0.025  ht  0.025  fill  1  box  at
+       (2,1.4) wid 0.025 ht 0.025 fill 1 box at	(2.025,1.4) wid	0.025 ht 0.025
+       fill 1 box at (2.05,1.4)	wid 0.025 ht 0.025 fill	1 box  at  (2.075,1.4)
+       wid  0.025 ht 0.025 fill	1 box at (2.125,1.4) wid 0.025 ht 0.025	fill 1
+       box at (2.15,1.4) wid 0.025 ht 0.025 fill  1  box  at  (2.175,1.4)  wid
+       0.025 ht	0.025 fill 1 box at (2.2,1.4) wid 0.025	ht 0.025 fill 1	box at
+       (2.225,1.4) wid 0.025 ht	0.025 fill 1 box at (2.25,1.4)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.275,1.4)  wid  0.025	ht 0.025 fill 1	box at
+       (2.325,1.4) wid 0.025 ht	0.025 fill 1 box at (2.35,1.4)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.375,1.4)  wid  0.025	ht 0.025 fill 1	box at
+       (2.4,1.4) wid 0.025 ht 0.025 fill 1 box at  (2.425,1.4)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.45,1.4)  wid	 0.025	ht 0.025 fill 1	box at
+       (2.475,1.4) wid 0.025 ht	0.025 fill 1 box at (2.575,1.4)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.6,1.4)  wid	0.025  ht  0.025 fill 1	box at
+       (2.625,1.4) wid 0.025 ht	0.025 fill 1 box at (2.675,1.4)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.7,1.4)  wid	0.025  ht  0.025 fill 1	box at
+       (2.8,1.4) wid 0.025 ht 0.025 fill 1 box at  (2.825,1.4)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.95,1.4)  wid	 0.025	ht 0.025 fill 1	box at
+       (2.975,1.4) wid 0.025 ht	0.025 fill 1 box at (3,1.4) wid	0.025 ht 0.025
+       fill  1 box at (3.025,1.4) wid 0.025 ht 0.025 fill 1 box	at (3.075,1.4)
+       wid 0.025 ht 0.025 fill 1 box at	(3.1,1.4) wid 0.025 ht	0.025  fill  1
+       box  at	(3.125,1.4)  wid  0.025	 ht 0.025 fill 1 box at	(3.15,1.4) wid
+       0.025 ht	0.025 fill 1 box at (0.1,1.325)	wid 0.025 ht 0.025 fill	1  box
+       at  (0.175,1.325)  wid  0.025  ht 0.025 fill 1 box at (0.225,1.325) wid
+       0.025 ht	0.025 fill 1 box at (0.25,1.325) wid 0.025 ht 0.025 fill 1 box
+       at (0.275,1.325)	wid 0.025 ht 0.025 fill	1 box at (0.3,1.325) wid 0.025
+       ht 0.025	fill 1 box at (0.325,1.325) wid	0.025 ht 0.025 fill 1  box  at
+       (0.375,1.325)  wid  0.025 ht 0.025 fill 1 box at	(0.45,1.325) wid 0.025
+       ht 0.025	fill 1 box at (0.55,1.325) wid 0.025 ht	0.025 fill  1  box  at
+       (0.625,1.325)  wid 0.025	ht 0.025 fill 1	box at (0.675,1.325) wid 0.025
+       ht 0.025	fill 1 box at (0.7,1.325) wid 0.025 ht 0.025  fill  1  box  at
+       (0.725,1.325)  wid  0.025 ht 0.025 fill 1 box at	(0.75,1.325) wid 0.025
+       ht 0.025	fill 1 box at (0.775,1.325) wid	0.025 ht 0.025 fill 1  box  at
+       (0.825,1.325) wid 0.025 ht 0.025	fill 1 box at (0.9,1.325) wid 0.025 ht
+       0.025 fill 1 box	at  (1,1.325)  wid  0.025  ht  0.025  fill  1  box  at
+       (1.075,1.325)  wid 0.025	ht 0.025 fill 1	box at (1.125,1.325) wid 0.025
+       ht 0.025	fill 1 box at (1.15,1.325) wid 0.025 ht	0.025 fill  1  box  at
+       (1.175,1.325) wid 0.025 ht 0.025	fill 1 box at (1.2,1.325) wid 0.025 ht
+       0.025 fill 1 box	at (1.225,1.325) wid 0.025 ht  0.025  fill  1  box  at
+       (1.275,1.325)  wid  0.025 ht 0.025 fill 1 box at	(1.35,1.325) wid 0.025
+       ht 0.025	fill 1 box at (1.45,1.325) wid 0.025 ht	0.025 fill  1  box  at
+       (1.525,1.325)  wid 0.025	ht 0.025 fill 1	box at (1.575,1.325) wid 0.025
+       ht 0.025	fill 1 box at (1.6,1.325) wid 0.025 ht 0.025  fill  1  box  at
+       (1.625,1.325)  wid  0.025 ht 0.025 fill 1 box at	(1.65,1.325) wid 0.025
+       ht 0.025	fill 1 box at (1.675,1.325) wid	0.025 ht 0.025 fill 1  box  at
+       (1.725,1.325) wid 0.025 ht 0.025	fill 1 box at (1.8,1.325) wid 0.025 ht
+       0.025 fill 1 box	at (1.9,1.325) wid  0.025  ht  0.025  fill  1  box  at
+       (1.975,1.325)  wid 0.025	ht 0.025 fill 1	box at (2.025,1.325) wid 0.025
+       ht 0.025	fill 1 box at (2.05,1.325) wid 0.025 ht	0.025 fill  1  box  at
+       (2.075,1.325) wid 0.025 ht 0.025	fill 1 box at (2.1,1.325) wid 0.025 ht
+       0.025 fill 1 box	at (2.125,1.325) wid 0.025 ht  0.025  fill  1  box  at
+       (2.175,1.325)  wid  0.025 ht 0.025 fill 1 box at	(2.25,1.325) wid 0.025
+       ht 0.025	fill 1 box at (0.25,1.3) wid 0.025 ht  0.025  fill  1  box  at
+       (0.275,1.3)  wid	 0.025	ht  0.025 fill 1 box at	(0.3,1.3) wid 0.025 ht
+       0.025 fill 1 box	at  (0.7,1.3)  wid  0.025  ht  0.025  fill  1  box  at
+       (0.725,1.3)  wid	 0.025	ht 0.025 fill 1	box at (0.75,1.3) wid 0.025 ht
+       0.025 fill 1 box	at (1.15,1.3)  wid  0.025  ht  0.025  fill  1  box  at
+       (1.175,1.3)  wid	 0.025	ht  0.025 fill 1 box at	(1.2,1.3) wid 0.025 ht
+       0.025 fill 1 box	at  (1.6,1.3)  wid  0.025  ht  0.025  fill  1  box  at
+       (1.625,1.3)  wid	 0.025	ht 0.025 fill 1	box at (1.65,1.3) wid 0.025 ht
+       0.025 fill 1 box	at (2.05,1.3)  wid  0.025  ht  0.025  fill  1  box  at
+       (2.075,1.3)  wid	 0.025	ht  0.025 fill 1 box at	(2.1,1.3) wid 0.025 ht
+       0.025 fill 1 box	at (0.275,1.275) wid 0.025 ht  0.025  fill  1  box  at
+       (0.725,1.275)  wid 0.025	ht 0.025 fill 1	box at (1.175,1.275) wid 0.025
+       ht 0.025	fill 1 box at (1.625,1.275) wid	0.025 ht 0.025 fill 1  box  at
+       (2.075,1.275)  wid 0.025	ht 0.025 fill 1	box at (0.2,1.25) wid 0.025 ht
+       0.025 fill 1 box	at (0.225,1.25)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.25,1.25)  wid	0.025 ht 0.025 fill 1 box at (0.275,1.25) wid 0.025 ht
+       0.025 fill 1 box	at (0.3,1.25)  wid  0.025  ht  0.025  fill  1  box  at
+       (0.325,1.25)  wid 0.025 ht 0.025	fill 1 box at (0.35,1.25) wid 0.025 ht
+       0.025 fill 1 box	at (0.65,1.25) wid  0.025  ht  0.025  fill  1  box  at
+       (0.675,1.25)  wid  0.025	ht 0.025 fill 1	box at (0.7,1.25) wid 0.025 ht
+       0.025 fill 1 box	at (0.725,1.25)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.75,1.25)  wid	0.025 ht 0.025 fill 1 box at (0.775,1.25) wid 0.025 ht
+       0.025 fill 1 box	at (0.8,1.25)  wid  0.025  ht  0.025  fill  1  box  at
+       (1.1,1.25)  wid	0.025 ht 0.025 fill 1 box at (1.125,1.25) wid 0.025 ht
+       0.025 fill 1 box	at (1.15,1.25) wid  0.025  ht  0.025  fill  1  box  at
+       (1.175,1.25)  wid  0.025	ht 0.025 fill 1	box at (1.2,1.25) wid 0.025 ht
+       0.025 fill 1 box	at (1.225,1.25)	wid 0.025  ht  0.025  fill  1  box  at
+       (1.25,1.25)  wid	 0.025 ht 0.025	fill 1 box at (1.55,1.25) wid 0.025 ht
+       0.025 fill 1 box	at (1.575,1.25)	wid 0.025  ht  0.025  fill  1  box  at
+       (1.6,1.25)  wid	0.025 ht 0.025 fill 1 box at (1.625,1.25) wid 0.025 ht
+       0.025 fill 1 box	at (1.65,1.25) wid  0.025  ht  0.025  fill  1  box  at
+       (1.675,1.25)  wid  0.025	ht 0.025 fill 1	box at (1.7,1.25) wid 0.025 ht
+       0.025 fill 1 box	 at  (2,1.25)  wid  0.025  ht  0.025  fill  1  box  at
+       (2.025,1.25)  wid 0.025 ht 0.025	fill 1 box at (2.05,1.25) wid 0.025 ht
+       0.025 fill 1 box	at (2.075,1.25)	wid 0.025  ht  0.025  fill  1  box  at
+       (2.1,1.25)  wid	0.025 ht 0.025 fill 1 box at (2.125,1.25) wid 0.025 ht
+       0.025 fill 1 box	at (2.15,1.25) wid  0.025  ht  0.025  fill  1  box  at
+       (0.15,1.225)  wid  0.025	ht 0.025 fill 1	box at (0.175,1.225) wid 0.025
+       ht 0.025	fill 1 box at (0.2,1.225) wid 0.025 ht 0.025  fill  1  box  at
+       (0.225,1.225)  wid  0.025 ht 0.025 fill 1 box at	(0.25,1.225) wid 0.025
+       ht 0.025	fill 1 box at (0.275,1.225) wid	0.025 ht 0.025 fill 1  box  at
+       (0.3,1.225) wid 0.025 ht	0.025 fill 1 box at (0.325,1.225) wid 0.025 ht
+       0.025 fill 1 box	at (0.35,1.225)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.375,1.225) wid 0.025 ht 0.025	fill 1 box at (0.4,1.225) wid 0.025 ht
+       0.025 fill 1 box	at (0.6,1.225) wid  0.025  ht  0.025  fill  1  box  at
+       (0.625,1.225)  wid  0.025 ht 0.025 fill 1 box at	(0.65,1.225) wid 0.025
+       ht 0.025	fill 1 box at (0.675,1.225) wid	0.025 ht 0.025 fill 1  box  at
+       (0.7,1.225) wid 0.025 ht	0.025 fill 1 box at (0.725,1.225) wid 0.025 ht
+       0.025 fill 1 box	at (0.75,1.225)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.775,1.225) wid 0.025 ht 0.025	fill 1 box at (0.8,1.225) wid 0.025 ht
+       0.025 fill 1 box	at (0.825,1.225) wid 0.025 ht  0.025  fill  1  box  at
+       (0.85,1.225) wid	0.025 ht 0.025 fill 1 box at (1.05,1.225) wid 0.025 ht
+       0.025 fill 1 box	at (1.075,1.225) wid 0.025 ht  0.025  fill  1  box  at
+       (1.1,1.225) wid 0.025 ht	0.025 fill 1 box at (1.125,1.225) wid 0.025 ht
+       0.025 fill 1 box	at (1.15,1.225)	wid 0.025  ht  0.025  fill  1  box  at
+       (1.175,1.225) wid 0.025 ht 0.025	fill 1 box at (1.2,1.225) wid 0.025 ht
+       0.025 fill 1 box	at (1.225,1.225) wid 0.025 ht  0.025  fill  1  box  at
+       (1.25,1.225)  wid  0.025	ht 0.025 fill 1	box at (1.275,1.225) wid 0.025
+       ht 0.025	fill 1 box at (1.3,1.225) wid 0.025 ht 0.025  fill  1  box  at
+       (1.5,1.225) wid 0.025 ht	0.025 fill 1 box at (1.525,1.225) wid 0.025 ht
+       0.025 fill 1 box	at (1.55,1.225)	wid 0.025  ht  0.025  fill  1  box  at
+       (1.575,1.225) wid 0.025 ht 0.025	fill 1 box at (1.6,1.225) wid 0.025 ht
+       0.025 fill 1 box	at (1.625,1.225) wid 0.025 ht  0.025  fill  1  box  at
+       (1.65,1.225)  wid  0.025	ht 0.025 fill 1	box at (1.675,1.225) wid 0.025
+       ht 0.025	fill 1 box at (1.7,1.225) wid 0.025 ht 0.025  fill  1  box  at
+       (1.725,1.225)  wid  0.025 ht 0.025 fill 1 box at	(1.75,1.225) wid 0.025
+       ht 0.025	fill 1 box at (1.95,1.225) wid 0.025 ht	0.025 fill  1  box  at
+       (1.975,1.225)  wid  0.025 ht 0.025 fill 1 box at	(2,1.225) wid 0.025 ht
+       0.025 fill 1 box	at (2.025,1.225) wid 0.025 ht  0.025  fill  1  box  at
+       (2.05,1.225)  wid  0.025	ht 0.025 fill 1	box at (2.075,1.225) wid 0.025
+       ht 0.025	fill 1 box at (2.1,1.225) wid 0.025 ht 0.025  fill  1  box  at
+       (2.125,1.225)  wid  0.025 ht 0.025 fill 1 box at	(2.15,1.225) wid 0.025
+       ht 0.025	fill 1 box at (2.175,1.225) wid	0.025 ht 0.025 fill 1  box  at
+       (2.2,1.225)  wid	 0.025 ht 0.025	fill 1 box at (0.125,1.2) wid 0.025 ht
+       0.025 fill 1 box	at (0.175,1.2) wid  0.025  ht  0.025  fill  1  box  at
+       (0.225,1.2)  wid	 0.025 ht 0.025	fill 1 box at (0.275,1.2) wid 0.025 ht
+       0.025 fill 1 box	at (0.325,1.2) wid  0.025  ht  0.025  fill  1  box  at
+       (0.375,1.2)  wid	 0.025 ht 0.025	fill 1 box at (0.425,1.2) wid 0.025 ht
+       0.025 fill 1 box	at (0.575,1.2) wid  0.025  ht  0.025  fill  1  box  at
+       (0.625,1.2)  wid	 0.025 ht 0.025	fill 1 box at (0.675,1.2) wid 0.025 ht
+       0.025 fill 1 box	at (0.725,1.2) wid  0.025  ht  0.025  fill  1  box  at
+       (0.775,1.2)  wid	 0.025 ht 0.025	fill 1 box at (0.825,1.2) wid 0.025 ht
+       0.025 fill 1 box	at (0.875,1.2) wid  0.025  ht  0.025  fill  1  box  at
+       (1.025,1.2)  wid	 0.025 ht 0.025	fill 1 box at (1.075,1.2) wid 0.025 ht
+       0.025 fill 1 box	at (1.125,1.2) wid  0.025  ht  0.025  fill  1  box  at
+       (1.175,1.2)  wid	 0.025 ht 0.025	fill 1 box at (1.225,1.2) wid 0.025 ht
+       0.025 fill 1 box	at (1.275,1.2) wid  0.025  ht  0.025  fill  1  box  at
+       (1.325,1.2)  wid	 0.025 ht 0.025	fill 1 box at (1.475,1.2) wid 0.025 ht
+       0.025 fill 1 box	at (1.525,1.2) wid  0.025  ht  0.025  fill  1  box  at
+       (1.575,1.2)  wid	 0.025 ht 0.025	fill 1 box at (1.625,1.2) wid 0.025 ht
+       0.025 fill 1 box	at (1.675,1.2) wid  0.025  ht  0.025  fill  1  box  at
+       (1.725,1.2)  wid	 0.025 ht 0.025	fill 1 box at (1.775,1.2) wid 0.025 ht
+       0.025 fill 1 box	at (1.925,1.2) wid  0.025  ht  0.025  fill  1  box  at
+       (1.975,1.2)  wid	 0.025 ht 0.025	fill 1 box at (2.025,1.2) wid 0.025 ht
+       0.025 fill 1 box	at (2.075,1.2) wid  0.025  ht  0.025  fill  1  box  at
+       (2.125,1.2)  wid	 0.025 ht 0.025	fill 1 box at (2.175,1.2) wid 0.025 ht
+       0.025 fill 1 box	at (2.225,1.2) wid  0.025  ht  0.025  fill  1  box  at
+       (0.1,1.175)  wid	0.025 ht 0.025 fill 1 box at (0.15,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (0.2,1.175) wid  0.025  ht  0.025  fill  1  box  at
+       (0.25,1.175)  wid  0.025	ht 0.025 fill 1	box at (0.275,1.175) wid 0.025
+       ht 0.025	fill 1 box at (0.3,1.175) wid 0.025 ht 0.025  fill  1  box  at
+       (0.35,1.175)  wid  0.025	ht 0.025 fill 1	box at (0.375,1.175) wid 0.025
+       ht 0.025	fill 1 box at (0.4,1.175) wid 0.025 ht 0.025  fill  1  box  at
+       (0.45,1.175) wid	0.025 ht 0.025 fill 1 box at (0.55,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (0.6,1.175) wid  0.025  ht  0.025  fill  1  box  at
+       (0.65,1.175)  wid 0.025 ht 0.025	fill 1 box at (0.7,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (0.725,1.175) wid 0.025 ht  0.025  fill  1  box  at
+       (0.75,1.175)  wid 0.025 ht 0.025	fill 1 box at (0.8,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (0.825,1.175) wid 0.025 ht  0.025  fill  1  box  at
+       (0.85,1.175)  wid 0.025 ht 0.025	fill 1 box at (0.9,1.175) wid 0.025 ht
+       0.025 fill 1 box	at  (1,1.175)  wid  0.025  ht  0.025  fill  1  box  at
+       (1.05,1.175)  wid 0.025 ht 0.025	fill 1 box at (1.1,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (1.15,1.175)	wid 0.025  ht  0.025  fill  1  box  at
+       (1.175,1.175) wid 0.025 ht 0.025	fill 1 box at (1.2,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (1.25,1.175)	wid 0.025  ht  0.025  fill  1  box  at
+       (1.275,1.175) wid 0.025 ht 0.025	fill 1 box at (1.3,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (1.35,1.175)	wid 0.025  ht  0.025  fill  1  box  at
+       (1.45,1.175)  wid 0.025 ht 0.025	fill 1 box at (1.5,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (1.55,1.175)	wid 0.025  ht  0.025  fill  1  box  at
+       (1.6,1.175) wid 0.025 ht	0.025 fill 1 box at (1.625,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (1.65,1.175)	wid 0.025  ht  0.025  fill  1  box  at
+       (1.7,1.175) wid 0.025 ht	0.025 fill 1 box at (1.725,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (1.75,1.175)	wid 0.025  ht  0.025  fill  1  box  at
+       (1.8,1.175)  wid	 0.025 ht 0.025	fill 1 box at (1.9,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (1.95,1.175)	wid 0.025  ht  0.025  fill  1  box  at
+       (2,1.175)  wid  0.025  ht 0.025 fill 1 box at (2.05,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (2.075,1.175) wid 0.025 ht  0.025  fill  1  box  at
+       (2.1,1.175)  wid	0.025 ht 0.025 fill 1 box at (2.15,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (2.175,1.175) wid 0.025 ht  0.025  fill  1  box  at
+       (2.2,1.175)  wid	0.025 ht 0.025 fill 1 box at (2.25,1.175) wid 0.025 ht
+       0.025 fill 1 box	at (0.1,1.15)  wid  0.025  ht  0.025  fill  1  box  at
+       (0.125,1.15)  wid 0.025 ht 0.025	fill 1 box at (0.15,1.15) wid 0.025 ht
+       0.025 fill 1 box	at (0.175,1.15)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.2,1.15)  wid	0.025 ht 0.025 fill 1 box at (0.225,1.15) wid 0.025 ht
+       0.025 fill 1 box	at (0.25,1.15) wid  0.025  ht  0.025  fill  1  box  at
+       (0.275,1.15) wid	0.025 ht 0.025 fill 1 box at (0.325,1.15) wid 0.025 ht
+       0.025 fill 1 box	at (0.35,1.15) wid  0.025  ht  0.025  fill  1  box  at
+       (0.4,1.15)  wid	0.025 ht 0.025 fill 1 box at (0.425,1.15) wid 0.025 ht
+       0.025 fill 1 box	at (0.45,1.15) wid  0.025  ht  0.025  fill  1  box  at
+       (0.55,1.15)  wid	0.025 ht 0.025 fill 1 box at (0.575,1.15) wid 0.025 ht
+       0.025 fill 1 box	at (0.6,1.15)  wid  0.025  ht  0.025  fill  1  box  at
+       (0.625,1.15)  wid 0.025 ht 0.025	fill 1 box at (0.65,1.15) wid 0.025 ht
+       0.025 fill 1 box	at (0.675,1.15)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.7,1.15)  wid	0.025 ht 0.025 fill 1 box at (0.725,1.15) wid 0.025 ht
+       0.025 fill 1 box	at (0.775,1.15)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.8,1.15)  wid	0.025  ht 0.025	fill 1 box at (0.85,1.15) wid 0.025 ht
+       0.025 fill 1 box	at (0.875,1.15)	wid 0.025  ht  0.025  fill  1  box  at
+       (0.9,1.15) wid 0.025 ht 0.025 fill 1 box	at (1,1.15) wid	0.025 ht 0.025
+       fill 1 box at (1.025,1.15) wid 0.025 ht 0.025 fill 1 box	at (1.05,1.15)
+       wid 0.025 ht 0.025 fill 1 box at	(1.075,1.15) wid 0.025 ht 0.025	fill 1
+       box at (1.1,1.15) wid 0.025 ht 0.025 fill 1  box	 at  (1.125,1.15)  wid
+       0.025  ht 0.025 fill 1 box at (1.15,1.15) wid 0.025 ht 0.025 fill 1 box
+       at (1.175,1.15) wid 0.025 ht 0.025 fill 1 box at	(1.225,1.15) wid 0.025
+       ht  0.025  fill	1  box at (1.25,1.15) wid 0.025	ht 0.025 fill 1	box at
+       (1.3,1.15) wid 0.025 ht 0.025 fill 1 box	at (1.325,1.15)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.35,1.15)  wid  0.025	ht 0.025 fill 1	box at
+       (1.45,1.15) wid 0.025 ht	0.025 fill 1 box at (1.475,1.15) wid 0.025  ht
+       0.025  fill  1  box  at	(1.5,1.15)  wid	 0.025	ht 0.025 fill 1	box at
+       (1.525,1.15) wid	0.025 ht 0.025 fill 1 box at (1.55,1.15) wid 0.025  ht
+       0.025  fill  1  box  at	(1.575,1.15)  wid 0.025	ht 0.025 fill 1	box at
+       (1.6,1.15) wid 0.025 ht 0.025 fill 1 box	at (1.625,1.15)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.675,1.15)  wid 0.025	ht 0.025 fill 1	box at
+       (1.7,1.15) wid 0.025 ht 0.025 fill 1 box	at (1.75,1.15)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.775,1.15)  wid 0.025	ht 0.025 fill 1	box at
+       (1.8,1.15) wid 0.025 ht 0.025 fill 1 box	at  (1.9,1.15)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.925,1.15)  wid 0.025	ht 0.025 fill 1	box at
+       (1.95,1.15) wid 0.025 ht	0.025 fill 1 box at (1.975,1.15) wid 0.025  ht
+       0.025  fill  1  box  at	(2,1.15)  wid  0.025  ht  0.025	 fill 1	box at
+       (2.025,1.15) wid	0.025 ht 0.025 fill 1 box at (2.05,1.15) wid 0.025  ht
+       0.025  fill  1  box  at	(2.075,1.15)  wid 0.025	ht 0.025 fill 1	box at
+       (2.125,1.15) wid	0.025 ht 0.025 fill 1 box at (2.15,1.15) wid 0.025  ht
+       0.025  fill  1  box  at	(2.2,1.15)  wid	 0.025	ht 0.025 fill 1	box at
+       (2.225,1.15) wid	0.025 ht 0.025 fill 1 box at (2.25,1.15) wid 0.025  ht
+       0.025  fill  1  box  at	(0.1,1.125)  wid  0.025	ht 0.025 fill 1	box at
+       (0.15,1.125) wid	0.025 ht 0.025 fill 1 box at (0.175,1.125)  wid	 0.025
+       ht  0.025  fill	1  box at (0.2,1.125) wid 0.025	ht 0.025 fill 1	box at
+       (0.25,1.125) wid	0.025 ht 0.025 fill 1 box at (0.3,1.125) wid 0.025  ht
+       0.025  fill  1  box  at	(0.35,1.125)  wid 0.025	ht 0.025 fill 1	box at
+       (0.375,1.125) wid 0.025 ht 0.025	fill 1 box at (0.4,1.125) wid 0.025 ht
+       0.025  fill  1  box  at	(0.45,1.125)  wid 0.025	ht 0.025 fill 1	box at
+       (0.55,1.125) wid	0.025 ht 0.025 fill 1 box at (0.6,1.125) wid 0.025  ht
+       0.025  fill  1  box  at	(0.625,1.125) wid 0.025	ht 0.025 fill 1	box at
+       (0.65,1.125) wid	0.025 ht 0.025 fill 1 box at (0.7,1.125) wid 0.025  ht
+       0.025  fill  1  box  at	(0.75,1.125)  wid 0.025	ht 0.025 fill 1	box at
+       (0.8,1.125) wid 0.025 ht	0.025 fill 1 box at (0.825,1.125) wid 0.025 ht
+       0.025  fill  1  box  at	(0.85,1.125)  wid 0.025	ht 0.025 fill 1	box at
+       (0.9,1.125) wid 0.025 ht	0.025 fill 1 box at  (1,1.125)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.05,1.125)  wid 0.025	ht 0.025 fill 1	box at
+       (1.075,1.125) wid 0.025 ht 0.025	fill 1 box at (1.1,1.125) wid 0.025 ht
+       0.025  fill  1  box  at	(1.15,1.125)  wid 0.025	ht 0.025 fill 1	box at
+       (1.2,1.125) wid 0.025 ht	0.025 fill 1 box at (1.25,1.125) wid 0.025  ht
+       0.025  fill  1  box  at	(1.275,1.125) wid 0.025	ht 0.025 fill 1	box at
+       (1.3,1.125) wid 0.025 ht	0.025 fill 1 box at (1.35,1.125) wid 0.025  ht
+       0.025  fill  1  box  at	(1.45,1.125)  wid 0.025	ht 0.025 fill 1	box at
+       (1.5,1.125) wid 0.025 ht	0.025 fill 1 box at (1.525,1.125) wid 0.025 ht
+       0.025  fill  1  box  at	(1.55,1.125)  wid 0.025	ht 0.025 fill 1	box at
+       (1.6,1.125) wid 0.025 ht	0.025 fill 1 box at (1.65,1.125) wid 0.025  ht
+       0.025  fill  1  box  at	(1.7,1.125)  wid  0.025	ht 0.025 fill 1	box at
+       (1.725,1.125) wid 0.025 ht 0.025	fill 1 box at (1.75,1.125)  wid	 0.025
+       ht  0.025  fill	1  box at (1.8,1.125) wid 0.025	ht 0.025 fill 1	box at
+       (1.9,1.125) wid 0.025 ht	0.025 fill 1 box at (1.95,1.125) wid 0.025  ht
+       0.025  fill  1  box  at	(1.975,1.125) wid 0.025	ht 0.025 fill 1	box at
+       (2,1.125) wid 0.025 ht 0.025 fill 1 box at (2.05,1.125)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.1,1.125)  wid  0.025	ht 0.025 fill 1	box at
+       (2.15,1.125) wid	0.025 ht 0.025 fill 1 box at (2.175,1.125)  wid	 0.025
+       ht  0.025  fill	1  box at (2.2,1.125) wid 0.025	ht 0.025 fill 1	box at
+       (2.25,1.125) wid	0.025 ht 0.025 fill 1 box at (0.125,1.1) wid 0.025  ht
+       0.025  fill  1  box  at	(0.175,1.1)  wid  0.025	ht 0.025 fill 1	box at
+       (0.225,1.1) wid 0.025 ht	0.025 fill 1 box at (0.275,1.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(0.325,1.1)  wid  0.025	ht 0.025 fill 1	box at
+       (0.375,1.1) wid 0.025 ht	0.025 fill 1 box at (0.425,1.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(0.575,1.1)  wid  0.025	ht 0.025 fill 1	box at
+       (0.625,1.1) wid 0.025 ht	0.025 fill 1 box at (0.675,1.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(0.725,1.1)  wid  0.025	ht 0.025 fill 1	box at
+       (0.775,1.1) wid 0.025 ht	0.025 fill 1 box at (0.825,1.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(0.875,1.1)  wid  0.025	ht 0.025 fill 1	box at
+       (1.025,1.1) wid 0.025 ht	0.025 fill 1 box at (1.075,1.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.125,1.1)  wid  0.025	ht 0.025 fill 1	box at
+       (1.175,1.1) wid 0.025 ht	0.025 fill 1 box at (1.225,1.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.275,1.1)  wid  0.025	ht 0.025 fill 1	box at
+       (1.325,1.1) wid 0.025 ht	0.025 fill 1 box at (1.475,1.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.525,1.1)  wid  0.025	ht 0.025 fill 1	box at
+       (1.575,1.1) wid 0.025 ht	0.025 fill 1 box at (1.625,1.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.675,1.1)  wid  0.025	ht 0.025 fill 1	box at
+       (1.725,1.1) wid 0.025 ht	0.025 fill 1 box at (1.775,1.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.925,1.1)  wid  0.025	ht 0.025 fill 1	box at
+       (1.975,1.1) wid 0.025 ht	0.025 fill 1 box at (2.025,1.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.075,1.1)  wid  0.025	ht 0.025 fill 1	box at
+       (2.125,1.1) wid 0.025 ht	0.025 fill 1 box at (2.175,1.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.225,1.1)  wid  0.025	ht 0.025 fill 1	box at
+       (0.15,1.075) wid	0.025 ht 0.025 fill 1 box at (0.175,1.075)  wid	 0.025
+       ht  0.025  fill	1  box at (0.2,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (0.225,1.075) wid 0.025 ht 0.025	fill 1 box at (0.25,1.075)  wid	 0.025
+       ht  0.025  fill 1 box at	(0.275,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (0.3,1.075) wid 0.025 ht	0.025 fill 1 box at (0.325,1.075) wid 0.025 ht
+       0.025  fill  1  box  at	(0.35,1.075)  wid 0.025	ht 0.025 fill 1	box at
+       (0.375,1.075) wid 0.025 ht 0.025	fill 1 box at (0.4,1.075) wid 0.025 ht
+       0.025  fill  1  box  at	(0.6,1.075)  wid  0.025	ht 0.025 fill 1	box at
+       (0.625,1.075) wid 0.025 ht 0.025	fill 1 box at (0.65,1.075)  wid	 0.025
+       ht  0.025  fill 1 box at	(0.675,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (0.7,1.075) wid 0.025 ht	0.025 fill 1 box at (0.725,1.075) wid 0.025 ht
+       0.025  fill  1  box  at	(0.75,1.075)  wid 0.025	ht 0.025 fill 1	box at
+       (0.775,1.075) wid 0.025 ht 0.025	fill 1 box at (0.8,1.075) wid 0.025 ht
+       0.025  fill  1  box  at	(0.825,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (0.85,1.075) wid	0.025 ht 0.025 fill 1 box at (1.05,1.075) wid 0.025 ht
+       0.025  fill  1  box  at	(1.075,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (1.1,1.075) wid 0.025 ht	0.025 fill 1 box at (1.125,1.075) wid 0.025 ht
+       0.025  fill  1  box  at	(1.15,1.075)  wid 0.025	ht 0.025 fill 1	box at
+       (1.175,1.075) wid 0.025 ht 0.025	fill 1 box at (1.2,1.075) wid 0.025 ht
+       0.025  fill  1  box  at	(1.225,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (1.25,1.075) wid	0.025 ht 0.025 fill 1 box at (1.275,1.075)  wid	 0.025
+       ht  0.025  fill	1  box at (1.3,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (1.5,1.075) wid 0.025 ht	0.025 fill 1 box at (1.525,1.075) wid 0.025 ht
+       0.025  fill  1  box  at	(1.55,1.075)  wid 0.025	ht 0.025 fill 1	box at
+       (1.575,1.075) wid 0.025 ht 0.025	fill 1 box at (1.6,1.075) wid 0.025 ht
+       0.025  fill  1  box  at	(1.625,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (1.65,1.075) wid	0.025 ht 0.025 fill 1 box at (1.675,1.075)  wid	 0.025
+       ht  0.025  fill	1  box at (1.7,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (1.725,1.075) wid 0.025 ht 0.025	fill 1 box at (1.75,1.075)  wid	 0.025
+       ht  0.025  fill	1 box at (1.95,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (1.975,1.075) wid 0.025 ht 0.025	fill 1 box at (2,1.075)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.025,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (2.05,1.075) wid	0.025 ht 0.025 fill 1 box at (2.075,1.075)  wid	 0.025
+       ht  0.025  fill	1  box at (2.1,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (2.125,1.075) wid 0.025 ht 0.025	fill 1 box at (2.15,1.075)  wid	 0.025
+       ht  0.025  fill 1 box at	(2.175,1.075) wid 0.025	ht 0.025 fill 1	box at
+       (2.2,1.075) wid 0.025 ht	0.025 fill 1 box at (0.125,1.05) wid 0.025  ht
+       0.025  fill  1  box  at	(0.2,1.05)  wid	 0.025	ht 0.025 fill 1	box at
+       (0.225,1.05) wid	0.025 ht 0.025 fill 1 box at (0.25,1.05) wid 0.025  ht
+       0.025  fill  1  box  at	(0.275,1.05)  wid 0.025	ht 0.025 fill 1	box at
+       (0.3,1.05) wid 0.025 ht 0.025 fill 1 box	at (0.325,1.05)	wid  0.025  ht
+       0.025  fill  1  box  at	(0.35,1.05)  wid  0.025	ht 0.025 fill 1	box at
+       (0.425,1.05) wid	0.025 ht 0.025 fill 1 box at (0.575,1.05) wid 0.025 ht
+       0.025  fill  1  box  at	(0.65,1.05)  wid  0.025	ht 0.025 fill 1	box at
+       (0.675,1.05) wid	0.025 ht 0.025 fill 1 box at (0.7,1.05)	wid  0.025  ht
+       0.025  fill  1  box  at	(0.725,1.05)  wid 0.025	ht 0.025 fill 1	box at
+       (0.75,1.05) wid 0.025 ht	0.025 fill 1 box at (0.775,1.05) wid 0.025  ht
+       0.025  fill  1  box  at	(0.8,1.05)  wid	 0.025	ht 0.025 fill 1	box at
+       (0.875,1.05) wid	0.025 ht 0.025 fill 1 box at (1.025,1.05) wid 0.025 ht
+       0.025  fill  1  box  at	(1.1,1.05)  wid	 0.025	ht 0.025 fill 1	box at
+       (1.125,1.05) wid	0.025 ht 0.025 fill 1 box at (1.15,1.05) wid 0.025  ht
+       0.025  fill  1  box  at	(1.175,1.05)  wid 0.025	ht 0.025 fill 1	box at
+       (1.2,1.05) wid 0.025 ht 0.025 fill 1 box	at (1.225,1.05)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.25,1.05)  wid  0.025	ht 0.025 fill 1	box at
+       (1.325,1.05) wid	0.025 ht 0.025 fill 1 box at (1.475,1.05) wid 0.025 ht
+       0.025  fill  1  box  at	(1.55,1.05)  wid  0.025	ht 0.025 fill 1	box at
+       (1.575,1.05) wid	0.025 ht 0.025 fill 1 box at (1.6,1.05)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.625,1.05)  wid 0.025	ht 0.025 fill 1	box at
+       (1.65,1.05) wid 0.025 ht	0.025 fill 1 box at (1.675,1.05) wid 0.025  ht
+       0.025  fill  1  box  at	(1.7,1.05)  wid	 0.025	ht 0.025 fill 1	box at
+       (1.775,1.05) wid	0.025 ht 0.025 fill 1 box at (1.925,1.05) wid 0.025 ht
+       0.025  fill  1  box  at	(2,1.05)  wid  0.025  ht  0.025	 fill 1	box at
+       (2.025,1.05) wid	0.025 ht 0.025 fill 1 box at (2.05,1.05) wid 0.025  ht
+       0.025  fill  1  box  at	(2.075,1.05)  wid 0.025	ht 0.025 fill 1	box at
+       (2.1,1.05) wid 0.025 ht 0.025 fill 1 box	at (2.125,1.05)	wid  0.025  ht
+       0.025  fill  1  box  at	(2.15,1.05)  wid  0.025	ht 0.025 fill 1	box at
+       (2.225,1.05) wid	0.025 ht 0.025 fill 1 box  at  (0.1,1)	wid  0.025  ht
+       0.025  fill 1 box at (0.45,1) wid 0.025 ht 0.025	fill 1 box at (0.55,1)
+       wid 0.025 ht 0.025 fill 1 box at	(0.9,1)	wid 0.025 ht 0.025 fill	1  box
+       at  (1,1)  wid 0.025 ht 0.025 fill 1 box	at (1.35,1) wid	0.025 ht 0.025
+       fill 1 box at (1.45,1) wid 0.025	ht 0.025 fill 1	 box  at  (1.8,1)  wid
+       0.025  ht  0.025	fill 1 box at (1.9,1) wid 0.025	ht 0.025 fill 1	box at
+       (2.25,1)	wid 0.025 ht 0.025 fill	1 box at  (1.175,0.75)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.175,0.725) wid 0.025	ht 0.025 fill 1	box at
+       (1.175,0.7) wid 0.025 ht	0.025 fill 1 box at (1.575,0.35) wid 0.025  ht
+       0.025  fill  1  box  at	(1.575,0.325) wid 0.025	ht 0.025 fill 1	box at
+       (1.575,0.3) wid 0.025 ht	0.025 fill 1 box at (1.575,0.275) wid 0.025 ht
+       0.025  fill  1  box  at	(1.575,0.25)  wid 0.025	ht 0.025 fill 1	box at
+       (1.55,0.225) wid	0.025 ht 0.025 fill 1 box at (1.575,0.225)  wid	 0.025
+       ht  0.025  fill	1  box at (1.6,0.225) wid 0.025	ht 0.025 fill 1	box at
+       (1.55,0.2) wid 0.025 ht 0.025 fill 1 box	at (1.575,0.2)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.6,0.2)  wid	0.025  ht  0.025 fill 1	box at
+       (1.55,0.175) wid	0.025 ht 0.025 fill 1 box at (1.575,0.175)  wid	 0.025
+       ht  0.025  fill	1  box at (1.6,0.175) wid 0.025	ht 0.025 fill 1	box at
+       (1.525,0.15) wid	0.025 ht 0.025 fill 1 box at (1.55,0.15) wid 0.025  ht
+       0.025  fill  1  box  at	(1.575,0.15)  wid 0.025	ht 0.025 fill 1	box at
+       (1.6,0.15) wid 0.025 ht 0.025 fill 1 box	at (1.625,0.15)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.4,0.125)  wid  0.025	ht 0.025 fill 1	box at
+       (1.425,0.125) wid 0.025 ht 0.025	fill 1 box at (1.525,0.125) wid	 0.025
+       ht  0.025  fill	1 box at (1.55,0.125) wid 0.025	ht 0.025 fill 1	box at
+       (1.6,0.125) wid 0.025 ht	0.025 fill 1 box at (1.625,0.125) wid 0.025 ht
+       0.025  fill  1  box  at	(1.725,0.125) wid 0.025	ht 0.025 fill 1	box at
+       (1.75,0.125) wid	0.025 ht 0.025 fill 1 box at (1.425,0.1) wid 0.025  ht
+       0.025  fill  1  box  at	(1.45,0.1)  wid	 0.025	ht 0.025 fill 1	box at
+       (1.475,0.1) wid 0.025 ht	0.025 fill 1 box at  (1.5,0.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.525,0.1)  wid  0.025	ht 0.025 fill 1	box at
+       (1.575,0.1) wid 0.025 ht	0.025 fill 1 box at (1.625,0.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.65,0.1)  wid	 0.025	ht 0.025 fill 1	box at
+       (1.675,0.1) wid 0.025 ht	0.025 fill 1 box at  (1.7,0.1)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.725,0.1)  wid  0.025	ht 0.025 fill 1	box at
+       (1.45,0.075) wid	0.025 ht 0.025 fill 1 box at (1.475,0.075)  wid	 0.025
+       ht  0.025  fill	1  box at (1.5,0.075) wid 0.025	ht 0.025 fill 1	box at
+       (1.525,0.075) wid 0.025 ht 0.025	fill 1 box at (1.55,0.075)  wid	 0.025
+       ht  0.025  fill 1 box at	(1.575,0.075) wid 0.025	ht 0.025 fill 1	box at
+       (1.6,0.075) wid 0.025 ht	0.025 fill 1 box at (1.625,0.075) wid 0.025 ht
+       0.025  fill  1  box  at	(1.65,0.075)  wid 0.025	ht 0.025 fill 1	box at
+       (1.675,0.075) wid 0.025 ht 0.025	fill 1 box at (1.7,0.075) wid 0.025 ht
+       0.025  fill  1  box  at	(1.425,0.05)  wid 0.025	ht 0.025 fill 1	box at
+       (1.45,0.05) wid 0.025 ht	0.025 fill 1 box at (1.475,0.05) wid 0.025  ht
+       0.025  fill  1  box  at	(1.5,0.05)  wid	 0.025	ht 0.025 fill 1	box at
+       (1.525,0.05) wid	0.025 ht 0.025 fill 1 box at (1.55,0.05) wid 0.025  ht
+       0.025  fill  1  box  at	(1.575,0.05)  wid 0.025	ht 0.025 fill 1	box at
+       (1.6,0.05) wid 0.025 ht 0.025 fill 1 box	at (1.625,0.05)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.65,0.05)  wid  0.025	ht 0.025 fill 1	box at
+       (1.675,0.05) wid	0.025 ht 0.025 fill 1 box at (1.7,0.05)	wid  0.025  ht
+       0.025  fill  1  box  at	(1.725,0.05)  wid 0.025	ht 0.025 fill 1	box at
+       (1.4,0.025) wid 0.025 ht	0.025 fill 1 box at (1.425,0.025) wid 0.025 ht
+       0.025  fill  1  box  at	(1.55,0.025)  wid 0.025	ht 0.025 fill 1	box at
+       (1.575,0.025) wid 0.025 ht 0.025	fill 1 box at (1.6,0.025) wid 0.025 ht
+       0.025  fill  1  box  at	(1.725,0.025) wid 0.025	ht 0.025 fill 1	box at
+       (1.75,0.025) wid	0.025 ht 0.025 fill 1 box at (1.575,0)	wid  0.025  ht
+       0.025 fill 1
+
+   TThhee KKeeyyss
+		       boxwid  = 0.3 boxht
+		       =   0.3	 B1:   box	    3:	 left
+		       "1"		     fill   A:	 fire
+		       0.1  B2:	 box   "2"	    C:	 right
+		       with	 .w	at
+		       B1.e+(0.05,0) fill
+		       0.1   B3:  box  "3"
+		       with	.w	at
+		       B2.e+(0.05,0)   BC:
+		       box "C" with .w	at
+		       B3.e+(0.05,0)   B4:
+		       box "4" with .n	at
+		       B1.s-(0,0.05)   fill
+		       0.1  B5:	 box   "5"
+		       with	 .w	at
+		       B4.e+(0.05,0) fill
+		       0.1   B6:  box  "6"
+		       with	.w	at
+		       B5.e+(0.05,0) fill
+		       0.1  BD:	 box   "D"
+		       with	 .w	at
+		       B6.e+(0.05,0) fill
+		       0.1   B7:  box  "7"
+		       with	.n	at
+		       B4.s-(0,0.05) fill
+		       0.1  B8:	 box   "8"
+		       with	 .w	at
+		       B7.e+(0.05,0) fill
+		       0.1   B9:  box  "9"
+		       with	.w	at
+		       B8.e+(0.05,0) fill
+		       0.1  BE:	 box   "E"
+		       with	 .w	at
+		       B9.e+(0.05,0) fill
+		       0.1   BA:  box  "A"
+		       with	.n	at
+		       B7.s-(0,0.05)   B0:
+		       box "0" with .w	at
+		       BA.e+(0.05,0)   fill
+		       0.1  BB:	 box   "B"
+		       with	 .w	at
+		       B0.e+(0.05,0) fill
+		       0.1   BF:  box  "F"
+		       with	.w	at
+		       BB.e+(0.05,0) fill
+		       0.1
+
+CCOOPPYYRRIIGGHHTT
+       spacefight version 1.0
+       Copyright (C) 1992 Carsten Soerensen
+
+AAUUTTHHOORR
+       Carsten Soerensen <u920659@daimi.aau.dk>
+
+       Carsten Soerensen
+       Kronhjortevej 4
+       DK-8270	Hoejbjerg
+       Denmark
+
+
+
+Reference Manual		     Chip8			 spacefight(7)

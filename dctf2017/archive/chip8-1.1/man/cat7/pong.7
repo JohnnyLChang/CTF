@@ -1,0 +1,104 @@
+pong(7)								       pong(7)
+
+
+
+NNAAMMEE
+       pong - the original video game
+
+SSYYNNOOPPSSIISS
+       cchhiipp88rruunn	ppoonngg
+
+DDEESSCCRRIIPPTTIIOONN
+       OK folks	here it	is!  Pong for the Chip8.
+
+       The game	never ends.  It	keeps score, but only up to 9 for each player,
+       then it will roll over to 0.  Sorry, it's the only way I	could think of
+       to  do  it.   So,  you  have  to	play ``whoever gets to a number	first,
+       wins.''
+
+       It is kind of slow, but then there are  two  paddles  and  ball	moving
+       around all at once.
+
+       The player who got the last point gets the serve...
+
+   TThhee DDiissppllaayy
+       box  with .sw at	(0,0) wid 3.2 ht 1.6 thickness 0.45 box	invis with .sw
+       at (1.35,1.55) wid 0.2 ht 0.05 fill 1 box invis with .sw	at  (1.4,1.55)
+       wid  0.15  ht  0.05 fill	1 box invis with .sw at	(1.45,1.55) wid	0.1 ht
+       0.05 fill 1 box invis with .sw at (1.5,1.55) wid	0.05 ht	 0.05  fill  1
+       box invis with .sw at (1.7,1.55)	wid 0.05 ht 0.05 fill 1	box invis with
+       .sw at (1.35,1.5) wid 0.05 ht  0.05  fill  1  box  invis	 with  .sw  at
+       (1.5,1.5)  wid 0.05 ht 0.05 fill	1 box invis with .sw at	(1.65,1.5) wid
+       0.1 ht 0.05 fill	1 box invis with .sw at	(1.7,1.5)  wid	0.05  ht  0.05
+       fill  1	box  invis with	.sw at (1.35,1.45) wid 0.05 ht 0.05 fill 1 box
+       invis with .sw at (1.5,1.45) wid	0.05 ht	0.05 fill 1 box	invis with .sw
+       at  (1.7,1.45) wid 0.05 ht 0.05 fill 1 box invis	with .sw at (1.35,1.4)
+       wid 0.05	ht 0.05	fill 1 box invis with .sw at  (1.5,1.4)	 wid  0.05  ht
+       0.05 fill 1 box invis with .sw at (1.7,1.4) wid 0.05 ht 0.05 fill 1 box
+       invis with .sw at (1.35,1.35) wid 0.2 ht	0.05 fill 1 box	invis with .sw
+       at (1.4,1.35) wid 0.15 ht 0.05 fill 1 box invis with .sw	at (1.45,1.35)
+       wid 0.1 ht 0.05 fill 1 box invis	with .sw at  (1.5,1.35)	 wid  0.05  ht
+       0.05  fill  1 box invis with .sw	at (1.65,1.35) wid 0.15	ht 0.05	fill 1
+       box invis with .sw at (1.7,1.35)	wid 0.1	ht 0.05	fill 1 box invis  with
+       .sw  at	(1.75,1.35)  wid  0.05	ht  0.05  fill 1 box invis with	.sw at
+       (0,0.5) wid 0.05	ht 0.3 fill 1 box invis	with .sw  at  (3.15,0.55)  wid
+       0.05  ht	 0.3  fill 1 box invis with .sw	at (1.05,0.1) wid 0.05 ht 0.05
+       fill 1
+
+   TThhee KKeeyyss
+		 boxwid	= 0.3  boxht
+		 =  0.3	 B1: box "1"	 1:   move left	paddle up
+		 B2: box "2" with .w	 4:   move left	paddle down
+		 at
+		 B1.e+(0.05,0)	  fill	 C:   move right paddle	up
+		 0.1   B3:  box	 "3"	 D:   move right paddle	down
+		 with	  .w	  at
+		 B2.e+(0.05,0) fill
+		 0.1  BC:  box	 "C"
+		 with	   .w	  at
+		 B3.e+(0.05,0)	 B4:
+		 box  "4" with .n at
+		 B1.s-(0,0.05)	 B5:
+		 box  "5" with .w at
+		 B4.e+(0.05,0)	 fill
+		 0.1   B6:  box	 "6"
+		 with	  .w	  at
+		 B5.e+(0.05,0) fill
+		 0.1  BD:  box	 "D"
+		 with	   .w	  at
+		 B6.e+(0.05,0)	 B7:
+		 box  "7" with .n at
+		 B4.s-(0,0.05)	 fill
+		 0.1   B8:  box	 "8"
+		 with	  .w	  at
+		 B7.e+(0.05,0) fill
+		 0.1  B9:  box	 "9"
+		 with	   .w	  at
+		 B8.e+(0.05,0) fill
+		 0.1   BE:  box	 "E"
+		 with	  .w	  at
+		 B9.e+(0.05,0) fill
+		 0.1  BA:  box	 "A"
+		 with	   .n	  at
+		 B7.s-(0,0.05) fill
+		 0.1   B0:  box	 "0"
+		 with	  .w	  at
+		 BA.e+(0.05,0) fill
+		 0.1  BB:  box	 "B"
+		 with	   .w	  at
+		 B0.e+(0.05,0) fill
+		 0.1   BF:  box	 "F"
+		 with	  .w	  at
+		 BB.e+(0.05,0) fill
+		 0.1
+
+CCOOPPYYRRIIGGHHTT
+       Pong version 1.0
+       Copyright (C) 1990 Paul Vervalin
+
+AAUUTTHHOORR
+       Paul Vervalin <vervalin@austin.lockheed.com>
+
+
+
+Reference Manual		     Chip8			       pong(7)

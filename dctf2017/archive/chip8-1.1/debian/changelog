@@ -1,0 +1,611 @@
+chip8 (1.1.D094-1) unstable; urgency=low
+
+  * This change set turns on all of the checks that aede-policy(1) can do.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 18 Sep 2012 13:25:24 +1000
+
+chip8 (1.1.D093-1) unstable; urgency=low
+
+  * The build system now groks how to build etc/debian-description.so, needed by
+    the web site.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 18 Sep 2012 10:32:41 +1000
+
+chip8 (1.1.D092-1) unstable; urgency=low
+
+  * This change et gives the web site a quick spruce-up.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 18 Sep 2012 10:23:33 +1000
+
+chip8 (1.1.D091-1) unstable; urgency=low
+
+  * This change set ads sharutils (uudecode) to the build dependencies.	 My
+    thanks to the LaunchPad PPA build farm for finding this problem.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 18 Sep 2012 08:45:51 +1000
+
+chip8 (1.1.D090-1) unstable; urgency=low
+
+  * This change set fixes a path bug in the ppa-upload script.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 18 Sep 2012 07:40:15 +1000
+
+chip8 (1.1.D089-1) unstable; urgency=low
+
+  * This change set adds the PPA upload script.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 18 Sep 2012 07:33:15 +1000
+
+chip8 (1.1.D088-1) unstable; urgency=low
+
+  * This change set makes the XX macro conditional, silencing a Lintian warning.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 18 Sep 2012 07:26:08 +1000
+
+chip8 (1.1.D087-1) unstable; urgency=low
+
+  * This change set moves the redundant license file to a filename that
+    aemakegen will elide when a Debina package is built.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Mon, 17 Sep 2012 19:21:27 +1000
+
+chip8 (1.1.D086-1) unstable; urgency=low
+
+  * This change set fixes the last of the problems making the Debian package.
+    We now build it most of the time.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Mon, 17 Sep 2012 00:28:57 +1000
+
+chip8 (1.1.D085-1) unstable; urgency=low
+
+  * This change set fixes a regression in the assembler page title lines. This
+    was introduced when sprintf was phased out.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 23:46:11 +1000
+
+chip8 (1.1.D084-1) unstable; urgency=low
+
+  * This change set improves the ways tests are run, to remove any and all
+    dependenc of X11.  Not only does this result in less window manager
+    flickering, it is essential for running automated tests inside Debian
+    package build farms.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 23:04:54 +1000
+
+chip8 (1.1.D083-1) unstable; urgency=low
+
+  * This change set updates the method of running tests, to use a modern method,
+    rather than the 1990s-era test methods.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 17:17:11 +1000
+
+chip8 (1.1.D082-1) unstable; urgency=low
+
+  * This change set switches to using libexplain for all malloc operations.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 16:38:20 +1000
+
+chip8 (1.1.D081-1) unstable; urgency=low
+
+  * This change set switches to using libexplain for all malloc operations, for
+    chip8run.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 16:34:22 +1000
+
+chip8 (1.1.D080-1) unstable; urgency=low
+
+  * This change set switches to using libexplain for all malloc operations, for
+    word lists.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 16:31:01 +1000
+
+chip8 (1.1.D079-1) unstable; urgency=low
+
+  * This change set switches to using libexplain for all malloc operations, for
+    the input classes.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 16:27:11 +1000
+
+chip8 (1.1.D078-1) unstable; urgency=low
+
+  * This change set fixes the string table to be O(1) acess.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 16:23:37 +1000
+
+chip8 (1.1.D077-1) unstable; urgency=low
+
+  * This change set fixes a couple of glitches found in the move from game/ =>
+    datadir/
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 16:20:40 +1000
+
+chip8 (1.1.D076-1) unstable; urgency=low
+
+  * This change set changes to using libexplain for all access to the name of
+    the program.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 13:47:36 +1000
+
+chip8 (1.1.D075-1) unstable; urgency=low
+
+  * This change set fixes some of the trace(()) function prototypes, they needed
+    DEBUG to be checked by the compiler.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 13:29:38 +1000
+
+chip8 (1.1.D074-1) unstable; urgency=low
+
+  * This change set switches to using libexplain for all error reporting.  Low
+    hanging fruit, this time.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 13:10:43 +1000
+
+chip8 (1.1.D073-1) unstable; urgency=low
+
+  * This change set moves the game sources into datadir, so that aemakegen finds
+    them automagically.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 12:26:02 +1000
+
+chip8 (1.1.D072-1) unstable; urgency=low
+
+  * This change set is the first of several working towards having a Debian
+    package for the project.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 12:11:19 +1000
+
+chip8 (1.1.D071-1) unstable; urgency=low
+
+  * This change set adds tags to the build system, for source code navifation.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 11:47:08 +1000
+
+chip8 (1.1.D070-1) unstable; urgency=low
+
+  * This change set replaces all sprintf references with snprintf.  There is no
+    safe way to use sprintf(3).
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 02:19:24 +1000
+
+chip8 (1.1.D069-1) unstable; urgency=low
+
+  * This change set turns on the gcc -Wwrite-string warning, and hen fixes all
+    the problems so found.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 01:49:38 +1000
+
+chip8 (1.1.D068-1) unstable; urgency=low
+
+  * This change set turns on the gcc -Wextra option, and fixes all the problems
+    so found.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 00:38:50 +1000
+
+chip8 (1.1.D067-1) unstable; urgency=low
+
+  * This change set gets rid of the last of the K&R insulation.	 An Ansi C
+    cmpiler is now required.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 16 Sep 2012 00:25:26 +1000
+
+chip8 (1.1.D066-1) unstable; urgency=low
+
+  * This change set replaces all K&R function defintions with Ansi C funcvtion
+    defintions.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 23:54:27 +1000
+
+chip8 (1.1.D065-1) unstable; urgency=low
+
+  * This change set updates the web site addresses for the author and the
+    project.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 21:55:04 +1000
+
+chip8 (1.1.D064-1) unstable; urgency=low
+
+  * This change set fixes the email address of the author.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 21:51:11 +1000
+
+chip8 (1.1.D063-1) unstable; urgency=low
+
+  * This change set replaces the existing shell script with aemakegen for
+    producing the RPM .spec file.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 21:33:15 +1000
+
+chip8 (1.1.D062-1) unstable; urgency=low
+
+  * This change set switches over to using aemakegen to produce the Makefile.in
+    file that goes into the tarball.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 19:54:08 +1000
+
+chip8 (1.1.D061-1) unstable; urgency=low
+
+  * This change set updates the way -I options are used, making them all
+    relative to the project root, rathet then one directory down.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 18:50:06 +1000
+
+chip8 (1.1.D060-1) unstable; urgency=low
+
+  * This change set shortens lines in excess of 80 characters.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 18:19:17 +1000
+
+chip8 (1.1.D059-1) unstable; urgency=low
+
+  * This change set fixes unquoted hyphens in the man pages. Not strictly
+    necessary, but it is prep for Debian package.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 18:15:46 +1000
+
+chip8 (1.1.D058-1) unstable; urgency=low
+
+  * This change set remove invisable trailing white space from source code
+    lines.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 17:11:17 +1000
+
+chip8 (1.1.D057-1) unstable; urgency=low
+
+  * This change set makes minor improvements to the web site.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 17:04:17 +1000
+
+chip8 (1.1.D056-1) unstable; urgency=low
+
+  * This change set removes all refernces to the MANIFESTfile, it is an 1990s
+    comp.sources.unix anachronism.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 16:47:32 +1000
+
+chip8 (1.1.D055-1) unstable; urgency=low
+
+  * This change set fixes references to the FSF's address in the file headers.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 16:38:55 +1000
+
+chip8 (1.1.D054-1) unstable; urgency=low
+
+  * This change set fixes a couple of build problems on a modern system.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 15 Sep 2012 16:19:54 +1000
+
+chip8 (1.1.D053-1) unstable; urgency=low
+
+  * This change updates the FSF address in the GPL file headers.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 07 Aug 1999 15:03:10 +1000
+
+chip8 (1.1.D052-1) unstable; urgency=low
+
+  * This change adds the 15puzzle game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 20 Mar 1999 21:43:26 +1100
+
+chip8 (1.1.D051-1) unstable; urgency=low
+
+  * This change adds the vbrix game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Fri, 19 Mar 1999 23:04:53 +1100
+
+chip8 (1.1.D050-1) unstable; urgency=low
+
+  * This change adds code to warn of ambiguous i-register behaviour.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Fri, 19 Mar 1999 22:00:36 +1100
+
+chip8 (1.1.D049-1) unstable; urgency=low
+
+  * This change adds the tank game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 25 Aug 1998 17:23:57 +1000
+
+chip8 (1.1.D048-1) unstable; urgency=low
+
+  * This change adds the vers game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Fri, 21 Aug 1998 17:25:02 +1000
+
+chip8 (1.1.D047-1) unstable; urgency=low
+
+  * This change adds the tictac game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Fri, 21 Aug 1998 16:40:29 +1000
+
+chip8 (1.1.D046-1) unstable; urgency=low
+
+  * This change adds the space fight game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Wed, 08 Jul 1998 22:29:12 +1000
+
+chip8 (1.1.D045-1) unstable; urgency=low
+
+  * This change adds the worm3 game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 07 Jul 1998 22:04:07 +1000
+
+chip8 (1.1.D044-1) unstable; urgency=low
+
+  * This change works over the build system to take advantage of the new
+    features available in cook, the build tool.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 07 Jul 1998 21:52:15 +1000
+
+chip8 (1.1.D043-1) unstable; urgency=low
+
+  * This change adds links to other Chip 8 interset sites.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 05 Jul 1998 22:39:13 +1000
+
+chip8 (1.1.D042-1) unstable; urgency=low
+
+  * This change adds the race game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 05 Jul 1998 18:45:21 +1000
+
+chip8 (1.1.D041-1) unstable; urgency=low
+
+  * This change adds the merlin game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 05 Jul 1998 17:47:42 +1000
+
+chip8 (1.1.D040-1) unstable; urgency=low
+
+  * This change adds the maze game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 05 Jul 1998 17:08:51 +1000
+
+chip8 (1.1.D039-1) unstable; urgency=low
+
+  * This change adds the kaleid game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 05 Jul 1998 16:17:41 +1000
+
+chip8 (1.1.D038-1) unstable; urgency=low
+
+  * This change adds H.Piper documentation
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 05 Jul 1998 15:17:50 +1000
+
+chip8 (1.1.D037-1) unstable; urgency=low
+
+  * This change adds the syzygy game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 05 Jul 1998 15:09:23 +1000
+
+chip8 (1.1.D036-1) unstable; urgency=low
+
+  * This change adds the missile game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 04 Jul 1998 14:42:13 +1000
+
+chip8 (1.1.D035-1) unstable; urgency=low
+
+  * This change adds the Invaders game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 04 Jul 1998 00:05:50 +1000
+
+chip8 (1.1.D034-1) unstable; urgency=low
+
+  * This change fixes a bug in assembling opcodes with very large numbers of
+    arguments.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Fri, 03 Jul 1998 23:37:47 +1000
+
+chip8 (1.1.D033-1) unstable; urgency=low
+
+  * This change adds the hidden game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Fri, 03 Jul 1998 22:21:05 +1000
+
+chip8 (1.1.D032-1) unstable; urgency=low
+
+  * This change adds functionality to cause chip8run to look in the library
+    directory for games.  The --file option must be given to load from an
+    explicit file.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Fri, 03 Jul 1998 22:05:44 +1000
+
+chip8 (1.1.D031-1) unstable; urgency=low
+
+  * This change adds the guess game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Fri, 03 Jul 1998 14:42:06 +1000
+
+chip8 (1.1.D030-1) unstable; urgency=low
+
+  * This change adds the field game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Fri, 03 Jul 1998 13:09:17 +1000
+
+chip8 (1.1.D029-1) unstable; urgency=low
+
+  * This change adds the connect4 game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Thu, 02 Jul 1998 21:59:22 +1000
+
+chip8 (1.1.D028-1) unstable; urgency=low
+
+  * This change adds the car game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Thu, 02 Jul 1998 20:17:54 +1000
+
+chip8 (1.1.D027-1) unstable; urgency=low
+
+  * This change adds the blitz game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Thu, 07 May 1998 22:56:56 +1000
+
+chip8 (1.1.D026-1) unstable; urgency=low
+
+  * This change adds the ant game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Thu, 07 May 1998 22:48:39 +1000
+
+chip8 (1.1.D025-1) unstable; urgency=low
+
+  * This change adds the alien game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Thu, 07 May 1998 17:19:50 +1000
+
+chip8 (1.1.D024-1) unstable; urgency=low
+
+  * This change adds the blinky game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Wed, 06 May 1998 16:59:18 +1000
+
+chip8 (1.1.D023-1) unstable; urgency=low
+
+  * This change implements the conditional assembly pseudo opcodes.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Wed, 06 May 1998 13:41:33 +1000
+
+chip8 (1.1.D022-1) unstable; urgency=low
+
+  * This change adds the hpiper game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 05 May 1998 22:59:48 +1000
+
+chip8 (1.1.D021-1) unstable; urgency=low
+
+  * This change adds the uboat game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 05 May 1998 22:31:39 +1000
+
+chip8 (1.1.D020-1) unstable; urgency=low
+
+  * This change adds the Joust game.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 05 May 1998 22:02:43 +1000
+
+chip8 (1.1.D019-1) unstable; urgency=low
+
+  * This change documents some of the games in the distribution.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 05 May 1998 21:41:17 +1000
+
+chip8 (1.1.D018-1) unstable; urgency=low
+
+  * none
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 28 Apr 1998 22:23:22 +1000
+
+chip8 (1.1.D017-1) unstable; urgency=low
+
+  * This change adds still more chipper opcodes.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 25 Apr 1998 21:47:18 +1000
+
+chip8 (1.1.D016-1) unstable; urgency=low
+
+  * none
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 25 Apr 1998 00:24:23 +1000
+
+chip8 (1.1.D015-1) unstable; urgency=low
+
+  * This change enhances chip8as to understand more odf the Chipper opcodes.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Wed, 22 Apr 1998 23:18:43 +1000
+
+chip8 (1.1.D014-1) unstable; urgency=low
+
+  * This change adds the exit schip opcode, now that I've seen Andreas
+    Gustafson's documentation.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Wed, 22 Apr 1998 15:50:20 +1000
+
+chip8 (1.1.D013-1) unstable; urgency=low
+
+  * This change adds the asc file format for input and output, and factors the
+    input of both chip8dis and chip8run into common functions.	The input
+    formats now detect more errors, and can be used in more complex ways.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Wed, 22 Apr 1998 14:29:41 +1000
+
+chip8 (1.1.D012-1) unstable; urgency=low
+
+  * This change addsa a reference manual, combining all the man pages, plus some
+    explanatory blurb.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Fri, 17 Apr 1998 09:59:11 +1000
+
+chip8 (1.1.D011-1) unstable; urgency=low
+
+  * This change adds the contents of the BUILDING file.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Thu, 16 Apr 1998 23:21:53 +1000
+
+chip8 (1.1.D010-1) unstable; urgency=low
+
+  * This change adds the rest of the Super-Chip opcodes.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Thu, 16 Apr 1998 17:20:34 +1000
+
+chip8 (1.1.D009-1) unstable; urgency=low
+
+  * This change adds the ansi insulation.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Wed, 15 Apr 1998 12:35:36 +1000
+
+chip8 (1.1.D008-1) unstable; urgency=low
+
+  * This change adds the `low' and `high' opcodes from the new Super-Chip spec.
+    This also adds the burden of supporting and maintining the larger display
+    resolution.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Tue, 14 Apr 1998 07:19:47 +1000
+
+chip8 (1.1.D007-1) unstable; urgency=low
+
+  * This change adds new games from the net.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Mon, 13 Apr 1998 09:40:21 +1000
+
+chip8 (1.1.D006-1) unstable; urgency=low
+
+  * This fixes a bug when assembling dif opcodes.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 12 Apr 1998 23:16:22 +1000
+
+chip8 (1.1.D005-1) unstable; urgency=low
+
+  * This change constructs the archive set, for upload.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sun, 12 Apr 1998 00:12:12 +1000
+
+chip8 (1.1.D004-1) unstable; urgency=low
+
+  * This change improves the integration (mostly updating) of the -help options.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 11 Apr 1998 17:05:02 +1000
+
+chip8 (1.1.D003-1) unstable; urgency=low
+
+  * This change updates the author's address, and tightents up the man pages,
+    factoring a lot of common information into include files.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 11 Apr 1998 14:36:23 +1000
+
+chip8 (1.1.D002-1) unstable; urgency=low
+
+  * This change updates the GNU GPL to the most recent version.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 11 Apr 1998 10:43:01 +1000
+
+chip8 (1.1.D001-1) unstable; urgency=low
+
+  * This change updates the build system.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Sat, 11 Apr 1998 09:59:44 +1000
+
+chip8 (0~D001-1) unstable; urgency=low
+
+  * New release derived from chip8-old.
+
+ -- Peter Miller <pmiller@opensource.org.au>  Thu, 09 Apr 1998 22:50:08 +1000
+

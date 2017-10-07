@@ -1,0 +1,459 @@
+/*
+ * chip8 - video game interpreter
+ * Copyright (C) 1990, 1998, 2012 Peter Miller
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* the default recipe */
+if [not [defined all]] then
+    all = ;
+all += documentation;
+all: [all];
+
+/*
+ * Turn on updating to ensure mod-time
+ * consistency on fast machines.
+ */
+set time-adjust;
+
+/*
+ * make sure targets are removed before the recipe body is run,
+ * and make sure that directories are created then too.
+ */
+set unlink mkdir;
+
+/*
+ * You may want to change some of these options.
+ * ([debug] must be defined, even if empty, use comments.)
+ *
+ * Change ``main.h'' to add the DEBUG define.
+ * All files reference this file, so this will cause recompilation
+ * of all files, both in the change and in the baseline.
+ */
+debug = -g ;
+
+/*
+ * Make sure the [project], [change], [version] and [arch] variables are set.
+ */
+#ifndef project
+echo "The [project] variable was not set from the command line." set silent;
+echo "If you want to do a build which is not a development build" set silent;
+echo "or an integration build, use the make command, not cook." set silent;
+fail;
+#endif
+#ifndef change
+echo "The [change] variable was not set from the command line." set silent;
+echo "If you want to do a build which is not a development build" set silent;
+echo "or an integration build, use the make command, not cook." set silent;
+fail;
+#endif
+#ifndef version
+echo "The [version] variable was not set from the command line." set silent;
+echo "If you want to do a build which is not a development build" set silent;
+echo "or an integration build, use the make command, not cook." set silent;
+fail;
+#endif
+#ifndef arch
+echo "The [arch] variable was not set from the command line." set silent;
+echo "If you want to do a build which is not a development build" set silent;
+echo "or an integration build, use the make command, not cook." set silent;
+fail;
+#endif
+#ifndef search_path
+echo "The [search_path] variable was not set from the command line." set silent;
+echo "If you want to do a build which is not a development build" set silent;
+echo "or an integration build, use the make command, not cook." set silent;
+fail;
+#endif
+
+/*
+ * The first item in search list should be the absolute path of the
+ * current directory.  Assume that it is.
+ */
+search_list = .;
+search_tmp = [tail [split ':' [search_path]]];
+
+/*
+ * Try to shorten the search path in command lines, too.
+ *
+ * This takes a little getting used to....
+ * 1. For development builds, the search path is dev dir, then branch bl,
+ *    then ... project bl.  Thus, bl in a dev dir winds up pointing to
+ *    the branch reporitory.
+ * 2. For integration builds, aegis deliberately omits the branch
+ *    baseline from the path, but include's the branch's parents and
+ *    ancestors.  Thus, bl in an int dir winds up pointing to the
+ *    branch's parent's reporitory.
+ * The idea is that integration builds in a branch are like a
+ * development build of the branch's dev dir.
+ */
+search_name = bl;
+loop
+{
+    search_dir = [head [search_tmp]];
+    if [not [search_dir]] then
+        loopstop;
+    search_tmp = [tail [search_tmp]];
+
+    if [not [exists [search_name]]] then
+        ln -s [search_dir] [search_name]
+            set clearstat;
+    search_list = [search_list] [search_name];
+    search_name = [search_name]bl;
+}
+
+/*
+ * If this is a development build, the version will be x.y.Czzz,
+ * so look to see if there is a C in the version string.
+ */
+if [match_mask %1C%2 [version]] then
+{
+    /*
+     * The develop_begin_command in the config file
+     * always creates the "bl" symbolic link.
+     */
+    baseline = bl;
+
+    /*
+     * Supplement file modification times with fingerprints.
+     * Only do this for development builds.
+     */
+    set fingerprint;
+}
+
+if [not [defined baseline]] then
+{
+    /*
+     * Turn on aggressive updating to ensure the smallest possible
+     * range of mod times at aeipass.  This also ensures mod time
+     * consistency on fast machines.
+     */
+    set time-adjust-back;
+    all = [all] integration-build-targets;
+}
+
+/*
+ * determine the short version:
+ * no change or delta number
+ */
+version_short = [fromto %1.C%2 %1 [subst D C [version]]];
+
+version_shorter = [split "." [version_short]] _ _;
+version_shorter = [unsplit "." [word 1 [version_shorter]]
+    [word 2 [version_shorter]]];
+project_short = [fromto %.[version_short] % [project]];
+project_minus = [project_short]-[version_short];
+
+/*
+ * use GNU awk
+ */
+awk = gawk;
+
+/*
+ * The source files.
+ * This is given to us by aegis.
+ */
+vs_file = common/patchlevel.h;
+change_files = [collect aegis -l profil -ter -p [project] -c [change]]
+    [vs_file];
+project_files = [collect aegis -l chafil -ter -p [project] -c [change]];
+source_files = [stringset [project_files] [change_files]];
+
+/*
+ * How to construct thiongs with GNU Autoconf.
+ * (Also sets some variables thereby.)
+ */
+#include-cooked etc/autoconf.cook
+
+common_obj =
+    [fromto common/%0%.c [arch]/common/%0%.o
+        [match_mask common/%0%.c [source_files]]
+    ]
+    ;
+
+
+/*
+ * determine the list of commands
+ */
+
+commands =
+    [fromto %1/%0%2 %1 [match_mask %/main.c [source_files]]];
+
+/*
+ * Add the commands to the list of top-level targets.
+ */
+all = [all]
+    [addprefix [arch]/bin/ [commands]]
+    ;
+
+/*
+ * determine the object files for each command
+ */
+cmd_list = [commands];
+loop
+{
+    cmd = [head [cmd_list]];
+    if [not [cmd]] then
+        loopstop;
+    cmd_list = [tail [cmd_list]];
+
+    [cmd]_obj =
+        [fromto [cmd]/%0%.y [arch]/[cmd]/%0%.gen.o
+            [match_mask [cmd]/%0%.y [source_files]]
+        ]
+        [fromto [cmd]/%0%.def [arch]/[cmd]/%0%.o
+            [match_mask [cmd]/%0%.def [source_files]]
+        ]
+        [fromto [cmd]/%0%.c [arch]/[cmd]/%0%.o
+            [match_mask [cmd]/%0%.c [source_files]]
+        ]
+        [common_obj]
+        ;
+}
+
+game_chp =
+    [fromto datadir/%.asm datadir/%.chp
+        [match_mask datadir/%.asm [source_files]]
+    ];
+all = [all] [game_chp];
+
+/*
+ * this next section is for gcc
+ *      comment it out if you don't have gcc
+ *
+ * The gcc include files MUST be first.
+ */
+cc_flags =
+    -ansi
+    -Wall
+    -Wextra
+    -Wmissing-declarations
+    -Wmissing-prototypes
+    -Wold-style-definition
+    -Wpointer-arith
+    -Wshadow
+    -Wstrict-prototypes
+    -Wwrite-strings
+    -Werror
+    ;
+
+/*
+ * include files from the common directory.
+ */
+cc_include_flags =
+    [prepost "-I" "/"[arch] [search_list]]
+    [addprefix "-I" [search_list]]
+    ;
+
+
+/*
+ * Build %1/%2.o from %1/%2.c
+ */
+
+[arch]/%1/%0%2.o: %1/%0%2.c
+{
+    local extra = [cc_flags];
+    if [defined %2_flags] then
+        extra = [extra] [%2_flags];
+
+    if [match %%.gen %2] then
+    {
+        /*
+         * Generated files may have warnings, because we have no
+         * control over the quality of generated code (usually
+         * warnings about missing prototypes or unreferenced
+         * labels).
+         */
+        extra = [stringset [extra] - -Werror];
+    }
+
+    [cc] [extra]
+        [cc_include_flags]
+        -c [resolve %1/%0%2.c]
+        ['if' [in gcc [cc]] 'then' -o [target]];
+    if [not [in gcc [cc]]] then
+        mv %2.o [target];
+}
+
+[arch]/%1/%0%2.o: [arch]/%1/%0%2.c
+{
+    local extra = [cc_flags];
+    if [defined %2_flags] then
+        extra = [extra] [%2_flags];
+
+    if [match %%.gen %2] then
+    {
+        /*
+         * Generated files may have warnings, because we have no
+         * control over the quality of generated code (usually
+         * warnings about missing prototypes or unreferenced
+         * labels).
+         */
+        extra = [stringset [extra] - -Werror];
+    }
+
+    [cc] [extra]
+        [cc_include_flags]
+        -c [resolve [arch]/%1/%0%2.c]
+        ['if' [in gcc [cc]] 'then' -o [target]];
+    if [not [in gcc [cc]]] then
+        mv %2.o [target];
+}
+
+%1/%0%2.c.d: %1/%0%2.c
+    set nocascade
+{
+    c_incl -nc -ns -eia -nrec
+        [cc_include_flags]
+        -prefix "'cascade %1/%0%2.c ='"
+        -suffix "';'" [resolve %1/%0%2.c]
+        [addprefix -rlp\= [search_list]]
+        -slp [arch] "'[arch]'"
+        -nsri
+        -o [target];
+}
+
+%1/%0%2.h.d: %1/%0%2.h
+    set nocascade
+{
+    c_incl -nc -ns -eia -nrec
+        [cc_include_flags]
+        -prefix "'cascade %1/%0%2.h ='"
+        -suffix "';'" [resolve %1/%0%2.h]
+        [addprefix -rlp\= [search_list]]
+        -slp [arch] "'[arch]'"
+        -nsri
+        -o [target];
+}
+
+c-dep-files =
+    [fromto %1/%0%2.c %1/%0%2.c.d [match_mask %1/%0%2.c [source_files]]]
+    [fromto %1/%0%2.h %1/%0%2.h.d [match_mask %1/%0%2.h [source_files]]]
+    [fromto %1/%0%2.y %1/%0%2.gen.c.d [match_mask %1/%0%2.y [source_files]]]
+    [fromto %1/%0%2.y %1/%0%2.gen.h.d [match_mask %1/%0%2.y [source_files]]]
+    ;
+
+#include-cooked-nowarn [c-dep-files]
+
+/*
+ * Catch 22: you need the include files to be there, to work out that
+ * you need to construct them.  This is the minimum set of dependencies
+ * to bootstrap the dependency process.  Sigh.
+ */
+cascade chip8run/machine.c = chip8run/hex5.h chip8run/hex10.h ;
+cascade common/ac/assert.h = [arch]/common/config.h ;
+cascade common/ac/ctype.h = [arch]/common/config.h ;
+cascade common/ac/fcntl.h = [arch]/common/config.h ;
+cascade common/ac/limits.h = [arch]/common/config.h ;
+cascade common/ac/stdarg.h = [arch]/common/config.h ;
+cascade common/ac/stddef.h = [arch]/common/config.h ;
+cascade common/ac/stdio.h = [arch]/common/config.h ;
+cascade common/ac/stdlib.h = [arch]/common/config.h ;
+cascade common/ac/string.h = [arch]/common/config.h ;
+cascade common/ac/sys/types.h = [arch]/common/config.h ;
+cascade common/ac/time.h = [arch]/common/config.h ;
+cascade common/ac/unistd.h = [arch]/common/config.h ;
+cascade common/libdir.c = [arch]/etc/libdir-h ;
+cascade common/versio_stamp.c = common/patchlevel.h ;
+cascade chip8as/output/asc.c = [arch]/common/config.h;
+cascade common/input/private.c = [arch]/common/config.h;
+cascade etc/index.html = etc/version.so etc/debian-description.so;
+
+
+/*
+ * build the programs
+ */
+
+[arch]/bin/%: [%_obj]
+    set shallow
+{
+    [cc] [ld_flags] -o [target] [resolve [%_obj]] [libs];
+    chmod 755 [target];
+}
+
+
+/*
+ * The version stamp is to be updated for every
+ * integration and development build.
+ */
+
+copyright_years =
+    [collect
+        aegis -list version -p [project] -c [change]
+        | [awk] "-F'[[\\\\]]'" "'/^copyright_years/{print $2}'"
+    ];
+
+[vs_file]:
+    set ['if' [or [not [defined baseline] ] [not [exists bl/[vs_file]
+        ] ] ] 'then' shallow]
+{
+    echo "'#define PATCHLEVEL \""[version]"\"'" > [target];
+    echo "'#define COPYRIGHT_YEARS \""[copyright_years]"\"'" >> [target];
+}
+
+etc/version.so:
+    set ['if' [or [not [defined baseline] ] [not [exists bl/etc/version.so
+        ] ] ] 'then' shallow]
+{
+    echo \".ds V) [version]\" > [target];
+    echo \".ds v) [version_short]\" >> [target];
+    echo [version]
+        | [awk] -F. "'{print \".ds u) \"$1\".\"$2}'"
+        >> [target];
+    aegis -list version -p [project] -c [change]
+        | [awk] -F'\'"\'' "'/previous/{print $2}'"
+        | [awk] -F. "'{print \".ds w) \"$1\".\"$2}'"
+        >> [target];
+    echo \".ds Y) [copyright_years]\" >> [target];
+}
+
+
+/*
+ * assemble the games
+ */
+datadir/%.chp datadir/%.list: datadir/%.asm: [arch]/bin/chip8as
+    set ['if' [not [defined baseline]] 'then' shallow]
+{
+    [resolve [arch]/bin/chip8as]
+        [resolve datadir/%.asm]
+        -hph
+        datadir/%.chp
+        -l datadir/%.list
+        ;
+}
+
+%0%.h: %0%.asm: [arch]/bin/chip8as
+{
+    [resolve [arch]/bin/chip8as] -cf [resolve %0%.asm] [target];
+}
+
+
+etc/debian-description.so: /etc/lsb-release
+    set shallow
+{
+    sh [resolve etc/debian-description.sh] /etc/lsb-release > [target];
+}
+
+
+/*
+ * How to build the documentation.
+ */
+#include-cooked etc/document.cook
+
+/*
+ * How to build the archive set.
+ */
+#include-cooked etc/archive.cook
+#include-cooked etc/tags.cook

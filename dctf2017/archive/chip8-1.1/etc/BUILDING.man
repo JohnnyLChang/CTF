@@ -1,0 +1,560 @@
+'\" t
+.\" chip8 - X11 Chip8 interpreter
+.\" Copyright (C) 1998, 2012 Peter Miller
+.\"
+.\" This program is free software; you can redistribute it and/or modify
+.\" it under the terms of the GNU General Public License as published by
+.\" the Free Software Foundation; either version 2 of the License, or
+.\" (at your option) any later version.
+.\"
+.\" This program is distributed in the hope that it will be useful,
+.\" but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\" GNU General Public License for more details.
+.\"
+.\" You should have received a copy of the GNU General Public License along
+.\" with this program. If not, see <http://www.gnu.org/licenses/>.
+.\"
+.\"
+.if n .ftr CB B
+.if n .ftr CI I
+.if n .ftr CW R
+.if n .ftr C  R
+.TH Build Chip8 Chip8 "Reference Manual"
+.if n .hy 0
+.if n .ad l
+.if n .nr IN 8n
+.so etc/version.so
+.SH NAME
+chip8 \- X11 Chip8 interpreter
+.XX "" "How to Build the Sources"
+.br
+.if t .ds C) \(co
+.if n .ds C) (C)
+Copyright \*(C) \*(Y) Peter Miller
+.PP
+The
+.I Chip8
+package is distributed under the terms of the
+GNU General Public License.
+See the LICENSE section, below, for more details.
+.SH SPACE REQUIREMENTS
+You may need up to 4MB of disk space to unpack and build the
+.I Chip8
+package.
+(This is the worst case seen so far,
+most systems have binaries about 60% as big as this,
+2MB is more typical.)
+Your mileage may vary.
+.SH SITE CONFIGURATION
+The
+.B Chip8
+package is configured using the
+.I configure
+shell script included in this distribution.
+.PP
+The
+.I configure
+shell script attempts to guess correct values for
+various system\[hy]dependent variables used during compilation,
+and creates the
+.I Makefile
+and
+.I common/config.h
+files.
+It also creates a shell script
+.I config.status
+that you can run in the future to recreate the current configuration.
+.SS Running Configure
+Normally,
+you just
+.I cd
+to the directory containing
+.IR Chip8 "'s"
+source code and type
+.RS
+.ft CW
+.nf
+% \f[CB]./configure\fP
+\fI\&...lots of output...\fP
+%
+.fi
+.ft R
+.RE
+If you're using
+.I csh
+on an old version of System V,
+you might need to type
+.RS
+.ft CW
+.nf
+% \f[CB]sh configure\fP
+\fI\&...lots of output...\fP
+%
+.fi
+.ft R
+.RE
+instead to prevent
+.I csh
+from trying to execute
+.I configure
+itself.
+.PP
+Running
+.I configure
+takes a minute or two.
+While it is running,
+it prints some messages that tell what it is doing.
+If you don't want to see the messages,
+run
+.I configure
+with the quiet option;
+for example,
+.RS
+.FT CW
+.nf
+% \f[CW]./configure \-\-quiet\fP
+%
+.fi
+.ft R
+.RE
+.PP
+By default,
+.I configure
+will arrange for the
+.I "make install"
+command to install the
+.B Chip8
+package's files in
+.IR /usr/local/bin ,
+.IR /usr/local/man
+and
+.IR /usr/local/share/chip8 .
+There are a number of options which allow you to control the placement
+of these files.
+.TP 8n
+\f[CW]\-\-prefix=\fP\fIPATH\fP
+This specifies the path prefix to be used in the installation.
+Defaults to \fI/usr/local\fP unless otherwise specified.
+.TP 8n
+\f[CW]\-\-exec\-prefix=\fP\fIPATH\fP
+You can specify separate installation prefixes for
+architecture\[hy]specific files and architecture\[hy]independent files.
+Defaults to \fI${prefix}\fP unless otherwise specified.
+.TP 8n
+\f[CW]\-\-bindir=\fP\fIPATH\fP
+This directory contains executable programs.  On a network, this
+directory may be shared between machines with identical hardware and
+operating systems; it may be mounted read\[hy]only.  Defaults to
+\fI${exec_prefix}/bin\fP unless otherwise specified.
+.TP 8n
+\f[CW]\-\-datadir=\fP\fIPATH\fP
+This directory contains installed data, such as the documentation,
+reports and shell scripts distributed with Chip8.  On a network, this
+directory may be shared between all machines; it may be mounted
+read\[hy]only.  Defaults to \fI${prefix}/share/chip8\fP unless otherwise
+specified.  A ``chip8'' directory will be appended if there is none in
+the specified path.
+.TP 8n
+\f[CW]\-\-mandir=\fP\fIPATH\fP
+This directory contains the on\[hy]line manual entries.
+On a network, this directory may be shared between all machines;
+it may be mounted read\[hy]only.
+Defaults to \fI${prefix}/man\fP unless otherwise specified.
+.PP
+.I configure
+ignores any other arguments that you give it.
+.PP
+On systems that require unusual options for compilation or linking
+that the
+.I Chip8
+package's
+.I configure
+script does not know about,
+you can give
+.I configure
+initial values for variables by setting them in the environment.
+In Bourne\[hy]compatible shells,
+you can do that on the command line like this:
+.RS
+.ft CW
+.nf
+$ \f[CB]CC='gcc \-traditional' LIBS=\-lposix ./configure\fP
+\fI\&...lots of output...\fP
+$
+.fi
+.ft R
+.RE
+Here are the
+.I make
+variables that you might want to override with
+environment variables when running
+.IR configure .
+.TP 8n
+Variable: CC
+C compiler program.
+The default is
+.IR cc .
+.TP 8n
+Variable: INSTALL
+Program to use to install files.
+The default is
+.I install
+if you have it,
+.I cp
+otherwise.
+.TP 8n
+Variable: LIBS
+Libraries to link with,
+in the form \f[CW]\-l\fP\fIfoo\fP \f[CW]\-l\fP\fIbar\fP.
+The
+.I configure
+script will append to this,
+rather than replace it.
+.PP
+If you need to do unusual things to compile the package,
+the author encourages you to figure out how
+.I configure
+could check whether to do them,
+and mail diffs or instructions to the author
+so that they can be included in the next release.
+.br
+.ne 1i
+.SH BUILDING CHIP8
+All you should need to do is use the
+.RS
+.ft CW
+.nf
+% \f[CB]make\fP
+\fI\&...lots of output...\fP
+%
+.fi
+.ft R
+.RE
+command and wait.
+When this finishes you should see a directory called
+.I bin
+containing three files:
+.IR chip8as ,
+.IR chip8dis ,
+and
+.IR chip8run .
+.TP 8n
+.B chip8as
+The
+.I chip8as
+program is an assembler for Chip8 programs.
+.TP 8n
+.B chip8dis
+The
+.I chip8dis
+program is a disassembler of Chip8 programs.
+.TP 8n
+aereport
+The
+.I chip8run
+program is used run assembled Chip8 programs.
+.PP
+You can remove the program binaries and object files from the
+source directory by using the
+.RS
+.ft CW
+.nf
+% \f[CB]make clean\fP
+\fI\&...lots of output...\fP
+%
+.fi
+.ft R
+.RE
+command.
+To remove all of the above files, and also remove the
+.I Makefile
+and
+.I common/config.h
+and
+.I config.status
+files, use the
+.RS
+.ft CW
+.nf
+% \f[CB]make distclean\fP
+\fI\&...lots of output...\fP
+%
+.fi
+.ft R
+.RE
+command.
+.PP
+The file
+.I etc/configure.ac
+is used to create
+.I configure
+by a GNU program called
+.IR autoconf .
+You only need to know this if you want to regenerate
+.I configure
+using a newer version of
+.IR autoconf .
+.br
+.ne 1i
+.SH TESTING CHIP8
+The
+.I Chip8
+package comes with a test suite.
+To run this test suite, use the command
+.RS
+.ft CW
+.nf
+% \f[CB]make sure\fP
+\fI\&...lots of output...\fP
+Passed All Tests
+%
+.fi
+.ft R
+.RE
+.PP
+The tests take less than a minute each,
+but they can vary greatly depending on your CPU.
+.br
+.ne 1i
+.SH INSTALLING CHIP8
+As explained in the
+.I "SITE CONFIGURATION"
+section, above,
+the
+.I Chip8
+package is installed under the
+.I /usr/local
+tree by default.
+Use the \f[CW]\-\-prefix=\fP\fIPATH\fP option to
+.I configure
+if you want some other path.
+.PP
+All that is required to install the
+.I Chip8
+package is to use the
+.RS
+.ft CW
+.nf
+% \f[CB]make install\fP
+\fI\&...lots of output...\fP
+%
+.fi
+.ft R
+.RE
+command.
+Control of the directories used may be found in the first
+few lines of the
+.I Makefile
+file if you want to bypass the
+.I configure
+script.
+You must also edit the other files generated by
+.IR configure ;
+it is usually easier to re\[hy]run
+.I configure
+with the appropriate arguments.
+.PP
+The above procedure assumes that the
+.IR soelim (1)
+command is somewhere in the command search
+.IR PATH .
+The
+.IR soelim (1)
+command is available as part of the
+.I "GNU Groff"
+package,
+mentioned below in the
+.I "PRINTED MANUALS"
+section.
+If you don't have it,
+but you do have the
+.I cook
+package,
+then a link from
+.I roffpp
+to
+.I soelim
+will also work.
+.br
+.ne 1i
+.SH PRINTED MANUALS
+This distribution contains the sources to
+all of the documentation for
+.IR Chip8 ,
+however the simplest way to get the documentation is by anonymous FTP;
+a PostScript file of the Reference Manual is available
+from the FTP sites listed in the README file.
+The Reference Manual contains the README and BUILDING files,
+as well as all of the section 1 and section 5 manual pages.
+.br
+.ne 1i
+.SH GETTING HELP
+If you need assistance with
+.IR Chip8 ,
+please do not hesitate to contact the author at
+.RS
+Peter Miller <pmiller@opensource.org.au>
+.RE
+Any and all feedback is welcome.
+.PP
+When reporting problems,
+please include the version number
+given by the
+.RS
+.ft CW
+.nf
+% \f[CB]chip8run \-version\fP
+Chip8 version \fI\*(V)\fP
+\fI\&...\fP
+%
+.fi
+.ft R
+.RE
+command.
+Please run this command to get the exact number,
+do not send the text of this example.
+.SS Runtime Checking
+In the
+.I common/main.h
+file, the is a define of
+.I DEBUG
+in comments.
+If the comments are removed,
+extensive debugging is turned on.
+This causes some performance loss,
+but performs much run\[hy]time checking
+and adds the
+.B \-TRAce
+command line option.
+.PP
+When the
+.B \-TRAce
+command line option is followed by one or more file names,
+it turns on execution traces in those source files.
+It is usually best to place this on the end of the command line
+so that names of the files to be traced are not confused
+with other file names or strings on the command line.
+.SS Problem Reports
+If you send email to the author,
+please include the following information:
+.TP
+1. The type of UNIX
+.br
+The author will need to know the brand and version of UNIX you are using,
+or if it is not UNIX but something else.
+The output of "uname \-sr" is usually sufficient (but not all systems have it).
+.TP
+2. The Version Number
+.br
+In any information you send,
+please include the version number
+reported in the
+.I common/patchlevel.h
+file,
+or \f[CW]`chip8run \-vers`\fP if you can get it to compile.
+.TP
+3. The Archive Site
+.br
+When and where you obtained this version of
+.IR Chip8 .
+.TP
+4. Unpacking
+.br
+Did you have problems unpacking
+.IR Chip8 ?
+.TP
+5. Building
+.br
+Did you have problems building
+.IR Chip8 ?
+This could have been the instructions included,
+it could have been the configure script,
+it could have been the Makefile,
+or anything else.
+.TP
+6. Testing
+.br
+Did you have problems with the tests?
+You could have had problems running them,
+or some of them could have failed.
+If some tests fail but not others,
+please let me know
+.I which
+ones failed,
+and include the fact that
+.I Chip8
+was \fBnot\fP set\[hy]uid\[hy]root at the time.
+The \-k option to \fImake\fP can be useful if some tests fail but not others.
+.TP
+7. Installation
+.br
+Did you have problems installing
+.IR Chip8 ?
+This could have been the instructions,
+or anything else.
+.PP
+At this point it would probably be a very good idea to print out the
+manual entries and read them carefully.
+You will also want to print a copy of the Reference Manual;
+if you don't gave GNU Groff,
+there should be a PostScript copy at the archive site.
+.TP
+8. Using Chip8
+.br
+Did you have problems using
+.IR Chip8 ?
+This is a whole can of worms.
+If possible,
+include a shell script similar to the tests which accompany
+.IR Chip8 ,
+which reproduces the bug.
+Exit code 1 on failure (bug),
+exit code 0 on success (for when bug is fixed).
+.TP
+9. The Source Code
+.br
+Did you read the code?
+Did you write some code?
+If you read the code and found problems,
+fixed them,
+or extended
+.IR Chip8 ,
+these contributions are most welcome.
+.PP
+The above list is inclusive,
+not exclusive.
+Any and all feedback is greatly appreciated,
+as is the effort and interest required to produce it.
+.br
+.ne 1i
+.SH LICENSE
+The
+.I Chip8
+package is free software;
+you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation;
+either version 2 of the License,
+or (at your option) any later version.
+.PP
+The
+.I Chip8
+package is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+.PP
+It should be in the
+.I LICENSE
+file included in this distribution.
+.br
+.ne 1i
+.SH AUTHOR
+.TS
+tab(;);
+l r l.
+Peter Miller;E\[hy]Mail:;pmiller@opensource.org.au
+\f[CW]/\e/\e*\fR;WWW:;http://miller.emu.id.au/pmiller/
+.TE

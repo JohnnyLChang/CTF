@@ -1,0 +1,31 @@
+Source: chip8
+Section: utils
+Priority: extra
+Maintainer: Peter Miller <pmiller@opensource.org.au>
+Homepage: http://chip8.sourceforge.net
+Build-Depends: debhelper (>= 5), groff, libexplain-dev, libx11-dev, sharutils
+Standards-Version: 3.9.1
+
+Package: chip8
+Architecture: any
+Description: X11 Chip8 Interpreter
+ Chip8 was an interpreter used in a number of home computers based on RCA's
+ CDP1802 processor in the late 1970s.  It implements a small machine designed
+ specifically for simple video games.  It has less than 40 instructions,
+ including arithmetic, control flow, graphics, and sound.
+ .
+ This package includes an assembler for chip8, a disassembler, and an X11 client
+ to run Chip8 programs.
+Depends: ${misc:Depends}, ${shlibs:Depends}
+
+Package: chip8-doc
+Architecture: any
+Section: doc
+Description: X11 Chip8 interpreter - documentation
+ Chip8 was an interpreter used in a number of home computers based on RCA's
+ CDP1802 processor in the late 1970s.  It implements a small machine designed
+ specifically for simple video games.  It has less than 40 instructions,
+ including arithmetic, control flow, graphics, and sound.
+ .
+ This package includes an assembler for chip8, a disassembler, and an X11 client
+ to run Chip8 programs.

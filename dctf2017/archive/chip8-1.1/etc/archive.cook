@@ -1,0 +1,342 @@
+/*
+ * chip8 - X11 Chip8 interpreter
+ * Copyright (C) 1998, 2012 Peter Miller
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+integration-build-targets:
+    archive/[project_minus].README
+    archive/[project_minus].lsm
+    archive/[project_minus].ps.gz
+    archive/[project_minus].pdf
+    archive/[project_minus].spec
+    archive/[project_minus].tar.gz
+    archive/icon.png
+    archive/index.html
+    ;
+
+etc/%.html.d: etc/%.html
+    set nocascade
+{
+    c_incl -nc -ns -eia -r -nrec
+        [cc_include_flags]
+        -prefix "'cascade etc/%.html ='"
+        -suffix "';'"
+        [resolve etc/[project_short].html]
+        [prepost "-rlp=" "" [search_list]] /* remove leading path */
+        -slp [arch] "'[arch]'" /* substitute leading path */
+        -o [target];
+}
+#include-cooked-nowarn etc/index.html.d
+
+archive/%.html: etc/%.html
+    set shallow
+{
+    roffpp
+        [cc_include_flags]
+        [resolve etc/%.html]
+    | groff -Tascii -t -P-hub -man
+    | cat -s
+    > [target];
+}
+
+archive/[project_minus].README: README
+    set shallow
+{
+    cp [resolve [need]] [target];
+}
+
+
+pre-assembled-game-files =
+    [fromto %0%.asm %0%.chp [match_mask datadir/%.asm [source_files]]];
+
+source_file_order =
+    README
+    [sort
+        [stringset
+            [source_files]
+            BUILDING
+            LICENSE
+            README
+
+            /*
+             * These two are for version stamping the release.
+             */
+            etc/version.so
+            common/patchlevel.h
+
+            /*
+             * These four are for building the tarball.
+             */
+            Makefile.in
+            common/config.h.in
+            install-sh
+            configure
+
+            /* so RPM can build without separate spec file */
+            [project_short].spec
+
+            /*
+             * For the reference manual.
+             */
+            etc/ref-games.so
+            etc/ref-index.so
+            etc/ref-parts.so
+            etc/CHANGES.[version_short]
+            /* etc/new.so */
+            [fromto
+                lib/%1/faq/main.%2 lib/%1/faq/toc.so
+                [match_mask lib/%1/faq/main.%2 [source_files]]
+            ]
+            [fromto
+                lib/%/refman/main.%2 lib/%/refman/index.so
+                [match_mask lib/%/refman/main.%2 [source_files]]
+            ]
+            [fromto
+                lib/%/refman/main.%2 lib/%/refman/parts.so
+                [match_mask lib/%/refman/main.%2 [source_files]]
+            ]
+            [fromto
+                lib/icon/%.uue lib/icon/%
+                [match_mask lib/icon/%.uue [source_files]]
+            ]
+            chip8run/hex5.h
+            chip8run/hex10.h
+            [pre-assembled-game-files]
+        -
+            README
+        ]
+    ]
+    ;
+
+archive/Part.01.gz: [source_file_order]
+    set shallow
+{
+    parts = [glob "archive/Part*"];
+    if [parts] then
+        rm [parts]
+            set clearstat;
+    /* assumes shar.3.49 available */
+    shar -n[project_short] -a -c -oarchive/Part -L200
+        -s "'Peter Miller <pmiller@opensource.org.au>'"
+        [resolve [source_file_order]];
+    gzip -9 -v archive/Part*;
+}
+
+archive/[project_minus].tar.gz: [source_file_order]
+        debian/control /* et al */
+        debian/copyright
+    set shallow
+{
+    if [exists archive/[project_minus].tar] then
+        rm archive/[project_minus].tar
+            set clearstat;
+    tar --create --file - --dereference [resolve [source_file_order]]
+        debian/changelog
+        debian/chip8-doc.install
+        debian/chip8.install
+        debian/compat
+        debian/control
+        debian/copyright
+        debian/rules
+        debian/source/format
+    | tardy -unu 0 -gnu 0 -una Peter -gna Miller
+        -p [project_minus] -ms 0644 -mc 07022 -now
+        [prepost "-rp=" "" [search_list]]
+        -
+        [target];
+}
+
+
+[project_short].spec: [source_files]
+{
+    aemakegen -p [project] -c [change] --target\=rpm-spec -o [target]
+        [pre-assembled-game-files]
+        set meter;
+}
+
+archive/[project_minus].spec: [project_short].spec
+    set shallow
+{
+    cp [resolve [need]] [target];
+}
+
+
+%0%: %0%.uue
+{
+    uudecode -o [target] [resolve [need]];
+}
+
+archive/%.png: etc/%.png
+    set shallow
+{
+    cat [resolve [need]] > [target];
+}
+
+/*
+ * This is not in the integration-build-targets because it takes far
+ * too long to do.
+ */
+
+RPM: archive/[project_minus]-1.i386.rpm;
+
+archive/[project_minus]-1.i386.rpm archive/[project_minus]-1.src.rpm:
+        archive/[project_minus].tar.gz etc/rpm-build.sh
+    set shallow
+{
+    sh [resolve etc/rpm-build.sh]
+        RPM-temporary
+        [resolve archive/[project_minus].tar.gz]
+        ;
+    mv RPM-temporary/RPMS/i386/[project_minus]-1.i386.rpm
+        archive/[project_minus]-1.i386.rpm
+        ;
+    mv RPM-temporary/SRPMS/[project_minus]-1.src.rpm
+        archive/[project_minus]-1.src.rpm
+        ;
+    rm -r RPM-temporary;
+}
+
+LICENSE: man/cat1/chip8-license.1
+{
+    cat [resolve [need]] > [target];
+}
+
+/*
+ * These recipes build a Makefile for a user.  They do not build a
+ * Makefile useful for a development build, because no arch
+ * information is included in the Makefile.
+ */
+
+Makefile.in: [source_files]
+    [pre-assembled-game-files]
+{
+    aemakegen -p [project] -c [change] -o [target]
+        [pre-assembled-game-files]
+        set meter;
+}
+
+etc/CHANGES.[version_short]: etc/CHANGES.sh [vs_file]
+{
+    sh [resolve etc/CHANGES.sh] [project] > [target];
+}
+
+archive/[project_minus].lsm: etc/[project_short].lsm
+    set shallow
+{
+    roffpp
+        [cc_include_flags]
+        [resolve etc/[project_short].lsm]
+    | groff -Tascii -t -P-hub
+    | cat -s
+    > [target];
+}
+
+archive/[project_minus].ps.gz: etc/reference.ps.gz
+    set shallow
+{
+    cat [resolve [need]] > [target];
+}
+
+archive/[project_minus].pdf: etc/reference.pdf
+    set shallow
+{
+    cat [resolve [need]] > [target];
+}
+
+
+check-tarball: etc/check-tarball.sh archive/[project_minus].tar.gz
+{
+    sh [resolve etc/check-tarball.sh archive/[project_minus].tar.gz];
+}
+
+
+debian/control
+debian/chip8.install
+debian/changelog: [source_files]
+    set shallow
+{
+    /* This actually makes more files than just debian/control */
+    aemakegen -project\=[project] -change\=[change] --target\=debian
+        [pre-assembled-game-files]
+        set meter;
+}
+
+debian/copyright: [source_files]
+    set shallow
+{
+    licensecheck "--check='[.]asm$|[.][chy]$'" --copyright [resolve [need]]
+    | sed "'s|^bl\\(bl\\)*/||'"
+    | /usr/lib/cdbs/licensecheck2dep5
+    | awk -f [resolve etc/deb-cop-fixme.awk]
+    > [target]
+    ;
+}
+
+
+if [or
+    [in [fromto %1D%2 %2 [version]] 001 002 003 004]
+    [collect "set +e; on_ac_power; expr 1 - $?; exit 0" ]
+] then
+{
+    all += debian-package;
+}
+
+
+debian-package: archive/[project_minus].tar.gz
+    debian/changelog
+{
+    local vsn = [collect head -1 [resolve debian/changelog]
+                         | sed "'s|.*(\\([^()]*\\).*|\\1|'" ];
+    vsn = [fromto %-1 % [vsn]];
+    function print "vsn = '"[vsn]"'";
+    if [not [in [count [vsn]] 1]] then
+        fail "debian version not right";
+    local tarball = [project_short]_[vsn].orig.tar.gz;
+
+    local user = [collect id -un];
+    local key = ;
+    if [in [user] archives] then
+        key = -k19CEC7D5;
+    else
+        key = -us -uc;
+
+    /*
+     * We fake the .orig.tar.gz file to not have a debian/ directory,
+     * by filtering it out with tardy.  This silences a PITA lintian
+     * warning, for no real benefit.
+     */
+
+    unset GPG_AGENT_INFO &&
+    rm -rf archive/debian &&
+    mkdir -p archive/debian &&
+    cd archive/debian &&
+    echo Options Indexes > .htaccess &&
+    gunzip < ../[project_minus].tar.gz
+        | tardy -exclude "'"[project_minus]"/debian/*'"
+                -exclude [project_minus]/etc/crc16-ccitt.html /*not free enuf*/
+        | gzip -9 > [tarball] &&
+    tar xzf ../[project_minus].tar.gz &&
+    cd [project_minus] &&
+#if 0
+    dpkg-buildpackage -sgpg [key] -sa &&
+#else
+    debuild [key] -sa &&
+#endif
+    cd .. &&
+    rm -rf [project_minus] &&
+    lintian -iIv --pedantic *.changes
+    ;
+}

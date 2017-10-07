@@ -1,0 +1,223 @@
+'\" tp
+.\"	chip8 - X11 Chip8 interpreter
+.\"	Copyright (C) 1998, 2012 Peter Miller
+.\"
+.\"	This program is free software; you can redistribute it and/or modify
+.\"	it under the terms of the GNU General Public License as published by
+.\"	the Free Software Foundation; either version 2 of the License, or
+.\"	(at your option) any later version.
+.\"
+.\"	This program is distributed in the hope that it will be useful,
+.\"	but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\"	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\"	GNU General Public License for more details.
+.\"
+.\"	You should have received a copy of the GNU General Public License
+.\"	along with this program. If not, see
+.\"	<http://www.gnu.org/licenses/>.
+.\"
+.TH "Invaders" 7 Chip8 "Reference Manual" ""
+.SH NAME
+Invaders \- a space invaders clone
+.if require_index \{
+.XX "invaders(7)" "a space invaders clone"
+.\}
+.SH SYNOPSIS
+.B chip8run
+.B invaders
+.SH DESCRIPTION
+The well known game.
+Destroy the invaders with your ship.
+.SS The Display
+.PS
+box at (1.575,0.775) wid 3.2 ht 1.6 thickness 0.45
+box at (0.8,1.25) wid 0.05 ht 0.05 fill 1
+box at (0.85,1.25) wid 0.05 ht 0.05 fill 1
+box at (0.9,1.25) wid 0.05 ht 0.05 fill 1
+box at (0.95,1.25) wid 0.05 ht 0.05 fill 1
+box at (1.4,1.25) wid 0.05 ht 0.05 fill 1
+box at (1.45,1.25) wid 0.05 ht 0.05 fill 1
+box at (1.5,1.25) wid 0.05 ht 0.05 fill 1
+box at (1.55,1.25) wid 0.05 ht 0.05 fill 1
+box at (2,1.25) wid 0.05 ht 0.05 fill 1
+box at (2.05,1.25) wid 0.05 ht 0.05 fill 1
+box at (2.1,1.25) wid 0.05 ht 0.05 fill 1
+box at (2.15,1.25) wid 0.05 ht 0.05 fill 1
+box at (2.6,1.25) wid 0.05 ht 0.05 fill 1
+box at (2.65,1.25) wid 0.05 ht 0.05 fill 1
+box at (2.7,1.25) wid 0.05 ht 0.05 fill 1
+box at (2.75,1.25) wid 0.05 ht 0.05 fill 1
+box at (0.75,1.2) wid 0.05 ht 0.05 fill 1
+box at (0.8,1.2) wid 0.05 ht 0.05 fill 1
+box at (0.85,1.2) wid 0.05 ht 0.05 fill 1
+box at (0.9,1.2) wid 0.05 ht 0.05 fill 1
+box at (0.95,1.2) wid 0.05 ht 0.05 fill 1
+box at (1,1.2) wid 0.05 ht 0.05 fill 1
+box at (1.35,1.2) wid 0.05 ht 0.05 fill 1
+box at (1.4,1.2) wid 0.05 ht 0.05 fill 1
+box at (1.45,1.2) wid 0.05 ht 0.05 fill 1
+box at (1.5,1.2) wid 0.05 ht 0.05 fill 1
+box at (1.55,1.2) wid 0.05 ht 0.05 fill 1
+box at (1.6,1.2) wid 0.05 ht 0.05 fill 1
+box at (1.95,1.2) wid 0.05 ht 0.05 fill 1
+box at (2,1.2) wid 0.05 ht 0.05 fill 1
+box at (2.05,1.2) wid 0.05 ht 0.05 fill 1
+box at (2.1,1.2) wid 0.05 ht 0.05 fill 1
+box at (2.15,1.2) wid 0.05 ht 0.05 fill 1
+box at (2.2,1.2) wid 0.05 ht 0.05 fill 1
+box at (2.55,1.2) wid 0.05 ht 0.05 fill 1
+box at (2.6,1.2) wid 0.05 ht 0.05 fill 1
+box at (2.65,1.2) wid 0.05 ht 0.05 fill 1
+box at (2.7,1.2) wid 0.05 ht 0.05 fill 1
+box at (2.75,1.2) wid 0.05 ht 0.05 fill 1
+box at (2.8,1.2) wid 0.05 ht 0.05 fill 1
+box at (0.7,1.15) wid 0.05 ht 0.05 fill 1
+box at (0.75,1.15) wid 0.05 ht 0.05 fill 1
+box at (0.8,1.15) wid 0.05 ht 0.05 fill 1
+box at (0.85,1.15) wid 0.05 ht 0.05 fill 1
+box at (0.9,1.15) wid 0.05 ht 0.05 fill 1
+box at (0.95,1.15) wid 0.05 ht 0.05 fill 1
+box at (1,1.15) wid 0.05 ht 0.05 fill 1
+box at (1.05,1.15) wid 0.05 ht 0.05 fill 1
+box at (1.3,1.15) wid 0.05 ht 0.05 fill 1
+box at (1.35,1.15) wid 0.05 ht 0.05 fill 1
+box at (1.4,1.15) wid 0.05 ht 0.05 fill 1
+box at (1.45,1.15) wid 0.05 ht 0.05 fill 1
+box at (1.5,1.15) wid 0.05 ht 0.05 fill 1
+box at (1.55,1.15) wid 0.05 ht 0.05 fill 1
+box at (1.6,1.15) wid 0.05 ht 0.05 fill 1
+box at (1.65,1.15) wid 0.05 ht 0.05 fill 1
+box at (1.9,1.15) wid 0.05 ht 0.05 fill 1
+box at (1.95,1.15) wid 0.05 ht 0.05 fill 1
+box at (2,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.05,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.1,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.15,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.2,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.25,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.5,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.55,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.6,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.65,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.7,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.75,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.8,1.15) wid 0.05 ht 0.05 fill 1
+box at (2.85,1.15) wid 0.05 ht 0.05 fill 1
+box at (0.7,1.1) wid 0.05 ht 0.05 fill 1
+box at (0.75,1.1) wid 0.05 ht 0.05 fill 1
+box at (0.8,1.1) wid 0.05 ht 0.05 fill 1
+box at (0.85,1.1) wid 0.05 ht 0.05 fill 1
+box at (0.9,1.1) wid 0.05 ht 0.05 fill 1
+box at (0.95,1.1) wid 0.05 ht 0.05 fill 1
+box at (1,1.1) wid 0.05 ht 0.05 fill 1
+box at (1.05,1.1) wid 0.05 ht 0.05 fill 1
+box at (1.3,1.1) wid 0.05 ht 0.05 fill 1
+box at (1.35,1.1) wid 0.05 ht 0.05 fill 1
+box at (1.4,1.1) wid 0.05 ht 0.05 fill 1
+box at (1.45,1.1) wid 0.05 ht 0.05 fill 1
+box at (1.5,1.1) wid 0.05 ht 0.05 fill 1
+box at (1.55,1.1) wid 0.05 ht 0.05 fill 1
+box at (1.6,1.1) wid 0.05 ht 0.05 fill 1
+box at (1.65,1.1) wid 0.05 ht 0.05 fill 1
+box at (1.9,1.1) wid 0.05 ht 0.05 fill 1
+box at (1.95,1.1) wid 0.05 ht 0.05 fill 1
+box at (2,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.05,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.1,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.15,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.2,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.25,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.5,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.55,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.6,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.65,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.7,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.75,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.8,1.1) wid 0.05 ht 0.05 fill 1
+box at (2.85,1.1) wid 0.05 ht 0.05 fill 1
+box at (0.7,1.05) wid 0.05 ht 0.05 fill 1
+box at (0.85,1.05) wid 0.05 ht 0.05 fill 1
+box at (0.9,1.05) wid 0.05 ht 0.05 fill 1
+box at (1.05,1.05) wid 0.05 ht 0.05 fill 1
+box at (1.3,1.05) wid 0.05 ht 0.05 fill 1
+box at (1.45,1.05) wid 0.05 ht 0.05 fill 1
+box at (1.5,1.05) wid 0.05 ht 0.05 fill 1
+box at (1.65,1.05) wid 0.05 ht 0.05 fill 1
+box at (1.9,1.05) wid 0.05 ht 0.05 fill 1
+box at (2.05,1.05) wid 0.05 ht 0.05 fill 1
+box at (2.1,1.05) wid 0.05 ht 0.05 fill 1
+box at (2.25,1.05) wid 0.05 ht 0.05 fill 1
+box at (2.5,1.05) wid 0.05 ht 0.05 fill 1
+box at (2.65,1.05) wid 0.05 ht 0.05 fill 1
+box at (2.7,1.05) wid 0.05 ht 0.05 fill 1
+box at (2.85,1.05) wid 0.05 ht 0.05 fill 1
+box at (0.7,1) wid 0.05 ht 0.05 fill 1
+box at (0.85,1) wid 0.05 ht 0.05 fill 1
+box at (0.9,1) wid 0.05 ht 0.05 fill 1
+box at (1.05,1) wid 0.05 ht 0.05 fill 1
+box at (1.3,1) wid 0.05 ht 0.05 fill 1
+box at (1.45,1) wid 0.05 ht 0.05 fill 1
+box at (1.5,1) wid 0.05 ht 0.05 fill 1
+box at (1.65,1) wid 0.05 ht 0.05 fill 1
+box at (1.9,1) wid 0.05 ht 0.05 fill 1
+box at (2.05,1) wid 0.05 ht 0.05 fill 1
+box at (2.1,1) wid 0.05 ht 0.05 fill 1
+box at (2.25,1) wid 0.05 ht 0.05 fill 1
+box at (2.5,1) wid 0.05 ht 0.05 fill 1
+box at (2.65,1) wid 0.05 ht 0.05 fill 1
+box at (2.7,1) wid 0.05 ht 0.05 fill 1
+box at (2.85,1) wid 0.05 ht 0.05 fill 1
+box at (1.55,0.7) wid 0.05 ht 0.05 fill 1
+box at (1.55,0.15) wid 0.05 ht 0.05 fill 1
+box at (1.5,0.1) wid 0.05 ht 0.05 fill 1
+box at (1.55,0.1) wid 0.05 ht 0.05 fill 1
+box at (1.6,0.1) wid 0.05 ht 0.05 fill 1
+box at (1.45,0.05) wid 0.05 ht 0.05 fill 1
+box at (1.5,0.05) wid 0.05 ht 0.05 fill 1
+box at (1.55,0.05) wid 0.05 ht 0.05 fill 1
+box at (1.6,0.05) wid 0.05 ht 0.05 fill 1
+box at (1.65,0.05) wid 0.05 ht 0.05 fill 1
+box at (1.4,0) wid 0.05 ht 0.05 fill 1
+box at (1.45,0) wid 0.05 ht 0.05 fill 1
+box at (1.5,0) wid 0.05 ht 0.05 fill 1
+box at (1.55,0) wid 0.05 ht 0.05 fill 1
+box at (1.6,0) wid 0.05 ht 0.05 fill 1
+box at (1.65,0) wid 0.05 ht 0.05 fill 1
+box at (1.7,0) wid 0.05 ht 0.05 fill 1
+.PE
+.SS The Keys
+.TS
+center;
+l r l.
+T{
+.PS
+boxwid = 0.3
+boxht = 0.3
+B1: box "1"				fill 0.1
+B2: box "2" with .w at B1.e+(0.05,0)	fill 0.1
+B3: box "3" with .w at B2.e+(0.05,0)	fill 0.1
+BC: box "C" with .w at B3.e+(0.05,0)	fill 0.1
+B4: box "4" with .n at B1.s-(0,0.05)
+B5: box "5" with .w at B4.e+(0.05,0)
+B6: box "6" with .w at B5.e+(0.05,0)
+BD: box "D" with .w at B6.e+(0.05,0)	fill 0.1
+B7: box "7" with .n at B4.s-(0,0.05)	fill 0.1
+B8: box "8" with .w at B7.e+(0.05,0)	fill 0.1
+B9: box "9" with .w at B8.e+(0.05,0)	fill 0.1
+BE: box "E" with .w at B9.e+(0.05,0)	fill 0.1
+BA: box "A" with .n at B7.s-(0,0.05)	fill 0.1
+B0: box "0" with .w at BA.e+(0.05,0)	fill 0.1
+BB: box "B" with .w at B0.e+(0.05,0)	fill 0.1
+BF: box "F" with .w at BB.e+(0.05,0)	fill 0.1
+.PE
+T}
+\^	4:	left
+\^	5:	fire
+\^	6:	right
+.TE
+.SH COPYRIGHT
+Invaders version 0.9
+.br
+Copyright (C) 1991 David Winter
+.SH AUTHOR
+David Winter <winter@worldnet.net>

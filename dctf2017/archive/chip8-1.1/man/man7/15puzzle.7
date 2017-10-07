@@ -1,0 +1,275 @@
+'\" tp
+.\"	chip8 - X11 Chip8 interpreter
+.\"	Copyright (C) 1998, 2012 Peter Miller
+.\"
+.\"	This program is free software; you can redistribute it and/or modify
+.\"	it under the terms of the GNU General Public License as published by
+.\"	the Free Software Foundation; either version 2 of the License, or
+.\"	(at your option) any later version.
+.\"
+.\"	This program is distributed in the hope that it will be useful,
+.\"	but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\"	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\"	GNU General Public License for more details.
+.\"
+.\"	You should have received a copy of the GNU General Public License
+.\"	along with this program. If not, see
+.\"	<http://www.gnu.org/licenses/>.
+.\"
+.TH "15puzzle" 7 Chip8 "Reference Manual" ""
+.SH NAME
+15puzzle \- X11 Chip8 game
+.if require_index \{
+.XX "15puzzle(7)" "game"
+.\}
+.SH SYNOPSIS
+.B chip8run
+.B 15puzzle
+.SH DESCRIPTION
+Here is the infamous 15 puzzle for Chip8.  The puzzle, as you doubtless
+recall, has 15 squares numbered 1 through 15 (in this case, 1 through
+F) and one hole.  You can move the hole about and must put the pieces
+in order.
+.PP
+When you first run puzzle, it comes up solved.  Thereafter, pressing
+\IRestart\fP causes the puzzle to have 32 random moves made, effectively
+randomizing the puzzle.  If 32's not enough for you, just press
+\IRestart\fP again.
+.PP
+The program does not check to see if you've solved the puzzle, and
+therefore nothing special happens when you do except for the warm,
+fuzzy feeling that you have beaten it.
+.SS The Display
+.PS
+box with .sw at (0,0) wid 3.2 ht 1.6 thickness 0.45
+box invis with .sw at (1.15,1.35) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.2,1.35) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.25,1.35) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.3,1.35) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,1.35) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.45,1.35) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.5,1.35) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.55,1.35) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.65,1.35) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.8,1.35) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.9,1.35) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.95,1.35) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (2,1.35) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (2.05,1.35) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,1.3) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.3,1.3) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.55,1.3) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.65,1.3) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.8,1.3) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (2.05,1.3) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,1.25) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.2,1.25) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.25,1.25) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.3,1.25) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,1.25) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.45,1.25) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.5,1.25) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.55,1.25) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.65,1.25) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.7,1.25) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.75,1.25) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.8,1.25) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (2,1.25) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.3,1.2) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,1.2) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.8,1.2) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.95,1.2) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,1.15) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.2,1.15) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.25,1.15) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.3,1.15) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,1.15) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.45,1.15) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.5,1.15) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.55,1.15) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.8,1.15) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.95,1.15) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,1.05) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.2,1.05) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.25,1.05) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.3,1.05) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,1.05) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.45,1.05) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.5,1.05) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.55,1.05) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.75,1.05) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.9,1.05) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.95,1.05) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (2,1.05) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (2.05,1.05) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,1) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,1) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.55,1) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.7,1) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.75,1) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (2.05,1) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.95) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.2,0.95) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.25,0.95) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.3,0.95) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.95) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.45,0.95) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.5,0.95) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.55,0.95) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.75,0.95) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.9,0.95) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.95,0.95) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (2,0.95) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (2.05,0.95) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.9) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.9) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.55,0.9) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.75,0.9) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (2.05,0.9) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.85) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.2,0.85) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.25,0.85) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.3,0.85) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.85) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.55,0.85) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.7,0.85) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.75,0.85) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.8,0.85) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.9,0.85) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.95,0.85) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (2,0.85) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (2.05,0.85) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.75) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.2,0.75) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.25,0.75) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.75) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.45,0.75) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.5,0.75) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.65,0.75) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.7,0.75) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.75,0.75) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.8,0.75) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.9,0.75) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.95,0.75) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (2,0.75) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (2.05,0.75) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.7) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.3,0.7) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.7) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.55,0.7) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.65,0.7) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.9,0.7) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (2.05,0.7) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.65) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.2,0.65) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.25,0.65) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.65) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.55,0.65) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.65,0.65) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.7,0.65) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.75,0.65) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.8,0.65) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.9,0.65) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.95,0.65) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (2,0.65) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (2.05,0.65) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.6) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.3,0.6) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.6) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.55,0.6) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.8,0.6) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.9,0.6) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (2.05,0.6) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.55) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.2,0.55) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.25,0.55) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.55) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.45,0.55) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.5,0.55) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.65,0.55) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.7,0.55) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.75,0.55) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.8,0.55) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.9,0.55) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.95,0.55) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (2,0.55) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (2.05,0.55) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.45) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.2,0.45) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.25,0.45) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.3,0.45) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.45) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.45,0.45) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.5,0.45) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.55,0.45) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.65,0.45) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.7,0.45) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.75,0.45) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.8,0.45) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.4) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.4) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.65,0.4) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.35) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.2,0.35) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.25,0.35) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.3,0.35) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.35) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.65,0.35) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.7,0.35) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.75,0.35) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.8,0.35) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.3) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.3) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.65,0.3) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.8,0.3) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.15,0.25) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.4,0.25) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.45,0.25) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.5,0.25) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.55,0.25) wid 0.05 ht 0.05 fill 1
+box invis with .sw at (1.65,0.25) wid 0.2 ht 0.05 fill 1
+box invis with .sw at (1.7,0.25) wid 0.15 ht 0.05 fill 1
+box invis with .sw at (1.75,0.25) wid 0.1 ht 0.05 fill 1
+box invis with .sw at (1.8,0.25) wid 0.05 ht 0.05 fill 1
+.PE
+.SS The Keys
+.TS
+center;
+l lw(3.5i).
+T{
+.PS
+boxwid = 0.3
+boxht = 0.3
+B1: box "1"
+B2: box "2" with .w at B1.e+(0.05,0)
+B3: box "3" with .w at B2.e+(0.05,0)
+BC: box "C" with .w at B3.e+(0.05,0)
+B4: box "4" with .n at B1.s-(0,0.05)
+B5: box "5" with .w at B4.e+(0.05,0)
+B6: box "6" with .w at B5.e+(0.05,0)
+BD: box "D" with .w at B6.e+(0.05,0)
+B7: box "7" with .n at B4.s-(0,0.05)
+B8: box "8" with .w at B7.e+(0.05,0)
+B9: box "9" with .w at B8.e+(0.05,0)
+BE: box "E" with .w at B9.e+(0.05,0)
+BA: box "A" with .n at B7.s-(0,0.05)
+B0: box "0" with .w at BA.e+(0.05,0)
+BB: box "B" with .w at B0.e+(0.05,0)
+BF: box "F" with .w at BB.e+(0.05,0)
+.PE
+T}	T{
+.PP
+You enter moves by using the keys.  The key's position in that 4\(mu4
+matrix corresponds to the square in that position of the puzzle matrix.
+Pushing a key causes the hole to migrate to that position.  The migration
+is performed in the order up, down, left, right; it is not necessary to
+limit your moves to those rows and columns containing the hole; you can
+request that the hole move to any position.
+T}
+.TE
+.SH COPYRIGHT
+15 Puzzle version 1.0
+.br
+Author Unknown
+.SH AUTHOR
+Author Unknown

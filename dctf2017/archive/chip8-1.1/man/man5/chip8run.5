@@ -1,0 +1,79 @@
+.\"
+.\"	chip8 - video game interpreter
+.\"	Copyright (C) 1990, 1998, 2012 Peter Miller
+.\"
+.\"	This program is free software; you can redistribute it and/or modify
+.\"	it under the terms of the GNU General Public License as published by
+.\"	the Free Software Foundation; either version 2 of the License, or
+.\"	(at your option) any later version.
+.\"
+.\"	This program is distributed in the hope that it will be useful,
+.\"	but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\"	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\"	GNU General Public License for more details.
+.\"
+.\"	You should have received a copy of the GNU General Public License
+.\"	along with this program. If not, see
+.\"	<http://www.gnu.org/licenses/>.
+.\"
+.hy 0
+.ad l
+.TH chip8run 5
+.SH NAME
+chip8 file formats
+.if require_index \{
+.XX "chip8run(5)" "chip8 file formats"
+.\}
+.SH DESCRIPTION
+The
+.I chip8run
+program understands 3 file formats: raw, HP and #!.
+The only difference is the headers.
+All 3 formats have a header, followed by data.
+The data will be at most 3584 bytes long.
+.SH RAW FORMAT
+The raw format has no header.
+There is only the data section in the file.
+.SH HP FORMAT
+the HP format has a 13 byte header in the format
+.RS
+.nf
+.ta 16n
+8\[hy]bytes	magic number "HPHP48\[hy]A"
+	48,50,48,50,34,38 (hex)
+2.5\[hy]bytes	type
+	0x02C2A for "string"
+2.5\[hy]bytes	length
+	in nybbles, including length.
+.fi
+.RE
+.PP
+The 2.5 byte fields are encodes as big\[hy]endian nybbles.
+.SH UNIX FORMAT
+The #! format discards all bytes upto the first newline ('\en') character,
+this is useful to make chip8 programs self\[hy]executing,
+by making the first line
+.RS
+#! /usr/local/bin/chip8run \-
+.RE
+Which tells unix to invoke the
+.IR chip8run (1)
+program and feed it the executing file on its standard input.
+.SH SEE ALSO
+.TP 8n
+.IR chip8as (1)
+An assembler, for assembling chip8 programs into the byte\[hy]code to be
+interpreted.
+.TP 8n
+.IR chip8as (5)
+The opcodes, as understood by the assmbler, and how they are interpreted
+by the interpreter.
+.TP 8n
+.IR chip8run (1)
+The interpreter, to run the assembled byte code.
+.TP 8n
+.IR chip8dis (1)
+A disassembler, so that you can turn assembled byte code into something
+more readable.
+.ds n) chip8
+.so man/man1/z_copyright.so

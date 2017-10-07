@@ -1,0 +1,76 @@
+Read Me(Chip8)							Read Me(Chip8)
+
+NAME
+	chip8 -	project	change supervisor
+	Copyright (C) 1990, 1991, 1998,	1999, 2012 Peter Miller
+
+	Chip8 is distributed under the terms of	the GNU	General	Public
+	License.  See the LICENSE section, below, for more details.
+
+DESCRIPTION
+	Chip8 was an interpreter used in a number of home computers based on
+	RCA's CDP1802 processor	in the late 1970's.  It	implements a small
+	machine	designed specifically for simple video games.  It has less
+	than 40	instructions, including	arithmetic, control flow, graphics,
+	and sound.
+
+	This package includes an assembler for chip8, a	disassembler, and an X
+	client to run chip8 programs.  This distribution includes 33 games:
+	15puzzle, alien, ant, blinky, blitz, brix, car,	connect4, field,
+	guess, hidden, hpiper, invaders, joust,	kaleid,	maze, merlin, missile,
+	pong, puzzle, race, snake, spacefight, syzygy, tank, tetris, tictac,
+	uboat, ufo, vbrix, vers, wipeoff, worm3.
+
+	The assembler understood by this package differs from the assembler
+	originaly documented for CHIP-8.  This is for a	number of reasons...
+	(a) the	original was unpleasant	to write a lexer for, (b) the opcodes
+	were not very orthogonal in appearance,	(c) the	format made arbitrary
+	expression syntax have to tiptoe all around it,	(d) if I changed it I
+	could re-use code from another of my assemblers.
+
+ARCHIVE	SITE
+	The latest version of Chip8 is available by HTTP from:
+
+		URL:	http://chip8.sourceforge.net/
+		File:	index.html	   # the Chip8 page
+		File:	chip8-1.1.README   # Description, from tar file
+		File:	chip8-1.1.lsm	   # Description, in LSM format
+		File:	chip8-1.1.spec	   # RedHat package specification
+		File:	chip8-1.1.tar.gz   # the complete source
+
+	This directory also contains a few other pieces	of software written by
+	me.  Please have a look	if you are interested.
+
+BUILDING
+	Instructions on	how to build and test Chip8 are	to be found in the
+	BUILDING file included in this distribution.
+
+LICENSE
+	Chip8 is free software;	you can	redistribute it	and/or modify it under
+	the terms of the GNU General Public License as published by the	Free
+	Software Foundation; either version 2 of the License, or (at your
+	option)	any later version.
+
+	Chip8 is distributed in	the hope that it will be useful, but WITHOUT
+	ANY WARRANTY; without even the implied warranty	of MERCHANTABILITY or
+	FITNESS	FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+	for more details.
+
+	You should have	received a copy	of the GNU General Public License
+	along with this	program. If not, see <http://www.gnu.org/licenses/>.
+
+	It should be in	the LICENSE file included in this distribution.
+
+AUTHOR
+	Peter Miller   E-Mail:	 pmiller@opensource.org.au
+	/\/\*		  WWW:	 http://miller.emu.id.au/pmiller/
+
+RELEASE	NOTES
+	For excruciating detail, and also acknowledgments of those who
+	generously sent	me feedback, please see	the aux/CHANGES.*  files
+	included in this distribution.
+
+	A number of features have been added to	Chip8 with this	release.  A
+	few of them are	detailed here:
+
+Reference Manual		     Chip8			Read Me(Chip8)

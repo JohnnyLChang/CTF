@@ -1,0 +1,135 @@
+'\" t
+.\" chip8 - project change supervisor
+.\" Copyright (C) 1990, 1998, 2012 Peter Miller
+.\"
+.\" This program is free software; you can redistribute it and/or modify
+.\" it under the terms of the GNU General Public License as published by
+.\" the Free Software Foundation; either version 2 of the License, or
+.\" (at your option) any later version.
+.\"
+.\" This program is distributed in the hope that it will be useful,
+.\" but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+.\" General Public License for more details.
+.\"
+.\" You should have received a copy of the GNU General Public License
+.\" along with this program. If not, see <http://www.gnu.org/licenses/>.
+.\"
+.if n .ftr CB B
+.if n .ftr CI I
+.if n .ftr CW R
+.if n .ftr C  R
+.TH "Read Me" Chip8 Chip8 "Reference Manual"
+.if n .hy 0
+.if n .ad l
+.if n .nr IN 8n
+.so etc/version.so
+.SH NAME
+chip8 \- project change supervisor
+.XX "" "The README File"
+.br
+.if t .ds C) \(co
+.if n .ds C) (C)
+Copyright \*(C) \*(Y) Peter Miller
+.br
+.PP
+.I Chip8
+is distributed under the terms of the
+GNU General Public License.
+See the LICENSE section, below, for more details.
+.SH DESCRIPTION
+.I Chip8
+was an interpreter used in a number of home computers
+based on RCA's CDP1802 processor in the late 1970's.
+It implements a small machine designed specifically
+for simple video games.  It has less than 40 instructions,
+including arithmetic, control flow, graphics, and sound.
+.PP
+This package includes an assembler for chip8,
+a disassembler, and an X client to run chip8 programs.
+.so etc/ref-games.so
+.PP
+The assembler understood by this package differs from the
+assembler originaly documented for CHIP\[hy]8.  This is for a
+number of reasons... (a) the original was unpleasant to
+write a lexer for, (b) the opcodes were not very orthogonal
+in appearance, (c) the format made arbitrary expression syntax
+have to tiptoe all around it, (d) if I changed it I could
+re\[hy]use code from another of my assemblers.
+.br
+.ne 1i
+.SH ARCHIVE SITE
+The latest version of
+.I Chip8
+is available by HTTP from:
+.RS
+.TS
+tab(;);
+l l s
+l l l.
+URL:;http://chip8.sourceforge.net/
+File:;index.html;# the Chip8 page
+File:;chip8\-\*(v).README;# Description, from tar file
+File:;chip8\-\*(v).lsm;# Description, in LSM format
+File:;chip8\-\*(v).spec;# RedHat package specification
+File:;chip8\-\*(v).tar.gz;# the complete source
+.TE
+.RE
+.PP
+This directory also contains a few other pieces of software written by me.
+Please have a look if you are interested.
+.br
+.ne 1i
+.SH BUILDING
+Instructions on how to build and test
+.I Chip8
+are to be found in the
+.I BUILDING
+file included in this distribution.
+.br
+.ne 1i
+.SH LICENSE
+.I Chip8
+is free software;
+you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation;
+either version 2 of the License,
+or (at your option) any later version.
+.PP
+.I Chip8
+is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY;
+without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+.PP
+You should have received a copy of the GNU General Public License along
+with this program. If not, see <http://www.gnu.org/licenses/>.
+.PP
+It should be in the
+.I LICENSE
+file included in this distribution.
+.br
+.ne 1i
+.SH AUTHOR
+.TS
+tab(;);
+l r l.
+Peter Miller;E\[hy]Mail:;pmiller@opensource.org.au
+\f(CW/\e/\e*\fR;WWW:;http://miller.emu.id.au/pmiller/
+.TE
+.bp
+.SH RELEASE NOTES
+For excruciating detail,
+.XX "" "Release Notes"
+and also acknowledgments of those who generously sent me feedback,
+please see the
+.I aux/CHANGES.*
+files included in this distribution.
+.PP
+A number of features have been added to
+.I Chip8
+with this release.
+A few of them are detailed here:
+.\" .so etc/new.so

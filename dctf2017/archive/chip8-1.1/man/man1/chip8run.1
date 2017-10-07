@@ -1,0 +1,192 @@
+.\"
+.\"	chip8 - video game interpreter
+.\"	Copyright (C) 1990, 1998, 2012 Peter Miller
+.\"
+.\"	This program is free software; you can redistribute it and/or modify
+.\"	it under the terms of the GNU General Public License as published by
+.\"	the Free Software Foundation; either version 2 of the License, or
+.\"	(at your option) any later version.
+.\"
+.\"	This program is distributed in the hope that it will be useful,
+.\"	but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\"	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\"	GNU General Public License for more details.
+.\"
+.\"	You should have received a copy of the GNU General Public License
+.\"	along with this program. If not, see
+.\"	<http://www.gnu.org/licenses/>.
+.\"
+.so etc/libdir.so
+.hy 0
+.ad l
+.ds n) chip8run
+.TH \*(n) 1
+.SH NAME
+chip8run \- run a chip8 program
+.if require_index \{
+.XX "chip8run(1)" "run a chip8 program"
+.\}
+.SH SYNOPSIS
+.B \*(n)
+[
+.IR option ...
+]
+.I game
+.br
+.B \*(n)
+[
+.IR option ...
+]
+.B \-File
+.I binary\[hy]file
+.br
+.B \*(n)
+.B \-Help
+.br
+.B \*(n)
+.B \-VERSion
+.SH DESCRIPTION
+The
+.I \*(n)
+program is used to run chip8 programs.
+It is an X11 client.
+.PP
+The first form, where only the name of a game is given,
+constructs a filename of the form \f(CW\*(L)/\fP\fIgame\fP\f(CW.chp\fP
+and attempts to open it.
+.PP
+The second form may be used to open a specific file.
+.PP
+A great variety of file formats are understood, including some of the
+HP48 formats, and also the \s-2UNIX\s+2 executable \f(CW#!\fP convention.
+.SH OPTIONS
+The following options are understood.
+.TP 8n
+.B \-Help
+This option may be used to
+provide information about how to use the
+.I \*(n)
+program.
+.TP 8n
+.B \-VERSion
+This option may be used to
+provide inforation about the version on the
+.I \*(n)
+program being executed.
+.TP 8n
+\fB\-BackGround\fP \fIcolor\fP
+This option may be used to
+set the backgound of the
+.I \*(n)
+window to the color specified.
+.TP 8n
+\fB\-BorDer_color\fP \fIcolor\fP
+This option may be used to
+set the border color of the
+.I \*(n)
+window to the color specified.
+.TP 8n
+\fB\-Border_Width\fP \fInumber\fP
+This option may be used to
+set the border width of the
+.I \*(n)
+window to the width specified.
+.TP 8n
+.B \-DEbug
+This option may be used to
+turn on debugging mode.
+Additional information is displayed as to the chip8 machine's internal state.
+Addition buttons are provided for additional control.
+.TP 8n
+\fB\-Display\fP \fIdisplay\[hy]name\fP
+This option may be used to
+set which X display to use.
+The default is the
+.I $DISPLAY
+environment variable,
+or
+.B ":0"
+if not set.
+.TP 8n
+\fB\-FoNt\fP \fIfont\[hy]name\fP
+This option may be used to
+set the font to be used in the
+.I \*(n)
+window.
+.TP 8n
+\fB\-ForeGround\fP \fIcolor\fP
+This option may be used to
+set the foregound of the
+.I \*(n)
+window to the color specified.
+.TP 8n
+\fB\-Geometry\fP \fIgeometry\[hy]spec\fP
+This option may be used to
+specifiy the initial position and/or size of the
+.I \*(n)
+window.
+.TP 8n
+.B \-IConic
+This option may be used to
+specify that the
+.I \*(n)
+window should initially be iconic.
+You need a cooperative window managaer.
+.TP 8n
+\fB\-Icon_Geometry\fP \fIgeometry\[hy]spec\fP
+This option may be used to
+specify the position and/or size of the
+.I \*(n)
+window's icon.
+.TP 8n
+\fB\-Name\fP \fIstring\fP
+This option may be used to
+set the name the
+.I \*(n)
+window is referred to as.
+.TP 8n
+\fB\-Test_Mode\fP
+This option may be used to test the chip8 machine.
+It makes the "Quit" button generate and exit code of 1, rather than 0 (it
+is an error if the user quits out of a test).
+It makes screen placement forced.
+Run\[hy]time errors result in exit 1, rather than turning on debugging.
+.TP 8n
+\fB\-Title\fP \fIstring\fP
+This option may be used to
+set the name the
+.I \*(n)
+window is referred to as.
+.TP 8n
+\fB\-XRM\fP \fIstring\fP
+This option may be used to
+specify an X resource.
+.PP
+All options are case\[hy]insensitive.
+Abbreviations are indicated by the upper\[hy]case letters.
+Options and other command line arguments may be aribtrarily
+mixed on the command line.
+.so man/man1/z_exit.so
+.SH FILES
+.TP 8n
+\*(L)
+This directory is where games are installed.
+A number of games are included in this distribution.
+.SH SEE ALSO
+.TP 8n
+.IR chip8as (1)
+An assembler, for assembling chip8 programs into the byte\[hy]code to be
+interpreted.
+.TP 8n
+.IR chip8as (5)
+The opcodes, as understood by the assmbler, and how they are interpreted
+by the interpreter.
+.TP 8n
+.IR chip8run (5)
+The file format, as output by the assembler and as understood by the
+interpreter.
+.TP 8n
+.IR chip8dis (1)
+A disassembler, so that you can turn assembled byte code into something
+more readable.
+.so man/man1/z_copyright.so

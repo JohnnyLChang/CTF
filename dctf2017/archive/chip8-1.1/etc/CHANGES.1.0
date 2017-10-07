@@ -1,0 +1,1004 @@
+
+
+
+Project "chip8-old"						 Page 1
+List of Changes				       Sat Apr 11 22:41:36 1998
+
+Change	State		Description
+------- -------		-------------
+   1	completed	Place chip8 under aegis control.
+   2	completed	Add copyright info.
+   3	completed	Add more copyright info.
+   4	completed	Add a README file.
+   5	completed	Improve version reporting functionality.
+   6	completed	Add manual pages for commands.
+   7	completed	Add manual pages for file formats.
+   8	completed	Add tests and testability.
+   9	completed	Make chip8dis understand HP format.
+  10	completed	Make chip8as generate HP format.
+  11	completed	Make chip8run understand format.
+  12	completed	Make snake terminate properly.
+  13	completed	Speed up trace calls.
+  14	completed	Add note in README that it is beta software.
+  15	completed	Incriment patchlevel.
+  16	completed	Border width not set correctly.
+  17	completed	Fix bug in arglex.
+
+
+
+Project "chip8-old", Change 1					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 1, Change 1.
+
+SUMMARY
+	Place chip8 under aegis control.
+
+DESCRIPTION
+	Place chip8 under aegis control.
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_enhancement.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	create	    1	      COPYING
+	source	create	    1	      Howto.cook
+	source	create	    1	      MANIFEST.sh
+	source	create	    1	      Makefile.sh
+	source	create	    1	      as/as.c
+	source	create	    1	      as/as.h
+	source	create	    1	      as/col.c
+	source	create	    1	      as/col.h
+	source	create	    1	      as/emit.c
+	source	create	    1	      as/emit.h
+	source	create	    1	      as/id.c
+	source	create	    1	      as/id.h
+	source	create	    1	      as/lex.c
+	source	create	    1	      as/lex.h
+	source	create	    1	      as/main.c
+	source	create	    1	      as/option.c
+	source	create	    1	      as/option.h
+	source	create	    1	      common/arglex.c
+	source	create	    1	      common/arglex.h
+	source	create	    1	      common/error.c
+	source	create	    1	      common/error.h
+	source	create	    1	      common/main.h
+	source	create	    1	      common/mem.c
+	source	create	    1	      common/mem.h
+	source	create	    1	      common/str.c
+	source	create	    1	      common/str.h
+	source	create	    1	      common/trace.c
+	source	create	    1	      common/trace.h
+	source	create	    1	      common/word.c
+	source	create	    1	      common/word.h
+	source	create	    1	      config
+	source	create	    1	      dis/dis.c
+	source	create	    1	      dis/dis.h
+
+
+
+Project "chip8-old", Change 1					 Page 2
+Change Details				       Sat Apr 11 22:41:37 1998
+
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	create	    1	      dis/main.c
+	source	create	    1	      game/brix.asm
+	source	create	    1	      game/pong.asm
+	source	create	    1	      game/puzzle.asm
+	source	create	    1	      game/snake.asm
+	source	create	    1	      h/stdarg.h
+	source	create	    1	      h/stddef.h
+	source	create	    1	      h/stdlib.h
+	source	create	    1	      run/arena.c
+	source	create	    1	      run/arena.h
+	source	create	    1	      run/button.c
+	source	create	    1	      run/button.h
+	source	create	    1	      run/chip8.c
+	source	create	    1	      run/chip8.icon
+	source	create	    1	      run/debug.c
+	source	create	    1	      run/debug.h
+	source	create	    1	      run/ecks.c
+	source	create	    1	      run/ecks.h
+	source	create	    1	      run/event.c
+	source	create	    1	      run/event.h
+	source	create	    1	      run/machine.c
+	source	create	    1	      run/machine.h
+	source	create	    1	      run/main.c
+	source	create	    1	      run/option.c
+	source	create	    1	      run/option.h
+	source	create	    1	      run/shell.c
+	source	create	    1	      run/shell.h
+	source	create	    1	      run/tile.c
+	source	create	    1	      run/window.c
+	source	create	    1	      run/window.h
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Thu Nov 29	peter
+			11:29:54 1990
+	develop_begin	Thu Nov 29	peter	 Elapsed time: 1.477
+			11:30:27 1990		 days.
+	develop_end	Fri Nov 30	peter
+			15:04:56 1990
+	review_pass	Fri Nov 30	peter
+			15:07:57 1990
+	integrate_begin Fri Nov 30	peter	 Elapsed time: 0.066
+			15:09:23 1990		 days.
+	integrate_pass	Fri Nov 30	peter
+			15:39:16 1990
+
+
+
+Project "chip8-old", Change 2					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 2, Change 2.
+
+SUMMARY
+	Add copyright info.
+
+DESCRIPTION
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_bug.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    1	      Howto.cook
+	source	modify	    1	      MANIFEST.sh
+	source	modify	    1	      Makefile.sh
+	source	modify	    1	      as/col.c
+	source	modify	    1	      as/col.h
+	source	modify	    1	      common/arglex.c
+	source	modify	    1	      common/arglex.h
+	source	modify	    1	      common/error.c
+	source	modify	    1	      common/error.h
+	source	modify	    1	      common/main.h
+	source	modify	    1	      common/mem.c
+	source	modify	    1	      common/mem.h
+	source	modify	    1	      common/str.c
+	source	modify	    1	      common/str.h
+	source	modify	    1	      common/trace.c
+	source	modify	    1	      common/trace.h
+	source	modify	    1	      common/word.c
+	source	modify	    1	      common/word.h
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Fri Nov 30	peter
+			16:28:12 1990
+	develop_begin	Fri Nov 30	peter	 Elapsed time: 1.000
+			16:30:33 1990		 days.
+	develop_end	Mon Dec	 3	peter	 Elapsed time: 0.025
+			10:06:51 1990		 days.
+	review_pass	Mon Dec	 3	peter
+			10:18:16 1990
+	integrate_begin Mon Dec	 3	peter	 Elapsed time: 0.062
+			10:19:03 1990		 days.
+	integrate_pass	Mon Dec	 3	peter
+			10:47:02 1990
+
+
+
+Project "chip8-old", Change 3					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 3, Change 3.
+
+SUMMARY
+	Add more copyright info.
+
+DESCRIPTION
+	Add more copyright info.
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_bug.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    1	      as/as.c
+	source	modify	    1	      as/as.h
+	source	modify	    1	      as/emit.c
+	source	modify	    1	      as/emit.h
+	source	modify	    1	      as/id.c
+	source	modify	    1	      as/id.h
+	source	modify	    1	      as/lex.c
+	source	modify	    1	      as/lex.h
+	source	modify	    1	      as/main.c
+	source	modify	    1	      as/option.c
+	source	modify	    1	      as/option.h
+	source	modify	    1	      dis/dis.c
+	source	modify	    1	      dis/dis.h
+	source	modify	    1	      dis/main.c
+	source	modify	    1	      run/arena.c
+	source	modify	    1	      run/arena.h
+	source	modify	    1	      run/button.c
+	source	modify	    1	      run/button.h
+	source	modify	    1	      run/chip8.c
+	source	modify	    1	      run/debug.c
+	source	modify	    1	      run/debug.h
+	source	modify	    1	      run/ecks.c
+	source	modify	    1	      run/ecks.h
+	source	modify	    1	      run/event.c
+	source	modify	    1	      run/event.h
+	source	modify	    1	      run/machine.c
+	source	modify	    1	      run/machine.h
+	source	modify	    1	      run/main.c
+	source	modify	    1	      run/option.c
+	source	modify	    1	      run/option.h
+	source	modify	    1	      run/shell.c
+	source	modify	    1	      run/shell.h
+	source	modify	    1	      run/tile.c
+
+
+
+Project "chip8-old", Change 3					 Page 2
+Change Details				       Sat Apr 11 22:41:37 1998
+
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    1	      run/window.c
+	source	modify	    1	      run/window.h
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Mon Dec	 3	peter
+			10:53:59 1990
+	develop_begin	Mon Dec	 3	peter	 Elapsed time: 0.133
+			10:54:09 1990		 days.
+	develop_end	Mon Dec	 3	peter
+			11:54:00 1990
+	review_pass	Mon Dec	 3	peter
+			11:54:25 1990
+	integrate_begin Mon Dec	 3	peter	 Elapsed time: 0.041
+			11:55:20 1990		 days.
+	integrate_pass	Mon Dec	 3	peter
+			12:13:39 1990
+
+
+
+Project "chip8-old", Change 4					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 4, Change 4.
+
+SUMMARY
+	Add a README file.
+
+DESCRIPTION
+	Add a README file.
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_bug.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	create	    1	      Contribution
+	source	modify	    2	      Howto.cook
+	source	create	    1	      README
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Mon Dec	 3	peter
+			12:18:20 1990
+	develop_begin	Mon Dec	 3	peter	 Elapsed time: 0.352
+			12:18:35 1990		 days.
+	develop_end	Mon Dec	 3	peter	 Elapsed time: 0.231
+			14:56:46 1990		 days.
+	review_pass	Mon Dec	 3	peter
+			16:40:43 1990
+	integrate_begin Mon Dec	 3	peter	 Elapsed time: 1.000
+			16:41:26 1990		 days.
+	integrate_pass	Tue Dec	 4	peter
+			11:33:09 1990
+
+
+
+Project "chip8-old", Change 5					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 5, Change 5.
+
+SUMMARY
+	Improve version reporting functionality.
+
+DESCRIPTION
+	Improve version reporting functionality.
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_bug.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    2	      as/main.c
+	source	create	    1	      common/help.c
+	source	create	    1	      common/help.h
+	source	create	    1	      common/patchlevel.h
+	source	create	    1	      common/version.c
+	source	create	    1	      common/version.h
+	source	modify	    2	      dis/main.c
+	source	modify	    2	      run/main.c
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Tue Dec	 4	peter
+			11:34:30 1990
+	develop_begin	Tue Dec	 4	peter	 Elapsed time: 0.250
+			11:42:47 1990		 days.
+	develop_end	Tue Dec	 4	peter
+			13:35:29 1990
+	review_pass	Tue Dec	 4	peter
+			13:36:36 1990
+	integrate_begin Tue Dec	 4	peter	 Elapsed time: 0.030
+			13:39:52 1990		 days.
+	integrate_pass	Tue Dec	 4	peter
+			13:53:29 1990
+
+
+
+Project "chip8-old", Change 6					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 6, Change 6.
+
+SUMMARY
+	Add manual pages for commands.
+
+DESCRIPTION
+	Add manual pages for commands.
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_enhancement.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	create	    1	      as/chip8as.1
+	source	modify	    3	      as/main.c
+	source	create	    1	      dis/chip8dis.1
+	source	modify	    3	      dis/main.c
+	source	create	    1	      run/chip8run.1
+	source	modify	    3	      run/main.c
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Tue Dec	 4	peter
+			14:14:10 1990
+	develop_begin	Tue Dec	 4	peter	 Elapsed time: 0.328
+			14:14:20 1990		 days.
+	develop_end	Tue Dec	 4	peter
+			16:42:00 1990
+	review_pass	Tue Dec	 4	peter
+			16:44:01 1990
+	integrate_begin Tue Dec	 4	peter	 Elapsed time: 0.023
+			16:44:41 1990		 days.
+	integrate_pass	Tue Dec	 4	peter
+			16:54:50 1990
+
+
+
+Project "chip8-old", Change 7					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 7, Change 7.
+
+SUMMARY
+	Add manual pages for file formats.
+
+DESCRIPTION
+	Add manual pages for file formats.
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_enhancement.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    1	      README
+	source	modify	    1	      as/chip8as.1
+	source	create	    1	      as/chip8as.5
+	source	modify	    4	      as/main.c
+	source	modify	    1	      dis/chip8dis.1
+	source	modify	    4	      dis/main.c
+	source	modify	    1	      run/chip8run.1
+	source	create	    1	      run/chip8run.5
+	source	modify	    4	      run/main.c
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Tue Dec	 4	peter
+			17:00:56 1990
+	develop_begin	Tue Dec	 4	peter	 Elapsed time: 2.000
+			17:01:13 1990		 days.
+	develop_end	Thu Dec	 6	peter
+			11:23:23 1990
+	review_pass	Thu Dec	 6	peter
+			11:25:12 1990
+	integrate_begin Thu Dec	 6	peter	 Elapsed time: 0.086
+			11:26:07 1990		 days.
+	integrate_pass	Thu Dec	 6	peter
+			12:04:53 1990
+
+
+
+Project "chip8-old", Change 8					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 8, Change 8.
+
+SUMMARY
+	Add tests and testability.
+
+DESCRIPTION
+	Add tests and testability.
+
+	This change is exempt from testing against the baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_enhancement.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    2	      as/as.c
+	source	modify	    2	      as/col.c
+	source	modify	    2	      as/emit.c
+	source	modify	    2	      dis/dis.c
+	source	modify	    2	      run/machine.c
+	source	modify	    5	      run/main.c
+	source	modify	    2	      run/option.c
+	source	modify	    2	      run/option.h
+	source	modify	    2	      run/shell.c
+	test	create	    1	      test/00/t0001a.sh
+	test	create	    1	      test/00/t0002a.sh
+	test	create	    1	      test/00/t0003a.sh
+	test	create	    1	      test/00/t0004a.sh
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Thu Dec	 6	peter
+			12:08:40 1990
+	develop_begin	Thu Dec	 6	peter	 Elapsed time: 0.387
+			12:09:07 1990		 days.
+	develop_end	Thu Dec	 6	peter
+			15:03:23 1990
+	review_pass	Thu Dec	 6	peter
+			15:06:26 1990
+	integrate_begin Thu Dec	 6	peter	 Elapsed time: 0.045
+			15:07:17 1990		 days.
+	integrate_pass	Thu Dec	 6	peter
+			15:27:42 1990
+
+
+
+Project "chip8-old", Change 9					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 9, Change 9.
+
+SUMMARY
+	Make chip8dis understand HP format.
+
+DESCRIPTION
+	Make chip8dis understand HP format.
+
+	This change is exempt from testing against the baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_enhancement.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    3	      dis/dis.c
+	test	modify	    1	      test/00/t0001a.sh
+	test	modify	    1	      test/00/t0002a.sh
+	test	modify	    1	      test/00/t0003a.sh
+	test	modify	    1	      test/00/t0004a.sh
+	test	create	    1	      test/00/t0005a.sh
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Thu Dec	 6	peter
+			15:31:25 1990
+	develop_begin	Thu Dec	 6	peter	 Elapsed time: 0.167
+			15:31:50 1990		 days.
+	develop_end	Thu Dec	 6	peter
+			16:46:50 1990
+	review_pass	Thu Dec	 6	peter
+			16:49:08 1990
+	integrate_begin Thu Dec	 6	peter	 Elapsed time: 0.024
+			16:49:56 1990		 days.
+	integrate_pass	Thu Dec	 6	peter
+			17:00:38 1990
+
+
+
+Project "chip8-old", Change 10					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 10, Change 10.
+
+SUMMARY
+	Make chip8as generate HP format.
+
+DESCRIPTION
+	Make chip8as generate HP format.
+
+	This change is exempt from testing against the baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_enhancement.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    1	      Contribution
+	source	modify	    2	      as/chip8as.1
+	source	modify	    3	      as/emit.c
+	source	modify	    2	      as/emit.h
+	source	modify	    5	      as/main.c
+	source	modify	    2	      as/option.c
+	source	modify	    2	      as/option.h
+	source	modify	    1	      game/brix.asm
+	source	modify	    2	      run/chip8run.1
+	source	modify	    1	      run/chip8run.5
+	source	modify	    6	      run/main.c
+	test	create	    1	      test/00/t0006a.sh
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Thu Dec	 6	peter
+			17:02:04 1990
+	develop_begin	Thu Dec	 6	peter	 Elapsed time: 1.000
+			17:02:20 1990		 days.
+	develop_end	Fri Dec	 7	peter
+			15:29:44 1990
+	review_pass	Fri Dec	 7	peter
+			15:33:58 1990
+	integrate_begin Fri Dec	 7	peter	 Elapsed time: 0.030
+			15:34:42 1990		 days.
+	integrate_pass	Fri Dec	 7	peter
+			15:48:18 1990
+
+
+
+Project "chip8-old", Change 11					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 11, Change 11.
+
+SUMMARY
+	Make chip8run understand format.
+
+DESCRIPTION
+	Make chip8run understand format.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_enhancement.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    3	      run/machine.c
+	source	modify	    7	      run/main.c
+	test	create	    1	      test/00/t0007a.sh
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Fri Dec	 7	peter
+			15:51:05 1990
+	develop_begin	Fri Dec	 7	peter	 Elapsed time: 1.000
+			15:53:02 1990		 days.
+	develop_end	Mon Dec 10	peter
+			14:01:03 1990
+	review_pass	Mon Dec 10	peter
+			14:03:31 1990
+	integrate_begin Mon Dec 10	peter	 Elapsed time: 0.170
+			14:04:17 1990		 days.
+	integrate_pass	Mon Dec 10	peter
+			15:20:36 1990
+
+
+
+Project "chip8-old", Change 12					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 12, Change 12.
+
+SUMMARY
+	Make snake terminate properly.
+
+DESCRIPTION
+	Make snake terminate properly.
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_enhancement.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    1	      game/snake.asm
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Mon Dec 10	peter
+			15:23:40 1990
+	develop_begin	Mon Dec 10	peter	 Elapsed time: 1.000
+			15:23:55 1990		 days.
+	develop_end	Tue Dec 11	peter
+			13:24:33 1990
+	review_pass	Tue Dec 11	peter
+			13:33:56 1990
+	integrate_begin Tue Dec 11	peter	 Elapsed time: 0.024
+			13:34:37 1990		 days.
+	integrate_pass	Tue Dec 11	peter
+			13:45:34 1990
+
+
+
+Project "chip8-old", Change 13					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 13, Change 13.
+
+SUMMARY
+	Speed up trace calls.
+
+DESCRIPTION
+	Speed up trace calls.
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_enhancement.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    2	      common/trace.c
+	source	modify	    2	      common/trace.h
+	source	modify	    4	      run/machine.c
+	source	modify	    3	      run/shell.c
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Tue Dec 11	peter
+			14:04:01 1990
+	develop_begin	Tue Dec 11	peter	 Elapsed time: 0.274
+			14:04:18 1990		 days.
+	develop_end	Tue Dec 11	peter
+			16:07:34 1990
+	review_pass	Tue Dec 11	peter
+			16:10:02 1990
+	integrate_begin Tue Dec 11	peter	 Elapsed time: 0.077
+			16:10:55 1990		 days.
+	integrate_pass	Tue Dec 11	peter
+			16:45:36 1990
+
+
+
+Project "chip8-old", Change 14					 Page 1
+Change Details				       Sat Apr 11 22:41:37 1998
+
+NAME
+	Project "chip8-old", Delta 14, Change 14.
+
+SUMMARY
+	Add note in README that it is beta software.
+
+DESCRIPTION
+	Add note in README that it is beta software.
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_enhancement.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    2	      README
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Tue Dec 11	peter
+			16:54:28 1990
+	develop_begin	Tue Dec 11	peter	 Elapsed time: 0.615
+			16:55:03 1990		 days.
+	develop_end	Tue Dec 11	peter
+			21:31:55 1990
+	review_pass	Tue Dec 11	peter
+			21:32:28 1990
+	integrate_begin Tue Dec 11	peter	 Elapsed time: 0.023
+			21:33:29 1990		 days.
+	integrate_pass	Tue Dec 11	peter
+			21:43:49 1990
+
+
+
+Project "chip8-old", Change 15					 Page 1
+Change Details				       Sat Apr 11 22:41:38 1998
+
+NAME
+	Project "chip8-old", Delta 15, Change 15.
+
+SUMMARY
+	Incriment patchlevel.
+
+DESCRIPTION
+	Incriment patch level.
+	Sent beta copy to
+		Andreas Gustafsson <gson@spiff.hut.fi>
+		Roger Iviw <slsw2@cc.usu.edu
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_enhancement.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    1	      common/patchlevel.h
+	source	modify	    1	      game/pong.asm
+	source	modify	    1	      game/puzzle.asm
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Tue Dec 11	peter
+			22:17:41 1990
+	develop_begin	Tue Dec 11	peter	 Elapsed time: 0.024
+			22:18:01 1990		 days.
+	develop_end	Tue Dec 11	peter
+			22:28:49 1990
+	review_pass	Tue Dec 11	peter
+			22:29:06 1990
+	integrate_begin Tue Dec 11	peter	 Elapsed time: 0.024
+			22:30:04 1990		 days.
+	integrate_pass	Tue Dec 11	peter
+			22:40:59 1990
+
+
+
+Project "chip8-old", Change 16					 Page 1
+Change Details				       Sat Apr 11 22:41:38 1998
+
+NAME
+	Project "chip8-old", Delta 16, Change 16.
+
+SUMMARY
+	Border width not set correctly.
+
+DESCRIPTION
+	Border width not set correctly.
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_bug.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    2	      run/window.c
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Tue Dec 11	peter
+			22:49:35 1990
+	develop_begin	Tue Dec 11	peter	 Elapsed time: 0.046
+			22:50:55 1990		 days.
+	develop_end	Tue Dec 11	peter
+			23:11:31 1990
+	review_pass	Tue Dec 11	peter
+			23:12:37 1990
+	integrate_begin Tue Dec 11	peter	 Elapsed time: 1.000
+			23:13:15 1990		 days.
+	integrate_pass	Wed Dec 12	peter
+			10:01:38 1990
+
+
+
+Project "chip8-old", Change 17					 Page 1
+Change Details				       Sat Apr 11 22:41:38 1998
+
+NAME
+	Project "chip8-old", Delta 17, Change 17.
+
+SUMMARY
+	Fix bug in arglex.
+
+DESCRIPTION
+	Fix bug in arglex.
+
+	This change is exempt from testing against the development
+	directory.  This change is exempt from testing against the
+	baseline.
+
+
+ARCHITECTURE
+	This change must build and test in the "unspecified"
+	architecture.
+
+CAUSE
+	This change was caused by internal_bug.
+
+FILES
+	Type	Action	 Edit	      File Name
+	------- -------- -------      -----------
+	source	modify	    2	      common/arglex.c
+	source	modify	    5	      dis/main.c
+	source	modify	    2	      run/ecks.h
+
+HISTORY
+	What		When		Who	 Comment
+	------		------		-----	 ---------
+	new_change	Thu Mar 14	pmiller
+			16:00:17 1991
+	develop_begin	Thu Mar 14	pmiller	 Elapsed time: 18.000
+			16:01:18 1991		 days.
+	develop_end	Tue Apr	 9	pmiller
+			15:52:45 1991
+	review_pass	Tue Apr	 9	pmiller
+			15:54:50 1991
+	integrate_begin Tue Apr	 9	pmiller
+			15:55:18 1991
+	integrate_pass	Tue Apr	 9	pmiller
+			16:00:33 1991

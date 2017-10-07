@@ -1,0 +1,81 @@
+.\"
+.\"	chip8 - video game interpreter
+.\"	Copyright (C) 1990, 1998, 2012 Peter Miller
+.\"
+.\"	This program is free software; you can redistribute it and/or modify
+.\"	it under the terms of the GNU General Public License as published by
+.\"	the Free Software Foundation; either version 2 of the License, or
+.\"	(at your option) any later version.
+.\"
+.\"	This program is distributed in the hope that it will be useful,
+.\"	but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\"	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\"	GNU General Public License for more details.
+.\"
+.\"	You should have received a copy of the GNU General Public License
+.\"	along with this program. If not, see
+.\"	<http://www.gnu.org/licenses/>.
+.\"
+.hy 0
+.ad l
+.ds n) chip8dis
+.TH \*(n) 1
+.SH NAME
+chip8dis \- disassemble chip8 programs
+.if require_index \{
+.XX "chip8dis(1)" "disassemble chip8 programs"
+.\}
+.SH SYNOPSIS
+.B \*(n)
+[
+.IR option ...
+]
+.I binary\[hy]file
+.I assembler\[hy]file
+.br
+.B \*(n)
+.B \-Help
+.br
+.B \*(n)
+.B \-VERSion
+.SH DESCRIPTION
+The
+.I \*(n)
+program is used to disassemble chip8 programs.
+.SH OPTIONS
+The following options are understood.
+.TP 8n
+.B \-Help
+This option may be used to
+provide information about how to use the
+.I \*(n)
+program.
+.TP 8n
+.B \-VERSion
+This option may be used to
+provide inforation about the version on the
+.I \*(n)
+program being executed.
+.PP
+All options are case\[hy]insensitive.
+Abbreviations are indicated by the upper\[hy]case letters.
+Options and other command line arguments may be aribtrarily
+mixed on the command line.
+.so man/man1/z_exit.so
+.SH SEE ALSO
+.TP 8n
+.IR chip8as (1)
+An assembler, for assembling chip8 programs into the byte\[hy]code to be
+interpreted.
+.TP 8n
+.IR chip8as (5)
+The opcodes, as understood by the assmbler, and how they are interpreted
+by the interpreter.
+.TP 8n
+.IR chip8run (1)
+The interpreter, to run the assembled byte code.
+.TP 8n
+.IR chip8run (5)
+The file format, as output by the assembler and as understood by the
+interpreter.
+.so man/man1/z_copyright.so

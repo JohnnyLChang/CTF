@@ -1,0 +1,273 @@
+Format: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?rev=174
+Upstream-Name: chip8
+Upstream-Contact: Peter Miller <pmiller@opensource.org.au>
+Source: http://chip8.sourceforge.net/
+
+Files: chip8as/as.c
+ chip8as/as.h
+ chip8as/col.c
+ chip8as/col.h
+ chip8as/conditional.c
+ chip8as/conditional.h
+ chip8as/cross_refer.c
+ chip8as/cross_refer.h
+ chip8as/emit.c
+ chip8as/emit.h
+ chip8as/expr.c
+ chip8as/expr.h
+ chip8as/id.c
+ chip8as/id.h
+ chip8as/ilist.c
+ chip8as/ilist.h
+ chip8as/lex.c
+ chip8as/lex.h
+ chip8as/main.c
+ chip8as/option.c
+ chip8as/option.h
+ chip8as/output.c
+ chip8as/output.h
+ chip8as/output/asc.c
+ chip8as/output/asc.h
+ chip8as/output/c.c
+ chip8as/output/c.h
+ chip8as/output/hp.c
+ chip8as/output/hp.h
+ chip8as/output/private.c
+ chip8as/output/private.h
+ chip8as/output/raw.c
+ chip8as/output/raw.h
+ chip8as/output/unix.c
+ chip8as/output/unix.h
+ chip8dis/dis.c
+ chip8dis/dis.h
+ chip8dis/main.c
+ chip8run/arena.c
+ chip8run/arena.h
+ chip8run/arglex2.c
+ chip8run/arglex2.h
+ chip8run/autotest.c
+ chip8run/autotest.h
+ chip8run/button.c
+ chip8run/button.h
+ chip8run/chip8.c
+ chip8run/chip8.h
+ chip8run/debug.c
+ chip8run/debug.h
+ chip8run/ecks.c
+ chip8run/ecks.h
+ chip8run/event.c
+ chip8run/event.h
+ chip8run/machine.c
+ chip8run/machine.h
+ chip8run/main.c
+ chip8run/option.c
+ chip8run/option.h
+ chip8run/shell.c
+ chip8run/shell.h
+ chip8run/tile.c
+ chip8run/tile.h
+ chip8run/window.c
+ chip8run/window.h
+ common/ac/assert.h
+ common/ac/ctype.h
+ common/ac/fcntl.h
+ common/ac/limits.h
+ common/ac/stdarg.h
+ common/ac/stddef.h
+ common/ac/stdio.h
+ common/ac/stdlib.h
+ common/ac/string.c
+ common/ac/string.h
+ common/ac/sys/stat.h
+ common/ac/sys/types.h
+ common/ac/time.h
+ common/ac/unistd.h
+ common/arglex.c
+ common/arglex.h
+ common/debug.h
+ common/fstrcmp.c
+ common/fstrcmp.h
+ common/help.c
+ common/help.h
+ common/input.c
+ common/input.h
+ common/input/asc.c
+ common/input/asc.h
+ common/input/binary.c
+ common/input/binary.h
+ common/input/hp.c
+ common/input/hp.h
+ common/input/private.c
+ common/input/private.h
+ common/input/unix.c
+ common/input/unix.h
+ common/libdir.c
+ common/libdir.h
+ common/sizeof.h
+ common/str.c
+ common/str.h
+ common/trace.c
+ common/trace.h
+ common/versio_stamp.c
+ common/versio_stamp.h
+ common/version.h
+ common/word.c
+ common/word.h
+ linux-x86_64/common/config.h
+Copyright: 1990, 1998, 2012, Peter Miller
+ 1990, 1998-1999, 2012 Peter Miller
+ 1998, 2012 Peter Miller
+ 2012, Peter Miller
+License: GPL-2+
+ On Debian systems, the complete text of the GNU
+ General Public License, version 2, can be found in
+ /usr/share/common-licenses/GPL-2.
+
+Files: datadir/blitz.asm
+ datadir/connect4.asm
+ datadir/guess.asm
+ datadir/hidden.asm
+ datadir/invaders.asm
+ datadir/maze.asm
+ datadir/merlin.asm
+ datadir/missile.asm
+ datadir/race.asm
+ datadir/tictac.asm
+Copyright: 1991, David Winter
+ 1991, David Winter"
+ David Winter
+ David Winter"
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: chip8run/hex10.h
+ chip8run/hex5.h
+ common/patchlevel.h
+ datadir/15puzzle.asm
+ datadir/ant.asm
+ datadir/tank.asm
+ datadir/tetris.asm
+ datadir/ufo.asm
+ datadir/wipeoff.asm
+Copyright: *No copyright*
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: chip8run/hex10.asm
+ chip8run/hex5.asm
+Copyright: 1998, 2012 Peter Miller
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: common/version.c
+Copyright: %s Peter Miller;\n", _years());
+ 1990, 1998, 2012, Peter Miller
+License: GPL-2+
+ On Debian systems, the complete text of the GNU
+ General Public License, version 2, can be found in
+ /usr/share/common-licenses/GPL-2.
+
+Files: datadir/syzygy.asm
+Copyright: 1990, Roy Trevino (RTT)
+ 1990, Roy Trevino"
+ ; notice
+ message is preserved, and any modified versions
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/brix.asm
+Copyright: 1990, Andreas Gustafsson
+ 1990, Andreas Gustafsson"
+ 1998, 2012 Peter Miller
+ message is preserved, and any modified versions
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/pong.asm
+Copyright: 1990, Andreas Gustafsson
+ 1990, Paul Vervalin
+ 1990, Paul Vervalin"
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/spacefight.asm
+Copyright: 1992, Carsten Soerensen
+ 1992, Carsten Soerensen"
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/blinky.asm
+Copyright: 1991, Christian Egeberg"
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/field.asm
+Copyright: 1991, D Roland
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/kaleid.asm
+Copyright: 1991, David Winter"
+ 1998, 2012 Peter Miller
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/joust.asm
+Copyright: 1991, Erin S Catto"
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/vers.asm
+Copyright: 1991, JMN
+ 1991, JMN"
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/alien.asm
+Copyright: Jonas Lindstedt
+ Jonas Lindstedt"
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/car.asm
+Copyright: 1994, K.v.Sengbusch
+ 1994, K.v.Sengbusch"
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/uboat.asm
+Copyright: 1994, Michael Kemper
+ 1994, Michael Kemper"
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/hpiper.asm
+Copyright: 1991, Paul Raines"
+ Paul Raines
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/vbrix.asm
+Copyright: 1996, Paul Robson"
+ Paul Robson 1996, ***
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/snake.asm
+Copyright: 1990, 1998, 2012, Peter Miller
+ 1998, 2012 Peter Miller"
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/puzzle.asm
+Copyright: 1990, Roger Ivie
+ 1990, Roger Ivie"
+License: UNKNOWN
+ The licenses covering these files are unknown.
+
+Files: datadir/worm3.asm
+Copyright: 1991, Unknown
+ 1991, Unknown"
+License: UNKNOWN
+ The licenses covering these files are unknown.
+

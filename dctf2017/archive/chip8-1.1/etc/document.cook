@@ -1,0 +1,158 @@
+/*
+ * chip8 - X11 Chip8 interpreter
+ * Copyright (C) 1998, 2012 Peter Miller
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+documentation:
+    [fromto man/man%1/%2.%1 man/cat%1/%2.%1
+        [match_mask man/man%1/%2.%1 [source_files]]
+    ]
+    etc/reference.ps.gz
+    etc/reference.pdf
+    ;
+
+man/cat%1/%2.%1: man/man%1/%2.%1
+{
+    roffpp
+        [cc_include_flags]
+        [resolve man/man%1/%2.%1]
+    | groff -Tascii -P-h -t -p -mpic -man
+    > [target];
+}
+
+man/man%1/%2.%1.d: man/man%1/%2.%1
+    set nocascade
+{
+    c_incl -nc -ns -eia -r -nrec
+        [cc_include_flags]
+        -prefix "'cascade man/man%1/%2.%1 ='"
+        -suffix "';'"
+        [resolve man/man%1/%2.%1]
+        [addprefix -rlp\= [search_list]]
+        -slp [arch] "'[arch]'"
+        -nsri
+        -o [target];
+}
+
+%0%.so.d: %0%.so
+    set nocascade
+{
+    c_incl -nc -ns -eia -r -nrec
+        [cc_include_flags]
+        -prefix "'cascade %0%.so ='"
+        -suffix "';'"
+        [resolve %0%.so]
+        [addprefix -rlp\= [search_list]]
+        -slp [arch] "'[arch]'"
+        -nsri
+        -o [target];
+}
+
+man-dep-files =
+    [addsuffix ".d"
+        [match_mask man/man%1/%2.%1 [source_files]]
+        [match_mask %0%.so [source_files]]
+        [match_mask etc/%.man [source_files]]
+        etc/version.so
+    ];
+
+#include-cooked-nowarn [man-dep-files]
+
+
+%: etc/%.man
+{
+    roffpp
+        [cc_include_flags]
+        [resolve etc/%.man]
+    | groff -Tascii -t -P-hub -man
+    | cat -s
+    > [target];
+}
+
+etc/%.ps.gz: etc/%.man
+{
+    roffpp
+        [cc_include_flags]
+        [resolve etc/%.man]
+    | groff -t -p -mpic -mpspic -man
+    | gzip -9
+    > [target];
+}
+
+etc/%.pdf: etc/%.man
+{
+    groff [cc_include_flags]
+        -t -p -mpic -mpspic -man
+        [resolve etc/%.man]
+        > etc/%.ps;
+    ps2pdf etc/%.ps [target];
+}
+
+etc/%.man.d: etc/%.man
+    set nocascade
+{
+    c_incl -nc -ns -eia -r -nrec
+        [cc_include_flags]
+        -prefix "'cascade etc/%.man ='"
+        -suffix "';'"
+        [resolve etc/%.man]
+        [addprefix -rlp\= [search_list]]
+        -slp [arch] "'[arch]'"
+        -nsri
+        -o [target];
+}
+
+
+etc/reference.man.d: etc/ref-index.so etc/ref-parts.so;
+
+etc/ref-index.so: [match_mask man/man%1/%2.%1 [source_files]]
+    etc/ref-ptx1.awk etc/ref-ptx.ignore etc/ref-ptx2.awk
+{
+    [awk] -f [resolve etc/ref-ptx1.awk]
+        [resolve [match_mask man/man%1/%2.%1 [source_files]]]
+    | ptx -O -r -w1000 -i[resolve etc/ref-ptx.ignore]
+    | sort -t'\'"\'' -f -d +5 -6 +3 -4
+    | [awk] -F'\'"\'' -f [resolve etc/ref-ptx2.awk]
+    > [target];
+}
+
+etc/ref-parts.so: [match_mask man/man%1/%2.%1 [source_files]]
+    etc/ref-ptx.sh
+{
+    sh -f [resolve etc/ref-ptx.sh]
+        [match_mask man/man%1/%2.%1 [source_files]]
+    > [target];
+}
+
+etc/ref-games.so: [match_mask datadir/%.asm [source_files]]
+{
+    echo 'This distribution includes' [count [need]] 'games:' > [target];
+    echo [unsplit ", " [sort [fromto datadir/%.asm % [need]]]]. >> [target];
+}
+
+/*
+ * Catch 22: you need the include files to be there, to work out that
+ * you need to construct them.  This is the minimum set of dependencies
+ * to bootstrap the dependency process.  Sigh.
+ */
+cascade common/ac/stdio.h = [arch]/common/config.h;
+cascade etc/BUILDING.man = etc/version.so ;
+cascade etc/README.man = etc/ref-games.so etc/version.so ;
+cascade etc/index.html = etc/version.so ;
+cascade etc/reference.man = etc/ref-parts.so etc/ref-index.so etc/version.so ;
+cascade man/man1/chip8run.1 = [arch]/etc/libdir.so ;
+cascade man/man1/z_copyright.so = etc/version.so ;
+;

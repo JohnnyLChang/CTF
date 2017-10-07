@@ -1,0 +1,361 @@
+Brix(7)								       Brix(7)
+
+
+
+NNAAMMEE
+       Brix - Knock out	the bricks
+
+SSYYNNOOPPSSIISS
+       cchhii88rruunn bbrriixx
+
+DDEESSCCRRIIPPTTIIOONN
+       This  is	 a  version  of	the classic game of knock out the bricks.  Not
+       particularly exciting, but I had	to include something to	show  how  the
+       interpreter is used.
+
+       Once  you get all of the	bricks,	the game will freeze.  Use the restart
+       button to start the game	again.
+
+   TThhee DDiissppllaayy
+       box with	.sw at (0,0) wid 3.2 ht	1.6 thickness 0.45 box invis with  .sw
+       at  (0,1.55)  wid  0.05 ht 0.05 fill 1 box invis	with .sw at (0.1,1.55)
+       wid 0.05	ht 0.05	fill 1 box invis with .sw at (0.2,1.55)	 wid  0.05  ht
+       0.05  fill  1  box invis	with .sw at (0.3,1.55) wid 0.05	ht 0.05	fill 1
+       box invis with .sw at (0.4,1.55)	wid 0.05 ht 0.05 fill 1	box invis with
+       .sw  at	(2.75,1.55)  wid  0.2  ht  0.05	 fill  1 box invis with	.sw at
+       (2.8,1.55) wid 0.15 ht 0.05 fill	1 box invis with  .sw  at  (2.85,1.55)
+       wid  0.1	 ht  0.05  fill	1 box invis with .sw at	(2.9,1.55) wid 0.05 ht
+       0.05 fill 1 box invis with .sw at (3,1.55) wid 0.2 ht 0.05 fill	1  box
+       invis  with  .sw	 at (3.05,1.55)	wid 0.15 ht 0.05 fill 1	box invis with
+       .sw at (3.1,1.55) wid 0.1  ht  0.05  fill  1  box  invis	 with  .sw  at
+       (3.15,1.55)  wid	 0.05  ht 0.05 fill 1 box invis	with .sw at (2.75,1.5)
+       wid 0.05	ht 0.05	fill 1 box invis with .sw at  (2.9,1.5)	 wid  0.05  ht
+       0.05  fill  1  box invis	with .sw at (3.15,1.5) wid 0.05	ht 0.05	fill 1
+       box invis with .sw at (2.75,1.45) wid 0.05 ht 0.05  fill	 1  box	 invis
+       with  .sw  at  (2.9,1.45) wid 0.05 ht 0.05 fill 1 box invis with	.sw at
+       (3,1.45)	wid 0.2	ht 0.05	fill 1 box invis with .sw at  (3.05,1.45)  wid
+       0.15  ht	 0.05  fill 1 box invis	with .sw at (3.1,1.45) wid 0.1 ht 0.05
+       fill 1 box invis	with .sw at (3.15,1.45)	wid 0.05 ht 0.05  fill	1  box
+       invis with .sw at (2.75,1.4) wid	0.05 ht	0.05 fill 1 box	invis with .sw
+       at (2.9,1.4) wid	0.05 ht	0.05 fill 1 box	invis with .sw at (3,1.4)  wid
+       0.05  ht	 0.05 fill 1 box invis with .sw	at (2.75,1.35) wid 0.2 ht 0.05
+       fill 1 box invis	with .sw at (2.8,1.35) wid 0.15	ht  0.05  fill	1  box
+       invis with .sw at (2.85,1.35) wid 0.1 ht	0.05 fill 1 box	invis with .sw
+       at (2.9,1.35) wid 0.05 ht 0.05 fill 1 box invis with  .sw  at  (3,1.35)
+       wid  0.2	 ht  0.05 fill 1 box invis with	.sw at (3.05,1.35) wid 0.15 ht
+       0.05 fill 1 box invis with .sw at (3.1,1.35) wid	0.1 ht 0.05 fill 1 box
+       invis  with  .sw	 at (3.15,1.35)	wid 0.05 ht 0.05 fill 1	box invis with
+       .sw at (0,1.25) wid  0.15  ht  0.05  fill  1  box  invis	 with  .sw  at
+       (0.05,1.25) wid 0.1 ht 0.05 fill	1 box invis with .sw at	(0.1,1.25) wid
+       0.05 ht 0.05 fill 1 box invis with .sw at (0.2,1.25) wid	0.15  ht  0.05
+       fill  1	box  invis  with .sw at	(0.25,1.25) wid	0.1 ht 0.05 fill 1 box
+       invis with .sw at (0.3,1.25) wid	0.05 ht	0.05 fill 1 box	invis with .sw
+       at (0.4,1.25) wid 0.15 ht 0.05 fill 1 box invis with .sw	at (0.45,1.25)
+       wid 0.1 ht 0.05 fill 1 box invis	with .sw at  (0.5,1.25)	 wid  0.05  ht
+       0.05  fill  1  box invis	with .sw at (0.6,1.25) wid 0.15	ht 0.05	fill 1
+       box invis with .sw at (0.65,1.25) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw  at	(0.7,1.25)  wid	 0.05  ht  0.05	 fill  1 box invis with	.sw at
+       (0.8,1.25) wid 0.15 ht 0.05 fill	1 box invis with  .sw  at  (0.85,1.25)
+       wid  0.1	 ht  0.05  fill	1 box invis with .sw at	(0.9,1.25) wid 0.05 ht
+       0.05 fill 1 box invis with .sw at (1,1.25) wid 0.15 ht 0.05 fill	1  box
+       invis with .sw at (1.05,1.25) wid 0.1 ht	0.05 fill 1 box	invis with .sw
+       at (1.1,1.25) wid 0.05 ht 0.05 fill 1 box invis with .sw	at  (1.2,1.25)
+       wid  0.15  ht  0.05 fill	1 box invis with .sw at	(1.25,1.25) wid	0.1 ht
+       0.05 fill 1 box invis with .sw at (1.3,1.25) wid	0.05 ht	 0.05  fill  1
+       box invis with .sw at (1.4,1.25)	wid 0.15 ht 0.05 fill 1	box invis with
+       .sw at (1.45,1.25) wid 0.1 ht  0.05  fill  1  box  invis	 with  .sw  at
+       (1.5,1.25) wid 0.05 ht 0.05 fill	1 box invis with .sw at	(1.6,1.25) wid
+       0.15 ht 0.05 fill 1 box invis with .sw at (1.65,1.25) wid 0.1  ht  0.05
+       fill  1	box  invis  with .sw at	(1.7,1.25) wid 0.05 ht 0.05 fill 1 box
+       invis with .sw at (1.8,1.25) wid	0.15 ht	0.05 fill 1 box	invis with .sw
+       at  (1.85,1.25) wid 0.1 ht 0.05 fill 1 box invis	with .sw at (1.9,1.25)
+       wid 0.05	ht 0.05	fill 1 box invis with .sw at (2,1.25) wid 0.15 ht 0.05
+       fill  1	box  invis  with .sw at	(2.05,1.25) wid	0.1 ht 0.05 fill 1 box
+       invis with .sw at (2.1,1.25) wid	0.05 ht	0.05 fill 1 box	invis with .sw
+       at (2.2,1.25) wid 0.15 ht 0.05 fill 1 box invis with .sw	at (2.25,1.25)
+       wid 0.1 ht 0.05 fill 1 box invis	with .sw at  (2.3,1.25)	 wid  0.05  ht
+       0.05  fill  1  box invis	with .sw at (2.4,1.25) wid 0.15	ht 0.05	fill 1
+       box invis with .sw at (2.45,1.25) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw  at	(2.5,1.25)  wid	 0.05  ht  0.05	 fill  1 box invis with	.sw at
+       (2.6,1.25) wid 0.15 ht 0.05 fill	1 box invis with  .sw  at  (2.65,1.25)
+       wid  0.1	 ht  0.05  fill	1 box invis with .sw at	(2.7,1.25) wid 0.05 ht
+       0.05 fill 1 box invis with .sw at (2.8,1.25) wid	0.15 ht	 0.05  fill  1
+       box invis with .sw at (2.85,1.25) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw at (2.9,1.25) wid 0.05 ht  0.05  fill  1  box  invis	 with  .sw  at
+       (3,1.25)	 wid 0.15 ht 0.05 fill 1 box invis with	.sw at (3.05,1.25) wid
+       0.1 ht 0.05 fill	1 box invis with .sw at	(3.1,1.25) wid	0.05  ht  0.05
+       fill 1 box invis	with .sw at (0,1.15) wid 0.15 ht 0.05 fill 1 box invis
+       with .sw	at (0.05,1.15) wid 0.1 ht 0.05 fill 1 box invis	 with  .sw  at
+       (0.1,1.15) wid 0.05 ht 0.05 fill	1 box invis with .sw at	(0.2,1.15) wid
+       0.15 ht 0.05 fill 1 box invis with .sw at (0.25,1.15) wid 0.1  ht  0.05
+       fill  1	box  invis  with .sw at	(0.3,1.15) wid 0.05 ht 0.05 fill 1 box
+       invis with .sw at (0.4,1.15) wid	0.15 ht	0.05 fill 1 box	invis with .sw
+       at  (0.45,1.15) wid 0.1 ht 0.05 fill 1 box invis	with .sw at (0.5,1.15)
+       wid 0.05	ht 0.05	fill 1 box invis with .sw at (0.6,1.15)	 wid  0.15  ht
+       0.05  fill  1  box invis	with .sw at (0.65,1.15)	wid 0.1	ht 0.05	fill 1
+       box invis with .sw at (0.7,1.15)	wid 0.05 ht 0.05 fill 1	box invis with
+       .sw  at	(0.8,1.15)  wid	 0.15  ht  0.05	 fill  1 box invis with	.sw at
+       (0.85,1.15) wid 0.1 ht 0.05 fill	1 box invis with .sw at	(0.9,1.15) wid
+       0.05  ht	 0.05  fill  1 box invis with .sw at (1,1.15) wid 0.15 ht 0.05
+       fill 1 box invis	with .sw at (1.05,1.15)	wid 0.1	ht  0.05  fill	1  box
+       invis with .sw at (1.1,1.15) wid	0.05 ht	0.05 fill 1 box	invis with .sw
+       at (1.2,1.15) wid 0.15 ht 0.05 fill 1 box invis with .sw	at (1.25,1.15)
+       wid  0.1	 ht  0.05  fill	1 box invis with .sw at	(1.3,1.15) wid 0.05 ht
+       0.05 fill 1 box invis with .sw at (1.4,1.15) wid	0.15 ht	 0.05  fill  1
+       box invis with .sw at (1.45,1.15) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw at (1.5,1.15) wid 0.05 ht  0.05  fill  1  box  invis	 with  .sw  at
+       (1.6,1.15)  wid	0.15  ht 0.05 fill 1 box invis with .sw	at (1.65,1.15)
+       wid 0.1 ht 0.05 fill 1 box invis	with .sw at  (1.7,1.15)	 wid  0.05  ht
+       0.05  fill  1  box invis	with .sw at (1.8,1.15) wid 0.15	ht 0.05	fill 1
+       box invis with .sw at (1.85,1.15) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw  at	(1.9,1.15)  wid	 0.05  ht  0.05	 fill  1 box invis with	.sw at
+       (2,1.15)	wid 0.15 ht 0.05 fill 1	box invis with .sw at (2.05,1.15)  wid
+       0.1  ht	0.05  fill 1 box invis with .sw	at (2.1,1.15) wid 0.05 ht 0.05
+       fill 1 box invis	with .sw at (2.2,1.15) wid 0.15	ht  0.05  fill	1  box
+       invis with .sw at (2.25,1.15) wid 0.1 ht	0.05 fill 1 box	invis with .sw
+       at (2.3,1.15) wid 0.05 ht 0.05 fill 1 box invis with .sw	at  (2.4,1.15)
+       wid  0.15  ht  0.05 fill	1 box invis with .sw at	(2.45,1.15) wid	0.1 ht
+       0.05 fill 1 box invis with .sw at (2.5,1.15) wid	0.05 ht	 0.05  fill  1
+       box invis with .sw at (2.6,1.15)	wid 0.15 ht 0.05 fill 1	box invis with
+       .sw at (2.65,1.15) wid 0.1 ht  0.05  fill  1  box  invis	 with  .sw  at
+       (2.7,1.15) wid 0.05 ht 0.05 fill	1 box invis with .sw at	(2.8,1.15) wid
+       0.15 ht 0.05 fill 1 box invis with .sw at (2.85,1.15) wid 0.1  ht  0.05
+       fill  1	box  invis  with .sw at	(2.9,1.15) wid 0.05 ht 0.05 fill 1 box
+       invis with .sw at (3,1.15) wid 0.15 ht 0.05 fill	1 box invis  with  .sw
+       at  (3.05,1.15) wid 0.1 ht 0.05 fill 1 box invis	with .sw at (3.1,1.15)
+       wid 0.05	ht 0.05	fill 1 box invis with .sw at (0,1.05) wid 0.15 ht 0.05
+       fill  1	box  invis  with .sw at	(0.05,1.05) wid	0.1 ht 0.05 fill 1 box
+       invis with .sw at (0.1,1.05) wid	0.05 ht	0.05 fill 1 box	invis with .sw
+       at (0.2,1.05) wid 0.15 ht 0.05 fill 1 box invis with .sw	at (0.25,1.05)
+       wid 0.1 ht 0.05 fill 1 box invis	with .sw at  (0.3,1.05)	 wid  0.05  ht
+       0.05  fill  1  box invis	with .sw at (0.4,1.05) wid 0.15	ht 0.05	fill 1
+       box invis with .sw at (0.45,1.05) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw  at	(0.5,1.05)  wid	 0.05  ht  0.05	 fill  1 box invis with	.sw at
+       (0.6,1.05) wid 0.15 ht 0.05 fill	1 box invis with  .sw  at  (0.65,1.05)
+       wid  0.1	 ht  0.05  fill	1 box invis with .sw at	(0.7,1.05) wid 0.05 ht
+       0.05 fill 1 box invis with .sw at (0.8,1.05) wid	0.15 ht	 0.05  fill  1
+       box invis with .sw at (0.85,1.05) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw at (0.9,1.05) wid 0.05 ht  0.05  fill  1  box  invis	 with  .sw  at
+       (1,1.05)	 wid 0.15 ht 0.05 fill 1 box invis with	.sw at (1.05,1.05) wid
+       0.1 ht 0.05 fill	1 box invis with .sw at	(1.1,1.05) wid	0.05  ht  0.05
+       fill  1	box  invis  with .sw at	(1.2,1.05) wid 0.15 ht 0.05 fill 1 box
+       invis with .sw at (1.25,1.05) wid 0.1 ht	0.05 fill 1 box	invis with .sw
+       at  (1.3,1.05) wid 0.05 ht 0.05 fill 1 box invis	with .sw at (1.4,1.05)
+       wid 0.15	ht 0.05	fill 1 box invis with .sw at (1.45,1.05)  wid  0.1  ht
+       0.05  fill  1  box invis	with .sw at (1.5,1.05) wid 0.05	ht 0.05	fill 1
+       box invis with .sw at (1.6,1.05)	wid 0.15 ht 0.05 fill 1	box invis with
+       .sw  at	(1.65,1.05)  wid  0.1  ht  0.05	 fill  1 box invis with	.sw at
+       (1.7,1.05) wid 0.05 ht 0.05 fill	1 box invis with .sw at	(1.8,1.05) wid
+       0.15  ht	 0.05 fill 1 box invis with .sw	at (1.85,1.05) wid 0.1 ht 0.05
+       fill 1 box invis	with .sw at (1.9,1.05) wid 0.05	ht  0.05  fill	1  box
+       invis  with  .sw	at (2,1.05) wid	0.15 ht	0.05 fill 1 box	invis with .sw
+       at (2.05,1.05) wid 0.1 ht 0.05 fill 1 box invis with .sw	at  (2.1,1.05)
+       wid  0.05  ht  0.05 fill	1 box invis with .sw at	(2.2,1.05) wid 0.15 ht
+       0.05 fill 1 box invis with .sw at (2.25,1.05) wid 0.1 ht	 0.05  fill  1
+       box invis with .sw at (2.3,1.05)	wid 0.05 ht 0.05 fill 1	box invis with
+       .sw at (2.4,1.05) wid 0.15 ht  0.05  fill  1  box  invis	 with  .sw  at
+       (2.45,1.05) wid 0.1 ht 0.05 fill	1 box invis with .sw at	(2.5,1.05) wid
+       0.05 ht 0.05 fill 1 box invis with .sw at (2.6,1.05) wid	0.15  ht  0.05
+       fill  1	box  invis  with .sw at	(2.65,1.05) wid	0.1 ht 0.05 fill 1 box
+       invis with .sw at (2.7,1.05) wid	0.05 ht	0.05 fill 1 box	invis with .sw
+       at (2.8,1.05) wid 0.15 ht 0.05 fill 1 box invis with .sw	at (2.85,1.05)
+       wid 0.1 ht 0.05 fill 1 box invis	with .sw at  (2.9,1.05)	 wid  0.05  ht
+       0.05  fill 1 box	invis with .sw at (3,1.05) wid 0.15 ht 0.05 fill 1 box
+       invis with .sw at (3.05,1.05) wid 0.1 ht	0.05 fill 1 box	invis with .sw
+       at  (3.1,1.05)  wid  0.05 ht 0.05 fill 1	box invis with .sw at (0,0.95)
+       wid 0.15	ht 0.05	fill 1 box invis with .sw at (0.05,0.95)  wid  0.1  ht
+       0.05  fill  1  box invis	with .sw at (0.1,0.95) wid 0.05	ht 0.05	fill 1
+       box invis with .sw at (0.2,0.95)	wid 0.15 ht 0.05 fill 1	box invis with
+       .sw  at	(0.25,0.95)  wid  0.1  ht  0.05	 fill  1 box invis with	.sw at
+       (0.3,0.95) wid 0.05 ht 0.05 fill	1 box invis with .sw at	(0.4,0.95) wid
+       0.15  ht	 0.05 fill 1 box invis with .sw	at (0.45,0.95) wid 0.1 ht 0.05
+       fill 1 box invis	with .sw at (0.5,0.95) wid 0.05	ht  0.05  fill	1  box
+       invis with .sw at (0.6,0.95) wid	0.15 ht	0.05 fill 1 box	invis with .sw
+       at (0.65,0.95) wid 0.1 ht 0.05 fill 1 box invis with .sw	at  (0.7,0.95)
+       wid  0.05  ht  0.05 fill	1 box invis with .sw at	(0.8,0.95) wid 0.15 ht
+       0.05 fill 1 box invis with .sw at (0.85,0.95) wid 0.1 ht	 0.05  fill  1
+       box invis with .sw at (0.9,0.95)	wid 0.05 ht 0.05 fill 1	box invis with
+       .sw at (1,0.95) wid  0.15  ht  0.05  fill  1  box  invis	 with  .sw  at
+       (1.05,0.95) wid 0.1 ht 0.05 fill	1 box invis with .sw at	(1.1,0.95) wid
+       0.05 ht 0.05 fill 1 box invis with .sw at (1.2,0.95) wid	0.15  ht  0.05
+       fill  1	box  invis  with .sw at	(1.25,0.95) wid	0.1 ht 0.05 fill 1 box
+       invis with .sw at (1.3,0.95) wid	0.05 ht	0.05 fill 1 box	invis with .sw
+       at (1.4,0.95) wid 0.15 ht 0.05 fill 1 box invis with .sw	at (1.45,0.95)
+       wid 0.1 ht 0.05 fill 1 box invis	with .sw at  (1.5,0.95)	 wid  0.05  ht
+       0.05  fill  1  box invis	with .sw at (1.6,0.95) wid 0.15	ht 0.05	fill 1
+       box invis with .sw at (1.65,0.95) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw  at	(1.7,0.95)  wid	 0.05  ht  0.05	 fill  1 box invis with	.sw at
+       (1.8,0.95) wid 0.15 ht 0.05 fill	1 box invis with  .sw  at  (1.85,0.95)
+       wid  0.1	 ht  0.05  fill	1 box invis with .sw at	(1.9,0.95) wid 0.05 ht
+       0.05 fill 1 box invis with .sw at (2,0.95) wid 0.15 ht 0.05 fill	1  box
+       invis with .sw at (2.05,0.95) wid 0.1 ht	0.05 fill 1 box	invis with .sw
+       at (2.1,0.95) wid 0.05 ht 0.05 fill 1 box invis with .sw	at  (2.2,0.95)
+       wid  0.15  ht  0.05 fill	1 box invis with .sw at	(2.25,0.95) wid	0.1 ht
+       0.05 fill 1 box invis with .sw at (2.3,0.95) wid	0.05 ht	 0.05  fill  1
+       box invis with .sw at (2.4,0.95)	wid 0.15 ht 0.05 fill 1	box invis with
+       .sw at (2.45,0.95) wid 0.1 ht  0.05  fill  1  box  invis	 with  .sw  at
+       (2.5,0.95) wid 0.05 ht 0.05 fill	1 box invis with .sw at	(2.6,0.95) wid
+       0.15 ht 0.05 fill 1 box invis with .sw at (2.65,0.95) wid 0.1  ht  0.05
+       fill  1	box  invis  with .sw at	(2.7,0.95) wid 0.05 ht 0.05 fill 1 box
+       invis with .sw at (2.8,0.95) wid	0.15 ht	0.05 fill 1 box	invis with .sw
+       at  (2.85,0.95) wid 0.1 ht 0.05 fill 1 box invis	with .sw at (2.9,0.95)
+       wid 0.05	ht 0.05	fill 1 box invis with .sw at (3,0.95) wid 0.15 ht 0.05
+       fill  1	box  invis  with .sw at	(3.05,0.95) wid	0.1 ht 0.05 fill 1 box
+       invis with .sw at (3.1,0.95) wid	0.05 ht	0.05 fill 1 box	invis with .sw
+       at  (0,0.85)  wid 0.15 ht 0.05 fill 1 box invis with .sw	at (0.05,0.85)
+       wid 0.1 ht 0.05 fill 1 box invis	with .sw at  (0.1,0.85)	 wid  0.05  ht
+       0.05  fill  1  box invis	with .sw at (0.2,0.85) wid 0.15	ht 0.05	fill 1
+       box invis with .sw at (0.25,0.85) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw  at	(0.3,0.85)  wid	 0.05  ht  0.05	 fill  1 box invis with	.sw at
+       (0.4,0.85) wid 0.15 ht 0.05 fill	1 box invis with  .sw  at  (0.45,0.85)
+       wid  0.1	 ht  0.05  fill	1 box invis with .sw at	(0.5,0.85) wid 0.05 ht
+       0.05 fill 1 box invis with .sw at (0.6,0.85) wid	0.15 ht	 0.05  fill  1
+       box invis with .sw at (0.65,0.85) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw at (0.7,0.85) wid 0.05 ht  0.05  fill  1  box  invis	 with  .sw  at
+       (0.8,0.85)  wid	0.15  ht 0.05 fill 1 box invis with .sw	at (0.85,0.85)
+       wid 0.1 ht 0.05 fill 1 box invis	with .sw at  (0.9,0.85)	 wid  0.05  ht
+       0.05  fill 1 box	invis with .sw at (1,0.85) wid 0.15 ht 0.05 fill 1 box
+       invis with .sw at (1.05,0.85) wid 0.1 ht	0.05 fill 1 box	invis with .sw
+       at  (1.1,0.85) wid 0.05 ht 0.05 fill 1 box invis	with .sw at (1.2,0.85)
+       wid 0.15	ht 0.05	fill 1 box invis with .sw at (1.25,0.85)  wid  0.1  ht
+       0.05  fill  1  box invis	with .sw at (1.3,0.85) wid 0.05	ht 0.05	fill 1
+       box invis with .sw at (1.4,0.85)	wid 0.15 ht 0.05 fill 1	box invis with
+       .sw  at	(1.45,0.85)  wid  0.1  ht  0.05	 fill  1 box invis with	.sw at
+       (1.5,0.85) wid 0.05 ht 0.05 fill	1 box invis with .sw at	(1.6,0.85) wid
+       0.15  ht	 0.05 fill 1 box invis with .sw	at (1.65,0.85) wid 0.1 ht 0.05
+       fill 1 box invis	with .sw at (1.7,0.85) wid 0.05	ht  0.05  fill	1  box
+       invis with .sw at (1.8,0.85) wid	0.15 ht	0.05 fill 1 box	invis with .sw
+       at (1.85,0.85) wid 0.1 ht 0.05 fill 1 box invis with .sw	at  (1.9,0.85)
+       wid 0.05	ht 0.05	fill 1 box invis with .sw at (2,0.85) wid 0.15 ht 0.05
+       fill 1 box invis	with .sw at (2.05,0.85)	wid 0.1	ht  0.05  fill	1  box
+       invis with .sw at (2.1,0.85) wid	0.05 ht	0.05 fill 1 box	invis with .sw
+       at (2.2,0.85) wid 0.15 ht 0.05 fill 1 box invis with .sw	at (2.25,0.85)
+       wid  0.1	 ht  0.05  fill	1 box invis with .sw at	(2.3,0.85) wid 0.05 ht
+       0.05 fill 1 box invis with .sw at (2.4,0.85) wid	0.15 ht	 0.05  fill  1
+       box invis with .sw at (2.45,0.85) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw at (2.5,0.85) wid 0.05 ht  0.05  fill  1  box  invis	 with  .sw  at
+       (2.6,0.85)  wid	0.15  ht 0.05 fill 1 box invis with .sw	at (2.65,0.85)
+       wid 0.1 ht 0.05 fill 1 box invis	with .sw at  (2.7,0.85)	 wid  0.05  ht
+       0.05  fill  1  box invis	with .sw at (2.8,0.85) wid 0.15	ht 0.05	fill 1
+       box invis with .sw at (2.85,0.85) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw  at	(2.9,0.85)  wid	 0.05  ht  0.05	 fill  1 box invis with	.sw at
+       (3,0.85)	wid 0.15 ht 0.05 fill 1	box invis with .sw at (3.05,0.85)  wid
+       0.1  ht	0.05  fill 1 box invis with .sw	at (3.1,0.85) wid 0.05 ht 0.05
+       fill 1 box invis	with .sw at (0,0.75) wid 0.15 ht 0.05 fill 1 box invis
+       with  .sw  at  (0.05,0.75) wid 0.1 ht 0.05 fill 1 box invis with	.sw at
+       (0.1,0.75) wid 0.05 ht 0.05 fill	1 box invis with .sw at	(0.2,0.75) wid
+       0.15  ht	 0.05 fill 1 box invis with .sw	at (0.25,0.75) wid 0.1 ht 0.05
+       fill 1 box invis	with .sw at (0.3,0.75) wid 0.05	ht  0.05  fill	1  box
+       invis with .sw at (0.4,0.75) wid	0.15 ht	0.05 fill 1 box	invis with .sw
+       at (0.45,0.75) wid 0.1 ht 0.05 fill 1 box invis with .sw	at  (0.5,0.75)
+       wid  0.05  ht  0.05 fill	1 box invis with .sw at	(0.6,0.75) wid 0.15 ht
+       0.05 fill 1 box invis with .sw at (0.65,0.75) wid 0.1 ht	 0.05  fill  1
+       box invis with .sw at (0.7,0.75)	wid 0.05 ht 0.05 fill 1	box invis with
+       .sw at (0.8,0.75) wid 0.15 ht  0.05  fill  1  box  invis	 with  .sw  at
+       (0.85,0.75) wid 0.1 ht 0.05 fill	1 box invis with .sw at	(0.9,0.75) wid
+       0.05 ht 0.05 fill 1 box invis with .sw at (1.2,0.75) wid	0.15  ht  0.05
+       fill  1	box  invis  with .sw at	(1.25,0.75) wid	0.1 ht 0.05 fill 1 box
+       invis with .sw at (1.3,0.75) wid	0.05 ht	0.05 fill 1 box	invis with .sw
+       at (1.4,0.75) wid 0.15 ht 0.05 fill 1 box invis with .sw	at (1.45,0.75)
+       wid 0.1 ht 0.05 fill 1 box invis	with .sw at  (1.5,0.75)	 wid  0.05  ht
+       0.05  fill  1  box invis	with .sw at (1.6,0.75) wid 0.15	ht 0.05	fill 1
+       box invis with .sw at (1.65,0.75) wid 0.1 ht 0.05 fill 1	box invis with
+       .sw  at	(1.7,0.75)  wid	 0.05  ht  0.05	 fill  1 box invis with	.sw at
+       (1.8,0.75) wid 0.15 ht 0.05 fill	1 box invis with  .sw  at  (1.85,0.75)
+       wid  0.1	 ht  0.05  fill	1 box invis with .sw at	(1.9,0.75) wid 0.05 ht
+       0.05 fill 1 box invis with .sw at (2,0.75) wid 0.15 ht 0.05 fill	1  box
+       invis with .sw at (2.05,0.75) wid 0.1 ht	0.05 fill 1 box	invis with .sw
+       at (2.1,0.75) wid 0.05 ht 0.05 fill 1 box invis with .sw	at  (2.2,0.75)
+       wid  0.15  ht  0.05 fill	1 box invis with .sw at	(2.25,0.75) wid	0.1 ht
+       0.05 fill 1 box invis with .sw at (2.3,0.75) wid	0.05 ht	 0.05  fill  1
+       box invis with .sw at (2.6,0.75)	wid 0.15 ht 0.05 fill 1	box invis with
+       .sw at (2.65,0.75) wid 0.1 ht  0.05  fill  1  box  invis	 with  .sw  at
+       (2.7,0.75) wid 0.05 ht 0.05 fill	1 box invis with .sw at	(2.8,0.75) wid
+       0.15 ht 0.05 fill 1 box invis with .sw at (2.85,0.75) wid 0.1  ht  0.05
+       fill  1	box  invis  with .sw at	(2.9,0.75) wid 0.05 ht 0.05 fill 1 box
+       invis with .sw at (3,0.75) wid 0.15 ht 0.05 fill	1 box invis  with  .sw
+       at  (3.05,0.75) wid 0.1 ht 0.05 fill 1 box invis	with .sw at (3.1,0.75)
+       wid 0.05	ht 0.05	fill 1 box invis with .sw at (2.7,0.55)	 wid  0.05  ht
+       0.05  fill  1  box invis	with .sw at (1.6,0) wid	0.3 ht 0.05 fill 1 box
+       invis with .sw at (1.65,0) wid 0.25 ht 0.05 fill	1 box invis  with  .sw
+       at  (1.7,0)  wid	 0.2 ht	0.05 fill 1 box	invis with .sw at (1.75,0) wid
+       0.15 ht 0.05 fill 1 box invis with .sw at (1.8,0) wid 0.1 ht 0.05  fill
+       1 box invis with	.sw at (1.85,0)	wid 0.05 ht 0.05 fill 1
+
+       The  dots at the	top-left indicate the number of	balls you have remain-
+       ing.
+
+       The number at the top-right is the number of bricks  you	 have  hit  so
+       far.  You are aiming for	a total	of 96.
+
+       The  short  line	 at  the bollom	of the screen is the paddle.  The ball
+       will bounce off the top,	the sideas and the paddle.  If it touches  the
+       bottom of the screen, you lose a	ball.
+
+   TThhee KKeeyyss
+		 boxwid	 = 0.3 boxht
+		 =   0.3   B1:	 box	      4:   move	paddle left
+		 "1"		       fill   6:   move	paddle right
+		 0.1  B2:  box	 "2"
+		 with	   .w	  at
+		 B1.e+(0.05,0) fill
+		 0.1   B3:  box	 "3"
+		 with	  .w	  at
+		 B2.e+(0.05,0) fill
+		 0.1  BC:  box	 "C"
+		 with	   .w	  at
+		 B3.e+(0.05,0) fill
+		 0.1   B4:  box	 "4"
+		 with	  .n	  at
+		 B1.s-(0,0.05)	 B5:
+		 box "5" with .w  at
+		 B4.e+(0.05,0)	 fill
+		 0.1  B6:  box	 "6"
+		 with	   .w	  at
+		 B5.e+(0.05,0)	 BD:
+		 box  "D" with .w at
+		 B6.e+(0.05,0)	 fill
+		 0.1   B7:  box	 "7"
+		 with	  .n	  at
+		 B4.s-(0,0.05) fill
+		 0.1  B8:  box	 "8"
+		 with	   .w	  at
+		 B7.e+(0.05,0) fill
+		 0.1   B9:  box	 "9"
+		 with	  .w	  at
+		 B8.e+(0.05,0) fill
+		 0.1  BE:  box	 "E"
+		 with	   .w	  at
+		 B9.e+(0.05,0) fill
+		 0.1   BA:  box	 "A"
+		 with	  .n	  at
+		 B7.s-(0,0.05) fill
+		 0.1  B0:  box	 "0"
+		 with	   .w	  at
+		 BA.e+(0.05,0) fill
+		 0.1   BB:  box	 "B"
+		 with	  .w	  at
+		 B0.e+(0.05,0) fill
+		 0.1  BF:  box	 "F"
+		 with	   .w	  at
+		 BB.e+(0.05,0) fill
+		 0.1
+
+CCOOPPYYRRIIGGHHTT
+       Brix version 1.0
+       Copyright (C) 1990 Andreas Gustafsson
+
+       Noncommercial  distribution  allowed, provided that this	copyright mes-
+       sage is preserved, and any modified  versions  are  clearly  marked  as
+       such.
+
+       THIS  SOFTWARE  IS  PROVIDED "AS	IS" AND	WITHOUT	ANY EXPRESS OR IMPLIED
+       WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE  IMPLIED	WARRANTIES  OF
+       MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+AAUUTTHHOORR
+       Andreas Gustafsson <gson@niksula.hut.fi>
+
+
+
+Reference Manual		     Chip8			       Brix(7)

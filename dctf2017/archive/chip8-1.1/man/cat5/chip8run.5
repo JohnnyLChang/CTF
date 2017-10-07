@@ -1,0 +1,67 @@
+chip8run(5)		      File Formats Manual		   chip8run(5)
+
+
+
+NNAAMMEE
+       chip8 file formats
+
+DDEESSCCRRIIPPTTIIOONN
+       The _c_h_i_p_8_r_u_n program understands	3 file formats:	raw, HP	and #!.	 The
+       only difference is the headers.	All 3 formats have a header, followed
+       by data.	 The data will be at most 3584 bytes long.
+
+RRAAWW FFOORRMMAATT
+       The raw format has no header.  There is only the	data section in	the
+       file.
+
+HHPP FFOORRMMAATT
+       the HP format has a 13 byte header in the format
+	      8-bytes	      magic number "HPHP48-A"
+			      48,50,48,50,34,38	(hex)
+	      2.5-bytes	      type
+			      0x02C2A for "string"
+	      2.5-bytes	      length
+			      in nybbles, including length.
+
+       The 2.5 byte fields are encodes as big-endian nybbles.
+
+UUNNIIXX FFOORRMMAATT
+       The #! format discards all bytes	upto the first newline ('\n') charac-
+       ter, this is useful to make chip8 programs self-executing, by making
+       the first line
+	      #! /usr/local/bin/chip8run -
+       Which tells unix	to invoke the _c_h_i_p_8_r_u_n(1) program and feed it the exe-
+       cuting file on its standard input.
+
+SSEEEE AALLSSOO
+       _c_h_i_p_8_a_s(1)
+	       An assembler, for assembling chip8 programs into	the byte-code
+	       to be interpreted.
+
+       _c_h_i_p_8_a_s(5)
+	       The opcodes, as understood by the assmbler, and how they	are
+	       interpreted by the interpreter.
+
+       _c_h_i_p_8_r_u_n(1)
+	       The interpreter,	to run the assembled byte code.
+
+       _c_h_i_p_8_d_i_s(1)
+	       A disassembler, so that you can turn assembled byte code	into
+	       something more readable.
+
+CCOOPPYYRRIIGGHHTT
+       _c_h_i_p_8 version 1.1
+       Copyright (C) 1990, 1991, 1998, 1999, 2012 Peter	Miller
+
+       This program is distributed in the hope that it will be useful, but
+       WITHOUT ANY WARRANTY; without even the implied warranty of MER-
+       CHANTABILITY or FITNESS FOR A PARTICULAR	PURPOSE.  See the GNU General
+       Public License for more details.
+
+AAUUTTHHOORR
+       Peter Miller   E-Mail:	pmiller@opensource.org.au
+       /\/\*		 WWW:	http://miller.emu.id.au/pmiller/
+
+
+
+								   chip8run(5)

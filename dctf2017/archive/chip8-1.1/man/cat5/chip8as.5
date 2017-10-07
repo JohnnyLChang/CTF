@@ -1,0 +1,532 @@
+chip8as(5)		      File Formats Manual		    chip8as(5)
+
+
+
+NNAAMMEE
+       chip8as - chip8 opcodes
+
+DDEESSCCRRIIPPTTIIOONN
+       This file documents the input format of the _c_h_i_p_8_a_s program.  As	a
+       side-effect, it also documents the various opcodes the _c_h_i_p_8_r_u_n program
+       understands.  Input files are text files.
+
+MMAACCHHIINNEE
+       This section describes the chip8	machine.
+
+       AAddddrreessss SSppaaccee
+	       The chip8 machine has an	address	space from 0x000 to 0xFFF.
+	       This address space contains both	code and data.	Addresses
+	       0x000 to	0x1FF are reserved.  Some implementations place	the
+	       interpreter here.  When the chip8 machine is reset, the PC is
+	       set to 0x200, thus chip8	programs start at 0x200.
+
+       OOppccooddeess
+	       Opcodes are all 16 bits long.  Opcodes must be aligned on even-
+	       byte boundaries (some implementations do	not require this).
+	       Opcodes are stored big-endian, high byte	first then low byte.
+
+       RReeggiisstteerrss
+	       The chip8 machine has a number of registers.
+
+	       vv00 to vv1155
+		       These are general 8-bit unsigned	arithmetic registers.
+		       Regsiters vv1100 to	vv1155 may	also be	referred to as vvAA to
+		       vvFF.  Arithmetic is done in 2s compliment.
+
+	       vv1155     In addition to being a general register,	this register
+		       may sometimes be	used as	an exception indicator by some
+		       opcodes.
+
+	       ttiimmee    The time	register is a count-down timer.	 It is decri-
+		       mented by 1 every 60th of a second until	it reaches 0.
+
+	       ttoonnee    The time	register is a count-down timer.	 It is decri-
+		       mented by 1 every 60th of a second until	it reaches 0.
+		       If the register is not 0, a beeper will be beeping.
+		       (Some implementations make the beeping optional.)
+
+	       ii       This register is	a pointer register.  It	is 16-bits
+		       long, although the address space	is only	12-bits.  It
+		       is an error to attempt to reference memory above	0xFFF.
+
+	       ..       The dot register	may be used to refer to	the value of
+		       the program counter maintained by the assembler.	 It
+		       refers to the value of the program counter before the
+		       opcode is generated.
+
+	       kkeeyy     This isn't really a register, even though the opcode
+		       treat it	that way.  There are 16	keys available,
+		       labeled "0" - "F".  Keys	may be sampled or waited for.
+
+       DDiissppllaayy
+	       The chip8 machine has a 64x32 display.  It is 64	pixels wide
+	       and 32 pixels high.  Row	0 is the top of	the screen, row	31 is
+	       the bottom of the screen.  Column 0 is the left of the screen,
+	       column 63 is rhe	right of the screen.  You may assume pixels
+	       are square.  (See the _h_i_g_h and _l_o_w opcodes; there is also a
+	       high resolution 128x64 display mode.)
+
+EEMMUULLAATTOORR DDIIFFFFEERREENNCCEESS
+       There are a number of differences between the various emulators.	 No
+       doubt this could	all be resolved	if anyone had the sources to the orig-
+       inal (circa 1977) interpreter.
+
+       Add Aligned Opcodes
+	       Some emulators accept opcodes at	odd addresses, and some	don't.
+	       Defensive programming should use	even-aligned opcodes.  (This
+	       distribution demands even-aligned opcodes on emulation, and
+	       gives a fatal error for odd-aligned opcodes on assembly,	but
+	       accepts odd-aligned opcodes for disassembly.)
+
+       The I Register
+	       The value of the	I register after _s_a_v_e and _r_e_s_t_o_r_e opcodes is
+	       not well	defined.  Some emulator	leaves the I register pointing
+	       _p_a_s_t the	last location referenced, other	emulators leave	it
+	       pointing	at the first location referenced.  Defensive program-
+	       ming should assume the I	register is not	meaningful after these
+	       opcodes.	 (This distribution is consistent with Gustafsson's
+	       emulator, which moves the I register _p_a_s_t the last location
+	       referenced.)
+
+       The Borrow Flag
+	       Many emulators calculate	the _b_o_r_r_o_w after the _s_u_b and _d_i_f
+	       opcodes incorrectly.  Defensive programming should assume the
+	       v15 register is not meaningful after these opcodes.  (This dis-
+	       tribution is consistent with Gustafsson's emulator, which per-
+	       forms the operation in more than	8 bits,	and sets the v15 reg-
+	       ister to	1 if any of the	high bits of the result	are non-zero,
+	       otherwise sets it to 0)
+
+LLIINNEE FFOORRMMAATT
+       The input of the	_c_h_i_p_8_a_s	program	is oriented around lines.  Each	line,
+       in general, has the form
+	       [ _l_a_b_e_l::	] _o_p_c_o_d_e [ _e_x_p_r,, ... ]
+
+       The label definition on the start of the	line is	optional, opcodes take
+       zero or more expressions.  End-of-line is significant, except after
+       commas.	It is also legal to have blank lines, or lines consisting of
+       only a label definition.	 Forward references of labels are legal, as it
+       is a 2-pass assembler.
+
+TTOOKKEENNSS
+       This section details how	the text file is broken	into tokens.
+
+       WWhhiittee SSppaaccee
+	       White space consists of tabs and	spaces.	 White space is
+	       ignored,	except where it	serves to separate tokens.  Comments
+	       commence	with semicolon (';') and end at	end-of-line ('\n');
+	       comments	are logical white space.
+
+       IIddeennttiiffiieerrss
+	       Identifiers start with an alphabetic character or and under-
+	       score ('_') or dot ('.'); followed by zero or more alphabetic,
+	       numeric,	underscore or dot characters.  Identifiers are case-
+	       sensitive unless	they are opcode	names or register names.
+	       Identifiers may be of any length, and all characters are	sig-
+	       nificant.
+
+       NNuummbbeerrss The default radix is decimal.  An "0x" prefix will yeild	hexa-
+	       decimal numbers,	a "0" prefix will yield	octal numbers.
+
+OOPPCCOODDEESS
+       The chip8 machine opcodes are described here.
+
+       scdown _n
+	       Scroll the screen down _n	pixels.	 _[_S_u_p_e_r_-_C_h_i_p_]
+	       This opcode delays until	the start of a 60Hz clock cycle	before
+	       drawing in low resolution mode.	(Use the delay timer to	pace
+	       your games in high resolution mode.)
+	       Code generated: 0x00C_n
+
+       clear
+	       Clear the display.
+	       Code generated: 0x00E0
+
+       ret
+	       Return from subroutine.	See also: the "call" opcode.  It is an
+	       error if	there is no subroutine to return from.
+	       Code generated: 0x00EE
+
+       compatibility
+	       Mangle the ``save'' and ``restore'' opcodes to leave the	I reg-
+	       ister unchanged.
+	       WWaarrnniinngg::	This opcode is not a standard Chip 8 opcode.  It is
+	       provided	soley to allow testing and porting of Chip 8 games
+	       which rely on this behaviour.
+	       Code generated: 0x00FA
+
+       scright
+	       Scroll the screen right 4 pixels.  _[_S_u_p_e_r_-_C_h_i_p_]
+	       This opcode delays until	the start of a 60Hz clock cycle	before
+	       drawing in low resolution mode.	(Use the delay timer to	pace
+	       your games in high resolution mode.)
+	       Code generated: 0x00FB
+
+       scleft
+	       Scroll the screen left 4	pixels.	 _[_S_u_p_e_r_-_C_h_i_p_]
+	       This opcode delays until	the start of a 60Hz clock cycle	before
+	       drawing in low resolution mode.	(Use the delay timer to	pace
+	       your games in high resolution mode.)
+	       Code generated: 0x00FC
+
+       low
+	       Low resolution (64x32) graphics mode (this is the default).
+	       _[_S_u_p_e_r_-_C_h_i_p_]
+	       Code generated: 0x00FE
+
+       high
+	       High resolution (128x64)	graphics mode.	_[_S_u_p_e_r_-_C_h_i_p_]
+	       Code generated: 0x00FF
+
+       jump _a_d_d_r
+	       Jump to _a_d_d_r.  The _a_d_d_r must be even.  The _a_d_d_r must be in the
+	       range 0x200 to 0xFFE.  The _a_d_d_r expression must be relative to
+	       some label.
+	       Code generated: 0x0NNN, where NNN is the	low 12 bits of _a_d_d_r.
+
+       jump _a_d_d_r, v0
+	       Jump to _a_d_d_r + v0.  The _a_d_d_r must be even.  The _a_d_d_r must be in
+	       the range 0x200 to 0xFFE.  The _a_d_d_r expression must be relative
+	       to some label.  It is a run-time	error if the value of register
+	       v0 is odd.  It is a run-time error if _a_d_d_r+v0 is	not in the
+	       range 0x2000 to 0xFFE.
+	       Code generated: 0xBNNN, where NNN is the	low 12 bits of _a_d_d_r.
+
+       call _a_d_d_r
+	       Call subroutine at _a_d_d_r.	 The _a_d_d_r must be even.	 The _a_d_d_r must
+	       be in the range 0x200 to	0xFFE.	The _a_d_d_r expression must be
+	       relative	to a label.  It	is a run-time error if there are too
+	       many subroutine calls, although you may safely assume at	least
+	       32 levels.
+	       Code generated: 0x1NNN, where NNN is the	low 12 bits of _a_d_d_r.
+
+       skip.eq v_X, _v_a_l_u_e
+	       Skip the	next instruction if the	value of register v_X is	equal
+	       to _v_a_l_u_e.  The _v_a_l_u_e must be in the range -128 to 255.
+	       Code generated: 0x3XYY, where YY	is the low 8 bits of _v_a_l_u_e.
+
+       skip.eq v_X, v_Y
+	       Skip the	next instruction if the	value of register v_X is	equal
+	       to the value of register	v_Y.
+	       Code generated: 0x3XY0
+
+       skip.eq v_X, key
+	       Skip the	next instruction if they key with the same number as
+	       the low 4 bits of the value of register v_X is currently being
+	       pressed.
+	       Code Generated: 0xEX9E
+
+       skip.ne v_X, _v_a_l_u_e
+	       Skip the	next instruction if the	value of register v_X is	not
+	       equal to	_v_a_l_u_e.	The _v_a_l_u_e must be in the range -128 to 255.
+	       Code generated: 0x4XKK, where KK	is the low 8 bits of _v_a_l_u_e.
+
+       skip.ne v_X, v_Y
+	       Skip the	next instruction if the	value of register v_X is	not
+	       equal to	the value of register v_Y.
+	       Code generated: 0x9XY0
+
+       skip.ne v_X, key
+	       Skip the	next instruction if the	key with the same number as
+	       the the low 4 bits of the value of register v_X currently	not
+	       being pressed.
+	       Code generated: 0xEXA1
+
+       load v_X,	_v_a_l_u_e
+	       Load register v_X	with the _v_a_l_u_e.	 The _v_a_l_u_e must	be in the
+	       range -128 to 255.
+	       Code generated: 0x6XKK, where KK	is the low 8 bits of _v_a_l_u_e.
+
+       load v_X,	key
+	       If no key is currently being pressed, block until one is.  Load
+	       register	v_X with	lowest number of all keys currently being
+	       pressed.	 The beeper will sound while any key is	being pressed.
+	       Block until the key is released (implementations	need not block
+	       if they guarantee that the key will not be "seen" by any	of the
+	       key opcodes until it is released	and pressed again).
+	       Code generated: 0xFX0A
+
+       load v_X,	v_Y
+	       Load register v_X	with the value of register v_Y.	Some implemen-
+	       tations may alter the value of register v15 (to what?).
+	       Code generated: 0x8XY0
+
+       load v_X,	time
+	       Load register v_X	with the value of the time register.
+	       Code generated: 0xFX07
+
+       load time, v_X
+	       Load the	time register with the value of	register v_X.
+	       Code generated: 0xFX15
+
+       load tone, v_X
+	       Load the	tone register with the value of	register v_X.
+	       Code generated: 0xFX18
+
+       load i, _a_d_d_r
+	       Load register i with the	_a_d_d_r.  The _a_d_d_r	must be	in the range
+	       0x200 to	0xFFF.
+	       Code generated: 0xANNN, where NNN is the	low 12 bits of _a_d_d_r.
+
+       add v_X, _v_a_l_u_e
+	       Add _v_a_l_u_e to register v_X.  The _v_a_l_u_e must be in the rabge -128
+	       to 255.
+	       Code generated: 0x7XKK, where KK	is the low 8 bits of _v_a_l_u_e.
+
+       add v_X, v_Y
+	       Add the value of	register v_Y to register	v_X.  The register v15
+	       is set to 1 if the result overflows, otherwise 0.
+	       Code generated: 0x8XY4
+
+       add i, v_X
+	       Add the value of	register v_X to register	i.
+	       Code generated: 0xFX1E
+
+       or i, v_X
+	       Bitwise OR the value of register	v_Y into	register v_X.  Some
+	       implementations may change the value of register	v15 (to
+	       what?).
+	       Code generated: 0x8XY1
+
+       and v_X, v
+	       Bitwise AND the value of	register v_Y into register v_X.  Some
+	       implementations may change the value of register	v15 (to
+	       what?).
+	       Code generated: 0x8XY2
+
+       xor v_X, v_Y
+	       Bitwise XOR the value of	register v_Y into register v_X.  Some
+	       implementations may change the value of register	v15 (to
+	       what?).
+	       Code generated: 0x8XY3
+
+       sub v_X, v_Y
+	       Subtract	the value of register v_Y from register v_X.  Register
+	       v15 is set to 1 is the result would be less than	zero, 0	other-
+	       wise.
+	       Code generated: 0x8XY5
+
+       shr v_X
+	       Shift the value of register v_X right one	bit.  Register v15 is
+	       set to 1	if v_X was odd before the operation, 0 otherwise.
+	       Code generated: 0x8X06
+
+       dif v_X, v_Y
+	       Set register v_X to the value of register	v_Y minus the value of
+	       register	v_X.  Register v15 is set to 1 is the result would be
+	       less than zero, 0 otherwise.
+	       Code generated: 0x8XY7
+
+       shl v_X
+	       Shift the value of register v_X left one bit.  Register v15 is
+	       set to 1	if the high bit	of register v_X was set before the
+	       operation, 0 otherwise.
+	       Code generated: 0x8X0E
+
+       rnd v_X, _v_a_l_u_e
+	       Register	v_X is set to the bitwise AND of	a pseudo-random	number
+	       and the _v_a_l_u_e.  The _v_a_l_u_e must be in the	range 0	to 255.
+	       Code generated: 0xCXKK, where KK	is the low 8 bits of _v_a_l_u_e.
+
+       draw v_X,	v_Y, _r_o_w_s
+	       This opcode is used to draw an image on the screen.  The	image
+	       will be 8 pixels	wide and _r_o_w_s pixels long.  The	image will be
+	       displayed at (x,y) coordinates, where x is the value of regis-
+	       ter v_X bitwise-AND 0x3F,	and y is the value of register v_Y bit-
+	       wise-AND	0x1F.  If any of the image would be drawn outside the
+	       screen area, it is clipped (it does not wrap around).
+	       The origin (0,0)	is the top-left	corner of the screen.  The
+	       image to	be drawn is pointed to by the i	register.  The most-
+	       significant bit is on the left.
+	       Drawing is done by using	XOR.  If this causes one or more pix-
+	       els to be erased, v15 is	set to 1, otherwise v15	is set to 0.
+	       The _r_o_w_s	must be	in the range 1 to 15.  It is a run-time	error
+	       if the value of register	i causes non-existent memory to	be
+	       accessed.
+	       This opcode delays until	the start of a 60Hz clock cycle	before
+	       drawing in low resolution mode.	(Use the delay timer to	pace
+	       your games in high resolution mode.)
+	       Code generated: 0xDXYN, where N is the low 4 bits of _r_o_w_s.
+
+       xdraw v_X, v_Y, _r_o_w_s
+	       As above, however the image is always 16x16 pixels.  _[_S_u_p_e_r_-
+	       _C_h_i_p_]
+	       Code generated: 0xDXY0
+
+       hex v_X
+	       Point I to an image of a	hex character for the low 4 bits of
+	       the value of register v_X.  The image is 4 pixels	wide and 5
+	       pixels high.
+	       Code generated: 0xFX29
+
+       bcd v_X
+	       Store a BCD representation of the value of register v_X into the
+	       three bytes pointer to be register i, most significant digit
+	       first.  It is a run-time	error if the value of register i
+	       causes non-existent memory to be	accessed.
+	       Code generated: 0xFX33
+
+       save v_X
+	       Store the values	of registers v0	to v_X into the bytes pointed
+	       to by register i, incrimenting register i past them.  It	is a
+	       run-time	error if the value of register i causes	non-existent
+	       memory to be accessed.
+	       Code generated: 0xFX55
+
+       restore v_X
+	       Read the	values of registers v0 to v_X from the bytes pointed to
+	       by register i, incrimenting register i past them.  It is	a run-
+	       time error if the value of register i causes non-existent mem-
+	       ory to be accessed.
+	       Code generated: 0xFX65
+
+       flags.save v_X
+	       Store the values	of registers v0	to v_X into the ``flags'' reg-
+	       isters (this means something in the HP48	implementation).  (_X <
+	       8) _[_S_u_p_e_r_-_C_h_i_p_]
+	       Code generated: 0xFX75
+
+       flags.restore v_X
+	       Read the	values of registers v0 to v_X from the ``flags''	regis-
+	       ters (this means	something in the HP48 implementation).	(_X <
+	       8) _[_S_u_p_e_r_-_C_h_i_p_]
+	       Code generated: 0xFX85
+
+       exit
+	       This opcode is used to terminate	the _c_h_i_p_8_r_u_n program.  It
+	       causes the _c_h_i_p_8_r_u_n program to exit with	a successful exit sta-
+	       tus.  _[_S_u_p_e_r_-_C_h_i_p_]
+	       Code generated: 0x00FD.
+
+       exit _v_a_l_u_e
+	       This opcode is used for testing the _c_h_i_p_8_r_u_n program, and are
+	       not normal chip8	opcodes.  They cause the _c_h_i_p_8_r_u_n program to
+	       exit with the given exit	status.	 This is primarily of use in
+	       performing regression tests of the chip8	machine	implementa-
+	       tion.  The _v_a_l_u_e	must be	in the range 0 to 1.
+	       Exit status 0 indicates a successful result, exit status	1
+	       indicates an error result.
+	       Code generated: 0x001X, where X is the low 4 bits of _v_a_l_u_e.
+
+PPSSEEUUDDOO--OOPPSS
+       The following are pseudo-ops of the _c_h_i_p_8_a_s program.
+
+       .ascii _e_x_p_r, ...
+	       Each expression is emitted into the code	stream as the bytes
+	       composing the given strings.  This is usually used to embed
+	       copyright notices into programs.	 There is no built-in ascii
+	       font available for drawing.
+
+       .byte _e_x_p_r, ...
+	       Each expression is emitted into the code	stream as a byte.  The
+	       _e_x_p_rs must be in	the range -128 to 255.
+
+       .word _e_x_p_r, ...
+	       Each expression is emitted into the code	stream as a word, high
+	       byte then low byte.  It is an error if ..	is odd.	 The _e_x_p_rs
+	       must be in the range -32768 to 32767.
+
+       .align [	_e_x_p_r ]
+	       This pseudo-op may be used to align .. with various boundaries.
+	       The default is a	word boundary (2 byte).	 Alignment boundaries
+	       must be powers of 2.  Zero or more zero-valued bytes are	emit-
+	       ted into	the code stream	to achieve alignment.
+
+       .ds _e_x_p_r	[ , _e_x_p_r ]
+	       This  pseudo-op may be used to define storage space in the code
+	       stream.	The first argument is the number of bytes to use, the
+	       second argument is the value to store there (defaults to	zero).
+
+       _l_a_b_e_l .equ _e_x_p_r
+	       This pseudo-op may be used to set a label to a calculated
+	       expression.
+
+       .pic _e_x_p_r, ...
+	       This pseudo-op may be used to construct a picture for future
+	       drawing by a series of draw opcodes.  It	breaks the image up
+	       into a series of	vertical slices	8 pixels wide.
+	       All of the expressions must be strings, blank characters	will
+	       be 0s in	the output, all	other characters will be 1s.  It does
+	       not understand tabs.  All the strings must be of	the same
+	       length.	See the	_s_n_a_k_e example program distributed with chip8
+	       for a number of examples	of this	pseudo-op.
+
+       .title _w_o_r_d, _w_o_r_d
+	       This pseudo-op may be used to set the page title	on the list-
+	       ing.  The title has two lines.  The first argument is the first
+	       line of the title, and the second argument is the second	line.
+
+       .xpic _e_x_p_r, ...
+	       This pseudo-op may be used to construct a picture for drawing
+	       by a series of xdraw opcodes.  It breaks	the image up into a
+	       series of vertical slices 16 pixels wide.  Because the xdraw
+	       opcode requires a 16 line high image, the given picture will be
+	       padded to a multiple of 16 lines, if necessary.
+
+       .xref on
+	       This pseudo-op may be used to cause a cross reference to	be
+	       added to	the listing.
+	       All of the expressions must be strings, blank characters	will
+	       be 0s in	the output, all	other characters will be 1s.  It does
+	       not understand tabs.  All the strings must be of	the same
+	       length.
+
+CCOONNDDIITTIIOONNAALL AASSSSEEMMBBLLYY
+       It is possible to conditionally assemble	different portions of code.
+       Conditionals may	be nested arbitrarily deeply.  This is controlled by
+       the following directives:
+
+       define _n_a_m_e
+	       This directive is used to define	a conditionl name.  The	condi-
+	       tions are based on the existence	or absence of these lines.
+
+       ifdef _n_a_m_e
+	       Begin a conditionl portion of code, including the bracketed
+	       lines if	the _n_a_m_e was previously	defined	by a define directive.
+
+       ifndef _n_a_m_e
+	       Begin a conditionl portion of code, including the bracketed
+	       lins if the _n_a_m_e	was not	previously defined by a	define direc-
+	       tive.
+
+       else    Reverse the sense of a conditional compilation.	(This is
+	       optional.)
+
+       endif   End the bracketing of source lines performed by a conditional.
+
+SSEEEE AALLSSOO
+       _c_h_i_p_8_a_s(1)
+	       An assembler, for assembling chip8 programs into	the byte-code
+	       to be interpreted.
+
+       _c_h_i_p_8_a_s(5)
+	       The opcodes, as understood by the assmbler, and how they	are
+	       interpreted by the interpreter.
+
+       _c_h_i_p_8_r_u_n(1)
+	       The interpreter,	to run the assembled byte code.
+
+       _c_h_i_p_8_r_u_n(5)
+	       The file	format,	as output by the assembler and as understood
+	       by the interpreter.
+
+       _c_h_i_p_8_d_i_s(1)
+	       A disassembler, so that you can turn assembled byte code	into
+	       something more readable.
+
+CCOOPPYYRRIIGGHHTT
+       _c_h_i_p_8 version 1.1
+       Copyright (C) 1990, 1991, 1998, 1999, 2012 Peter	Miller
+
+       This program is distributed in the hope that it will be useful, but
+       WITHOUT ANY WARRANTY; without even the implied warranty of MER-
+       CHANTABILITY or FITNESS FOR A PARTICULAR	PURPOSE.  See the GNU General
+       Public License for more details.
+
+AAUUTTHHOORR
+       Peter Miller   E-Mail:	pmiller@opensource.org.au
+       /\/\*		 WWW:	http://miller.emu.id.au/pmiller/
+
+
+
+								    chip8as(5)

@@ -1,0 +1,124 @@
+#
+#	chip8 - X11 Chip8 interpreter
+#	Copyright (C) 1998, 2012 Peter Miller
+#
+#	This program is free software; you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation; either version 2 of the License, or
+#	(at your option) any later version.
+#
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+#
+#	You should have received a copy of the GNU General Public License
+#	along with this program. If not, see
+#	<http://www.gnu.org/licenses/>.
+#
+# @configure_input@
+#
+
+#
+# directory containing the source
+#
+srcdir = @srcdir@
+VPATH = @srcdir@
+
+#
+# the name of the install program to use
+#
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+INSTALL_DATA = @INSTALL_DATA@
+
+#
+# the name of the compiler to use
+#
+CC = @CC@
+
+#
+# The compiler flags to use
+#
+CFLAGS = @CFLAGS@
+
+#
+# The linker flags to use
+#
+LDFLAGS = @LDFLAGS@ @X_LIBS@
+
+#
+# prefix for installation path
+#
+#	If you need to change the prefix, it is best to re-run configure
+#	using the --prefix=PATH option, as this will re-write all of the
+#	files which contain the prefix, not just this one.  See the
+#	instructions in the BUILDING file for more information.
+#
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+#
+# where to put the data directories
+#
+# ${datadir} is for architecture-neutral files
+#	On a network, this would be shared between all machines
+#	on the network.  It can be mounted read-only.
+#
+# This is where shell scripts are parked.
+# This is where report scripts are parked.
+# This is where documents are parked.
+#
+datadir = $(RPM_BUILD_ROOT)@datadir@
+
+#
+# Where to put the executables
+#	On a network, this would only be shared between machines
+#	of identical cpu-hw-os flavour.  It can be mounted read-only.
+#
+bindir = $(RPM_BUILD_ROOT)@bindir@
+
+#
+# Where to put the on-line manuals
+#	On a network, this would be shared between all machines
+#	on the network.  It can be mounted read-only.
+#
+mandir = $(RPM_BUILD_ROOT)@mandir@
+
+#
+# Which yacc to use
+#
+YACC = @YACC@
+
+#
+# extra libraries required for your system
+#
+LIBS = @X_PRE_LIBS@ @X_EXTRA_LIBS@ -lX11 @LIBS@
+
+#
+# shell to use to run tests and commands
+#
+SH = @SH@
+
+#
+# command used to construct libraries
+#
+AR = ar
+
+#
+# program used to place index within libraries
+#
+RANLIB = @RANLIB@
+
+#
+# commands used to format the documents
+#
+SOELIM = @SOELIM@
+GROFF = @GROFF@
+HAVE_GROFF = @HAVE_GROFF@
+
+#
+# You should not need to alter anything below this point.
+#------------------------------------------------------------
+
+all: all-bin all-lib

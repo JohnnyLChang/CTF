@@ -1,0 +1,88 @@
+.\"
+.\"	chip8 - X11 Chip8 interpreter
+.\"	Copyright (C) 1998, 2012 Peter Miller
+.\"
+.\"	This program is free software; you can redistribute it and/or modify
+.\"	it under the terms of the GNU General Public License as published by
+.\"	the Free Software Foundation; either version 2 of the License, or
+.\"	(at your option) any later version.
+.\"
+.\"	This program is distributed in the hope that it will be useful,
+.\"	but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\"	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\"	GNU General Public License for more details.
+.\"
+.\"	You should have received a copy of the GNU General Public License
+.\"	along with this program. If not, see
+.\"	<http://www.gnu.org/licenses/>.
+.\"
+.\" LSM = Linux Software Module, an archive description file
+.\"
+.\" Descriptions of the LSM file format can be found in the
+.\" /pub/Linux/docs directories of sunsite.unc.edu and tsx-11.mit.edu.
+.\"
+.ad l
+.hy 0
+.de SH
+.in 0
+.br
+\\$1
+'in 8n
+..
+.so version.so
+.SH Begin3
+.SH Title:
+Chip8
+.SH Version:
+\*(v)
+.SH Entered-date:
+.ds MO1 JAN
+.ds MO2 FEB
+.ds MO3 MAR
+.ds MO4 APR
+.ds MO5 MAY
+.ds MO6 JUN
+.ds MO7 JUL
+.ds MO8 AUG
+.ds MO9 SEP
+.ds MO10 OCT
+.ds MO11 NOV
+.ds MO12 DEC
+\n[dy]\*[MO\n[mo]]\n[yr]
+.SH Description:
+Chip8 was an interpreter used in a number of home computers
+based on RCA's CDP1802 processor in the late 1970's.
+It implements a small machine designed specifically
+for simple video games.  It has less than 40 instructions,
+including arithmetic, control flow, graphics, and sound.
+.sp
+This package includes an assembler for chip8,
+a disassembler, and an X client to run chip8 programs.
+.so ref-games.so
+.SH Keywords:
+chip8, emulator
+.SH Author:
+Peter Miller <pmiller@opensource.org.au>
+.SH Primary-site:
+http://chip8.sourceforge.net/
+.TS
+tab(;);
+l l.
+chip8-\*(v).README;Description, from the tar file
+chip8-\*(v).lsm;Description, in LSM format
+chip8-\*(v).tar.gz;the ccomplete source
+chip8-\*(v).spec;RedHat package specification
+.TE
+.SH Secondary-site:
+ftp://sunsite.unc.edu/pub/Linux/games
+.TS
+tab(;);
+l l.
+chip8-\*(v).README;Description, from the tar file
+chip8-\*(v).lsm;Description, in LSM format
+chip8-\*(v).tar.gz;the ccomplete source
+chip8-\*(v).spec;RedHat package specification
+.TE
+.SH Copying-policy:
+GPL
+.SH End

@@ -1,0 +1,698 @@
+.\"
+.\"	chip8 - video game interpreter
+.\"	Copyright (C) 1990, 1998, 2012 Peter Miller
+.\"
+.\"	This program is free software; you can redistribute it and/or modify
+.\"	it under the terms of the GNU General Public License as published by
+.\"	the Free Software Foundation; either version 2 of the License, or
+.\"	(at your option) any later version.
+.\"
+.\"	This program is distributed in the hope that it will be useful,
+.\"	but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\"	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\"	GNU General Public License for more details.
+.\"
+.\"	You should have received a copy of the GNU General Public License
+.\"	along with this program. If not, see
+.\"	<http://www.gnu.org/licenses/>.
+.\"
+.hy 0
+.ad l
+.TH chip8as 5
+.SH NAME
+chip8as \- chip8 opcodes
+.if require_index \{
+.XX "chip8as(5)" "chip8 opcodes"
+.\}
+.SH DESCRIPTION
+This file documents the input format of the
+.I chip8as
+program.
+As a side\[hy]effect,
+it also documents the various opcodes the
+.I chip8run
+program understands.
+Input files are text files.
+.SH MACHINE
+This section describes the chip8 machine.
+.TP 8n
+.B "Address Space"
+The chip8 machine has an address space from 0x000 to 0xFFF.
+This address space contains both code and data.
+Addresses 0x000 to 0x1FF are reserved.
+Some implementations place the interpreter here.
+When the chip8 machine is reset, the PC is set to 0x200,
+thus chip8 programs start at 0x200.
+.TP 8n
+.B Opcodes
+.br
+Opcodes are all 16 bits long.
+Opcodes must be aligned on even\[hy]byte boundaries
+(some implementations do not require this).
+Opcodes are stored big\[hy]endian,
+high byte first then low byte.
+.TP 8n
+.B "Registers"
+The chip8 machine has a number of registers.
+.RS 8n
+.TP 8n
+\fBv0\fP to \fBv15\fP
+These are general 8\[hy]bit unsigned arithmetic registers.
+Regsiters \fBv10\fP to \fBv15\fP may also
+be referred to as \fBvA\fP to \fBvF\fP.
+Arithmetic is done in 2s compliment.
+.TP 8n
+.B v15
+In addition to being a general register,
+this register may sometimes be used as an
+exception indicator by some opcodes.
+.TP 8n
+.B time
+The time register is a count\[hy]down timer.
+It is decrimented by 1 every 60th of a second until it reaches 0.
+.TP 8n
+.B tone
+The time register is a count\[hy]down timer.
+It is decrimented by 1 every 60th of a second until it reaches 0.
+If the register is not 0, a beeper will be beeping.
+(Some implementations make the beeping optional.)
+.TP 8n
+.B i
+This register is a pointer register.
+It is 16\[hy]bits long, although the address space is only 12\[hy]bits.
+It is an error to attempt to reference memory above 0xFFF.
+.TP 8n
+.B "."
+The dot register may be used to refer to the value
+of the program counter maintained by the assembler.
+It refers to the value of the program counter before the opcode is generated.
+.TP 8n
+.B key
+This isn't really a register, even though the opcode treat it that way.
+There are 16 keys available, labeled "0" \- "F".
+Keys may be sampled or waited for.
+.RE
+.TP 8n
+.B "Display"
+.br
+The chip8 machine has a 64\(mu32 display.
+It is 64 pixels wide and 32 pixels high.
+Row 0 is the top of the screen, row 31 is the bottom of the screen.
+Column 0 is the left of the screen, column 63 is rhe right of the screen.
+You may assume pixels are square.
+(See the \fIhigh\fP and \fIlow\fP opcodes; there is also a
+high resolution 128\(mu64 display mode.)
+.SH EMULATOR DIFFERENCES
+There are a number of differences between the various emulators.  No doubt
+this could all be resolved if anyone had the sources to the original
+(circa 1977) interpreter.
+.TP 8n
+Add Aligned Opcodes
+Some emulators accept opcodes at odd addresses, and some don't.
+Defensive programming should use even\[hy]aligned opcodes.
+(This distribution demands even\[hy]aligned opcodes on emulation,
+and gives a fatal error for odd\[hy]aligned opcodes on assembly,
+but accepts odd\[hy]aligned opcodes for disassembly.)
+.TP 8n
+The I Register
+The value of the I register after \fIsave\fP and \fIrestore\fP opcodes
+is not well defined.  Some emulator leaves the I register pointing
+\fIpast\fP the last location referenced, other emulators leave it pointing
+at the first location referenced.
+Defensive programming should assume the I register is not meaningful
+after these opcodes.
+(This distribution is consistent with Gustafsson's emulator,
+which moves the I register \fIpast\fP the last location referenced.)
+.TP 8n
+The Borrow Flag
+Many emulators calculate the \fIborrow\fP after the \fIsub\fP and
+\fIdif\fP opcodes incorrectly.
+Defensive programming should assume the v15 register is not meaningful
+after these opcodes.
+(This distribution is consistent with Gustafsson's emulator, which
+performs the operation in more than 8 bits, and sets the v15 register
+to 1 if any of the high bits of the result are non\[hy]zero,
+otherwise sets it to 0)
+.SH LINE FORMAT
+The input of the
+.I chip8as
+program is oriented around lines.
+Each line, in general, has the form
+.RS 8n
+.nf
+[ \fIlabel\fB:\fR ] \fIopcode\fR [ \fIexpr\fB,\fR ... ]
+.fi
+.RE
+.PP
+The label definition on the start of the line is optional,
+opcodes take zero or more expressions.
+End\[hy]of\[hy]line is significant, except after commas.
+It is also legal to have blank lines,
+or lines consisting of only a label definition.
+Forward references of labels are legal,
+as it is a 2\[hy]pass assembler.
+.SH TOKENS
+This section details how the text file is broken into tokens.
+.TP 8n
+.B "White Space"
+White space consists of tabs and spaces.
+White space is ignored,
+except where it serves to separate tokens.
+Comments commence with semicolon (';') and end at end\[hy]of\[hy]line ('\en');
+comments are logical white space.
+.TP 8n
+.B Identifiers
+Identifiers start with an alphabetic character or
+and underscore ('_') or dot ('.');
+followed by zero or more alphabetic, numeric, underscore
+or dot characters.
+Identifiers are case\[hy]sensitive unless they are opcode names
+or register names.
+Identifiers may be of any length, and all characters are significant.
+.TP 8n
+.B Numbers
+The default radix is decimal.
+An "0x" prefix will yeild hexadecimal numbers,
+a "0" prefix will yield octal numbers.
+.SH OPCODES
+The chip8 machine opcodes are described here.
+.TP 8n
+\f(CWscdown\fP \fIn\fP
+.br
+Scroll the screen down \fIn\fP pixels.
+.I "[Super\[hy]Chip]"
+.br
+This opcode delays until the start of a 60Hz clock cycle before drawing
+in low resolution mode.  (Use the delay timer to pace your games in high
+resolution mode.)
+.br
+Code generated: \f(CW0x00C\fP\f(CIn\fP
+.TP 8n
+\f(CWclear\fP
+.br
+Clear the display.
+.br
+Code generated: \f(CW0x00E0\fP
+.TP 8n
+\f(CWret\fP
+.br
+Return from subroutine.
+See also: the "call" opcode.
+It is an error if there is no subroutine to return from.
+.br
+Code generated: \f(CW0x00EE\fP
+.TP 8n
+\f(CWcompatibility\fP
+.br
+Mangle the ``save'' and ``restore'' opcodes to leave the I register unchanged.
+.br
+.B Warning:
+This opcode is not a standard Chip 8 opcode.  It is provided soley to
+allow testing and porting of Chip 8 games which rely on this behaviour.
+.br
+Code generated: \f(CW0x00FA\fP
+.TP 8n
+\f(CWscright\fP
+.br
+Scroll the screen right 4 pixels.
+.I "[Super\[hy]Chip]"
+.br
+This opcode delays until the start of a 60Hz clock cycle before drawing
+in low resolution mode.  (Use the delay timer to pace your games in high
+resolution mode.)
+.br
+Code generated: \f(CW0x00FB\fP
+.TP 8n
+\f(CWscleft\fP
+.br
+Scroll the screen left 4 pixels.
+.I "[Super\[hy]Chip]"
+.br
+This opcode delays until the start of a 60Hz clock cycle before drawing
+in low resolution mode.  (Use the delay timer to pace your games in high
+resolution mode.)
+.br
+Code generated: \f(CW0x00FC\fP
+.TP 8n
+\f(CWlow\fP
+.br
+Low resolution (64\(mu32) graphics mode (this is the default).
+.I "[Super\[hy]Chip]"
+.br
+Code generated: \f(CW0x00FE\fP
+.TP 8n
+\f(CWhigh\fP
+.br
+High resolution (128\(mu64) graphics mode.
+.I "[Super\[hy]Chip]"
+.br
+Code generated: \f(CW0x00FF\fP
+.TP 8n
+\f(CWjump\fP \fIaddr\fP
+.br
+Jump to \fIaddr\fP.
+The \fIaddr\fP must be even.
+The \fIaddr\fP must be in the range 0x200 to 0xFFE.
+The \fIaddr\fP expression must be relative to some label.
+.br
+Code generated: \f(CW0x0NNN\fP, where NNN is the low 12 bits of \fIaddr\fP.
+.TP
+\f(CWjump\fP \fIaddr\fP\f(CW, v0\fP
+.br
+Jump to \fIaddr\fP + v0.
+The \fIaddr\fP must be even.
+The \fIaddr\fP must be in the range 0x200 to 0xFFE.
+The \fIaddr\fP expression must be relative to some label.
+It is a run\[hy]time error if the value of register v0 is odd.
+It is a run\[hy]time error if \fIaddr\fP+v0 is not in the range 0x2000 to 0xFFE.
+.br
+Code generated: \f(CW0xBNNN\fP, where NNN is the low 12 bits of \fIaddr\fP.
+.TP 8n
+\f(CWcall\fP \fIaddr\fP
+.br
+Call subroutine at \fIaddr\fP.
+The \fIaddr\fP must be even.
+The \fIaddr\fP must be in the range 0x200 to 0xFFE.
+The \fIaddr\fP expression must be relative to a label.
+It is a run\[hy]time error if there are too many subroutine calls,
+although you may safely assume at least 32 levels.
+.br
+Code generated: \f(CW0x1NNN\fP, where NNN is the low 12 bits of \fIaddr\fP.
+.TP 8n
+\f(CWskip.eq\fP v\fIX\fP, \fIvalue\fP
+.br
+Skip the next instruction if the value of
+register v\fIX\fP is equal to \fIvalue\fP.
+The \fIvalue\fP must be in the range \-128 to 255.
+.br
+Code generated: \f(CW0x3XYY\fP, where YY is the low 8 bits of \fIvalue\fP.
+.TP 8n
+\f(CWskip.eq\fP v\fIX\fP, v\fIY\fP
+.br
+Skip the next instruction if the value of
+register v\fIX\fP is equal to the value of register v\fIY\fP.
+.br
+Code generated: \f(CW0x3XY0\fP
+.TP 8n
+\f(CWskip.eq\fP v\fIX\fP, \f(CWkey\fP
+.br
+Skip the next instruction if they key with the same number as the
+low 4 bits of the value of register v\fIX\fP is currently being pressed.
+.br
+Code Generated: \f(CW0xEX9E\fP
+.TP 8n
+\f(CWskip.ne\fP v\fIX\fP, \fIvalue\fP
+.br
+Skip the next instruction if the value of register v\fIX\fP is
+not equal to \fIvalue\fP.
+The \fIvalue\fP must be in the range \-128 to 255.
+.br
+Code generated: \f(CW0x4XKK\fP, where KK is the low 8 bits of \fIvalue\fP.
+.TP 8n
+\f(CWskip.ne\fP v\fIX\fP, v\fIY\fP
+.br
+Skip the next instruction if the value of register v\fIX\fP is not
+equal to the value of register v\fIY\fP.
+.br
+Code generated: \f(CW0x9XY0\fP
+.TP 8n
+\f(CWskip.ne\fP v\fIX\fP, \f(CWkey\fP
+.br
+Skip the next instruction if the key with the same number as the the low
+4 bits of the value of register v\fIX\fP currently not being pressed.
+.br
+Code generated: \f(CW0xEXA1\fP
+.TP 8n
+\f(CWload\fP v\fIX\fP, \fIvalue\fP
+.br
+Load register v\fIX\fP with the \fIvalue\fP.
+The \fIvalue\fP must be in the range \-128 to 255.
+.br
+Code generated: \f(CW0x6XKK\fP, where KK is the low 8 bits of \fIvalue\fP.
+.TP 8n
+\f(CWload\fP v\fIX\fP, \f(CWkey\fP
+.br
+If no key is currently being pressed, block until one is.
+Load register v\fIX\fP with lowest number of all keys currently being pressed.
+The beeper will sound while any key is being pressed.
+Block until the key is released (implementations need not block
+if they guarantee that the key will not be "seen" by any of the key
+opcodes until it is released and pressed again).
+.br
+Code generated: \f(CW0xFX0A\fP
+.TP 8n
+\f(CWload\fP v\fIX\fP, v\fIY\fP
+.br
+Load register v\fIX\fP with the value of register v\fIY\fP.
+Some implementations may alter the value of register v15 (to what?).
+.br
+Code generated: \f(CW0x8XY0\fP
+.TP 8n
+\f(CWload\fP v\fIX\fP, \f(CWtime\fP
+.br
+Load register v\fIX\fP with the value of the time register.
+.br
+Code generated: \f(CW0xFX07\fP
+.TP 8n
+\f(CWload\fP \f(CWtime\fP, v\fIX\fP
+.br
+Load the time register with the value of register v\fIX\fP.
+.br
+Code generated: \f(CW0xFX15\fP
+.TP 8n
+\f(CWload\fP \f(CWtone\fP, v\fIX\fP
+.br
+Load the tone register with the value of register v\fIX\fP.
+.br
+Code generated: \f(CW0xFX18\fP
+.TP 8n
+\f(CWload\fP \f(CWi\fP, \fIaddr\fP
+.br
+Load register i with the \fIaddr\fP.
+The \fIaddr\fP must be in the range 0x200 to 0xFFF.
+.br
+Code generated: \f(CW0xANNN\fP, where NNN is the low 12 bits of \fIaddr\fP.
+.TP 8n
+\f(CWadd\fP v\fIX\fP, \fIvalue\fP
+.br
+Add \fIvalue\fP to register v\fIX\fP.
+The \fIvalue\fP must be in the rabge \-128 to 255.
+.br
+Code generated: \f(CW0x7XKK\fP, where KK is the low 8 bits of \fIvalue\fP.
+.TP 8n
+\f(CWadd\fP v\fIX\fP, v\fIY\fP
+.br
+Add the value of register v\fIY\fP to register v\fIX\fP.
+The register v15 is set to 1 if the result overflows, otherwise 0.
+.br
+Code generated: \f(CW0x8XY4\fP
+.TP 8n
+\f(CWadd\fP \f(CWi\fP, v\fIX\fP
+.br
+Add the value of register v\fIX\fP to register i.
+.br
+Code generated: \f(CW0xFX1E\fP
+.TP 8n
+\f(CWor\fP \f(CWi\fP, v\fIX\fP
+.br
+Bitwise OR the value of register v\fIY\fP into register v\fIX\fP.
+Some implementations may change the value of register v15 (to what?).
+.br
+Code generated: \f(CW0x8XY1\fP
+.TP 8n
+\f(CWand\fP v\fIX\fP, v\fI\fP
+.br
+Bitwise AND the value of register v\fIY\fP into register v\fIX\fP.
+Some implementations may change the value of register v15 (to what?).
+.br
+Code generated: \f(CW0x8XY2\fP
+.TP 8n
+\f(CWxor\fP v\fIX\fP, v\fIY\fP
+.br
+Bitwise XOR the value of register v\fIY\fP into register v\fIX\fP.
+Some implementations may change the value of register v15 (to what?).
+.br
+Code generated: \f(CW0x8XY3\fP
+.TP 8n
+\f(CWsub\fP v\fIX\fP, v\fIY\fP
+.br
+Subtract the value of register v\fIY\fP from register v\fIX\fP.
+Register v15 is set to 1 is the result would be less than zero, 0 otherwise.
+.br
+Code generated: \f(CW0x8XY5\fP
+.TP 8n
+\f(CWshr\fP v\fIX\fP
+.br
+Shift the value of register v\fIX\fP right one bit.
+Register v15 is set to 1 if v\fIX\fP was odd before the operation, 0 otherwise.
+.br
+Code generated: \f(CW0x8X06\fP
+.TP 8n
+\f(CWdif\fP v\fIX\fP, v\fIY\fP
+.br
+Set register v\fIX\fP to
+the value of register v\fIY\fP minus the value of register v\fIX\fP.
+Register v15 is set to 1 is the result would be less than zero, 0 otherwise.
+.br
+Code generated: \f(CW0x8XY7\fP
+.TP 8n
+\f(CWshl\fP v\fIX\fP
+.br
+Shift the value of register v\fIX\fP left one bit.
+Register v15 is set to 1 if the high bit of register v\fIX\fP was set
+before the operation, 0 otherwise.
+.br
+Code generated: \f(CW0x8X0E\fP
+.TP 8n
+\f(CWrnd\fP v\fIX\fP, \fIvalue\fP
+.br
+Register v\fIX\fP is set to the bitwise AND of a pseudo\[hy]random
+number and the \fIvalue\fP.
+The \fIvalue\fP must be in the range 0 to 255.
+.br
+Code generated: \f(CW0xCXKK\fP, where KK is the low 8 bits of \fIvalue\fP.
+.TP 8n
+\f(CWdraw\fP v\fIX\fP, v\fIY\fP, \fIrows\fP
+.br
+This opcode is used to draw an image on the screen.
+The image will be 8 pixels wide and \fIrows\fP pixels long.
+The image will be displayed at (x,y) coordinates,
+where x is the value of register v\fIX\fP bitwise\[hy]AND 0x3F,
+and y is the value of register v\fIY\fP bitwise\[hy]AND 0x1F.
+If any of the image would be drawn outside the screen area,
+it is clipped (it does not wrap around).
+.br
+The origin (0,0) is the top\[hy]left corner of the screen.
+The image to be drawn is pointed to by the i register.
+The most\[hy]significant bit is on the left.
+.br
+Drawing is done by using XOR.
+If this causes one or more pixels to be erased,
+v15 is set to 1, otherwise v15 is set to 0.
+.br
+The \fIrows\fP must be in the range 1 to 15.
+It is a run\[hy]time error if the value of register i
+causes non\[hy]existent memory to be accessed.
+.br
+This opcode delays until the start of a 60Hz clock cycle before drawing
+in low resolution mode.  (Use the delay timer to pace your games in high
+resolution mode.)
+.br
+Code generated: \f(CW0xDXYN\fP, where N is the low 4 bits of \fIrows\fP.
+.TP 8n
+\f(CWxdraw\fP v\fIX\fP, v\fIY\fP, \fIrows\fP
+.br
+As above, however the image is always 16\(mu16 pixels.
+.I "[Super\[hy]Chip]"
+.br
+Code generated: \f(CW0xDXY0\fP
+.TP 8n
+\f(CWhex\fP v\fIX\fP
+.br
+Point I to an image of a hex character
+for the low 4 bits of the value of register v\fIX\fP.
+The image is 4 pixels wide and 5 pixels high.
+.br
+Code generated: \f(CW0xFX29\fP
+.TP 8n
+\f(CWbcd\fP v\fIX\fP
+.br
+Store a BCD representation of the value of register v\fIX\fP
+into the three bytes pointer to be register i,
+most significant digit first.
+It is a run\[hy]time error if the value of register i
+causes non\[hy]existent memory to be accessed.
+.br
+Code generated: \f(CW0xFX33\fP
+.TP 8n
+\f(CWsave\fP v\fIX\fP
+.br
+Store the values of registers v0 to v\fIX\fP
+into the bytes pointed to by register i,
+incrimenting register i past them.
+It is a run\[hy]time error if the value of register i
+causes non\[hy]existent memory to be accessed.
+.br
+Code generated: \f(CW0xFX55\fP
+.TP 8n
+\f(CWrestore\fP v\fIX\fP
+.br
+Read the values of registers v0 to v\fIX\fP
+from the bytes pointed to by register i,
+incrimenting register i past them.
+It is a run\[hy]time error if the value of register i
+causes non\[hy]existent memory to be accessed.
+.br
+Code generated: \f(CW0xFX65\fP
+.TP 8n
+\f(CWflags.save\fP v\fIX\fP
+.br
+Store the values of registers v0 to v\fIX\fP
+into the ``flags'' registers (this means something in the HP48 implementation).
+(\fIX\fP < 8)
+.I "[Super\[hy]Chip]"
+.br
+Code generated: \f(CW0xFX75\fP
+.TP 8n
+\f(CWflags.restore\fP v\fIX\fP
+.br
+Read the values of registers v0 to v\fIX\fP
+from the ``flags'' registers (this means something in the HP48 implementation).
+(\fIX\fP < 8)
+.I "[Super\[hy]Chip]"
+.br
+Code generated: \f(CW0xFX85\fP
+.TP 8n
+\f(CWexit\fP
+.br
+This opcode is used to terminate the
+.I chip8run
+program.
+It causes the
+.I chip8run
+program to exit with a successful exit status.
+.I "[Super\[hy]Chip]"
+.br
+Code generated: \f(CW0x00FD\fP.
+.TP 8n
+\f(CWexit\fP \fIvalue\fP
+.br
+This opcode is used for testing the
+.I chip8run
+program,
+and are not normal chip8 opcodes.
+They cause the
+.I chip8run
+program to exit with the given exit status.
+This is primarily of use in performing regression tests
+of the chip8 machine implementation.
+The \fIvalue\fP must be in the range 0 to 1.
+.br
+Exit status 0 indicates a successful result,
+exit status 1 indicates an error result.
+.br
+Code generated: \f(CW0x001X\fP, where X is the low 4 bits of \fIvalue\fP.
+.SH PSEUDO\[hy]OPS
+The following are pseudo\[hy]ops of the
+.I chip8as
+program.
+.TP 8n
+\f(CW\&.ascii\fP \fIexpr\fP, ...
+.br
+Each expression is emitted into the code stream as the bytes composing
+the given strings.  This is usually used to embed copyright notices
+into programs.  There is no built\[hy]in ascii font available for drawing.
+.TP 8n
+\f(CW\&.byte\fP \fIexpr\fP, ...
+.br
+Each expression is emitted into the code stream as a byte.
+The \fIexpr\fPs must be in the range \-128 to 255.
+.TP 8n
+\f(CW\&.word\fP \fIexpr\fP, ...
+.br
+Each expression is emitted into the code stream as a word,
+high byte then low byte.
+It is an error if \fB.\fP is odd.
+The \fIexpr\fPs must be in the range \-32768 to 32767.
+.TP 8n
+\f(CW\&.align\fP [ \fIexpr\fP ]
+.br
+This pseudo\[hy]op may be used to align \fB.\fP with various boundaries.
+The default is a word boundary (2 byte).
+Alignment boundaries must be powers of 2.
+Zero or more zero\[hy]valued bytes are emitted into the code stream
+to achieve alignment.
+.TP 8n
+\f(CW\&.ds\fP \fIexpr\fP [ , \fIexpr\fP ]
+.br
+This  pseudo\[hy]op may be used to define storage space in the code stream.
+The first argument is the number of bytes to use,
+the second argument is the value to store there (defaults to zero).
+.TP 8n
+\fIlabel\fP \f(CW.equ\fP \fIexpr\fP
+.br
+This pseudo\[hy]op may be used to set a label to a calculated expression.
+.TP 8n
+\f(CW\&.pic\fP \fIexpr\fP, ...
+.br
+This pseudo\[hy]op may be used to construct a picture for future
+drawing by a series of \f(CWdraw\fP opcodes.
+It breaks the image up into a series of vertical slices 8 pixels wide.
+.br
+All of the expressions must be strings,
+blank characters will be 0s in the output, all other characters will be 1s.
+It does not understand tabs.
+All the strings must be of the same length.
+See the
+.I snake
+example program distributed with chip8
+for a number of examples of this pseudo\[hy]op.
+.TP 8n
+\f(CW\&.title\fP \fIword\fP, \fIword\fP
+.br
+This pseudo\[hy]op may be used to set the page title on the listing.
+The title has two lines.  The first argument is the first line of the
+title, and the second argument is the second line.
+.TP 8n
+\f(CW\&.xpic\fP \fIexpr\fP, ...
+.br
+This pseudo\[hy]op may be used to construct a picture for
+drawing by a series of \f(CWxdraw\fP opcodes.
+It breaks the image up into a series of vertical slices 16 pixels wide.
+Because the \f(CWxdraw\fP opcode requires a 16 line high image,
+the given picture will be padded to a multiple of 16 lines, if necessary.
+.TP 8n
+\f(CW\&.xref on\fP
+.br
+This pseudo\[hy]op may be used to
+cause a cross reference to be added to the listing.
+.br
+All of the expressions must be strings,
+blank characters will be 0s in the output, all other characters will be 1s.
+It does not understand tabs.
+All the strings must be of the same length.
+.SH CONDITIONAL ASSEMBLY
+It is possible to conditionally assemble different portions of code.
+Conditionals may be nested arbitrarily deeply.
+This is controlled by the following directives:
+.TP 8n
+\f(CWdefine\fP \fIname\fP
+This directive is used to define a conditionl name.
+The conditions are based on the existence or absence of these lines.
+.TP 8n
+\f(CWifdef\fP \fIname\fP
+Begin a conditionl portion of code, including the bracketed lines if the
+\fIname\fP was previously defined by a \f(CWdefine\fP directive.
+.TP 8n
+\f(CWifndef\fP \fIname\fP
+Begin a conditionl portion of code, including the bracketed lins if the
+\fIname\fP was not previously defined by a \f(CWdefine\fP directive.
+.TP 8n
+\f(CWelse\fP
+Reverse the sense of a conditional compilation.
+(This is optional.)
+.TP 8n
+\f(CWendif\fP
+End the bracketing of source lines performed by a conditional.
+.SH SEE ALSO
+.TP 8n
+.IR chip8as (1)
+An assembler, for assembling chip8 programs into the byte\[hy]code to be
+interpreted.
+.TP 8n
+.IR chip8as (5)
+The opcodes, as understood by the assmbler, and how they are interpreted
+by the interpreter.
+.TP 8n
+.IR chip8run (1)
+The interpreter, to run the assembled byte code.
+.TP 8n
+.IR chip8run (5)
+The file format, as output by the assembler and as understood by the
+interpreter.
+.TP 8n
+.IR chip8dis (1)
+A disassembler, so that you can turn assembled byte code into something
+more readable.
+.ds n) chip8
+.so man/man1/z_copyright.so

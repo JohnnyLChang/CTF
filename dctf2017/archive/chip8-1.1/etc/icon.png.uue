@@ -1,0 +1,28 @@
+#
+# chip8 - X11 Chip8 interpreter
+# Copyright (C) 2012 Peter Miller
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+begin 664 icon.png
+MB5!.1PT*&@H````-24A$4@```"`````@"`8```!S>GKT`````7-21T(`KLX<
+MZ0````9B2T=$`/\`_P#_H+VGDP````EP2%ES```+$P``"Q,!`)J<&`````=T
+M24U%!]P)#P8U-0Q4?O0```#B241!5%C#[9;1"L,@#$5OAG_4OOO_D/Q-W[.'
+MDF$[E<C6.%@/%(QM\)JD4>#FWZ%BK*?YJVT`P*-4HWI4=[5=4Q;.8U>FX0\S
+MOZ<@"A&!B```TOE%E``C]3Y<UQ4`P,ROL9?2Q\)=(_46+FW5L5HEHNI&7`*L
+M,#])3^DO(LT()F^NC&UKIR)G0(2'!!\$+,OB<LRYN6\`,MX'HJJ_*6`FR4+O
+M90^_?E=`K>A::=F+3*X1T.L%O6;B\1\28(M-ZX2U78]&P.N3:B=4^&\X:_&?
+GN1&171*+\R/")@`T_59\<S.=)SRAY=,$=`8:`````$E%3D2N0F""
+`
+end
