@@ -1,0 +1,1027 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLCOLORS	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^ALLCOLORS = (RED, GREEN, BLUE, YELLOW, ORANGE, PURPLE, CYAN)$/;"	kind:variable	line:44
+ALLSHAPES	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^ALLSHAPES = (DONUT, SQUARE, DIAMOND, LINES, OVAL)$/;"	kind:variable	line:45
+ANIMATIONSPEED	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^ANIMATIONSPEED = 25 # integer from 1 to 100, higher is faster animation$/;"	kind:variable	line:23
+AirPlay.py	../reverse/backdoor_pi_300/fs/home/pi/.local/share/Trash/files/AirPlay.py	1;"	kind:file	line:1
+BASICFONTSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^BASICFONTSIZE = 20$/;"	kind:variable	line:29
+BGCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^BGCOLOR = BRIGHTBLUE$/;"	kind:variable	line:27
+BGCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^BGCOLOR = LIGHTBLUE # background color on the screen$/;"	kind:variable	line:49
+BGCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^BGCOLOR = NAVYBLUE$/;"	kind:variable	line:33
+BGCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^BGCOLOR = BLACK$/;"	kind:variable	line:39
+BGCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^BGCOLOR = DARKTURQUOISE$/;"	kind:variable	line:25
+BGCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^BGCOLOR = BRIGHTBLUE$/;"	kind:variable	line:28
+BGCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^BGCOLOR = BLACK$/;"	kind:variable	line:39
+BGCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^BGCOLOR = BLACK$/;"	kind:variable	line:39
+BGCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^BGCOLOR = BLACK$/;"	kind:variable	line:27
+BLACK	../reverse/backdoor_pi_300/fs/home/pi/python_games/drawing.py	/^BLACK = (  0,   0,   0)$/;"	kind:variable	line:11
+BLACK	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^BLACK      = (  0,   0,   0)$/;"	kind:variable	line:32
+BLACK	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^BLACK = 'black'$/;"	kind:variable	line:31
+BLACK	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^BLACK     = (  0,   0,   0)$/;"	kind:variable	line:46
+BLACK	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^BLACK    = (  0,   0,   0)$/;"	kind:variable	line:42
+BLACK	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^BLACK       = (  0,   0,   0)$/;"	kind:variable	line:28
+BLACK	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^BLACK        = (  0,   0,   0)$/;"	kind:variable	line:20
+BLACK	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^BLACK =         (  0,   0,   0)$/;"	kind:variable	line:19
+BLACK	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^BLACK       = (  0,   0,   0)$/;"	kind:variable	line:28
+BLACK	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^BLACK       = (  0,   0,   0)$/;"	kind:variable	line:28
+BLACK	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^BLACK     = (  0,   0,   0)$/;"	kind:variable	line:22
+BLACK_TILE	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^BLACK_TILE = 'BLACK_TILE' # an arbitrary but unique value$/;"	kind:variable	line:20
+BLANK	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^BLANK = '.'$/;"	kind:variable	line:17
+BLANK	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^BLANK = None$/;"	kind:variable	line:16
+BLANK	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^BLANK = '.'$/;"	kind:variable	line:17
+BLANK	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^BLANK = '.'$/;"	kind:variable	line:17
+BLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/drawing.py	/^BLUE  = (  0,   0, 255)$/;"	kind:variable	line:15
+BLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^BLUE      = (  0,   0, 255)$/;"	kind:variable	line:44
+BLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^BLUE     = (  0,   0, 255)$/;"	kind:variable	line:45
+BLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^BLUE     = (  0,   0, 255)$/;"	kind:variable	line:27
+BLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^BLUE        = (  0,   0, 155)$/;"	kind:variable	line:33
+BLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^BLUE         = (  0,   0, 155)$/;"	kind:variable	line:26
+BLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^BLUE        = (  0,   0, 155)$/;"	kind:variable	line:33
+BLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^BLUE        = (  0,   0, 155)$/;"	kind:variable	line:33
+BLUERECT	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^BLUERECT   = pygame.Rect(XMARGIN + BUTTONSIZE + BUTTONGAPSIZE, YMARGIN, BUTTONSIZE, BUTTONSIZE)$/;"	kind:variable	line:37
+BOARDHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^BOARDHEIGHT = 8 # how many rows of spaces on the game board$/;"	kind:variable	line:18
+BOARDHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^BOARDHEIGHT = 6 # how many spaces tall the board is$/;"	kind:variable	line:10
+BOARDHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^BOARDHEIGHT = 8 # how many rows in the board$/;"	kind:variable	line:26
+BOARDHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^BOARDHEIGHT = 7 # number of rows of icons$/;"	kind:variable	line:16
+BOARDHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^BOARDHEIGHT = 20$/;"	kind:variable	line:16
+BOARDHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^BOARDHEIGHT = 4 # number of rows in the board$/;"	kind:variable	line:11
+BOARDHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^BOARDHEIGHT = 20$/;"	kind:variable	line:16
+BOARDHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^BOARDHEIGHT = 20$/;"	kind:variable	line:16
+BOARDWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^BOARDWIDTH = 8 # how many columns of spaces on the game board$/;"	kind:variable	line:17
+BOARDWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^BOARDWIDTH = 7  # how many spaces wide the board is$/;"	kind:variable	line:9
+BOARDWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^BOARDWIDTH = 8 # how many columns in the board$/;"	kind:variable	line:25
+BOARDWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^BOARDWIDTH = 10 # number of columns of icons$/;"	kind:variable	line:15
+BOARDWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^BOARDWIDTH = 10$/;"	kind:variable	line:15
+BOARDWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^BOARDWIDTH = 4  # number of columns in the board$/;"	kind:variable	line:10
+BOARDWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^BOARDWIDTH = 10$/;"	kind:variable	line:15
+BOARDWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^BOARDWIDTH = 10$/;"	kind:variable	line:15
+BORDERCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^BORDERCOLOR = BLUE$/;"	kind:variable	line:38
+BORDERCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^BORDERCOLOR = BRIGHTBLUE$/;"	kind:variable	line:28
+BORDERCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^BORDERCOLOR = BLUE$/;"	kind:variable	line:38
+BORDERCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^BORDERCOLOR = BLUE$/;"	kind:variable	line:38
+BOUNCEHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^BOUNCEHEIGHT = 30    # how high the player bounces$/;"	kind:variable	line:22
+BOUNCERATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^BOUNCERATE = 6       # how fast the player bounces (large is slower)$/;"	kind:variable	line:21
+BOXCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^BOXCOLOR = WHITE$/;"	kind:variable	line:35
+BOXSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^BOXSIZE = 40 # size of box height & width in pixels$/;"	kind:variable	line:13
+BOXSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^BOXSIZE = 20$/;"	kind:variable	line:14
+BOXSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^BOXSIZE = 20$/;"	kind:variable	line:14
+BOXSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^BOXSIZE = 20$/;"	kind:variable	line:14
+BRIGHTBLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^BRIGHTBLUE = (  0,  50, 255)$/;"	kind:variable	line:34
+BRIGHTBLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^BRIGHTBLUE = (0, 50, 255)$/;"	kind:variable	line:24
+BRIGHTBLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^BRIGHTBLUE   = (  0,   0, 255)$/;"	kind:variable	line:25
+BRIGHTBLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^BRIGHTBLUE =    (  0,  50, 255)$/;"	kind:variable	line:21
+BRIGHTBLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^BRIGHTBLUE = (  0, 170, 255)$/;"	kind:variable	line:26
+BRIGHTGREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^BRIGHTGREEN  = (  0, 255,   0)$/;"	kind:variable	line:23
+BRIGHTRED	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^BRIGHTRED    = (255,   0,   0)$/;"	kind:variable	line:21
+BRIGHTYELLOW	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^BRIGHTYELLOW = (255, 255,   0)$/;"	kind:variable	line:27
+BROWN	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^BROWN      = (174,  94,   0)$/;"	kind:variable	line:35
+BROWN	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^BROWN     = ( 85,  65,   0)$/;"	kind:variable	line:47
+BUTTONCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^BUTTONCOLOR = WHITE$/;"	kind:variable	line:31
+BUTTONGAPSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^BUTTONGAPSIZE = 20$/;"	kind:variable	line:15
+BUTTONSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^BUTTONSIZE = 200$/;"	kind:variable	line:14
+BUTTONTEXTCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^BUTTONTEXTCOLOR = BLACK$/;"	kind:variable	line:32
+CAMERASLACK	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^CAMERASLACK = 90     # how far from the center the squirrel moves before moving the camera$/;"	kind:variable	line:19
+CAM_MOVE_SPEED	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^CAM_MOVE_SPEED = 5 # how many pixels per frame the camera moves$/;"	kind:variable	line:20
+CELLHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^CELLHEIGHT = int(WINDOWHEIGHT \/ CELLSIZE)$/;"	kind:variable	line:18
+CELLSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^CELLSIZE = 20$/;"	kind:variable	line:14
+CELLWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^CELLWIDTH = int(WINDOWWIDTH \/ CELLSIZE)$/;"	kind:variable	line:17
+COLORS	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^COLORS      = (     BLUE,      GREEN,      RED,      YELLOW)$/;"	kind:variable	line:42
+COLORS	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^COLORS      = (     BLUE,      GREEN,      RED,      YELLOW)$/;"	kind:variable	line:42
+COLORS	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^COLORS      = (     BLUE,      GREEN,      RED,      YELLOW)$/;"	kind:variable	line:42
+COLORSCHEMES	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^COLORSCHEMES = (((150, 200, 255), RED, GREEN, BLUE, YELLOW, ORANGE, PURPLE),$/;"	kind:variable	line:51
+COMPUTER	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^COMPUTER = 'computer'$/;"	kind:variable	line:34
+CYAN	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^CYAN     = (  0, 255, 255)$/;"	kind:variable	line:31
+CachedFileList	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^class CachedFileList(dict):$/;"	kind:class	line:226
+DARKGRAY	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^DARKGRAY = ( 70,  70,  70)$/;"	kind:variable	line:41
+DARKGRAY	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^DARKGRAY     = ( 40,  40,  40)$/;"	kind:variable	line:29
+DARKGRAY	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^DARKGRAY  = ( 40,  40,  40)$/;"	kind:variable	line:26
+DARKGREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^DARKGREEN = (  0, 155,   0)$/;"	kind:variable	line:25
+DARKTURQUOISE	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^DARKTURQUOISE = (  3,  54,  73)$/;"	kind:variable	line:22
+DEDUCTSPEED	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^DEDUCTSPEED = 0.8 # reduces score by 1 point every DEDUCTSPEED seconds.$/;"	kind:variable	line:39
+DIAMOND	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^DIAMOND = 'diamond'$/;"	kind:variable	line:40
+DIFFICULTY	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^DIFFICULTY = 2 # how many moves to look ahead. (>2 is usually too much)$/;"	kind:variable	line:13
+DIRCHANGEFREQ	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^DIRCHANGEFREQ = 2    # % chance of direction change per frame$/;"	kind:variable	line:33
+DISPLAYSURF	../reverse/backdoor_pi_300/fs/home/pi/python_games/blankpygame.py	/^DISPLAYSURF = pygame.display.set_mode((400, 300))$/;"	kind:variable	line:5
+DISPLAYSURF	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	/^DISPLAYSURF = pygame.display.set_mode((400, 300), 0, 32)$/;"	kind:variable	line:10
+DISPLAYSURF	../reverse/backdoor_pi_300/fs/home/pi/python_games/drawing.py	/^DISPLAYSURF = pygame.display.set_mode((400, 300), 0, 32)$/;"	kind:variable	line:7
+DONUT	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^DONUT = 'donut'$/;"	kind:variable	line:38
+DOWN	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^DOWN = 'down'$/;"	kind:variable	line:62
+DOWN	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^DOWN = 'down'$/;"	kind:variable	line:39
+DOWN	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^DOWN = 'down'$/;"	kind:variable	line:32
+DOWN	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^DOWN = 'down'$/;"	kind:variable	line:30
+DeviceData	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^class DeviceData:$/;"	kind:class	line:33
+DeviceData	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^class DeviceData:$/;"	kind:class	line:73
+EASY	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^EASY = 0   # arbitrary but unique value$/;"	kind:variable	line:29
+EGGnPTH_RE	../reverse/backdoor_pi_300/fs/usr/bin/dh_python2	/^EGGnPTH_RE = re.compile(r'(.*?)(-py\\d\\.\\d+)?(.*?)(\\.egg-info|\\.pth)$')$/;"	kind:variable	line:55
+EMPTY	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^EMPTY = None$/;"	kind:variable	line:32
+EMPTY_SPACE	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^EMPTY_SPACE = 'EMPTY_SPACE' # an arbitrary but unique value$/;"	kind:variable	line:21
+EMPTY_SPACE	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^EMPTY_SPACE = -1 # an arbitrary, nonpositive value$/;"	kind:variable	line:66
+FLASHDELAY	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^FLASHDELAY = 200 # in milliseconds$/;"	kind:variable	line:13
+FLASHSPEED	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^FLASHSPEED = 500 # in milliseconds$/;"	kind:variable	line:12
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	/^FPS = 30 # frames per second setting$/;"	kind:variable	line:6
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^FPS = 10 # frames per second to update the screen$/;"	kind:variable	line:13
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^FPS = 30 # frames per second to update the screen$/;"	kind:variable	line:17
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^FPS = 30 # frames per second to update the screen$/;"	kind:variable	line:21
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^FPS = 30$/;"	kind:variable	line:23
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^FPS = 30 # frames per second, the general speed of the program$/;"	kind:variable	line:9
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^FPS = 25$/;"	kind:variable	line:11
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^FPS = 30$/;"	kind:variable	line:9
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^FPS = 30$/;"	kind:variable	line:15
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^FPS = 30 # frames per second to update the screen$/;"	kind:variable	line:9
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^FPS = 30 # frames per second to update the screen$/;"	kind:variable	line:9
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^FPS = 25$/;"	kind:variable	line:11
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^FPS = 25$/;"	kind:variable	line:11
+FPS	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^FPS = 15$/;"	kind:variable	line:11
+F_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^F_TEMPLATE = [['.....',$/;"	kind:variable	line:49
+GAMEOVERBGCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^GAMEOVERBGCOLOR = BLACK # background color of the "Game over" text.$/;"	kind:variable	line:52
+GAMEOVERCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^GAMEOVERCOLOR = RED # color of the "Game over" text.$/;"	kind:variable	line:51
+GAMEOVERTIME	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^GAMEOVERTIME = 4     # how long the "game over" text stays on the screen in seconds$/;"	kind:variable	line:26
+GAPSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^GAPSIZE = 10 # size of gap between boxes in pixels$/;"	kind:variable	line:14
+GConfSchema	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^class GConfSchema:$/;"	kind:class	line:809
+GConfSchemaParser	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^class GConfSchemaParser:$/;"	kind:class	line:911
+GEMIMAGESIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^GEMIMAGESIZE = 64 # width & height of each space in pixels$/;"	kind:variable	line:27
+GRASSCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^GRASSCOLOR = (24, 255, 0)$/;"	kind:variable	line:15
+GRAY	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^GRAY     = (100, 100, 100)$/;"	kind:variable	line:22
+GRAY	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^GRAY        = (185, 185, 185)$/;"	kind:variable	line:27
+GRAY	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^GRAY        = (185, 185, 185)$/;"	kind:variable	line:27
+GRAY	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^GRAY        = (185, 185, 185)$/;"	kind:variable	line:27
+GREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/drawing.py	/^GREEN = (  0, 255,   0)$/;"	kind:variable	line:14
+GREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^GREEN      = (  0, 155,   0)$/;"	kind:variable	line:33
+GREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^GREEN    = (  0, 255,   0)$/;"	kind:variable	line:44
+GREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^GREEN    = (  0, 255,   0)$/;"	kind:variable	line:26
+GREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^GREEN       = (  0, 155,   0)$/;"	kind:variable	line:31
+GREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^GREEN        = (  0, 155,   0)$/;"	kind:variable	line:24
+GREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^GREEN =         (  0, 204,   0)$/;"	kind:variable	line:23
+GREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^GREEN       = (  0, 155,   0)$/;"	kind:variable	line:31
+GREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^GREEN       = (  0, 155,   0)$/;"	kind:variable	line:31
+GREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^GREEN     = (  0, 255,   0)$/;"	kind:variable	line:24
+GREENRECT	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^GREENRECT  = pygame.Rect(XMARGIN + BUTTONSIZE + BUTTONGAPSIZE, YMARGIN + BUTTONSIZE + BUTTONGAPSIZE, BUTTONSIZE, BUTTONSIZE)$/;"	kind:variable	line:39
+GRIDCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^GRIDCOLOR = BLUE # color of the game board$/;"	kind:variable	line:50
+GRIDLINECOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^GRIDLINECOLOR = BLACK$/;"	kind:variable	line:39
+GSETTINGS_SIMPLE_SCHEMA_INDENT	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^GSETTINGS_SIMPLE_SCHEMA_INDENT = '  '$/;"	kind:variable	line:42
+GSettingsSchema	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^class GSettingsSchema:$/;"	kind:class	line:121
+GSettingsSchemaConvertException	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^class GSettingsSchemaConvertException(Exception):$/;"	kind:class	line:78
+GSettingsSchemaKey	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^class GSettingsSchemaKey:$/;"	kind:class	line:232
+GSettingsSchemaRoot	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^class GSettingsSchemaRoot:$/;"	kind:class	line:85
+HALF_WINHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^HALF_WINHEIGHT = int(WINHEIGHT \/ 2)$/;"	kind:variable	line:13
+HALF_WINHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^HALF_WINHEIGHT = int(WINHEIGHT \/ 2)$/;"	kind:variable	line:13
+HALF_WINWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^HALF_WINWIDTH = int(WINWIDTH \/ 2)$/;"	kind:variable	line:12
+HALF_WINWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^HALF_WINWIDTH = int(WINWIDTH \/ 2)$/;"	kind:variable	line:12
+HARD	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^HARD = 2   # arbitrary but unique value$/;"	kind:variable	line:31
+HEAD	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^HEAD = 0 # syntactic sugar: index of the worm's head$/;"	kind:variable	line:34
+HIGHLIGHTCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^HIGHLIGHTCOLOR = PURPLE # color of the selected gem's border$/;"	kind:variable	line:48
+HIGHLIGHTCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^HIGHLIGHTCOLOR = BLUE$/;"	kind:variable	line:36
+HINTCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^HINTCOLOR = BROWN$/;"	kind:variable	line:41
+HINT_TILE	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^HINT_TILE = 'HINT_TILE' # an arbitrary but unique value$/;"	kind:variable	line:22
+HUMAN	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^HUMAN = 'human'$/;"	kind:variable	line:33
+INVULNTIME	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^INVULNTIME = 2       # how long the player is invulnerable after being hit in seconds$/;"	kind:variable	line:25
+I_SHAPE_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^I_SHAPE_TEMPLATE = [['..O..',$/;"	kind:variable	line:71
+I_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^I_TEMPLATE = [['..O..',$/;"	kind:variable	line:89
+Iostats_version	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^Iostats_version = '0.2'$/;"	kind:variable	line:27
+J_SHAPE_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^J_SHAPE_TEMPLATE = [['.....',$/;"	kind:variable	line:88
+J_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^J_TEMPLATE = [['..O..',$/;"	kind:variable	line:119
+L	../crypto/bad_computation_800/crypt.py	/^def L(u, n):$/;"	kind:function	line:55
+LARGEBOARDSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^LARGEBOARDSIZE  = 30$/;"	kind:variable	line:17
+LARGEBOXSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^LARGEBOXSIZE  = 11$/;"	kind:variable	line:13
+LARGEMAXLIFE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^LARGEMAXLIFE  = 64$/;"	kind:variable	line:21
+LEFT	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^LEFT = 'left'$/;"	kind:variable	line:63
+LEFT	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^LEFT = 'left'$/;"	kind:variable	line:40
+LEFT	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^LEFT = 'left'$/;"	kind:variable	line:34
+LEFT	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^LEFT = 'left'$/;"	kind:variable	line:33
+LEFT	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^LEFT = 'left'$/;"	kind:variable	line:31
+LIGHTBGCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^LIGHTBGCOLOR = GRAY$/;"	kind:variable	line:34
+LIGHTBLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^LIGHTBLUE = (170, 190, 255)$/;"	kind:variable	line:43
+LIGHTBLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^LIGHTBLUE   = ( 20,  20, 175)$/;"	kind:variable	line:34
+LIGHTBLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^LIGHTBLUE   = ( 20,  20, 175)$/;"	kind:variable	line:34
+LIGHTBLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^LIGHTBLUE   = ( 20,  20, 175)$/;"	kind:variable	line:34
+LIGHTCOLORS	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^LIGHTCOLORS = (LIGHTBLUE, LIGHTGREEN, LIGHTRED, LIGHTYELLOW)$/;"	kind:variable	line:43
+LIGHTCOLORS	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^LIGHTCOLORS = (LIGHTBLUE, LIGHTGREEN, LIGHTRED, LIGHTYELLOW)$/;"	kind:variable	line:43
+LIGHTCOLORS	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^LIGHTCOLORS = (LIGHTBLUE, LIGHTGREEN, LIGHTRED, LIGHTYELLOW)$/;"	kind:variable	line:43
+LIGHTGREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^LIGHTGREEN  = ( 20, 175,  20)$/;"	kind:variable	line:32
+LIGHTGREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^LIGHTGREEN  = ( 20, 175,  20)$/;"	kind:variable	line:32
+LIGHTGREEN	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^LIGHTGREEN  = ( 20, 175,  20)$/;"	kind:variable	line:32
+LIGHTRED	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^LIGHTRED    = (175,  20,  20)$/;"	kind:variable	line:30
+LIGHTRED	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^LIGHTRED    = (175,  20,  20)$/;"	kind:variable	line:30
+LIGHTRED	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^LIGHTRED    = (175,  20,  20)$/;"	kind:variable	line:30
+LIGHTYELLOW	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^LIGHTYELLOW = (175, 175,  20)$/;"	kind:variable	line:36
+LIGHTYELLOW	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^LIGHTYELLOW = (175, 175,  20)$/;"	kind:variable	line:36
+LIGHTYELLOW	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^LIGHTYELLOW = (175, 175,  20)$/;"	kind:variable	line:36
+LINES	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^LINES = 'lines'$/;"	kind:variable	line:41
+L_SHAPE_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^L_SHAPE_TEMPLATE = [['.....',$/;"	kind:variable	line:109
+L_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^L_TEMPLATE = [['..O..',$/;"	kind:variable	line:99
+MAXHEALTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^MAXHEALTH = 3        # how much health the player starts with$/;"	kind:variable	line:27
+MEDIUM	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^MEDIUM = 1 # arbitrary but unique value$/;"	kind:variable	line:30
+MEDIUMBOARDSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^MEDIUMBOARDSIZE = 17$/;"	kind:variable	line:16
+MEDIUMBOXSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^MEDIUMBOXSIZE = 20$/;"	kind:variable	line:12
+MEDIUMMAXLIFE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^MEDIUMMAXLIFE = 30$/;"	kind:variable	line:20
+MESSAGECOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^MESSAGECOLOR = WHITE$/;"	kind:variable	line:33
+MOVEDOWNFREQ	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^MOVEDOWNFREQ = 0.1$/;"	kind:variable	line:20
+MOVEDOWNFREQ	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^MOVEDOWNFREQ = 0.1$/;"	kind:variable	line:20
+MOVEDOWNFREQ	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^MOVEDOWNFREQ = 0.1$/;"	kind:variable	line:20
+MOVERATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^MOVERATE = 25 # 1 to 100, larger num means faster animations$/;"	kind:variable	line:38
+MOVERATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^MOVERATE = 9         # how fast the player moves$/;"	kind:variable	line:20
+MOVESIDEWAYSFREQ	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^MOVESIDEWAYSFREQ = 0.15$/;"	kind:variable	line:19
+MOVESIDEWAYSFREQ	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^MOVESIDEWAYSFREQ = 0.15$/;"	kind:variable	line:19
+MOVESIDEWAYSFREQ	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^MOVESIDEWAYSFREQ = 0.15$/;"	kind:variable	line:19
+Mountstats_version	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^Mountstats_version = '0.2'$/;"	kind:variable	line:26
+NAVYBLUE	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^NAVYBLUE = ( 60,  60, 100)$/;"	kind:variable	line:23
+NUMGEMIMAGES	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^NUMGEMIMAGES = 7$/;"	kind:variable	line:31
+NUMGRASS	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^NUMGRASS = 80        # number of grass objects in the active area$/;"	kind:variable	line:29
+NUMMATCHSOUNDS	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^NUMMATCHSOUNDS = 6$/;"	kind:variable	line:36
+NUMSQUIRRELS	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^NUMSQUIRRELS = 30    # number of squirrels in the active area$/;"	kind:variable	line:30
+N_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^N_TEMPLATE = [['.....',$/;"	kind:variable	line:139
+NfsByteCounters	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^NfsByteCounters = [$/;"	kind:variable	line:62
+NfsEventCounters	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^NfsEventCounters = [$/;"	kind:variable	line:34
+ORANGE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^ORANGE   = (255, 128,   0)$/;"	kind:variable	line:47
+ORANGE	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^ORANGE   = (255, 128,   0)$/;"	kind:variable	line:29
+OUTSIDE_DECORATION_PCT	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^OUTSIDE_DECORATION_PCT = 20$/;"	kind:variable	line:24
+OVAL	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^OVAL = 'oval'$/;"	kind:variable	line:42
+O_SHAPE_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^O_SHAPE_TEMPLATE = [['.....',$/;"	kind:variable	line:82
+PALETTEGAPSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^PALETTEGAPSIZE = 10$/;"	kind:variable	line:27
+PALETTESIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^PALETTESIZE = 45$/;"	kind:variable	line:28
+PIECES	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^PIECES = {'F': F_TEMPLATE,$/;"	kind:variable	line:367
+PIECES	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^PIECES = {'S': S_SHAPE_TEMPLATE,$/;"	kind:variable	line:151
+PIECES	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^PIECES = {'A': SHAPE_TEMPLATE}$/;"	kind:variable	line:55
+PURPLE	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^PURPLE    = (255,   0, 255)$/;"	kind:variable	line:42
+PURPLE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^PURPLE   = (255,   0, 255)$/;"	kind:variable	line:48
+PURPLE	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^PURPLE   = (255,   0, 255)$/;"	kind:variable	line:30
+P_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^P_TEMPLATE = [['.....',$/;"	kind:variable	line:179
+PrivateDirList	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^class PrivateDirList(_PrivateList):$/;"	kind:class	line:217
+PrivateFileList	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^class PrivateFileList(_FileList, _PrivateList):$/;"	kind:class	line:172
+RED	../reverse/backdoor_pi_300/fs/home/pi/python_games/drawing.py	/^RED   = (255,   0,   0)$/;"	kind:variable	line:13
+RED	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^RED = 'red'$/;"	kind:variable	line:30
+RED	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^RED       = (255, 100, 100)$/;"	kind:variable	line:45
+RED	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^RED      = (255,   0,   0)$/;"	kind:variable	line:43
+RED	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^RED      = (255,   0,   0)$/;"	kind:variable	line:25
+RED	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^RED         = (155,   0,   0)$/;"	kind:variable	line:29
+RED	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^RED          = (155,   0,   0)$/;"	kind:variable	line:22
+RED	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^RED = (255, 0, 0)$/;"	kind:variable	line:17
+RED	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^RED         = (155,   0,   0)$/;"	kind:variable	line:29
+RED	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^RED         = (155,   0,   0)$/;"	kind:variable	line:29
+RED	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^RED       = (255,   0,   0)$/;"	kind:variable	line:23
+REDRECT	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^REDRECT    = pygame.Rect(XMARGIN, YMARGIN + BUTTONSIZE + BUTTONGAPSIZE, BUTTONSIZE, BUTTONSIZE)$/;"	kind:variable	line:38
+REVEALSPEED	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^REVEALSPEED = 8 # speed boxes' sliding reveals and covers$/;"	kind:variable	line:12
+RF_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^RF_TEMPLATE = [['.....',$/;"	kind:variable	line:69
+RIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^RIGHT = 'right'$/;"	kind:variable	line:64
+RIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^RIGHT = 'right'$/;"	kind:variable	line:41
+RIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^RIGHT = 'right'$/;"	kind:variable	line:35
+RIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^RIGHT = 'right'$/;"	kind:variable	line:34
+RIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^RIGHT = 'right'$/;"	kind:variable	line:32
+RN_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^RN_TEMPLATE = [['.....',$/;"	kind:variable	line:159
+ROWABOVEBOARD	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^ROWABOVEBOARD = 'row above board' # an arbitrary, noninteger value$/;"	kind:variable	line:67
+RP_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^RP_TEMPLATE = [['.....',$/;"	kind:variable	line:199
+RY_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^RY_TEMPLATE = [['.....',$/;"	kind:variable	line:324
+RZ_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^RZ_TEMPLATE = [['.....',$/;"	kind:variable	line:354
+SCORECOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^SCORECOLOR = BROWN # color of the text for the player's score$/;"	kind:variable	line:53
+SHAPE_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^SHAPE_TEMPLATE = [['.....',$/;"	kind:variable	line:49
+SMALLBOARDSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^SMALLBOARDSIZE  = 6 # size is in boxes$/;"	kind:variable	line:15
+SMALLBOXSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^SMALLBOXSIZE  = 60 # size is in pixels$/;"	kind:variable	line:11
+SMALLMAXLIFE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^SMALLMAXLIFE  = 10 # number of turns$/;"	kind:variable	line:19
+SPACESIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^SPACESIZE = 50 # width & height of each space on the board, in pixels$/;"	kind:variable	line:16
+SPACESIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^SPACESIZE = 50 # size of the tokens and individual board spaces in pixels$/;"	kind:variable	line:15
+SQUARE	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^SQUARE = 'square'$/;"	kind:variable	line:39
+SQUIRRELMAXSPEED	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^SQUIRRELMAXSPEED = 7 # fastest squirrel speed$/;"	kind:variable	line:32
+SQUIRRELMINSPEED	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^SQUIRRELMINSPEED = 3 # slowest squirrel speed$/;"	kind:variable	line:31
+STARTSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^STARTSIZE = 25       # how big the player starts off$/;"	kind:variable	line:23
+STDINS	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^STDINS = {}$/;"	kind:variable	line:47
+S_SHAPE_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^S_SHAPE_TEMPLATE = [['.....',$/;"	kind:variable	line:49
+SharedDirList	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^class SharedDirList(_PublicList):$/;"	kind:class	line:192
+SharedFileList	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^class SharedFileList(_FileList, _PublicList):$/;"	kind:class	line:164
+SimpleSchemaParser	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^class SimpleSchemaParser:$/;"	kind:class	line:325
+TEMPLATEHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^TEMPLATEHEIGHT = 5$/;"	kind:variable	line:47
+TEMPLATEHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^TEMPLATEHEIGHT = 5$/;"	kind:variable	line:47
+TEMPLATEHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^TEMPLATEHEIGHT = 5$/;"	kind:variable	line:47
+TEMPLATEWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^TEMPLATEWIDTH = 5$/;"	kind:variable	line:46
+TEMPLATEWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^TEMPLATEWIDTH = 5$/;"	kind:variable	line:46
+TEMPLATEWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^TEMPLATEWIDTH = 5$/;"	kind:variable	line:46
+TEXTBGCOLOR1	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^TEXTBGCOLOR1 = BRIGHTBLUE$/;"	kind:variable	line:37
+TEXTBGCOLOR2	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^TEXTBGCOLOR2 = GREEN$/;"	kind:variable	line:38
+TEXTCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^TEXTCOLOR = WHITE$/;"	kind:variable	line:40
+TEXTCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^TEXTCOLOR = WHITE$/;"	kind:variable	line:28
+TEXTCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^TEXTCOLOR = WHITE$/;"	kind:variable	line:40
+TEXTCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^TEXTCOLOR = WHITE$/;"	kind:variable	line:27
+TEXTCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^TEXTCOLOR = WHITE$/;"	kind:variable	line:29
+TEXTCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^TEXTCOLOR = WHITE$/;"	kind:variable	line:40
+TEXTCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^TEXTCOLOR = WHITE$/;"	kind:variable	line:40
+TEXTSHADOWCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^TEXTSHADOWCOLOR = GRAY$/;"	kind:variable	line:41
+TEXTSHADOWCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^TEXTSHADOWCOLOR = GRAY$/;"	kind:variable	line:41
+TEXTSHADOWCOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^TEXTSHADOWCOLOR = GRAY$/;"	kind:variable	line:41
+TILECOLOR	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^TILECOLOR = GREEN$/;"	kind:variable	line:26
+TILEFLOORHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^TILEFLOORHEIGHT = 40$/;"	kind:variable	line:18
+TILEHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^TILEHEIGHT = 85$/;"	kind:variable	line:17
+TILESIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^TILESIZE = 80$/;"	kind:variable	line:12
+TILEWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^TILEWIDTH = 50$/;"	kind:variable	line:16
+TIMEOUT	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^TIMEOUT = 4 # seconds before game over if no button is pushed.$/;"	kind:variable	line:16
+TOPMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^TOPMARGIN = WINDOWHEIGHT - (BOARDHEIGHT * BOXSIZE) - 5$/;"	kind:variable	line:23
+TOPMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^TOPMARGIN = WINDOWHEIGHT - (BOARDHEIGHT * BOXSIZE) - 5$/;"	kind:variable	line:23
+TOPMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^TOPMARGIN = WINDOWHEIGHT - (BOARDHEIGHT * BOXSIZE) - 5$/;"	kind:variable	line:23
+TYPES_FOR_CHOICES	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^TYPES_FOR_CHOICES = [ 's' ]$/;"	kind:variable	line:43
+TYPES_FOR_RANGE	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^TYPES_FOR_RANGE = [ 'y', 'n', 'q', 'i', 'u', 'x', 't', 'h', 'd' ]$/;"	kind:variable	line:44
+T_SHAPE_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^T_SHAPE_TEMPLATE = [['.....',$/;"	kind:variable	line:130
+T_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^T_TEMPLATE = [['.....',$/;"	kind:variable	line:219
+UP	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^UP = 'up'$/;"	kind:variable	line:61
+UP	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^UP = 'up'$/;"	kind:variable	line:38
+UP	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^UP = 'up'$/;"	kind:variable	line:31
+UP	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^UP = 'up'$/;"	kind:variable	line:29
+U_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^U_TEMPLATE = [['.....',$/;"	kind:variable	line:239
+V_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^V_TEMPLATE = [['..O..',$/;"	kind:variable	line:259
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	/^WHITE = (255, 255, 255)$/;"	kind:variable	line:13
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/drawing.py	/^WHITE = (255, 255, 255)$/;"	kind:variable	line:12
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^WHITE      = (255, 255, 255)$/;"	kind:variable	line:31
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^WHITE = (255, 255, 255)$/;"	kind:variable	line:25
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^WHITE    = (255, 255, 255)$/;"	kind:variable	line:40
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^WHITE    = (255, 255, 255)$/;"	kind:variable	line:24
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^WHITE       = (255, 255, 255)$/;"	kind:variable	line:26
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^WHITE        = (255, 255, 255)$/;"	kind:variable	line:19
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^WHITE =         (255, 255, 255)$/;"	kind:variable	line:20
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^WHITE = (255, 255, 255)$/;"	kind:variable	line:16
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^WHITE      = (255, 255, 255)$/;"	kind:variable	line:27
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^WHITE       = (255, 255, 255)$/;"	kind:variable	line:26
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^WHITE       = (255, 255, 255)$/;"	kind:variable	line:26
+WHITE	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^WHITE     = (255, 255, 255)$/;"	kind:variable	line:21
+WHITE_TILE	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^WHITE_TILE = 'WHITE_TILE' # an arbitrary but unique value$/;"	kind:variable	line:19
+WINDOWHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^WINDOWHEIGHT = 480 # height in pixels$/;"	kind:variable	line:15
+WINDOWHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^WINDOWHEIGHT = 480 # height in pixels$/;"	kind:variable	line:19
+WINDOWHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^WINDOWHEIGHT = 600 # height in pixels$/;"	kind:variable	line:23
+WINDOWHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^WINDOWHEIGHT = 480$/;"	kind:variable	line:25
+WINDOWHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^WINDOWHEIGHT = 480 # size of windows' height in pixels$/;"	kind:variable	line:11
+WINDOWHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^WINDOWHEIGHT = 480$/;"	kind:variable	line:13
+WINDOWHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^WINDOWHEIGHT = 480$/;"	kind:variable	line:11
+WINDOWHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^WINDOWHEIGHT = 480$/;"	kind:variable	line:14
+WINDOWHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^WINDOWHEIGHT = 480$/;"	kind:variable	line:13
+WINDOWHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^WINDOWHEIGHT = 480$/;"	kind:variable	line:13
+WINDOWHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^WINDOWHEIGHT = 480$/;"	kind:variable	line:13
+WINDOWWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^WINDOWWIDTH = 640 # width of the program's window, in pixels$/;"	kind:variable	line:14
+WINDOWWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^WINDOWWIDTH = 640 # width of the program's window, in pixels$/;"	kind:variable	line:18
+WINDOWWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^WINDOWWIDTH = 600  # width of the program's window, in pixels$/;"	kind:variable	line:22
+WINDOWWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^WINDOWWIDTH = 640$/;"	kind:variable	line:24
+WINDOWWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^WINDOWWIDTH = 640 # size of window's width in pixels$/;"	kind:variable	line:10
+WINDOWWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^WINDOWWIDTH = 640$/;"	kind:variable	line:12
+WINDOWWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^WINDOWWIDTH = 640$/;"	kind:variable	line:10
+WINDOWWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^WINDOWWIDTH = 640$/;"	kind:variable	line:13
+WINDOWWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^WINDOWWIDTH = 640$/;"	kind:variable	line:12
+WINDOWWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^WINDOWWIDTH = 640$/;"	kind:variable	line:12
+WINDOWWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^WINDOWWIDTH = 640$/;"	kind:variable	line:12
+WINHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^WINHEIGHT = 480 # height in pixels$/;"	kind:variable	line:11
+WINHEIGHT	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^WINHEIGHT = 600 # height in pixels$/;"	kind:variable	line:11
+WINSIZE	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^WINSIZE = 300        # how big the player needs to be to win$/;"	kind:variable	line:24
+WINWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^WINWIDTH = 640 # width of the program's window, in pixels$/;"	kind:variable	line:10
+WINWIDTH	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^WINWIDTH = 800 # width of the program's window, in pixels$/;"	kind:variable	line:10
+WORKERS	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^WORKERS = {}$/;"	kind:variable	line:48
+W_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^W_TEMPLATE = [['.....',$/;"	kind:variable	line:279
+XMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^XMARGIN = int((WINDOWWIDTH - (BOARDWIDTH * SPACESIZE)) \/ 2)$/;"	kind:variable	line:27
+XMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^XMARGIN = int((WINDOWWIDTH - BOARDWIDTH * SPACESIZE) \/ 2)$/;"	kind:variable	line:21
+XMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^XMARGIN = int((WINDOWWIDTH - GEMIMAGESIZE * BOARDWIDTH) \/ 2)$/;"	kind:variable	line:57
+XMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^XMARGIN = int((WINDOWWIDTH - (BOARDWIDTH * (BOXSIZE + GAPSIZE))) \/ 2)$/;"	kind:variable	line:18
+XMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^XMARGIN = int((WINDOWWIDTH - BOARDWIDTH * BOXSIZE) \/ 2)$/;"	kind:variable	line:22
+XMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^XMARGIN = int((WINDOWWIDTH - (2 * BUTTONSIZE) - BUTTONGAPSIZE) \/ 2)$/;"	kind:variable	line:32
+XMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^XMARGIN = int((WINDOWWIDTH - (TILESIZE * BOARDWIDTH + (BOARDWIDTH - 1))) \/ 2)$/;"	kind:variable	line:35
+XMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^XMARGIN = int((WINDOWWIDTH - BOARDWIDTH * BOXSIZE) \/ 2)$/;"	kind:variable	line:22
+XMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^XMARGIN = int((WINDOWWIDTH - BOARDWIDTH * BOXSIZE) \/ 2)$/;"	kind:variable	line:22
+XMLSchemaParser	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^class XMLSchemaParser:$/;"	kind:class	line:615
+X_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^X_TEMPLATE = [['.....',$/;"	kind:variable	line:299
+YELLOW	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^YELLOW   = (255, 255,   0)$/;"	kind:variable	line:46
+YELLOW	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^YELLOW   = (255, 255,   0)$/;"	kind:variable	line:28
+YELLOW	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^YELLOW      = (155, 155,   0)$/;"	kind:variable	line:35
+YELLOW	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^YELLOW       = (155, 155,   0)$/;"	kind:variable	line:28
+YELLOW	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^YELLOW      = (155, 155,   0)$/;"	kind:variable	line:35
+YELLOW	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^YELLOW      = (155, 155,   0)$/;"	kind:variable	line:35
+YELLOWRECT	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^YELLOWRECT = pygame.Rect(XMARGIN, YMARGIN, BUTTONSIZE, BUTTONSIZE)$/;"	kind:variable	line:36
+YMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^YMARGIN = int((WINDOWHEIGHT - (BOARDHEIGHT * SPACESIZE)) \/ 2)$/;"	kind:variable	line:28
+YMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^YMARGIN = int((WINDOWHEIGHT - BOARDHEIGHT * SPACESIZE) \/ 2)$/;"	kind:variable	line:22
+YMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^YMARGIN = int((WINDOWHEIGHT - GEMIMAGESIZE * BOARDHEIGHT) \/ 2)$/;"	kind:variable	line:58
+YMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^YMARGIN = int((WINDOWHEIGHT - (BOARDHEIGHT * (BOXSIZE + GAPSIZE))) \/ 2)$/;"	kind:variable	line:19
+YMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^YMARGIN = int((WINDOWHEIGHT - (2 * BUTTONSIZE) - BUTTONGAPSIZE) \/ 2)$/;"	kind:variable	line:33
+YMARGIN	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^YMARGIN = int((WINDOWHEIGHT - (TILESIZE * BOARDHEIGHT + (BOARDHEIGHT - 1))) \/ 2)$/;"	kind:variable	line:36
+Y_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^Y_TEMPLATE = [['.....',$/;"	kind:variable	line:304
+Z_SHAPE_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^Z_SHAPE_TEMPLATE = [['.....',$/;"	kind:variable	line:60
+Z_TEMPLATE	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^Z_TEMPLATE = [['.....',$/;"	kind:variable	line:344
+_FileList	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^class _FileList(list):$/;"	kind:class	line:146
+_PrivateList	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^class _PrivateList (list):$/;"	kind:class	line:116
+_PublicList	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^class _PublicList (list):$/;"	kind:class	line:65
+__getitem__	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    def __getitem__ (self, name):$/;"	kind:member	line:227
+__init__	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def __init__(self):$/;"	kind:member	line:123
+__init__	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def __init__(self):$/;"	kind:member	line:234
+__init__	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def __init__(self):$/;"	kind:member	line:87
+__init__	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def __init__(self, file):$/;"	kind:member	line:343
+__init__	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def __init__(self, file):$/;"	kind:member	line:617
+__init__	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def __init__(self, file, default_gettext_domain, default_schema_id, keep_underscores):$/;"	kind:member	line:913
+__init__	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def __init__(self, node):$/;"	kind:member	line:811
+__init__	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^    def __init__(self):$/;"	kind:member	line:37
+__init__	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def __init__(self):$/;"	kind:member	line:77
+__init__	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    def __init__ (self, path):$/;"	kind:member	line:147
+__init__	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    def __init__ (self, path):$/;"	kind:member	line:193
+__init__	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    def __init__ (self, path):$/;"	kind:member	line:218
+__init__	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^  def __init__(self):$/;"	kind:member	line:39
+__init__	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/pysupport.py	/^  def __init__(self,version_info):$/;"	kind:member	line:21
+__iter__	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^  def __iter__(self):$/;"	kind:member	line:64
+__parse_nfs_line	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^    def __parse_nfs_line(self, words):$/;"	kind:member	line:42
+__parse_nfs_line	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def __parse_nfs_line(self, words):$/;"	kind:member	line:82
+__parse_rpc_line	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^    def __parse_rpc_line(self, words):$/;"	kind:member	line:101
+__parse_rpc_line	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def __parse_rpc_line(self, words):$/;"	kind:member	line:120
+__print_attr_cache_stats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def __print_attr_cache_stats(self, sample_time):$/;"	kind:member	line:240
+__print_data_cache_stats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def __print_data_cache_stats(self):$/;"	kind:member	line:227
+__print_dir_cache_stats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def __print_dir_cache_stats(self, sample_time):$/;"	kind:member	line:266
+__print_page_stats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def __print_page_stats(self, sample_time):$/;"	kind:member	line:288
+__print_rpc_op_stats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def __print_rpc_op_stats(self, op, sample_time):$/;"	kind:member	line:328
+_eat_indent	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _eat_indent(self):$/;"	kind:member	line:360
+_fix_hierarchy	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _fix_hierarchy(self):$/;"	kind:member	line:990
+_get_simple_string_for_attributes	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _get_simple_string_for_attributes(self, current_indent, parent_path, force_empty_line):$/;"	kind:member	line:155
+_get_simple_string_for_content	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _get_simple_string_for_content(self, current_indent):$/;"	kind:member	line:170
+_get_value_with_locale	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _get_value_with_locale(self, node, locale_node, element):$/;"	kind:member	line:880
+_get_xml_nodes_for_content	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _get_xml_nodes_for_content(self):$/;"	kind:member	line:204
+_has_range_choices	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _has_range_choices(self):$/;"	kind:member	line:258
+_has_range_minmax	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _has_range_minmax(self):$/;"	kind:member	line:261
+_insert_schema	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _insert_schema(self, gconf_schema):$/;"	kind:member	line:922
+_oneline	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _oneline(self, s):$/;"	kind:member	line:891
+_parse_choices	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _parse_choices(self, object):$/;"	kind:member	line:471
+_parse_id_without_separator	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _parse_id_without_separator(self):$/;"	kind:member	line:408
+_parse_key	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _parse_key(self):$/;"	kind:member	line:418
+_parse_key	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _parse_key(self, key_node, schema):$/;"	kind:member	line:622
+_parse_l10n	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _parse_l10n(self):$/;"	kind:member	line:455
+_parse_range	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _parse_range(self, object):$/;"	kind:member	line:483
+_parse_schema	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _parse_schema(self, schema_node):$/;"	kind:member	line:671
+_parse_word	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _parse_word(self):$/;"	kind:member	line:391
+_set_children_id	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _set_children_id(self, schema):$/;"	kind:member	line:985
+_token_allow_separator	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _token_allow_separator(self):$/;"	kind:member	line:405
+_word_to_token	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def _word_to_token(self, word):$/;"	kind:member	line:399
+a	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^    a=re.match("<<\\s*([\\d\\.]+)",elem)$/;"	kind:variable	line:64
+a	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^    a=re.match(">=\\s*([\\d\\.]+)",elem)$/;"	kind:variable	line:60
+a	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^    a=re.match("^[\\d\\.]+$",elem)$/;"	kind:variable	line:73
+aa	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def aa(bb, ee):$/;"	kind:function	line:84
+action	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            action="store",$/;"	kind:variable	line:557
+action	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            action="store_const",$/;"	kind:variable	line:535
+action	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            action="store_const",$/;"	kind:variable	line:540
+action	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            action="store_const",$/;"	kind:variable	line:545
+action	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            action="store_true",$/;"	kind:variable	line:553
+addToBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def addToBoard(board, piece):$/;"	kind:function	line:617
+addToBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def addToBoard(board, piece):$/;"	kind:function	line:391
+addToBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def addToBoard(board, piece):$/;"	kind:function	line:288
+addpyver	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^  def addpyver(self,pyver):$/;"	kind:member	line:48
+addsum	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^  def addsum(self,file,pyver,sum):$/;"	kind:member	line:42
+allfiles	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^def allfiles(path, onlypy=False):$/;"	kind:function	line:178
+allowed_tokens	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    allowed_tokens = {$/;"	kind:variable	line:327
+animateComputerMoving	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def animateComputerMoving(board, column):$/;"	kind:function	line:233
+animateDroppingToken	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def animateDroppingToken(board, column, color):$/;"	kind:function	line:216
+animateMovingGems	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def animateMovingGems(board, gems, pointsText, score):$/;"	kind:function	line:444
+animateTileChange	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def animateTileChange(tilesToFlip, tileColor, additionalTile):$/;"	kind:function	line:226
+apply_entries	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^def apply_entries(filename):$/;"	kind:function	line:83
+are_choices_valid	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^def are_choices_valid(choices):$/;"	kind:function	line:64
+arg	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^      arg='--makefile-install-rule'$/;"	kind:variable	line:65
+arg	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^      arg='--makefile-uninstall-rule'$/;"	kind:variable	line:67
+arg	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^        arg = arg[len(sourcepath):].lstrip("\/")$/;"	kind:variable	line:414
+b	../crypto/bad_computation_800/crypt.py	/^b = 22$/;"	kind:variable	line:6
+basedir	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^  basedir=basedir.rstrip('\/')$/;"	kind:variable	line:182
+basepath	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^basepath='\/usr\/lib\/pymodules'$/;"	kind:variable	line:19
+bgColor	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^bgColor = COLORSCHEMES[0][0]$/;"	kind:variable	line:59
+bgColor	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^bgColor = BLACK$/;"	kind:variable	line:30
+blankpygame.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/blankpygame.py	1;"	kind:file	line:1
+boardHeight	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^boardHeight = MEDIUMBOARDSIZE$/;"	kind:variable	line:36
+boardWidth	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^boardWidth = MEDIUMBOARDSIZE$/;"	kind:variable	line:35
+bool_convert	../reverse/backdoor_pi_300/fs/usr/bin/jack_control	/^def bool_convert(str_value):$/;"	kind:function	line:14
+bool_entry	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^def bool_entry(value):$/;"	kind:function	line:58
+boxSize	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^boxSize = MEDIUMBOXSIZE$/;"	kind:variable	line:26
+bytecompile	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    def bytecompile (self):$/;"	kind:member	line:118
+bytecompile_all	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^def bytecompile_all(py,path=None):$/;"	kind:function	line:245
+c	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def c():$/;"	kind:function	line:63
+calculateLevelAndFallFreq	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def calculateLevelAndFallFreq(score):$/;"	kind:function	line:599
+calculateLevelAndFallFreq	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def calculateLevelAndFallFreq(score):$/;"	kind:function	line:373
+calculateLevelAndFallFreq	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def calculateLevelAndFallFreq(score):$/;"	kind:function	line:270
+canMakeMove	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def canMakeMove(board):$/;"	kind:function	line:272
+catImg	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	/^catImg = pygame.image.load('cat.png')$/;"	kind:variable	line:14
+catanimation.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	1;"	kind:file	line:1
+catx	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	/^catx = 10$/;"	kind:variable	line:15
+caty	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	/^caty = 10$/;"	kind:variable	line:16
+changeBackgroundAnimation	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^def changeBackgroundAnimation(animationSpeed=40):$/;"	kind:function	line:191
+checkForGemClick	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def checkForGemClick(pos):$/;"	kind:function	line:508
+checkForKeyPress	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def checkForKeyPress():$/;"	kind:function	line:543
+checkForKeyPress	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def checkForKeyPress():$/;"	kind:function	line:315
+checkForKeyPress	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def checkForKeyPress():$/;"	kind:function	line:213
+checkForKeyPress	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^def checkForKeyPress():$/;"	kind:function	line:120
+checkForQuit	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def checkForQuit():$/;"	kind:function	line:510
+checkForQuit	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def checkForQuit():$/;"	kind:function	line:155
+checkForQuit	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def checkForQuit():$/;"	kind:function	line:590
+checkForQuit	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^def checkForQuit():$/;"	kind:function	line:141
+checkForQuit	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def checkForQuit():$/;"	kind:function	line:122
+checkForQuit	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def checkForQuit():$/;"	kind:function	line:364
+checkForQuit	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def checkForQuit():$/;"	kind:function	line:261
+clean	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    def clean(self):$/;"	kind:member	line:136
+cleanup	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^def cleanup():$/;"	kind:function	line:47
+compare_iostats	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^    def compare_iostats(self, old_stats):$/;"	kind:member	line:282
+compare_iostats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def compare_iostats(self, old_stats):$/;"	kind:member	line:198
+compile	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^def compile(files, versions, force, optimize, e_patterns=None):$/;"	kind:function	line:144
+compile_versions	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^        compile_versions = debsorted(versions)[:1]$/;"	kind:variable	line:238
+concat	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^def concat(l1,l2):$/;"	kind:function	line:60
+config	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/pysupport.py	/^config = SafeConfigParser()$/;"	kind:variable	line:4
+configure_interface_name	../reverse/backdoor_pi_300/fs/usr/bin/jack_control	/^configure_interface_name = name_base + '.Configure'$/;"	kind:variable	line:5
+const	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            const=1,$/;"	kind:variable	line:537
+const	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            const=2,$/;"	kind:variable	line:542
+const	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            const=3,$/;"	kind:variable	line:547
+control_interface_name	../reverse/backdoor_pi_300/fs/usr/bin/jack_control	/^control_interface_name = name_base + '.JackControl'$/;"	kind:variable	line:4
+convertToPixelCoords	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def convertToPixelCoords(boxx, boxy):$/;"	kind:function	line:680
+convertToPixelCoords	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def convertToPixelCoords(boxx, boxy):$/;"	kind:function	line:454
+convertToPixelCoords	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def convertToPixelCoords(boxx, boxy):$/;"	kind:function	line:351
+convert_underscores	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def convert_underscores(self):$/;"	kind:member	line:898
+count	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                count = int(arg)$/;"	kind:variable	line:584
+count_seen	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                count_seen = True$/;"	kind:variable	line:589
+coverBoxesAnimation	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def coverBoxesAnimation(board, boxesToCover):$/;"	kind:function	line:228
+create_dotpath	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^def create_dotpath(py):$/;"	kind:function	line:256
+create_ext_links	../reverse/backdoor_pi_300/fs/usr/bin/dh_python2	/^def create_ext_links(dir1):$/;"	kind:function	line:190
+create_public_links	../reverse/backdoor_pi_300/fs/usr/bin/dh_python2	/^def create_public_links(dir1, vrange, root=''):$/;"	kind:function	line:214
+crypt.py	../crypto/bad_computation_800/crypt.py	1;"	kind:file	line:1
+d	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def d(ccc):$/;"	kind:function	line:58
+dbus_type_to_python_type	../reverse/backdoor_pi_300/fs/usr/bin/jack_control	/^def dbus_type_to_python_type(dbus_value):$/;"	kind:function	line:32
+dbus_type_to_type_string	../reverse/backdoor_pi_300/fs/usr/bin/jack_control	/^def dbus_type_to_type_string(dbus_value):$/;"	kind:function	line:53
+dbus_typesig_to_type_string	../reverse/backdoor_pi_300/fs/usr/bin/jack_control	/^def dbus_typesig_to_type_string(type_char):$/;"	kind:function	line:67
+dd	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def dd(bbb, boxes, gg):$/;"	kind:function	line:111
+debug	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^def debug(x):$/;"	kind:function	line:50
+decorateMap	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^def decorateMap(mapObj, startxy):$/;"	kind:function	line:274
+default	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^                   default=False)$/;"	kind:variable	line:20
+default	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^                  default=None)$/;"	kind:variable	line:14
+default	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^                  default=None)$/;"	kind:variable	line:17
+default	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^                  default=False)$/;"	kind:variable	line:32
+default	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^                  default=False)$/;"	kind:variable	line:41
+default	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^                  default=False)$/;"	kind:variable	line:44
+default	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^                  default=False)$/;"	kind:variable	line:47
+defaults_dest	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^defaults_dest="\/var\/lib\/gconf\/defaults"$/;"	kind:variable	line:34
+defaults_files	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^defaults_files = []$/;"	kind:variable	line:129
+description	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^        description=mydescription,$/;"	kind:variable	line:528
+dest	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            dest="list",$/;"	kind:variable	line:559
+dest	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            dest="sort",$/;"	kind:variable	line:554
+dest	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            dest="which",$/;"	kind:variable	line:536
+dest	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            dest="which",$/;"	kind:variable	line:541
+dest	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            dest="which",$/;"	kind:variable	line:546
+dest_stamp	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^    dest_stamp = 0$/;"	kind:variable	line:147
+dest_stamp	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^    dest_stamp = os.stat(os.path.join(options.dest_dir, treefile)).st_mtime$/;"	kind:variable	line:145
+destroyer	../reverse/backdoor_pi_300/fs/usr/bin/pyclean	/^def destroyer():  # ;-)$/;"	kind:function	line:46
+devices	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^            devices = list_nfs_mounts(origdevices,mountstats)$/;"	kind:variable	line:617
+devices	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^            devices = list_nfs_mounts(origdevices,mountstats)$/;"	kind:variable	line:631
+devices	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    devices = list_nfs_mounts(origdevices, mountstats)$/;"	kind:variable	line:595
+dh_python2	../reverse/backdoor_pi_300/fs/usr/bin/dh_python2	1;"	kind:file	line:1
+difference	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^def difference(x, y):$/;"	kind:function	line:28
+difference	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^def difference(x, y):$/;"	kind:function	line:29
+difficulty	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^difficulty = MEDIUM # game starts in "medium" mode$/;"	kind:variable	line:33
+dir	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^        dir = os.path.join(basepath,pyver)$/;"	kind:variable	line:437
+dir	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    dir = os.path.join(basepath,pyver)$/;"	kind:variable	line:444
+direction	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	/^            direction = 'down'$/;"	kind:variable	line:25
+direction	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	/^            direction = 'left'$/;"	kind:variable	line:29
+direction	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	/^            direction = 'right'$/;"	kind:variable	line:37
+direction	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	/^            direction = 'up'$/;"	kind:variable	line:33
+direction	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	/^direction = 'right'$/;"	kind:variable	line:17
+dirlist_file	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^def dirlist_file(f):$/;"	kind:function	line:373
+dirlisting	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^dirlisting = os.listdir(sourcepath)$/;"	kind:variable	line:384
+display_iostats	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^    def display_iostats(self, sample_time):$/;"	kind:member	line:308
+display_iostats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def display_iostats(self, sample_time, which):$/;"	kind:member	line:370
+display_nfs_bytes	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^    def display_nfs_bytes(self):$/;"	kind:member	line:232
+display_nfs_events	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^    def display_nfs_events(self):$/;"	kind:member	line:195
+display_nfs_options	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^    def display_nfs_options(self):$/;"	kind:member	line:179
+display_rpc_generic_stats	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^    def display_rpc_generic_stats(self):$/;"	kind:member	line:244
+display_rpc_op_stats	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^    def display_rpc_op_stats(self):$/;"	kind:member	line:258
+displaygroup	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    displaygroup = OptionGroup(parser, "Display Options",$/;"	kind:variable	line:550
+do_eggrename	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^def do_eggrename (basedir, pybasedir, suffixdir=""):$/;"	kind:function	line:168
+do_listonly	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^def do_listonly (basedir):$/;"	kind:function	line:158
+do_move	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^def do_move (basedir, tuples):$/;"	kind:function	line:101
+do_private	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^do_private=[]$/;"	kind:variable	line:411
+do_public	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^do_public=[]$/;"	kind:variable	line:410
+do_simple_move	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^def do_simple_move (basedir, sourcedir):$/;"	kind:function	line:91
+drawApple	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^def drawApple(coord):$/;"	kind:function	line:214
+drawBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def drawBoard(board):$/;"	kind:function	line:256
+drawBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def drawBoard(board, extraToken=None):$/;"	kind:function	line:137
+drawBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def drawBoard(board):$/;"	kind:function	line:517
+drawBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def drawBoard(board, transparency=255):$/;"	kind:function	line:363
+drawBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def drawBoard(board, revealed):$/;"	kind:function	line:234
+drawBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def drawBoard(board):$/;"	kind:function	line:699
+drawBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def drawBoard(board, message):$/;"	kind:function	line:233
+drawBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def drawBoard(board):$/;"	kind:function	line:473
+drawBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def drawBoard(board):$/;"	kind:function	line:370
+drawBox	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def drawBox(boxx, boxy, color, pixelx=None, pixely=None):$/;"	kind:function	line:686
+drawBox	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def drawBox(boxx, boxy, color, pixelx=None, pixely=None):$/;"	kind:function	line:460
+drawBox	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def drawBox(boxx, boxy, color, pixelx=None, pixely=None):$/;"	kind:function	line:357
+drawBoxCovers	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def drawBoxCovers(board, boxes, coverage):$/;"	kind:function	line:208
+drawButtons	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^def drawButtons():$/;"	kind:function	line:184
+drawColorSchemeBoxes	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def drawColorSchemeBoxes(x, y, schemeNum):$/;"	kind:function	line:267
+drawGrid	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^def drawGrid():$/;"	kind:function	line:221
+drawHealthMeter	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^def drawHealthMeter(currentHealth):$/;"	kind:function	line:316
+drawHighlightBox	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def drawHighlightBox(boxx, boxy):$/;"	kind:function	line:248
+drawIcon	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def drawIcon(shape, color, boxx, boxy):$/;"	kind:function	line:181
+drawInfo	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def drawInfo(board, playerTile, computerTile, turn):$/;"	kind:function	line:303
+drawLifeMeter	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def drawLifeMeter(currentLife):$/;"	kind:function	line:392
+drawLogoAndButtons	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def drawLogoAndButtons():$/;"	kind:function	line:356
+drawMap	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^def drawMap(mapObj, gameStateObj, goals):$/;"	kind:function	line:535
+drawMovingGem	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def drawMovingGem(gem, progress):$/;"	kind:function	line:318
+drawNextPiece	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def drawNextPiece(piece):$/;"	kind:function	line:738
+drawNextPiece	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def drawNextPiece(piece):$/;"	kind:function	line:512
+drawNextPiece	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def drawNextPiece(piece):$/;"	kind:function	line:409
+drawPalettes	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def drawPalettes():$/;"	kind:function	line:381
+drawPiece	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def drawPiece(piece, pixelx=None, pixely=None):$/;"	kind:function	line:725
+drawPiece	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def drawPiece(piece, pixelx=None, pixely=None):$/;"	kind:function	line:499
+drawPiece	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def drawPiece(piece, pixelx=None, pixely=None):$/;"	kind:function	line:396
+drawPressKeyMsg	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^def drawPressKeyMsg():$/;"	kind:function	line:111
+drawScore	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def drawScore(score):$/;"	kind:function	line:541
+drawScore	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^def drawScore(score):$/;"	kind:function	line:197
+drawStatus	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def drawStatus(score, level):$/;"	kind:function	line:711
+drawStatus	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def drawStatus(score, level):$/;"	kind:function	line:485
+drawStatus	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def drawStatus(score, level):$/;"	kind:function	line:382
+drawTile	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def drawTile(tilex, tiley, number, adjx=0, adjy=0):$/;"	kind:function	line:214
+drawWorm	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^def drawWorm(wormCoords):$/;"	kind:function	line:204
+drawing.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/drawing.py	1;"	kind:file	line:1
+dwfregrgre	../crypto/bad_computation_800/crypt.py	/^def dwfregrgre(x, z):$/;"	kind:function	line:9
+e_patterns	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^                                              compile_versions)$/;"	kind:variable	line:244
+e_patterns	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^            e_patterns = get_exclude_patterns(item, options.regexpr, versions)$/;"	kind:variable	line:266
+e_patterns	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^        e_patterns = get_exclude_patterns()$/;"	kind:variable	line:256
+elem	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^    elem=elem.strip()$/;"	kind:variable	line:52
+enterPlayerTile	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def enterPlayerTile():$/;"	kind:function	line:421
+env	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^    env=os.environ.copy()$/;"	kind:variable	line:61
+extensionpath	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^extensionpath='usr\/lib\/pyshared'$/;"	kind:variable	line:13
+f	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def f(bbb, pp):$/;"	kind:function	line:127
+f	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^    f=file(args[0])$/;"	kind:variable	line:28
+f	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^    f=sys.stdin$/;"	kind:variable	line:26
+f	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^  f=iter(['-'])$/;"	kind:variable	line:23
+f2py	../reverse/backdoor_pi_300/fs/usr/bin/f2py	1;"	kind:file	line:1
+fd	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^    fd = os.open("\/dev\/null",os.O_WRONLY)$/;"	kind:variable	line:69
+filelist	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^class filelist:$/;"	kind:class	line:38
+files	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^                files = dpf.filter_directory(pkg_files, item)$/;"	kind:variable	line:250
+files	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^            files = add_namespace_files(files, action=True)$/;"	kind:variable	line:268
+files	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^            files = dpf.filter_out_ext(files, ('.so',))$/;"	kind:variable	line:269
+files	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^            files = dpf.from_directory(item, extensions=('.py', '.so'))$/;"	kind:variable	line:267
+files	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^        files = add_namespace_files(files, options.package, action=True)$/;"	kind:variable	line:259
+files	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^        files = dpf.filter_out_ext(files, ('.so',))$/;"	kind:variable	line:260
+files	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^        files = dpf.filter_public(files, versions)$/;"	kind:variable	line:258
+files	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^        files = dpf.from_package(options.package, extensions=('.py', '.so'))$/;"	kind:variable	line:257
+files	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^  files = do_listonly (basedir)$/;"	kind:variable	line:195
+fill	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def fill(self, name, type, default, typed_default, l10n, l10n_context, summary, description, choices, range):$/;"	kind:member	line:246
+fillBoardAndAnimate	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def fillBoardAndAnimate(board, points, score):$/;"	kind:function	line:485
+filter_files	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^def filter_files(files, e_patterns, compile_versions):$/;"	kind:function	line:107
+findMatchingGems	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def findMatchingGems(board):$/;"	kind:function	line:393
+find_files_to_remove	../reverse/backdoor_pi_300/fs/usr/bin/pyclean	/^    def find_files_to_remove(pyfile):$/;"	kind:function	line:49
+fix_locations	../reverse/backdoor_pi_300/fs/usr/bin/dh_python2	/^def fix_locations(package):$/;"	kind:function	line:66
+fix_value_for_simple_gconf_type	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^def fix_value_for_simple_gconf_type(gconftype, gconfvalue):$/;"	kind:function	line:763
+flashBorderAnimation	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def flashBorderAnimation(color, board, animationSpeed=30):$/;"	kind:function	line:277
+flashButtonAnimation	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^def flashButtonAnimation(color, animationSpeed=50):$/;"	kind:function	line:150
+flippy.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	1;"	kind:file	line:1
+float_entry	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^def float_entry(value):$/;"	kind:function	line:61
+floodAnimation	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def floodAnimation(board, paletteClicked, animationSpeed=25):$/;"	kind:function	line:296
+floodFill	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def floodFill(board, oldColor, newColor, x, y):$/;"	kind:function	line:419
+floodFill	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^def floodFill(mapObj, x, y, oldCharacter, newCharacter):$/;"	kind:function	line:513
+fourinarow.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	1;"	kind:file	line:1
+fpsClock	../reverse/backdoor_pi_300/fs/home/pi/python_games/catanimation.py	/^fpsClock = pygame.time.Clock()$/;"	kind:variable	line:7
+g	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def g(bbb):$/;"	kind:function	line:139
+gameOverAnimation	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^def gameOverAnimation(color=WHITE, animationSpeed=50):$/;"	kind:function	line:212
+gameWonAnimation	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def gameWonAnimation(board):$/;"	kind:function	line:269
+gconf-schemas	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	1;"	kind:file	line:1
+gconf_val	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^      gconf_val={}$/;"	kind:variable	line:161
+gconf_val	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^gconf_val = {}$/;"	kind:variable	line:94
+gemgem.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	1;"	kind:file	line:1
+generateNewPuzzle	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def generateNewPuzzle(numSlides):$/;"	kind:function	line:295
+generateRandomBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def generateRandomBoard(width, height, difficulty=MEDIUM):$/;"	kind:function	line:308
+generateRevealedBoxesData	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def generateRevealedBoxesData(val):$/;"	kind:function	line:125
+getBlankBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def getBlankBoard():$/;"	kind:function	line:264
+getBlankBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def getBlankBoard():$/;"	kind:function	line:625
+getBlankBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def getBlankBoard():$/;"	kind:function	line:399
+getBlankBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def getBlankBoard():$/;"	kind:function	line:296
+getBlankPosition	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def getBlankPosition(board):$/;"	kind:function	line:149
+getBoardCopyMinusGems	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def getBoardCopyMinusGems(board, gems):$/;"	kind:function	line:526
+getBoardWithValidMoves	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def getBoardWithValidMoves(board, tile):$/;"	kind:function	line:388
+getBounceAmount	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^def getBounceAmount(currentBounce, bounceRate, bounceHeight):$/;"	kind:function	line:328
+getBoxAtPixel	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def getBoxAtPixel(x, y):$/;"	kind:function	line:171
+getButtonClicked	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^def getButtonClicked(x, y):$/;"	kind:function	line:238
+getColorOfPaletteAt	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def getColorOfPaletteAt(x, y):$/;"	kind:function	line:404
+getComputerMove	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def getComputerMove(board, computerTile):$/;"	kind:function	line:485
+getComputerMove	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def getComputerMove(board):$/;"	kind:function	line:257
+getDropSlots	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def getDropSlots(board):$/;"	kind:function	line:363
+getDroppingGems	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def getDroppingGems(board):$/;"	kind:function	line:431
+getGemAt	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def getGemAt(board, x, y):$/;"	kind:function	line:356
+getHumanMove	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def getHumanMove(board, isFirstMove):$/;"	kind:function	line:175
+getLeftTopOfTile	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def getLeftTopOfTile(tileX, tileY):$/;"	kind:function	line:197
+getLowestEmptySpace	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def getLowestEmptySpace(board, column):$/;"	kind:function	line:313
+getNewBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def getNewBoard():$/;"	kind:function	line:325
+getNewBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def getNewBoard():$/;"	kind:function	line:168
+getNewPiece	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def getNewPiece():$/;"	kind:function	line:606
+getNewPiece	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def getNewPiece():$/;"	kind:function	line:380
+getNewPiece	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def getNewPiece():$/;"	kind:function	line:277
+getPotentialMoves	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def getPotentialMoves(board, tile, lookAhead):$/;"	kind:function	line:272
+getRandomLocation	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^def getRandomLocation():$/;"	kind:function	line:171
+getRandomMove	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def getRandomMove(board, lastMove=None):$/;"	kind:function	line:179
+getRandomOffCameraPos	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^def getRandomOffCameraPos(camerax, cameray, objWidth, objHeight):$/;"	kind:function	line:343
+getRandomVelocity	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^def getRandomVelocity():$/;"	kind:function	line:335
+getRandomizedBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def getRandomizedBoard():$/;"	kind:function	line:132
+getScoreOfBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def getScoreOfBoard(board):$/;"	kind:function	line:408
+getShapeAndColor	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def getShapeAndColor(board, boxx, boxy):$/;"	kind:function	line:202
+getSpaceClicked	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def getSpaceClicked(mousex, mousey):$/;"	kind:function	line:290
+getSpotClicked	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def getSpotClicked(board, x, y):$/;"	kind:function	line:203
+getStartingBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def getStartingBoard():$/;"	kind:function	line:131
+getSwappingGems	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def getSwappingGems(board, firstXY, secondXY):$/;"	kind:function	line:234
+getValidMoves	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def getValidMoves(board, tile):$/;"	kind:function	line:397
+get_exclude_patterns	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^def get_exclude_patterns(directory='\/', patterns=None, versions=None):$/;"	kind:function	line:84
+get_exclude_patterns_from_dir	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^def get_exclude_patterns_from_dir(name='\/usr\/share\/python\/bcep\/'):$/;"	kind:function	line:62
+get_gsettings_schema_key	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def get_gsettings_schema_key(self):$/;"	kind:member	line:902
+get_parameters	../reverse/backdoor_pi_300/fs/usr/bin/jack_control	/^def get_parameters(iface, path):$/;"	kind:function	line:83
+get_simple_string	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def get_simple_string(self):$/;"	kind:member	line:91
+get_simple_string	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def get_simple_string(self, current_indent = '', parent_path = ''):$/;"	kind:member	line:133
+get_simple_string	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def get_simple_string(self, current_indent):$/;"	kind:member	line:264
+get_xml_node	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def get_xml_node(self):$/;"	kind:member	line:108
+get_xml_node	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def get_xml_node(self):$/;"	kind:member	line:289
+get_xml_nodes	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def get_xml_nodes(self):$/;"	kind:member	line:187
+gsettings-schema-convert	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	1;"	kind:file	line:1
+hasWon	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def hasWon(board):$/;"	kind:function	line:167
+hasWon	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def hasWon(revealedBoxes):$/;"	kind:function	line:283
+help	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^multiple times to build up a list of things to exclude.')$/;"	kind:variable	line:208
+help	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^                  help="do not send SIGHUP the running gconfd-2 processes")$/;"	kind:variable	line:20
+help	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^                  help="only regenerate configuration if needed")$/;"	kind:variable	line:22
+help	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^                  help="select mandatory settings directories")$/;"	kind:variable	line:18
+help	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^                   help="clean up the GConf database and register all schemas again",$/;"	kind:variable	line:19
+help	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^                  help="do not send SIGHUP the running gconfd-2 processes")$/;"	kind:variable	line:22
+help	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^                  help="register schemas to the GConf database",$/;"	kind:variable	line:13
+help	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^                  help="unregister schemas from the GConf database",$/;"	kind:variable	line:16
+help	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            help="Sort NFS mount points by ops\/second")$/;"	kind:variable	line:555
+help	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            help="only print stats for first LIST mount points")$/;"	kind:variable	line:560
+help	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            help='displays statistics related to directory operations')$/;"	kind:variable	line:543
+help	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            help='displays statistics related to the attribute cache')$/;"	kind:variable	line:538
+help	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            help='displays statistics related to the page cache')$/;"	kind:variable	line:548
+help	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^                  help="[deprecated] byte-compilation mode: only handle private modules",$/;"	kind:variable	line:43
+help	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^                  help="[deprecated] installation mode: only handle public modules",$/;"	kind:variable	line:46
+help	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^                  help="clean modules instead of compiling them",$/;"	kind:variable	line:31
+help	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^                  help="rebuild all modules, including public modules for all python versions")$/;"	kind:variable	line:38
+help	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^                  help="rebuild all private modules for a new default python version")$/;"	kind:variable	line:35
+help	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^                  help="run post-installation operations, common to many packages",$/;"	kind:variable	line:40
+hhh	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def hhh():$/;"	kind:function	line:3
+highlightSpace	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def highlightSpace(x, y):$/;"	kind:function	line:427
+htmlescape	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^def htmlescape(str):$/;"	kind:function	line:52
+i	../reverse/backdoor_pi_300/fs/usr/bin/f2py	/^        i=sys.argv.index("--"+mode)$/;"	kind:variable	line:6
+idle	../reverse/backdoor_pi_300/fs/usr/bin/idle	1;"	kind:file	line:1
+ii	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def ii(hh):$/;"	kind:function	line:161
+inkspill.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	1;"	kind:file	line:1
+install	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    def install (self, versions):$/;"	kind:member	line:67
+installedpath	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^installedpath='usr\/lib\/pymodules'$/;"	kind:variable	line:14
+int_entry	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^def int_entry(value):$/;"	kind:function	line:55
+interval	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                interval = int(arg)$/;"	kind:variable	line:573
+interval_seen	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                interval_seen = True$/;"	kind:variable	line:578
+iostat_command	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^def iostat_command():$/;"	kind:function	line:519
+iostat_command	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^def iostat_command(name):$/;"	kind:function	line:504
+isBlocked	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^def isBlocked(mapObj, gameStateObj, x, y):$/;"	kind:function	line:314
+isBoardFull	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def isBoardFull(board):$/;"	kind:function	line:329
+isCompleteLine	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def isCompleteLine(board, y):$/;"	kind:function	line:650
+isCompleteLine	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def isCompleteLine(board, y):$/;"	kind:function	line:424
+isCompleteLine	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def isCompleteLine(board, y):$/;"	kind:function	line:321
+isLevelFinished	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^def isLevelFinished(levelObj, gameStateObj):$/;"	kind:function	line:583
+isOnBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def isOnBoard(x, y):$/;"	kind:function	line:383
+isOnBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def isOnBoard(x, y):$/;"	kind:function	line:633
+isOnBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def isOnBoard(x, y):$/;"	kind:function	line:407
+isOnBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def isOnBoard(x, y):$/;"	kind:function	line:304
+isOnCorner	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def isOnCorner(x, y):$/;"	kind:function	line:477
+isOutsideActiveArea	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^def isOutsideActiveArea(camerax, cameray, obj):$/;"	kind:function	line:385
+isValidMove	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def isValidMove(board, tile, xstart, ystart):$/;"	kind:function	line:334
+isValidMove	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def isValidMove(board, column):$/;"	kind:function	line:321
+isValidMove	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def isValidMove(board, move):$/;"	kind:function	line:171
+isValidPosition	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def isValidPosition(board, piece, adjX=0, adjY=0):$/;"	kind:function	line:637
+isValidPosition	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def isValidPosition(board, piece, adjX=0, adjY=0):$/;"	kind:function	line:411
+isValidPosition	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def isValidPosition(board, piece, adjX=0, adjY=0):$/;"	kind:function	line:308
+isWall	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^def isWall(mapObj, x, y):$/;"	kind:function	line:264
+isWinner	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def isWinner(board, tile):$/;"	kind:function	line:338
+is_key_name_valid	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^def is_key_name_valid(name):$/;"	kind:function	line:56
+is_nfs_mountpoint	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^    def is_nfs_mountpoint(self):$/;"	kind:member	line:169
+is_nfs_mountpoint	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def is_nfs_mountpoint(self):$/;"	kind:member	line:188
+is_range_valid	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^def is_range_valid(minmax):$/;"	kind:function	line:69
+is_schema_id_valid	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^def is_schema_id_valid(id):$/;"	kind:function	line:50
+isallthesame	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^  def isallthesame(self,file):$/;"	kind:member	line:50
+isect	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^def isect(l1,l2):$/;"	kind:function	line:57
+jack_control	../reverse/backdoor_pi_300/fs/usr/bin/jack_control	1;"	kind:file	line:1
+jj	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def jj(bbb):$/;"	kind:function	line:151
+l	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^      l=line.split(':')[1]$/;"	kind:variable	line:44
+l	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^  l=None$/;"	kind:variable	line:32
+leftTopCoordsOfBox	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def leftTopCoordsOfBox(boxx, boxy):$/;"	kind:function	line:164
+leftTopPixelCoordOfBox	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def leftTopPixelCoordOfBox(boxx, boxy):$/;"	kind:function	line:437
+line	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^    line=line.strip()$/;"	kind:variable	line:35
+list	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^  def list(self,file):$/;"	kind:member	line:62
+list_entry	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^def list_entry(value):$/;"	kind:function	line:67
+list_nfs_mounts	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^def list_nfs_mounts(givenlist, mountstats):$/;"	kind:function	line:484
+listcmp	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^def listcmp(a,b):$/;"	kind:function	line:75
+log	../reverse/backdoor_pi_300/fs/usr/bin/dh_python2	/^log = logging.getLogger(__name__)$/;"	kind:variable	line:53
+log	../reverse/backdoor_pi_300/fs/usr/bin/pyclean	/^log = logging.getLogger(__name__)$/;"	kind:variable	line:37
+log	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^log = logging.getLogger(__name__)$/;"	kind:variable	line:46
+m	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def m(x, y):$/;"	kind:function	line:86
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def main():$/;"	kind:function	line:44
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def main():$/;"	kind:function	line:37
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def main():$/;"	kind:function	line:69
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def main():$/;"	kind:function	line:62
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def main():$/;"	kind:function	line:48
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def main():$/;"	kind:function	line:387
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^def main():$/;"	kind:function	line:41
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def main():$/;"	kind:function	line:43
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^def main():$/;"	kind:function	line:63
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^def main():$/;"	kind:function	line:37
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def main():$/;"	kind:function	line:160
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def main():$/;"	kind:function	line:58
+main	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^def main():$/;"	kind:function	line:36
+main	../reverse/backdoor_pi_300/fs/usr/bin/dh_python2	/^def main():$/;"	kind:function	line:482
+main	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^def main(args):$/;"	kind:function	line:1035
+main	../reverse/backdoor_pi_300/fs/usr/bin/jack_control	/^def main():$/;"	kind:function	line:104
+main	../reverse/backdoor_pi_300/fs/usr/bin/pyclean	/^def main():$/;"	kind:function	line:70
+main	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^def main():$/;"	kind:function	line:182
+makeMove	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def makeMove(board, tile, xstart, ystart, realMove=False):$/;"	kind:function	line:459
+makeMove	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def makeMove(board, player, column):$/;"	kind:function	line:131
+makeMove	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def makeMove(board, move):$/;"	kind:function	line:157
+makeMove	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^def makeMove(mapObj, gameStateObj, playerMoveTo):$/;"	kind:function	line:330
+makeNewGrass	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^def makeNewGrass(camerax, cameray):$/;"	kind:function	line:375
+makeNewSquirrel	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^def makeNewSquirrel(camerax, cameray):$/;"	kind:function	line:356
+makeText	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def makeText(text, color, bgcolor, top, left):$/;"	kind:function	line:225
+makeTextObjs	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def makeTextObjs(text, font, color):$/;"	kind:function	line:531
+makeTextObjs	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def makeTextObjs(text, font, color):$/;"	kind:function	line:304
+makeTextObjs	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def makeTextObjs(text, font, color):$/;"	kind:function	line:202
+map_gconf_type_to_variant_type	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^def map_gconf_type_to_variant_type(gconftype, gconfsubtype):$/;"	kind:function	line:747
+max	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^        max=""$/;"	kind:variable	line:71
+max	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^        max='.'.join(max)$/;"	kind:variable	line:69
+max	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^        max=a.group(1).split(".")$/;"	kind:variable	line:67
+max	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^  max=v.max$/;"	kind:variable	line:101
+maxLife	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^maxLife = MEDIUMMAXLIFE$/;"	kind:variable	line:34
+memorypuzzle.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	1;"	kind:file	line:1
+memorypuzzle_obfuscated.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	1;"	kind:file	line:1
+min	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^      min=a.group(1)$/;"	kind:variable	line:62
+min	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^  min=v.min$/;"	kind:variable	line:99
+modulepath	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^modulepath='usr\/share\/pyshared'$/;"	kind:variable	line:12
+mountstats	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	1;"	kind:file	line:1
+mountstats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^            mountstats = parse_stats_file('\/proc\/self\/mountstats')$/;"	kind:variable	line:614
+mountstats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^            mountstats = parse_stats_file('\/proc\/self\/mountstats')$/;"	kind:variable	line:628
+mountstats_command	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^def mountstats_command():$/;"	kind:function	line:404
+moveGems	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def moveGems(board, movingGems):$/;"	kind:function	line:464
+move_to_pyshared	../reverse/backdoor_pi_300/fs/usr/bin/dh_python2	/^def move_to_pyshared(dir1):$/;"	kind:function	line:156
+movemodules	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	1;"	kind:file	line:1
+n	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def n(bb, ee):$/;"	kind:function	line:136
+name_base	../reverse/backdoor_pi_300/fs/usr/bin/jack_control	/^name_base = 'org.jackaudio'$/;"	kind:variable	line:3
+need_dotpath	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^            need_dotpath = True$/;"	kind:variable	line:481
+need_dotpath	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    need_dotpath = False$/;"	kind:variable	line:499
+need_dotpath	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^need_dotpath = False$/;"	kind:variable	line:473
+need_postinstall	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    need_postinstall = []$/;"	kind:variable	line:493
+need_postinstall	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    need_postinstall = concat (need_postinstall, isect(package.pyversions,py_installed))$/;"	kind:variable	line:475
+need_postinstall	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    need_postinstall = py_installed$/;"	kind:variable	line:497
+need_postinstall	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^need_postinstall = []$/;"	kind:variable	line:442
+nfsiostat	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	1;"	kind:file	line:1
+nfsstat_command	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^def nfsstat_command():$/;"	kind:function	line:482
+o	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def o(bbb, cc):$/;"	kind:function	line:121
+old_extensionpath	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^old_extensionpath='\/usr\/lib\/python-support'$/;"	kind:variable	line:21
+old_mountstats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^            old_mountstats = mountstats$/;"	kind:variable	line:611
+old_mountstats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^            old_mountstats = mountstats$/;"	kind:variable	line:625
+old_mountstats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    old_mountstats = None$/;"	kind:variable	line:601
+ops	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def ops(self, sample_time):$/;"	kind:member	line:364
+out	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^    out=file(public_file, "w")$/;"	kind:variable	line:229
+out	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^      out=["-"]$/;"	kind:variable	line:55
+out	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^  out=[]$/;"	kind:variable	line:50
+p	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def p(bbb, ff):$/;"	kind:function	line:124
+package	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^    package=os.path.split(basedir)[1]$/;"	kind:variable	line:185
+package	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^  package=options.package$/;"	kind:variable	line:183
+paletteColors	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^paletteColors =  COLORSCHEMES[0][1:]$/;"	kind:variable	line:60
+paraborder	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^    paraborder=False$/;"	kind:variable	line:42
+paraborder	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^  paraborder=True$/;"	kind:variable	line:33
+parse	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def parse(self):$/;"	kind:member	line:1012
+parse	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def parse(self):$/;"	kind:member	line:596
+parse	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def parse(self):$/;"	kind:member	line:702
+parse_line	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^    def parse_line(self, line):$/;"	kind:member	line:498
+parse_option	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    def parse_option (self, arg, value):$/;"	kind:member	line:165
+parse_option	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    def parse_option (self, arg, value):$/;"	kind:member	line:173
+parse_stats	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^    def parse_stats(self, lines):$/;"	kind:member	line:153
+parse_stats	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    def parse_stats(self, lines):$/;"	kind:member	line:172
+parse_stats_file	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^def parse_stats_file(filename):$/;"	kind:function	line:363
+parse_stats_file	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^def parse_stats_file(filename):$/;"	kind:function	line:418
+parser	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^parser = OptionParser()$/;"	kind:variable	line:12
+parser	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^parser = OptionParser(usage="usage: %prog --[un]register file1.schemas [file2.schemas [...]]")$/;"	kind:variable	line:10
+parser	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    parser = OptionParser($/;"	kind:variable	line:526
+parser	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^parser = OptionParser(usage="usage: %prog [-v] [-c] package_directory [...]\\n"+$/;"	kind:variable	line:25
+parser	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^parser = OptionParser(usage="usage: %prog [options] [directory [...]]")$/;"	kind:variable	line:16
+parser	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^parser = OptionParser(usage="usage: %prog [options] file.pyversions")$/;"	kind:variable	line:12
+parseversions	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	1;"	kind:file	line:1
+pentomino.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	1;"	kind:file	line:1
+pids	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^    pids=os.popen('pidof gconfd-2').readlines()[0].split()$/;"	kind:variable	line:86
+pixObj	../reverse/backdoor_pi_300/fs/home/pi/python_games/drawing.py	/^pixObj = pygame.PixelArray(DISPLAYSURF)$/;"	kind:variable	line:27
+pkg_files	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^        pkg_files = tuple(dpf.from_package(options.package))$/;"	kind:variable	line:241
+post_change_stuff	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^def post_change_stuff(py):$/;"	kind:function	line:281
+print_iostat_help	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^def print_iostat_help(name):$/;"	kind:function	line:485
+print_iostat_summary	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^def print_iostat_summary(old, new, devices, time):$/;"	kind:function	line:507
+print_iostat_summary	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^def print_iostat_summary(old, new, devices, time, options):$/;"	kind:function	line:445
+print_mountstats_help	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^def print_mountstats_help(name):$/;"	kind:function	line:390
+print_nfsstat_help	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^def print_nfsstat_help(name):$/;"	kind:function	line:474
+private_packages	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^private_packages = CachedFileList()$/;"	kind:variable	line:383
+proc	../reverse/backdoor_pi_300/fs/home/pi/.local/share/Trash/files/AirPlay.py	/^proc = subprocess.Popen(['echo', name],stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)$/;"	kind:variable	line:9
+prog	../reverse/backdoor_pi_300/fs/usr/sbin/mountstats	/^prog = os.path.basename(sys.argv[0])$/;"	kind:variable	line:601
+prog	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^prog = os.path.basename(sys.argv[0])$/;"	kind:variable	line:639
+public_file	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^  public_file = os.path.join(basedir,sourcepath,package+".public")$/;"	kind:variable	line:189
+public_packages	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^public_packages = CachedFileList()$/;"	kind:variable	line:382
+pullDownAllGems	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def pullDownAllGems(board):$/;"	kind:function	line:346
+py_compile	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^def py_compile(version, optimize, workers):$/;"	kind:function	line:130
+py_installed	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/pysupport.py	/^py_installed = [ ver for ver in py_supported if os.access('\/usr\/bin\/'+ver,os.X_OK) ]$/;"	kind:variable	line:11
+py_oldversions	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/pysupport.py	/^py_oldversions = [s.strip() for s in versions.split(',')]$/;"	kind:variable	line:9
+py_supported	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/pysupport.py	/^py_supported = [s.strip() for s in versions.split(',')]$/;"	kind:variable	line:7
+py_supported_short	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/pysupport.py	/^py_supported_short = [ a.replace("python","") for a in py_supported ]$/;"	kind:variable	line:12
+pyclean	../reverse/backdoor_pi_300/fs/usr/bin/pyclean	1;"	kind:file	line:1
+pycompile	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	1;"	kind:file	line:1
+pysupport.py	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/pysupport.py	1;"	kind:file	line:1
+python_type_to_jackdbus_type	../reverse/backdoor_pi_300/fs/usr/bin/jack_control	/^def python_type_to_jackdbus_type(value, type_char):$/;"	kind:function	line:39
+pyversion	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    pyversion = None$/;"	kind:variable	line:117
+pyversions	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    pyversions = py_supported$/;"	kind:variable	line:66
+readLevelsFile	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^def readLevelsFile(filename):$/;"	kind:function	line:426
+read_entries	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^def read_entries(filename):$/;"	kind:function	line:122
+realname	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^    realname=os.path.join(options.source_dir,f)$/;"	kind:variable	line:142
+realname	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^  realname=os.path.join(options.source_dir,f)$/;"	kind:variable	line:157
+removeCompleteLines	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def removeCompleteLines(board):$/;"	kind:function	line:658
+removeCompleteLines	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def removeCompleteLines(board):$/;"	kind:function	line:432
+removeCompleteLines	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def removeCompleteLines(board):$/;"	kind:function	line:329
+rename_subtle	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^def rename_subtle (source, destination, sourcedir):$/;"	kind:function	line:68
+res	../reverse/backdoor_pi_300/fs/usr/bin/gsettings-schema-convert	/^        res = main(sys.argv)$/;"	kind:variable	line:1146
+res	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^    res=os.spawnvpe(os.P_WAIT,'gconftool-2',['gconftool-2',arg]+schemas,env)$/;"	kind:variable	line:73
+resetAnimation	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def resetAnimation(board, allMoves):$/;"	kind:function	line:313
+resetBoard	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def resetBoard(board):$/;"	kind:function	line:312
+ret	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^    ret = os.spawnlp(os.P_WAIT, 'dpkg-trigger', 'dpkg-trigger', '--no-await', 'pysupport')$/;"	kind:variable	line:486
+revealBoxesAnimation	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def revealBoxesAnimation(board, boxesToReveal):$/;"	kind:function	line:222
+runGame	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def runGame():$/;"	kind:function	line:71
+runGame	../reverse/backdoor_pi_300/fs/home/pi/python_games/fourinarow.py	/^def runGame(isFirstGame):$/;"	kind:function	line:74
+runGame	../reverse/backdoor_pi_300/fs/home/pi/python_games/gemgem.py	/^def runGame():$/;"	kind:function	line:110
+runGame	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def runGame():$/;"	kind:function	line:408
+runGame	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^def runGame():$/;"	kind:function	line:84
+runGame	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def runGame():$/;"	kind:function	line:181
+runGame	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def runGame():$/;"	kind:function	line:79
+runGame	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^def runGame():$/;"	kind:function	line:51
+runLevel	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^def runLevel(levels, levelNum):$/;"	kind:function	line:123
+rv	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^            rv = process.returncode$/;"	kind:variable	line:283
+rv	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^    rv = 0$/;"	kind:variable	line:277
+s	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def s(bbb, bb, ee):$/;"	kind:function	line:109
+sample_time	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^            sample_time = interval$/;"	kind:variable	line:613
+sample_time	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^            sample_time = interval$/;"	kind:variable	line:627
+sample_time	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    sample_time = 0.0$/;"	kind:variable	line:602
+save_stdout	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^save_stdout=os.dup(1)$/;"	kind:variable	line:44
+save_stdout	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^    save_stdout=os.dup(1)$/;"	kind:variable	line:70
+scan	../reverse/backdoor_pi_300/fs/usr/bin/dh_python2	/^def scan(package, dname=None, options=None):$/;"	kind:function	line:302
+schema	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^      schema=os.path.join(schema_location,schema)$/;"	kind:variable	line:44
+schema_location	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^schema_location="\/usr\/share\/gconf\/schemas"$/;"	kind:variable	line:33
+schemas	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^schemas = [ ]$/;"	kind:variable	line:36
+sdsd	../crypto/bad_computation_800/crypt.py	/^def sdsd(edefefef):$/;"	kind:function	line:21
+service_name	../reverse/backdoor_pi_300/fs/usr/bin/jack_control	/^service_name = name_base + '.service'$/;"	kind:variable	line:6
+share	../reverse/backdoor_pi_300/fs/usr/bin/dh_python2	/^def share(package, stats, options):$/;"	kind:function	line:113
+share_2x	../reverse/backdoor_pi_300/fs/usr/bin/dh_python2	/^def share_2x(dir1, dir2, dc=None):$/;"	kind:function	line:232
+shared_extensionpath	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^shared_extensionpath='\/usr\/lib\/pyshared'$/;"	kind:variable	line:23
+shared_path	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^shared_path='\/usr\/share\/pyshared'$/;"	kind:variable	line:22
+showGameOverScreen	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^def showGameOverScreen():$/;"	kind:function	line:175
+showSettingsScreen	../reverse/backdoor_pi_300/fs/home/pi/python_games/inkspill.py	/^def showSettingsScreen():$/;"	kind:function	line:176
+showStartScreen	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^def showStartScreen():$/;"	kind:function	line:133
+showTextScreen	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def showTextScreen(text):$/;"	kind:function	line:567
+showTextScreen	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def showTextScreen(text):$/;"	kind:function	line:341
+showTextScreen	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def showTextScreen(text):$/;"	kind:function	line:238
+simulate.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	1;"	kind:file	line:1
+sitecustomize.py	../reverse/backdoor_pi_300/fs/etc/python2.7/sitecustomize.py	1;"	kind:file	line:1
+sitecustomize.py	../reverse/backdoor_pi_300/fs/etc/python3.2/sitecustomize.py	1;"	kind:file	line:1
+slideAnimation	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def slideAnimation(board, direction, message, animationSpeed):$/;"	kind:function	line:254
+slidepuzzle.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	1;"	kind:file	line:1
+source_stamp	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^    source_stamp = max(os.stat(realname).st_mtime,source_stamp)$/;"	kind:variable	line:143
+source_stamp	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^  source_stamp = os.stat(options.source_dir).st_mtime$/;"	kind:variable	line:140
+sourcepath	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^sourcepath='\/usr\/share\/python-support'$/;"	kind:variable	line:20
+sourcepath	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/movemodules	/^sourcepath='usr\/share\/python-support'$/;"	kind:variable	line:11
+splitIntoGroupsOf	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def splitIntoGroupsOf(groupSize, theList):$/;"	kind:function	line:155
+squirrel.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	1;"	kind:file	line:1
+starpusher.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	1;"	kind:file	line:1
+startGameAnimation	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle.py	/^def startGameAnimation(board):$/;"	kind:function	line:253
+startScreen	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^def startScreen():$/;"	kind:function	line:377
+statgroup	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^    statgroup = OptionGroup(parser, "Statistics Options",$/;"	kind:variable	line:532
+string_entry	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^def string_entry(value):$/;"	kind:function	line:64
+stringtoparse	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^    stringtoparse = "-"$/;"	kind:variable	line:86
+stringtoparse	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^    stringtoparse = stringtoparse.split("=",1)[1]$/;"	kind:variable	line:83
+stringtoparse	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^  stringtoparse=','.join(out)$/;"	kind:variable	line:78
+stringtoparse	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^  stringtoparse=f.next()$/;"	kind:variable	line:80
+swsdwd	../crypto/bad_computation_800/crypt.py	/^def swsdwd(a, b):$/;"	kind:function	line:41
+swsdwdwdwa	../crypto/bad_computation_800/crypt.py	/^def swsdwdwdwa(a, m):$/;"	kind:function	line:48
+t	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def t(vv, uu):$/;"	kind:function	line:79
+terminate	../reverse/backdoor_pi_300/fs/home/pi/python_games/pentomino.py	/^def terminate():$/;"	kind:function	line:536
+terminate	../reverse/backdoor_pi_300/fs/home/pi/python_games/simulate.py	/^def terminate():$/;"	kind:function	line:136
+terminate	../reverse/backdoor_pi_300/fs/home/pi/python_games/slidepuzzle.py	/^def terminate():$/;"	kind:function	line:117
+terminate	../reverse/backdoor_pi_300/fs/home/pi/python_games/squirrel.py	/^def terminate():$/;"	kind:function	line:323
+terminate	../reverse/backdoor_pi_300/fs/home/pi/python_games/starpusher.py	/^def terminate():$/;"	kind:function	line:592
+terminate	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	/^def terminate():$/;"	kind:function	line:309
+terminate	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	/^def terminate():$/;"	kind:function	line:207
+terminate	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	/^def terminate():$/;"	kind:function	line:166
+tetromino.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetromino.py	1;"	kind:file	line:1
+tetrominoforidiots.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/tetrominoforidiots.py	1;"	kind:file	line:1
+tmp_dir	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^tmp_dir=tempfile.mkdtemp(prefix="gconf-")$/;"	kind:variable	line:151
+tmp_file	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^tmp_file=tmp_dir+'\/temp.entries'$/;"	kind:variable	line:154
+tmp_gconf	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^tmp_gconf=tmp_dir+'\/gconf'$/;"	kind:variable	line:153
+tmp_home	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^tmp_home=tmp_dir+'\/home'$/;"	kind:variable	line:152
+tmp_home	../reverse/backdoor_pi_300/fs/usr/sbin/gconf-schemas	/^    tmp_home=tempfile.mkdtemp(prefix='gconf-')$/;"	kind:variable	line:60
+translateBoardToPixelCoord	../reverse/backdoor_pi_300/fs/home/pi/python_games/flippy.py	/^def translateBoardToPixelCoord(x, y):$/;"	kind:function	line:222
+treefile	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^treefile = '%gconf-tree.xml'$/;"	kind:variable	line:7
+type	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^                            type="int",$/;"	kind:variable	line:558
+update-gconf-defaults	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	1;"	kind:file	line:1
+update-python-modules	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	1;"	kind:file	line:1
+usage	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^        usage="usage: %prog [ <interval> [ <count> ] ] [ <options> ] [ <mount point> ]",$/;"	kind:variable	line:527
+v	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/parseversions	/^v=pysupport.version_list(stringtoparse)$/;"	kind:variable	line:92
+version	../reverse/backdoor_pi_300/fs/usr/sbin/nfsiostat	/^        version='version %s' % Iostats_version)$/;"	kind:variable	line:529
+version_cmp	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/pysupport.py	/^def version_cmp(ver1,ver2):$/;"	kind:function	line:14
+version_list	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/pysupport.py	/^class version_list(list):$/;"	kind:class	line:20
+versions	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^        versions = debsorted(versions)[:1]$/;"	kind:variable	line:264
+versions	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^        versions = get_requested_versions(options.vrange, available=True)$/;"	kind:variable	line:231
+versions	../reverse/backdoor_pi_300/fs/usr/bin/pycompile	/^        versions = set(options.vrange[:1])$/;"	kind:variable	line:229
+versions	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/pysupport.py	/^versions = config.get('DEFAULT', 'old-versions')$/;"	kind:variable	line:8
+versions	../reverse/backdoor_pi_300/fs/usr/share/python-support/private/pysupport.py	/^versions = config.get('DEFAULT', 'supported-versions')$/;"	kind:variable	line:6
+w	../reverse/backdoor_pi_300/fs/home/pi/python_games/memorypuzzle_obfuscated.py	/^def w(ss, tt, bb, ee):$/;"	kind:function	line:94
+warning	../reverse/backdoor_pi_300/fs/usr/sbin/update-python-modules	/^def warning(x):$/;"	kind:function	line:54
+wormy.py	../reverse/backdoor_pi_300/fs/home/pi/python_games/wormy.py	1;"	kind:file	line:1
+write_and_apply_entries	../reverse/backdoor_pi_300/fs/usr/bin/update-gconf-defaults	/^def write_and_apply_entries(filename):$/;"	kind:function	line:96

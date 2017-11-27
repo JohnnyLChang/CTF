@@ -6,7 +6,7 @@ from base64 import b64encode
 b = 22
 
 
-def dwfregrgre(x, z):
+def getprime(x, z):
     wdef = []
     for a in range(x, z + 1):
         for i in range(2, a):
@@ -18,13 +18,13 @@ def dwfregrgre(x, z):
     return wdef
 
 
-def sdsd(edefefef):
-    fvfegve = [x for x in range(2, edefefef)]
+def getprimes(param):
+    fvfegve = [x for x in range(2, param)]
 
     x = 2
     rrerrrr = True
     while rrerrrr:
-        for i in range(x * x, edefefef, x):
+        for i in range(x * x, param, x):
             if i in fvfegve:
                 fvfegve.remove(i)
 
@@ -45,12 +45,14 @@ def swsdwd(a, b):
         g, y, x = swsdwd(b % a, a)
         return (g, x - (b // a) * y, y)
 
-def swsdwdwdwa(a, m):
+
+def findmu(a, m):
     g, x, y = swsdwd(a, m)
     if g != 1:
         raise Exception('Oops! Error!')
     else:
         return x % m
+
 
 def L(u, n):
     return (u - 1) // n
@@ -66,13 +68,18 @@ if __name__ == '__main__':
         print("Error! Password must starts with KLCTF")
         exit()
 
-    p = choice(dwfregrgre(100, 1000))
-    q = choice(dwfregrgre(200, 1000))
+# find primes 100-1000 and 200-1000
+    p = choice(getprime(100, 300))
+    q = choice(getprime(200, 300))
 
+    print(L(33, 2))
+    print("p=", p)
+    print("q=", q)
     print("Waiting for encryption...")
 
     n = p * q
     g = None
+    print("n=", n)
     for i in range(n + 1, n * n):
         if ((i % p) == 0) or ((i % q) == 0) or ((i % n) == 0):
             continue
@@ -84,10 +91,12 @@ if __name__ == '__main__':
         print("Error! Can't find g!")
         exit()
 
-    lamb = (p - 1) * (q - 1)
-    mu = swsdwdwdwa(L(pow(g, lamb, n * n), n), n) % n
+    print("g=", g)
+    r = (p - 1) * (q - 1)
+    mu = findmu(L(pow(g, r, n * n), n), n) % n
 
-    rc = sdsd(n - 1)
+    print("mu=", mu)
+    rc = getprimes(n - 1)
     if len(rc) == 0:
         print("Error! Candidates for r not found!")
         exit()
@@ -99,12 +108,14 @@ if __name__ == '__main__':
 
     r = choice(rc)
 
-    wdwfewgwggrgrg = [ord(x) for x in argv[1][6:-1]]
+    flag = [ord(x) for x in argv[1][6:-1]]
     dcew = (pow(g, b, (n * n)) * pow(r, n, (n * n))) % (n * n)
 
-    for i in range(len(wdwfewgwggrgrg)):
-        wdwfewgwggrgrg[i] = (((pow(g, wdwfewgwggrgrg[i], (n * n)) * pow(r, n, (n * n))) % (n * n)) * dcew) % (n * n)
-        wdwfewgwggrgrg[i] = (L(pow(wdwfewgwggrgrg[i], lamb, (n * n)), n) * mu) % n
+    for i in range(len(flag)):
+        flag[i] = (
+            ((pow(g, flag[i], (n * n)) * pow(r, n, (n * n))) % (n * n)) * dcew) % (n * n)
+        flag[i] = (
+            L(pow(flag[i], r, (n * n)), n) * mu) % n
 
-    wdwfewgwggrgrg = b64encode(bytearray(wdwfewgwggrgrg))
-    print(str(wdwfewgwggrgrg)[2:-1])
+    flag = b64encode(bytearray(flag))
+    print(str(flag)[2:-1])

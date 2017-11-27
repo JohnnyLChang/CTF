@@ -62,7 +62,7 @@ class CoClass2 {
 
         this.status &= 0xFFFFFFFF;
 
-        this.callback = param.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo;
+        this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = param.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo;
         this.val_param = param.CoCoCo;
     }
 }
@@ -71,11 +71,11 @@ class CoClass2Child extends CoClass2 {
 
 
     CoCoCoCoCoCoCoCo() {
-        return this.callback.getUint8(this.status);
+        return this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.getUint8(this.status);
     }
 
     CoCoCoCoCoCoCoCoCo(param) {
-        this.callback.setUint8(this.status, param);
+        this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.setUint8(this.status, param);
     }
 }
 
@@ -84,11 +84,11 @@ class CoClass2Child2 extends CoClass2 {
 
 
     CoCoCoCoCoCoCoCo() {
-        return this.callback.getUint32(this.status);
+        return this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.getUint32(this.status);
     }
 
     CoCoCoCoCoCoCoCoCo(param) {
-        this.callback.setUint32(this.status, param);
+        this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.setUint32(this.status, param);
     }
 }
 
@@ -141,11 +141,11 @@ class Processor {
     }
 
     CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo() {
-        var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCo.getInt32(16);
-        var CoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.getUint32(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo);
-        CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo += 4;
-        this.CoCoCo.setInt32(16, CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo);
-        return CoCoCoCoCoCoCoCoCoCo;
+        var tmpv = this.CoCoCo.getInt32(16);
+        var tmpv2 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.getUint32(tmpv);
+        tmpv += 4;
+        this.CoCoCo.setInt32(16, tmpv);
+        return tmpv2;
     }
 
 
@@ -153,133 +153,133 @@ class Processor {
         var val = this.CoCoCoCoCo();
         switch (val) {
             case 4:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var value = val4.CoCoCoCoCoCoCoCo();
 
                 this.dosetval(this.retval);
-                this.retval = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo;
+                this.retval = value;
                 break;
             case 2:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val2 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCoCo(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo());
+                val4.CoCoCoCoCoCoCoCoCo(val2.CoCoCoCoCoCoCoCo());
                 break;
             case 8:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                this.retval = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo();
+                this.retval = val4.CoCoCoCoCoCoCoCo();
                 break;
             case 10:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val2 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCoCo(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo() >>> 0);
+                val4.CoCoCoCoCoCoCoCoCo(val2.CoCoCoCoCoCoCoCo() >>> 0);
 
                 break;
             case 5:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val2 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo() + CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo();
+                var value = val4.CoCoCoCoCoCoCoCo() + val2.CoCoCoCoCoCoCoCo();
 
-                this.bval2 = new Boolean(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo >> 32);
+                this.bval2 = new Boolean(value >> 32);
 
-                CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCoCo(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo);
+                val4.CoCoCoCoCoCoCoCoCo(value);
                 break;
             case 18:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val2 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo() >>> CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo();
-                CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCoCo(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo);
+                var value = val4.CoCoCoCoCoCoCoCo() >>> val2.CoCoCoCoCoCoCoCo();
+                val4.CoCoCoCoCoCoCoCoCo(value);
                 break;
             case 11:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val2 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo() ^ CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo();
-                CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCoCo(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo);
+                var value = val4.CoCoCoCoCoCoCoCo() ^ val2.CoCoCoCoCoCoCoCo();
+                val4.CoCoCoCoCoCoCoCoCo(value);
                 break;
             case 3:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val2 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo() + ((~CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo()) + 1);
-                this.bval2 = new Boolean(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo >> 32);
+                var value = val4.CoCoCoCoCoCoCoCo() + ((~val2.CoCoCoCoCoCoCoCo()) + 1);
+                this.bval2 = new Boolean(value >> 32);
 
-                CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCoCo(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo);
+                val4.CoCoCoCoCoCoCoCoCo(value);
                 break;
             case 15:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var value = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                this.retval = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo;
+                this.retval = value;
                 break;
             case 14:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
-                CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCoCo(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo);
+                var value = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                val4.CoCoCoCoCoCoCoCoCo(value);
                 break;
             case 17:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val2 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo() & CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo();
-                CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCoCo(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo);
+                var value = val4.CoCoCoCoCoCoCoCo() & val2.CoCoCoCoCoCoCoCo();
+                val4.CoCoCoCoCoCoCoCoCo(value);
                 break;
             case 9:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
 
                 if (this.bval2 == false) {
-                    this.retval = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo();
+                    this.retval = val4.CoCoCoCoCoCoCoCo();
                 }
                 break;
             case 1:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                this.dosetval(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo());
+                this.dosetval(val4.CoCoCoCoCoCoCoCo());
                 break;
             case 6:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val2 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                this.bval1 = (CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo() == CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo());
+                this.bval1 = (val4.CoCoCoCoCoCoCoCo() == val2.CoCoCoCoCoCoCoCo());
 
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo() + ((~CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo()) + 1);
-                this.bval2 = new Boolean(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo >> 32);
+                var value = val4.CoCoCoCoCoCoCoCo() + ((~val2.CoCoCoCoCoCoCoCo()) + 1);
+                this.bval2 = new Boolean(value >> 32);
                 break;
             case 7:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
                 if (this.bval1 == false) {
-                    this.retval = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo();
+                    this.retval = val4.CoCoCoCoCoCoCoCo();
                 }
                 break;
             case 13:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val2 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo() | CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo();
-                CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCoCo(CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo);
+                var value = val4.CoCoCoCoCoCoCoCo() | val2.CoCoCoCoCoCoCoCo();
+                val4.CoCoCoCoCoCoCoCoCo(value);
                 break;
             case 16:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
                 if (this.bval1 == true) {
-                    this.retval = CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo();
+                    this.retval = val4.CoCoCoCoCoCoCoCo();
                 }
                 break;
             case 12:
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
+                var val4 = this.CoCoCoCoCoCoCoCoCoCoCoCoCoCoCo();
 
-                var CoCoCoCoCoCoCoCoCoCo = (this.CoCoCo.getInt32(8) << 32) | this.CoCoCo.getInt32(0);
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = CoCoCoCoCoCoCoCoCoCo / CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo();
-                this.CoCoCo.setInt32(0, CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo);
-                var CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo = CoCoCoCoCoCoCoCoCoCo % CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo.CoCoCoCoCoCoCoCo();
-                this.CoCoCo.setInt32(8, CoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCoCo);
+                var tmp = (this.CoCoCo.getInt32(8) << 32) | this.CoCoCo.getInt32(0);
+                var tmp2 = tmp / val4.CoCoCoCoCoCoCoCo();
+                this.CoCoCo.setInt32(0, tmp2);
+                var tmp2 = tmp % val4.CoCoCoCoCoCoCoCo();
+                this.CoCoCo.setInt32(8, tmp2);
                 break;
         }
     }
@@ -304,7 +304,6 @@ function GetFlag(inputflag) {
     try {
         while (process.retval != 0xFFFFFFFF) {
             process.processing();
-            console.log(process.CoCoCo.getInt32(0))
         }
     } catch (e) {}
 
