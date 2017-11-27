@@ -1,0 +1,6 @@
+{
+    "require": {
+        "amphp/parallel": "^0.1.8",
+        "amphp/amp": "^2.0"
+    }
+}
