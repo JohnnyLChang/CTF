@@ -1,0 +1,3 @@
+[submodule "ctftools/crypto/ctftools/crypto/LengthExtensionAttack/hlextend"]
+	path = ctftools/crypto/ctftools/crypto/LengthExtensionAttack/hlextend
+	url = https://github.com/stephenbradshaw/hlextend.git
